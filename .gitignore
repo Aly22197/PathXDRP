@@ -100,7 +100,7 @@ results/archive/
 # Generated figures — regeneratable via eval/plot_results.py.
 # Only Pipeline.pdf is kept (referenced by the README).
 # ============================================================================
-figures/
+figures/*
 !figures/Pipeline.png
 
 # ============================================================================
