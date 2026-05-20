@@ -17,7 +17,7 @@ journal); they are not part of this code release.
 
 ## Pipeline at a glance
 
-![Pipeline](figures/Pipeline.pdf)
+![Pipeline](figures/Pipeline.png)
 
 End-to-end flow: raw GDSC2 + DepMap + PubChem + KEGG inputs → graph and
 expression tensors → four DRP models trained under five split protocols →
@@ -96,7 +96,7 @@ to [`results/xai/`](results/xai/).
 │   ├── pathxdrp/ graphdrp/ drpreter/ cdrscan/   # one JSON + preds CSV per run
 │   ├── xai/                                      # XAI benchmark outputs
 │   └── summary_v3_vs_baselines.csv               # aggregated headline table
-├── figures/Pipeline.pdf     # the diagram shown above
+├── figures/Pipeline.png     # the diagram shown above
 └── requirements.txt
 ```
 
@@ -108,7 +108,7 @@ What is **not** in the repo:
 - **Trained checkpoints** (~4.3 GB total). Reproduce with
   `scripts/run_sweep.py` on a CUDA GPU.
 - **Per-run training logs**, **archived sweeps**, and **generated figures
-  other than `figures/Pipeline.pdf`**. All regeneratable from the code.
+  other than `figures/Pipeline.png`**. All regeneratable from the code.
 - **Manuscript LaTeX sources and compiled PDFs.** Distributed separately
   through Zenodo / the journal.
 

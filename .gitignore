@@ -101,7 +101,7 @@ results/archive/
 # Only Pipeline.pdf is kept (referenced by the README).
 # ============================================================================
 figures/
-!figures/Pipeline.pdf
+!figures/Pipeline.png
 
 # ============================================================================
 # Project-internal / dev-only directories — not part of the released pipeline.
