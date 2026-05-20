@@ -1,0 +1,4925 @@
+{
+  "summary": {
+    "n_drugs_evaluated": 237,
+    "ig_target_auroc_mean": 0.605828618379838,
+    "ig_target_auroc_median": 0.6225053410452817,
+    "attn_target_auroc_mean": NaN,
+    "attn_target_auroc_median": NaN,
+    "ig_geneset_recall_at_5_mean": 0.6082822085889571,
+    "ig_geneset_recall_at_10_mean": 0.6790388548057259,
+    "ig_geneset_recall_at_20_mean": 0.6905930470347648,
+    "ig_geneset_hit_at_5_rate": 0.6809815950920245,
+    "ig_geneset_hit_at_10_rate": 0.7239263803680982,
+    "attn_geneset_recall_at_5_mean": NaN,
+    "attn_geneset_recall_at_10_mean": NaN,
+    "attn_geneset_recall_at_20_mean": NaN,
+    "attn_geneset_hit_at_5_rate": NaN,
+    "attn_geneset_hit_at_10_rate": NaN,
+    "ig_target_pathway_auroc_mean": 0.5375603146275366,
+    "attn_target_pathway_auroc_mean": NaN,
+    "attn_sensitivity_alignment_mean": NaN,
+    "attn_faithfulness_suff_mean": NaN,
+    "attn_faithfulness_comp_mean": NaN
+  },
+  "per_drug": [
+    {
+      "drug": "5-Fluorouracil",
+      "n_cells": 5,
+      "raw_targets": [
+        "Antimetabolite (DNA & RNA)"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.4109928607940674
+    },
+    {
+      "drug": "5-azacytidine",
+      "n_cells": 5,
+      "raw_targets": [
+        "DNA methyltransferases"
+      ],
+      "resolved_targets": [
+        "DNMT1",
+        "DNMT3A",
+        "DNMT3B"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.12114334106445312,
+      "ig_target_auroc": 0.8706791731804759,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "A-366",
+      "n_cells": 5,
+      "raw_targets": [
+        "EHMT1",
+        "EHMT2"
+      ],
+      "resolved_targets": [
+        "EHMT1",
+        "EHMT2"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.1159055233001709,
+      "ig_target_auroc": 0.5032306810484082,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.5799457994579946,
+      "ig_target_pathway_rank": 155,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "ABT737",
+      "n_cells": 5,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "BCL-W",
+        "BCL-B",
+        "BFL1"
+      ],
+      "resolved_targets": [
+        "BCL2"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.11694884300231934,
+      "ig_target_auroc": 0.9521154647769904,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7804878048780488,
+      "ig_target_pathway_rank": 81,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AGI-5198",
+      "n_cells": 5,
+      "raw_targets": [
+        "IDH1 (R132H)"
+      ],
+      "resolved_targets": [
+        "IDH1"
+      ],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "ig_time_s": 0.11843204498291016,
+      "ig_target_auroc": 0.47113380575239683,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.1842818428184282,
+      "ig_target_pathway_rank": 301,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AGI-6780",
+      "n_cells": 5,
+      "raw_targets": [
+        "IDH2 R140Q mutant"
+      ],
+      "resolved_targets": [
+        "IDH2"
+      ],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "ig_time_s": 0.10301709175109863,
+      "ig_target_auroc": 0.9712380158399333,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.17886178861788615,
+      "ig_target_pathway_rank": 303,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AGK2",
+      "n_cells": 5,
+      "raw_targets": [
+        "BAZ2A",
+        "BAZ2B"
+      ],
+      "resolved_targets": [
+        "BAZ2A",
+        "BAZ2B"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.10297441482543945,
+      "ig_target_auroc": 0.728179875983534,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.6639566395663956,
+      "ig_target_pathway_rank": 124,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AMG-319",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3K (beta sparing)"
+      ],
+      "resolved_targets": [
+        "PIK3CA"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10106182098388672,
+      "ig_target_auroc": 0.38177365568987076,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7994579945799458,
+      "ig_target_pathway_rank": 74,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AT13148",
+      "n_cells": 5,
+      "raw_targets": [
+        "AKT1"
+      ],
+      "resolved_targets": [
+        "AKT1"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.12067675590515137,
+      "ig_target_auroc": 0.8210191746561067,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7100271002710027,
+      "ig_target_pathway_rank": 107,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZ6102",
+      "n_cells": 5,
+      "raw_targets": [
+        "TNKS1",
+        "TNKS2"
+      ],
+      "resolved_targets": [
+        "TNKS",
+        "TNKS2"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.1125190258026123,
+      "ig_target_auroc": 0.8483403678807775,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.8726287262872628,
+      "ig_target_pathway_rank": 47,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZ960",
+      "n_cells": 5,
+      "raw_targets": [
+        "JAK2",
+        "JAK3"
+      ],
+      "resolved_targets": [
+        "JAK2",
+        "JAK3"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.12530279159545898,
+      "ig_target_auroc": 0.8041008806211244,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.035230352303523005,
+      "ig_target_pathway_rank": 356,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD1208",
+      "n_cells": 5,
+      "raw_targets": [
+        "PIM1",
+        "PIM2",
+        "PIM3"
+      ],
+      "resolved_targets": [
+        "PIM1",
+        "PIM2",
+        "PIM3"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11320757865905762,
+      "ig_target_auroc": 0.6577036651033524,
+      "ig_geneset_recall_at_5": 0.6666666666666666,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.6666666666666666,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.6666666666666666,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.04336043360433606,
+      "ig_target_pathway_rank": 353,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD1332",
+      "n_cells": 5,
+      "raw_targets": [
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "resolved_targets": [
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.11692333221435547,
+      "ig_target_auroc": 0.25476810838978636,
+      "ig_geneset_recall_at_5": 0.3333333333333333,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.6666666666666666,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "AZD2014",
+      "n_cells": 5,
+      "raw_targets": [
+        "mTORC1",
+        "mTORC2"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.11181879043579102,
+      "ig_target_auroc": 0.49140266777824093,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8563685636856369,
+      "ig_target_pathway_rank": 53,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD3759",
+      "n_cells": 5,
+      "raw_targets": [
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "EGFR"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "ig_time_s": 0.10999393463134766,
+      "ig_target_auroc": 0.9754064193413923,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.6233062330623307,
+      "ig_target_pathway_rank": 139,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD4547",
+      "n_cells": 5,
+      "raw_targets": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3"
+      ],
+      "resolved_targets": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.11864161491394043,
+      "ig_target_auroc": 0.7743790168490533,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "AZD5153",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11622762680053711,
+      "ig_target_auroc": 0.42674030846185906,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.04336043360433606,
+      "ig_target_pathway_rank": 353,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD5363",
+      "n_cells": 5,
+      "raw_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3",
+        "ROCK2"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3",
+        "ROCK2"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11277079582214355,
+      "ig_target_auroc": 0.7107978529365783,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.07588075880758804,
+      "ig_target_pathway_rank": 341,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD5438",
+      "n_cells": 5,
+      "raw_targets": [
+        "CDK2"
+      ],
+      "resolved_targets": [
+        "CDK2"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.1031959056854248,
+      "ig_target_auroc": 0.16975823259691536,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7588075880758808,
+      "ig_target_pathway_rank": 89,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD5582",
+      "n_cells": 5,
+      "raw_targets": [
+        "XIAP",
+        "cIAP"
+      ],
+      "resolved_targets": [
+        "XIAP"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.12720060348510742,
+      "ig_target_auroc": 0.039808253438932906,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7208672086720866,
+      "ig_target_pathway_rank": 103,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD5991",
+      "n_cells": 5,
+      "raw_targets": [
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.11855602264404297,
+      "ig_target_auroc": 0.5403814089203834,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8184281842818428,
+      "ig_target_pathway_rank": 67,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD6482",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3Kbeta"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10806536674499512,
+      "ig_target_pathway_auroc": 0.8482384823848239,
+      "ig_target_pathway_rank": 56,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD6738",
+      "n_cells": 5,
+      "raw_targets": [
+        "ATR"
+      ],
+      "resolved_targets": [
+        "ATR"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.11507439613342285,
+      "ig_target_auroc": 0.7653188828678616,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "AZD7762",
+      "n_cells": 5,
+      "raw_targets": [
+        "CHEK1",
+        "CHEK2"
+      ],
+      "resolved_targets": [
+        "CHEK1",
+        "CHEK2"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.11336994171142578,
+      "ig_target_auroc": 0.6524673023813246,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.6639566395663956,
+      "ig_target_pathway_rank": 124,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD8055",
+      "n_cells": 5,
+      "raw_targets": [
+        "MTORC1",
+        "MTORC2"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10292530059814453,
+      "ig_target_auroc": 0.4189245518966236,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7018970189701896,
+      "ig_target_pathway_rank": 110,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "AZD8186",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3Kalpha",
+        "PI3Kbeta"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10262513160705566,
+      "ig_target_pathway_auroc": 0.7994579945799458,
+      "ig_target_pathway_rank": 74,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Acetalax",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.11376547813415527
+    },
+    {
+      "drug": "Afatinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "EGFR",
+        "ERBB2"
+      ],
+      "resolved_targets": [
+        "EGFR",
+        "ERBB2"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "ig_time_s": 0.09744930267333984,
+      "ig_target_auroc": 0.9760825386900108,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7615176151761518,
+      "ig_target_pathway_rank": 88,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Afuresertib",
+      "n_cells": 5,
+      "raw_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10300803184509277,
+      "ig_target_auroc": 0.7560187597707139,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8238482384823849,
+      "ig_target_pathway_rank": 65,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Alisertib",
+      "n_cells": 5,
+      "raw_targets": [
+        "AURKA"
+      ],
+      "resolved_targets": [
+        "AURKA"
+      ],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "ig_time_s": 0.11017537117004395,
+      "ig_target_auroc": 0.40204251771571486,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "Alpelisib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3Kalpha"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10895514488220215,
+      "ig_target_pathway_auroc": 0.7154471544715447,
+      "ig_target_pathway_rank": 105,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Avagacestat",
+      "n_cells": 5,
+      "raw_targets": [
+        "Amyloid beta20",
+        "Amyloid beta40"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.10697197914123535
+    },
+    {
+      "drug": "Axitinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PDGFR",
+        "KIT",
+        "VEGFR"
+      ],
+      "resolved_targets": [
+        "PDGFRA",
+        "KIT",
+        "KDR"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.11164569854736328,
+      "ig_target_auroc": 0.6153204794163627,
+      "ig_geneset_recall_at_5": 0.6666666666666666,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "BEN",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.09237837791442871
+    },
+    {
+      "drug": "BI-2536",
+      "n_cells": 5,
+      "raw_targets": [
+        "PLK1",
+        "PLK2",
+        "PLK3"
+      ],
+      "resolved_targets": [
+        "PLK1",
+        "PLK2",
+        "PLK3"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.10944890975952148,
+      "ig_target_auroc": 0.6356261941983672,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.8319783197831978,
+      "ig_target_pathway_rank": 62,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "BIBR-1532",
+      "n_cells": 5,
+      "raw_targets": [
+        "TERT"
+      ],
+      "resolved_targets": [
+        "TERT"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.11105561256408691,
+      "ig_target_auroc": 0.4134014172571905,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "BMS-345541",
+      "n_cells": 5,
+      "raw_targets": [
+        "IKK-1",
+        "IKK-2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.10332536697387695
+    },
+    {
+      "drug": "BMS-536924",
+      "n_cells": 5,
+      "raw_targets": [
+        "IGF1R",
+        "IR"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10353350639343262,
+      "ig_target_auroc": 0.8532721967486453,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "BMS-754807",
+      "n_cells": 5,
+      "raw_targets": [
+        "IGF1R",
+        "IR"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10962557792663574,
+      "ig_target_auroc": 0.41543351396415173,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "BX795",
+      "n_cells": 5,
+      "raw_targets": [
+        "TBK1",
+        "PDK1 (PDPK1)",
+        "IKK",
+        "AURKB",
+        "AURKC"
+      ],
+      "resolved_targets": [
+        "TBK1",
+        "PDK1",
+        "AURKB",
+        "AURKC"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11223196983337402,
+      "ig_target_auroc": 0.6366928969722236,
+      "ig_geneset_recall_at_5": 0.25,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.25,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.25,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.0677506775067751,
+      "ig_target_pathway_rank": 344,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Bicalutamide",
+      "n_cells": 5,
+      "raw_targets": [
+        "AR"
+      ],
+      "resolved_targets": [
+        "AR"
+      ],
+      "target_pathway": "Hormone-related",
+      "matched_pathway": "Steroid hormone biosynthesis",
+      "ig_time_s": 0.11371779441833496,
+      "ig_target_auroc": 0.569091288036682,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.2032520325203252,
+      "ig_target_pathway_rank": 294,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Bleomycin",
+      "n_cells": 5,
+      "raw_targets": [
+        "dsDNA break induction"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.1133718490600586,
+      "ig_target_pathway_auroc": 0.6856368563685638,
+      "ig_target_pathway_rank": 116,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "n_cells": 5,
+      "raw_targets": [
+        "dsDNA break induction"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.10894656181335449,
+      "ig_target_pathway_auroc": 0.5772357723577235,
+      "ig_target_pathway_rank": 156,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Bortezomib",
+      "n_cells": 5,
+      "raw_targets": [
+        "Proteasome"
+      ],
+      "resolved_targets": [
+        "PSMB1",
+        "PSMB2",
+        "PSMB5"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.1059103012084961,
+      "ig_target_auroc": 0.5206704881014417,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.2032520325203252,
+      "ig_target_pathway_rank": 294,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Bosutinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "SRC",
+        "ABL",
+        "TEC"
+      ],
+      "resolved_targets": [
+        "SRC",
+        "ABL1",
+        "TEC"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.10222578048706055,
+      "ig_target_auroc": 0.7301024839326038,
+      "ig_geneset_recall_at_5": 0.3333333333333333,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.6666666666666666,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.6666666666666666,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.07859078590785906,
+      "ig_target_pathway_rank": 340,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Bromosporine",
+      "n_cells": 5,
+      "raw_targets": [
+        "CECR2",
+        "BRD2",
+        "BRD4",
+        "BRD9"
+      ],
+      "resolved_targets": [
+        "CECR2",
+        "BRD2",
+        "BRD4",
+        "BRD9"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.10298538208007812,
+      "ig_target_auroc": 0.4572541560268904,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.046070460704607075,
+      "ig_target_pathway_rank": 352,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Buparlisib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3Kalpha",
+        "PI3Kdelta",
+        "PI3Kbeta",
+        "PI3Kgamma"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.11394071578979492,
+      "ig_target_pathway_auroc": 0.7913279132791328,
+      "ig_target_pathway_rank": 77,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "CCT-018159",
+      "n_cells": 5,
+      "raw_targets": [
+        "HSP90"
+      ],
+      "resolved_targets": [
+        "HSP90AA1",
+        "HSP90AB1",
+        "HSP90B1"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.1058349609375,
+      "ig_target_auroc": 0.603248219558798,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.23035230352303526,
+      "ig_target_pathway_rank": 284,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "CCT007093",
+      "n_cells": 5,
+      "raw_targets": [
+        "PPM1D"
+      ],
+      "resolved_targets": [
+        "PPM1D"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.1098480224609375,
+      "ig_target_auroc": 0.7711546477699042,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.8346883468834688,
+      "ig_target_pathway_rank": 61,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "CHIR-99021",
+      "n_cells": 5,
+      "raw_targets": [
+        "GSK3A",
+        "GSK3B"
+      ],
+      "resolved_targets": [
+        "GSK3A",
+        "GSK3B"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.1030128002166748,
+      "ig_target_auroc": 0.584570892605909,
+      "ig_geneset_recall_at_5": 0.5,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.5,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8536585365853658,
+      "ig_target_pathway_rank": 54,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "CPI-637",
+      "n_cells": 5,
+      "raw_targets": [
+        "EP300"
+      ],
+      "resolved_targets": [
+        "EP300"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.10261321067810059,
+      "ig_target_auroc": 0.3919862442684452,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.5880758807588076,
+      "ig_target_pathway_rank": 152,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "CZC24832",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3Kgamma"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.1086583137512207,
+      "ig_target_pathway_auroc": 0.8021680216802168,
+      "ig_target_pathway_rank": 73,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Camptothecin",
+      "n_cells": 5,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.1131124496459961,
+      "ig_target_auroc": 0.4893184660275115,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.1707317073170732,
+      "ig_target_pathway_rank": 306,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Cediranib",
+      "n_cells": 5,
+      "raw_targets": [
+        "VEGFR",
+        "FLT1",
+        "FLT2",
+        "FLT3",
+        "FLT4",
+        "KIT",
+        "PDGFRB"
+      ],
+      "resolved_targets": [
+        "KDR",
+        "FLT1",
+        "FLT3",
+        "FLT4",
+        "KIT",
+        "PDGFRB"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10554671287536621,
+      "ig_target_auroc": 0.5936137315196053,
+      "ig_geneset_recall_at_5": 0.6666666666666666,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Cisplatin",
+      "n_cells": 5,
+      "raw_targets": [
+        "DNA crosslinker"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.10252022743225098,
+      "ig_target_pathway_auroc": 0.30081300813008127,
+      "ig_target_pathway_rank": 258,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Crizotinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "MET",
+        "ALK",
+        "ROS1"
+      ],
+      "resolved_targets": [
+        "MET",
+        "ALK",
+        "ROS1"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10294294357299805,
+      "ig_target_auroc": 0.5106479068959526,
+      "ig_geneset_recall_at_5": 0.6666666666666666,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.6666666666666666,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.6666666666666666,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "n_cells": 5,
+      "raw_targets": [
+        "Alkylating agent"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.11510562896728516,
+      "ig_target_pathway_auroc": 0.24932249322493227,
+      "ig_target_pathway_rank": 277,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Cytarabine",
+      "n_cells": 5,
+      "raw_targets": [
+        "Antimetabolite"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.12082600593566895
+    },
+    {
+      "drug": "Dabrafenib",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRAF"
+      ],
+      "resolved_targets": [
+        "BRAF"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.10909342765808105,
+      "ig_target_auroc": 0.5291788245102126,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.959349593495935,
+      "ig_target_pathway_rank": 15,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Dacarbazine",
+      "n_cells": 5,
+      "raw_targets": [
+        "CP11A"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.10920381546020508
+    },
+    {
+      "drug": "Dactinomycin",
+      "n_cells": 5,
+      "raw_targets": [
+        "RNA polymerase"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.1090555191040039
+    },
+    {
+      "drug": "Dactolisib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3K (class 1)",
+        "MTORC1",
+        "MTORC2"
+      ],
+      "resolved_targets": [
+        "PIK3CA",
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10266351699829102,
+      "ig_target_auroc": 0.8124641759157939,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7940379403794038,
+      "ig_target_pathway_rank": 76,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Daporinad",
+      "n_cells": 5,
+      "raw_targets": [
+        "NAMPT"
+      ],
+      "resolved_targets": [
+        "NAMPT"
+      ],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "ig_time_s": 0.10907745361328125,
+      "ig_target_auroc": 0.4641517298874531,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.5663956639566395,
+      "ig_target_pathway_rank": 160,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Dasatinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "ABL",
+        "SRC",
+        "Ephrins",
+        "PDGFR",
+        "KIT"
+      ],
+      "resolved_targets": [
+        "ABL1",
+        "SRC",
+        "PDGFRA",
+        "KIT"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.1089634895324707,
+      "ig_target_auroc": 0.7370889572150712,
+      "ig_geneset_recall_at_5": 0.75,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.054200542005420016,
+      "ig_target_pathway_rank": 349,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.1091456413269043
+    },
+    {
+      "drug": "Dinaciclib",
+      "n_cells": 5,
+      "raw_targets": [
+        "CDK1",
+        "CDK2",
+        "CDK5",
+        "CDK9"
+      ],
+      "resolved_targets": [
+        "CDK1",
+        "CDK2",
+        "CDK5",
+        "CDK9"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.10903143882751465,
+      "ig_target_auroc": 0.6219578925426026,
+      "ig_geneset_recall_at_5": 0.5,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.5,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.75,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7859078590785908,
+      "ig_target_pathway_rank": 79,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Docetaxel",
+      "n_cells": 5,
+      "raw_targets": [
+        "Microtubule stabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "ig_time_s": 0.11826181411743164
+    },
+    {
+      "drug": "Doramapimod",
+      "n_cells": 5,
+      "raw_targets": [
+        "p38",
+        "JNK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "JNK and p38 signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10822558403015137
+    },
+    {
+      "drug": "EHT-1864",
+      "n_cells": 5,
+      "raw_targets": [
+        "RAC1",
+        "RAC2",
+        "RAC3"
+      ],
+      "resolved_targets": [
+        "RAC1",
+        "RAC2",
+        "RAC3"
+      ],
+      "target_pathway": "Cytoskeleton",
+      "matched_pathway": "Regulation of actin cytoskeleton",
+      "ig_time_s": 0.11433053016662598,
+      "ig_target_auroc": 0.6609692548202188,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.9159891598915989,
+      "ig_target_pathway_rank": 31,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "EPZ004777",
+      "n_cells": 5,
+      "raw_targets": [
+        "DOT1L"
+      ],
+      "resolved_targets": [
+        "DOT1L"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.10884881019592285,
+      "ig_target_auroc": 0.4840558566069195,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.6910569105691057,
+      "ig_target_pathway_rank": 114,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "EPZ5676",
+      "n_cells": 5,
+      "raw_targets": [
+        "DOT1L"
+      ],
+      "resolved_targets": [
+        "DOT1L"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.11467385292053223,
+      "ig_target_auroc": 0.6350562734472697,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.6991869918699187,
+      "ig_target_pathway_rank": 111,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Elephantin",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.10896086692810059
+    },
+    {
+      "drug": "Elesclomol",
+      "n_cells": 5,
+      "raw_targets": [
+        "HSP90"
+      ],
+      "resolved_targets": [
+        "HSP90AA1",
+        "HSP90AB1",
+        "HSP90B1"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.12125253677368164,
+      "ig_target_auroc": 0.5353309015112038,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.32791327913279134,
+      "ig_target_pathway_rank": 248,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Entinostat",
+      "n_cells": 5,
+      "raw_targets": [
+        "HDAC1",
+        "HDAC3"
+      ],
+      "resolved_targets": [
+        "HDAC1",
+        "HDAC2",
+        "HDAC3",
+        "HDAC4",
+        "HDAC5",
+        "HDAC6",
+        "HDAC7",
+        "HDAC8",
+        "HDAC9",
+        "HDAC10"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.10302495956420898,
+      "ig_target_auroc": 0.461090548923526,
+      "ig_geneset_recall_at_5": 0.2,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.2,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.3,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.6314363143631436,
+      "ig_target_pathway_rank": 136,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Entospletinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "SYK"
+      ],
+      "resolved_targets": [
+        "SYK"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.1149594783782959,
+      "ig_target_auroc": 0.6118174239266361,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.051490514905149,
+      "ig_target_pathway_rank": 350,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Epirubicin",
+      "n_cells": 5,
+      "raw_targets": [
+        "Anthracycline"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.10895848274230957,
+      "ig_target_pathway_auroc": 0.21680216802168017,
+      "ig_target_pathway_rank": 289,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Erlotinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "EGFR"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "ig_time_s": 0.11506319046020508,
+      "ig_target_auroc": 0.9689453939141308,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.6287262872628726,
+      "ig_target_pathway_rank": 137,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Fludarabine",
+      "n_cells": 5,
+      "raw_targets": [
+        "Antimetabolite"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.115020751953125,
+      "ig_target_pathway_auroc": 0.20867208672086723,
+      "ig_target_pathway_rank": 292,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Foretinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "MET",
+        "KDR",
+        "TIE2",
+        "VEGFR3/FLT4",
+        "RON",
+        "PDGFR",
+        "FGFR1",
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "MET",
+        "KDR",
+        "PDGFRA",
+        "FGFR1",
+        "EGFR"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.1031045913696289,
+      "ig_target_auroc": 0.6888993120700437,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Fulvestrant",
+      "n_cells": 5,
+      "raw_targets": [
+        "ESR"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Hormone-related",
+      "matched_pathway": "Steroid hormone biosynthesis",
+      "ig_time_s": 0.11511564254760742,
+      "ig_target_pathway_auroc": 0.2682926829268293,
+      "ig_target_pathway_rank": 270,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GDC0810",
+      "n_cells": 5,
+      "raw_targets": [
+        "ESR1",
+        "ESR2"
+      ],
+      "resolved_targets": [
+        "ESR1",
+        "ESR2"
+      ],
+      "target_pathway": "Hormone-related",
+      "matched_pathway": "Steroid hormone biosynthesis",
+      "ig_time_s": 0.12105607986450195,
+      "ig_target_auroc": 0.46701578865093013,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.33062330623306235,
+      "ig_target_pathway_rank": 247,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GNE-317",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3Kalpha"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.11729145050048828,
+      "ig_target_pathway_auroc": 0.7723577235772358,
+      "ig_target_pathway_rank": 84,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK-LSD1",
+      "n_cells": 5,
+      "raw_targets": [
+        "KDM1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.09683871269226074,
+      "ig_target_pathway_auroc": 0.6856368563685638,
+      "ig_target_pathway_rank": 116,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK-LSD1-2HCl ",
+      "n_cells": 5,
+      "raw_targets": [
+        "LSD1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.1209874153137207,
+      "ig_target_pathway_auroc": 0.5934959349593496,
+      "ig_target_pathway_rank": 150,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK1904529A",
+      "n_cells": 5,
+      "raw_targets": [
+        "IGF1R",
+        "IR"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.1208806037902832,
+      "ig_target_auroc": 0.9389849937473949,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "GSK2110183B",
+      "n_cells": 5,
+      "raw_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.12073445320129395,
+      "ig_target_auroc": 0.8184471078686816,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7615176151761518,
+      "ig_target_pathway_rank": 88,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK2256098C",
+      "n_cells": 5,
+      "raw_targets": [
+        "FAK1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Cytoskeleton",
+      "matched_pathway": "Regulation of actin cytoskeleton",
+      "ig_time_s": 0.11534810066223145,
+      "ig_target_pathway_auroc": 0.9512195121951219,
+      "ig_target_pathway_rank": 18,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK2578215A",
+      "n_cells": 5,
+      "raw_targets": [
+        "LRRK2"
+      ],
+      "resolved_targets": [
+        "LRRK2"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11526036262512207,
+      "ig_target_auroc": 0.24030846185910792,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.04336043360433606,
+      "ig_target_pathway_rank": 353,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK2606414",
+      "n_cells": 5,
+      "raw_targets": [
+        "PERK"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "ig_time_s": 0.10589885711669922,
+      "ig_target_pathway_auroc": 0.2574525745257452,
+      "ig_target_pathway_rank": 274,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK269962A",
+      "n_cells": 5,
+      "raw_targets": [
+        "ROCK1",
+        "ROCK2"
+      ],
+      "resolved_targets": [
+        "ROCK1",
+        "ROCK2"
+      ],
+      "target_pathway": "Cytoskeleton",
+      "matched_pathway": "Regulation of actin cytoskeleton",
+      "ig_time_s": 0.11504054069519043,
+      "ig_target_auroc": 0.38671773227033507,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.9539295392953929,
+      "ig_target_pathway_rank": 17,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK2801",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.1033015251159668,
+      "ig_target_pathway_auroc": 0.02168021680216803,
+      "ig_target_pathway_rank": 361,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK2830371",
+      "n_cells": 5,
+      "raw_targets": [
+        "WIP1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.11481547355651855
+    },
+    {
+      "drug": "GSK2830371A",
+      "n_cells": 5,
+      "raw_targets": [
+        "PPM1D"
+      ],
+      "resolved_targets": [
+        "PPM1D"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.11200952529907227,
+      "ig_target_auroc": 0.530168820341809,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "GSK343",
+      "n_cells": 5,
+      "raw_targets": [
+        "EZH2"
+      ],
+      "resolved_targets": [
+        "EZH2"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.1155247688293457,
+      "ig_target_auroc": 0.8288349312213422,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.5772357723577235,
+      "ig_target_pathway_rank": 156,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK591",
+      "n_cells": 5,
+      "raw_targets": [
+        "PMRT5"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.1255178451538086,
+      "ig_target_pathway_auroc": 0.5907859078590786,
+      "ig_target_pathway_rank": 151,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GSK626616AC",
+      "n_cells": 5,
+      "raw_targets": [
+        "DYRK1A"
+      ],
+      "resolved_targets": [
+        "DYRK1A"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11655139923095703,
+      "ig_target_auroc": 0.37005002084201755,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.035230352303523005,
+      "ig_target_pathway_rank": 356,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "GW441756",
+      "n_cells": 5,
+      "raw_targets": [
+        "NTRK1"
+      ],
+      "resolved_targets": [
+        "NTRK1"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.12340354919433594,
+      "ig_target_auroc": 0.9809295539808253,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.1275925636291504
+    },
+    {
+      "drug": "Gefitinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "EGFR"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "ig_time_s": 0.1086893081665039,
+      "ig_target_auroc": 0.9776469362234265,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.6178861788617886,
+      "ig_target_pathway_rank": 141,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Gemcitabine",
+      "n_cells": 5,
+      "raw_targets": [
+        "Pyrimidine antimetabolite"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.12402057647705078,
+      "ig_target_pathway_auroc": 0.24661246612466126,
+      "ig_target_pathway_rank": 278,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "HKMTI-1-005",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.10864400863647461
+    },
+    {
+      "drug": "I-BET-762",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11510181427001953,
+      "ig_target_auroc": 0.3643216953274274,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.04065040650406504,
+      "ig_target_pathway_rank": 354,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "I-BRD9",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRD9"
+      ],
+      "resolved_targets": [
+        "BRD9"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11156225204467773,
+      "ig_target_auroc": 0.1165589829095457,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.051490514905149,
+      "ig_target_pathway_rank": 350,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "n_cells": 5,
+      "raw_targets": [
+        "SIR2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.12267541885375977
+    },
+    {
+      "drug": "IOX2",
+      "n_cells": 5,
+      "raw_targets": [
+        "EGLN1"
+      ],
+      "resolved_targets": [
+        "EGLN1"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.1087195873260498,
+      "ig_target_auroc": 0.9237182159233014,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "IWP-2",
+      "n_cells": 5,
+      "raw_targets": [
+        "PORCN"
+      ],
+      "resolved_targets": [
+        "PORCN"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.103271484375,
+      "ig_target_auroc": 0.4242913714047519,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.8753387533875339,
+      "ig_target_pathway_rank": 46,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Ibrutinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "BTK"
+      ],
+      "resolved_targets": [
+        "BTK"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11553311347961426,
+      "ig_target_auroc": 0.6132763651521468,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.02981029810298108,
+      "ig_target_pathway_rank": 358,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Ipatasertib",
+      "n_cells": 5,
+      "raw_targets": [
+        "AKT1",
+        "AKT",
+        "AKT3"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.11961030960083008,
+      "ig_target_auroc": 0.7914538822303283,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8211382113821138,
+      "ig_target_pathway_rank": 66,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Irinotecan",
+      "n_cells": 5,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.09696269035339355,
+      "ig_target_auroc": 0.5903501458941226,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.29810298102981025,
+      "ig_target_pathway_rank": 259,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "n_cells": 5,
+      "raw_targets": [
+        "JNK"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "JNK and p38 signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10306000709533691
+    },
+    {
+      "drug": "JQ1",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4",
+        "BRDT"
+      ],
+      "resolved_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4",
+        "BRDT"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.10666060447692871,
+      "ig_target_auroc": 0.636901349731617,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.05691056910569103,
+      "ig_target_pathway_rank": 348,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "n_cells": 5,
+      "raw_targets": [
+        "KRAS (G12C)"
+      ],
+      "resolved_targets": [
+        "KRAS"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.12087249755859375,
+      "ig_target_auroc": 0.6359941642350979,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.975609756097561,
+      "ig_target_pathway_rank": 9,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "KU-55933",
+      "n_cells": 5,
+      "raw_targets": [
+        "ATM"
+      ],
+      "resolved_targets": [
+        "ATM"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.10527610778808594,
+      "ig_target_auroc": 0.42757398916215095,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.12111806869506836
+    },
+    {
+      "drug": "LCL161",
+      "n_cells": 5,
+      "raw_targets": [
+        "XIAP",
+        "IAP1",
+        "IAP2"
+      ],
+      "resolved_targets": [
+        "XIAP"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.10885190963745117,
+      "ig_target_auroc": 0.1522509378907878,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7425474254742548,
+      "ig_target_pathway_rank": 95,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "LGK974",
+      "n_cells": 5,
+      "raw_targets": [
+        "PORCN"
+      ],
+      "resolved_targets": [
+        "PORCN"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.10869383811950684,
+      "ig_target_auroc": 0.8307107127969988,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.8807588075880759,
+      "ig_target_pathway_rank": 44,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "LJI308",
+      "n_cells": 5,
+      "raw_targets": [
+        "RSK2",
+        "RSK1",
+        "RSK3"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.11975669860839844,
+      "ig_target_pathway_auroc": 0.8075880758807588,
+      "ig_target_pathway_rank": 71,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "LMP744",
+      "n_cells": 5,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.11008834838867188,
+      "ig_target_auroc": 0.8440496040016674,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.22764227642276424,
+      "ig_target_pathway_rank": 285,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "LY2109761",
+      "n_cells": 5,
+      "raw_targets": [
+        "TGFB1"
+      ],
+      "resolved_targets": [
+        "TGFB1"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.11476922035217285,
+      "ig_target_auroc": 0.2359837432263443,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Lapatinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "EGFR",
+        "ERBB2"
+      ],
+      "resolved_targets": [
+        "EGFR",
+        "ERBB2"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "ig_time_s": 0.10626482963562012,
+      "ig_target_auroc": 0.7625709968214267,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7398373983739837,
+      "ig_target_pathway_rank": 96,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Leflunomide",
+      "n_cells": 5,
+      "raw_targets": [
+        "Pyrimidine synthesis inhibitor"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.10268640518188477,
+      "ig_target_pathway_auroc": 0.31165311653116534,
+      "ig_target_pathway_rank": 254,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Lenalidomide",
+      "n_cells": 5,
+      "raw_targets": [
+        "CRBN"
+      ],
+      "resolved_targets": [
+        "CRBN"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.10870122909545898,
+      "ig_target_auroc": 0.623697373905794,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.3252032520325203,
+      "ig_target_pathway_rank": 249,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Lestaurtinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "FLT3",
+        "JAK2",
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "resolved_targets": [
+        "FLT3",
+        "JAK2",
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.1149148941040039,
+      "ig_target_auroc": 0.5200542005420055,
+      "ig_geneset_recall_at_5": 0.8,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.06233062330623307,
+      "ig_target_pathway_rank": 346,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Linsitinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "IGF1R"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.1098017692565918,
+      "ig_target_auroc": 0.45805543976656937,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Luminespib",
+      "n_cells": 5,
+      "raw_targets": [
+        "HSP90"
+      ],
+      "resolved_targets": [
+        "HSP90AA1",
+        "HSP90AB1",
+        "HSP90B1"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.10936951637268066,
+      "ig_target_auroc": 0.8386138613861386,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.2032520325203252,
+      "ig_target_pathway_rank": 294,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "MG-132",
+      "n_cells": 5,
+      "raw_targets": [
+        "Proteasome",
+        "CAPN1"
+      ],
+      "resolved_targets": [
+        "PSMB1",
+        "PSMB2",
+        "PSMB5",
+        "CAPN1"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.11516952514648438,
+      "ig_target_auroc": 0.7823362343009016,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.2547425474254743,
+      "ig_target_pathway_rank": 275,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "MIM1",
+      "n_cells": 5,
+      "raw_targets": [
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.11327910423278809,
+      "ig_target_auroc": 0.8844310129220508,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7533875338753387,
+      "ig_target_pathway_rank": 91,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "MIRA-1",
+      "n_cells": 5,
+      "raw_targets": [
+        "TP53"
+      ],
+      "resolved_targets": [
+        "TP53"
+      ],
+      "target_pathway": "p53 pathway",
+      "matched_pathway": "p53 signaling pathway",
+      "ig_time_s": 0.10988140106201172,
+      "ig_target_auroc": 0.18606711129637354,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.4092140921409214,
+      "ig_target_pathway_rank": 218,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "MK-1775",
+      "n_cells": 5,
+      "raw_targets": [
+        "WEE1",
+        "PLK1"
+      ],
+      "resolved_targets": [
+        "WEE1",
+        "PLK1"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.11093592643737793,
+      "ig_target_auroc": 0.710723776770361,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.7398373983739837,
+      "ig_target_pathway_rank": 96,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "MK-2206",
+      "n_cells": 5,
+      "raw_targets": [
+        "AKT1",
+        "AKT2"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10851216316223145,
+      "ig_target_auroc": 0.8469334583919546,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7588075880758808,
+      "ig_target_pathway_rank": 89,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "MK-8776",
+      "n_cells": 5,
+      "raw_targets": [
+        "CHEK1",
+        "CHEK2",
+        "CDK2"
+      ],
+      "resolved_targets": [
+        "CHEK1",
+        "CHEK2",
+        "CDK2"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.11147379875183105,
+      "ig_target_auroc": 0.5552892131318394,
+      "ig_geneset_recall_at_5": 0.3333333333333333,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.3333333333333333,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.3333333333333333,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7479674796747968,
+      "ig_target_pathway_rank": 93,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "ML323",
+      "n_cells": 5,
+      "raw_targets": [
+        "USP1",
+        "UAF1"
+      ],
+      "resolved_targets": [
+        "USP1"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.10284686088562012,
+      "ig_target_auroc": 0.7327532305127137,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.26287262872628725,
+      "ig_target_pathway_rank": 272,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "MN-64",
+      "n_cells": 5,
+      "raw_targets": [
+        "TNKS1",
+        "TNKS2"
+      ],
+      "resolved_targets": [
+        "TNKS",
+        "TNKS2"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.11545729637145996,
+      "ig_target_auroc": 0.7563441196394143,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.8888888888888888,
+      "ig_target_pathway_rank": 41,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Methotrexate",
+      "n_cells": 5,
+      "raw_targets": [
+        "Antimetabolite"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.12086272239685059,
+      "ig_target_pathway_auroc": 0.3062330623306233,
+      "ig_target_pathway_rank": 256,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Mirin",
+      "n_cells": 5,
+      "raw_targets": [
+        "MRE11"
+      ],
+      "resolved_targets": [
+        "MRE11"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.1100766658782959,
+      "ig_target_auroc": 0.2743851604835348,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "Mitoxantrone",
+      "n_cells": 5,
+      "raw_targets": [
+        "TOP2"
+      ],
+      "resolved_targets": [
+        "TOP2A",
+        "TOP2B"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.12107682228088379,
+      "ig_target_auroc": 0.1184148819759262,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.24661246612466126,
+      "ig_target_pathway_rank": 278,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Motesanib",
+      "n_cells": 5,
+      "raw_targets": [
+        "VEGFR",
+        "RET",
+        "KIT",
+        "PDGFR"
+      ],
+      "resolved_targets": [
+        "KDR",
+        "RET",
+        "KIT",
+        "PDGFRA"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10921335220336914,
+      "ig_target_auroc": 0.7277216113398302,
+      "ig_geneset_recall_at_5": 0.75,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.11497759819030762
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "n_cells": 5,
+      "raw_targets": [
+        "Metabolism"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "ig_time_s": 0.11521196365356445,
+      "ig_target_pathway_auroc": 0.19241192411924124,
+      "ig_target_pathway_rank": 298,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "NU7441",
+      "n_cells": 5,
+      "raw_targets": [
+        "DNAPK"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.11582708358764648
+    },
+    {
+      "drug": "NVP-ADW742",
+      "n_cells": 5,
+      "raw_targets": [
+        "IGF1R"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.09689545631408691,
+      "ig_target_auroc": 0.48504585243851606,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Navitoclax",
+      "n_cells": 5,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "BCL-W"
+      ],
+      "resolved_targets": [
+        "BCL2"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.12130331993103027,
+      "ig_target_auroc": 0.7788140892038349,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8048780487804879,
+      "ig_target_pathway_rank": 72,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Nelarabine",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.12076926231384277,
+      "ig_target_pathway_auroc": 0.3387533875338753,
+      "ig_target_pathway_rank": 244,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Nilotinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "ABL"
+      ],
+      "resolved_targets": [
+        "ABL1"
+      ],
+      "target_pathway": "ABL signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.12694764137268066,
+      "ig_target_auroc": 0.9218945393914131,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Niraparib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2",
+        "PARP3"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.10874462127685547,
+      "ig_target_auroc": 0.7331770019107173,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "n_cells": 5,
+      "raw_targets": [
+        "MDM2"
+      ],
+      "resolved_targets": [
+        "MDM2"
+      ],
+      "target_pathway": "p53 pathway",
+      "matched_pathway": "p53 signaling pathway",
+      "ig_time_s": 0.09046149253845215,
+      "ig_target_auroc": 0.6963318049187162,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.48238482384823844,
+      "ig_target_pathway_rank": 191,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "OF-1",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRPF1B",
+        "BRPF2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.1029353141784668,
+      "ig_target_pathway_auroc": 0.6829268292682926,
+      "ig_target_pathway_rank": 117,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "OSI-027",
+      "n_cells": 5,
+      "raw_targets": [
+        "MTORC1",
+        "MTORC2"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.1167287826538086,
+      "ig_target_auroc": 0.4550593997498958,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7642276422764227,
+      "ig_target_pathway_rank": 87,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "OTX015",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11786007881164551,
+      "ig_target_auroc": 0.562480458572173,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.04336043360433606,
+      "ig_target_pathway_rank": 353,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "n_cells": 5,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "BCL-W",
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "BCL2",
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.11558938026428223,
+      "ig_target_auroc": 0.5528372674691261,
+      "ig_geneset_recall_at_5": 0.5,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7452574525745257,
+      "ig_target_pathway_rank": 94,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Olaparib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2",
+        "PARP3"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.1152334213256836,
+      "ig_target_auroc": 0.7692374500607956,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "Osimertinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "EGFR"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "ig_time_s": 0.1151423454284668,
+      "ig_target_auroc": 0.9295018757815756,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7750677506775068,
+      "ig_target_pathway_rank": 83,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Oxaliplatin",
+      "n_cells": 5,
+      "raw_targets": [
+        "DNA alkylating agent"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.11653995513916016,
+      "ig_target_pathway_auroc": 0.26016260162601623,
+      "ig_target_pathway_rank": 273,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "P22077",
+      "n_cells": 5,
+      "raw_targets": [
+        "USP7",
+        "USP47"
+      ],
+      "resolved_targets": [
+        "USP7",
+        "USP47"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.10832977294921875,
+      "ig_target_auroc": 0.5743056641133865,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.40108401084010836,
+      "ig_target_pathway_rank": 221,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "PCI-34051",
+      "n_cells": 5,
+      "raw_targets": [
+        "HDAC8",
+        "HDAC6",
+        "HDAC1"
+      ],
+      "resolved_targets": [
+        "HDAC1",
+        "HDAC2",
+        "HDAC3",
+        "HDAC4",
+        "HDAC5",
+        "HDAC6",
+        "HDAC7",
+        "HDAC8",
+        "HDAC9",
+        "HDAC10"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.1086885929107666,
+      "ig_target_auroc": 0.5743158004483137,
+      "ig_geneset_recall_at_5": 0.2,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.2,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.3,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.6178861788617886,
+      "ig_target_pathway_rank": 141,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "PD0325901",
+      "n_cells": 5,
+      "raw_targets": [
+        "MEK1",
+        "MEK2"
+      ],
+      "resolved_targets": [
+        "MAP2K1",
+        "MAP2K2"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.11912417411804199,
+      "ig_target_auroc": 0.5138085560940024,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.975609756097561,
+      "ig_target_pathway_rank": 9,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "PD173074",
+      "n_cells": 5,
+      "raw_targets": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3"
+      ],
+      "resolved_targets": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10860133171081543,
+      "ig_target_auroc": 0.7904290429042904,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "PF-4708671",
+      "n_cells": 5,
+      "raw_targets": [
+        "S6K1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.12127089500427246,
+      "ig_target_pathway_auroc": 0.7344173441734417,
+      "ig_target_pathway_rank": 98,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "PFI-1",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11156582832336426,
+      "ig_target_auroc": 0.22957482284285113,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.04336043360433606,
+      "ig_target_pathway_rank": 353,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "PFI3",
+      "n_cells": 5,
+      "raw_targets": [
+        "Polybromo 1",
+        "SMARCA4",
+        "SMARCA2"
+      ],
+      "resolved_targets": [
+        "SMARCA4",
+        "SMARCA2"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.10975456237792969,
+      "ig_target_auroc": 0.6225053410452817,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.02168021680216803,
+      "ig_target_pathway_rank": 361,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "PLX-4720",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRAF"
+      ],
+      "resolved_targets": [
+        "BRAF"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.10890889167785645,
+      "ig_target_auroc": 0.10853480616923716,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.9728997289972899,
+      "ig_target_pathway_rank": 10,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "POMHEX",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.10944485664367676
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "n_cells": 5,
+      "raw_targets": [
+        "TP53 activation"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "p53 pathway",
+      "matched_pathway": "p53 signaling pathway",
+      "ig_time_s": 0.11576509475708008,
+      "ig_target_pathway_auroc": 0.48238482384823844,
+      "ig_target_pathway_rank": 191,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "PRT062607",
+      "n_cells": 5,
+      "raw_targets": [
+        "SYK"
+      ],
+      "resolved_targets": [
+        "SYK"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.10289978981018066,
+      "ig_target_auroc": 0.9346081700708628,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.04065040650406504,
+      "ig_target_pathway_rank": 354,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Paclitaxel",
+      "n_cells": 5,
+      "raw_targets": [
+        "Microtubule stabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "ig_time_s": 0.1151118278503418
+    },
+    {
+      "drug": "Palbociclib",
+      "n_cells": 5,
+      "raw_targets": [
+        "CDK4",
+        "CDK6"
+      ],
+      "resolved_targets": [
+        "CDK4",
+        "CDK6"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.1155698299407959,
+      "ig_target_auroc": 0.31090094315043515,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8401084010840109,
+      "ig_target_pathway_rank": 59,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Pevonedistat",
+      "n_cells": 5,
+      "raw_targets": [
+        "NAE"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.1137690544128418
+    },
+    {
+      "drug": "Picolinici-acid",
+      "n_cells": 5,
+      "raw_targets": [
+        "Inflammatory related"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.12321877479553223
+    },
+    {
+      "drug": "Pictilisib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3K (class 1)"
+      ],
+      "resolved_targets": [
+        "PIK3CA"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10910177230834961,
+      "ig_target_auroc": 0.9190287619841601,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8319783197831978,
+      "ig_target_pathway_rank": 62,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Piperlongumine",
+      "n_cells": 5,
+      "raw_targets": [
+        "Induces reactive oxygen species"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.10785770416259766
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.10785293579101562
+    },
+    {
+      "drug": "Pyridostatin",
+      "n_cells": 5,
+      "raw_targets": [
+        "G-quadruplex stabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.11654996871948242,
+      "ig_target_pathway_auroc": 0.0840108401084011,
+      "ig_target_pathway_rank": 338,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "RO-3306",
+      "n_cells": 5,
+      "raw_targets": [
+        "CDK1"
+      ],
+      "resolved_targets": [
+        "CDK1"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.10937952995300293,
+      "ig_target_auroc": 0.8887557315548146,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.7452574525745257,
+      "ig_target_pathway_rank": 94,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "RVX-208",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11895394325256348,
+      "ig_target_auroc": 0.11035848270112547,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.03252032520325199,
+      "ig_target_pathway_rank": 357,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Rapamycin",
+      "n_cells": 5,
+      "raw_targets": [
+        "MTORC1"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.1075124740600586,
+      "ig_target_auroc": 0.2267090454355981,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7452574525745257,
+      "ig_target_pathway_rank": 94,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Refametinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "MEK1",
+        "MEK2"
+      ],
+      "resolved_targets": [
+        "MAP2K1",
+        "MAP2K2"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.11267828941345215,
+      "ig_target_auroc": 0.26598405502579336,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.9701897018970189,
+      "ig_target_pathway_rank": 11,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Remodelin",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.10843157768249512
+    },
+    {
+      "drug": "Ribociclib",
+      "n_cells": 5,
+      "raw_targets": [
+        "CDK4",
+        "CDK6"
+      ],
+      "resolved_targets": [
+        "CDK4",
+        "CDK6"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.10942697525024414,
+      "ig_target_auroc": 0.30933771038507635,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8184281842818428,
+      "ig_target_pathway_rank": 67,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Romidepsin",
+      "n_cells": 5,
+      "raw_targets": [
+        "HDAC1",
+        "HDAC2",
+        "HDAC3",
+        "HDAC8"
+      ],
+      "resolved_targets": [
+        "HDAC1",
+        "HDAC2",
+        "HDAC3",
+        "HDAC4",
+        "HDAC5",
+        "HDAC6",
+        "HDAC7",
+        "HDAC8",
+        "HDAC9",
+        "HDAC10"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.11212968826293945,
+      "ig_target_auroc": 0.6231350675076891,
+      "ig_geneset_recall_at_5": 0.2,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.2,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.3,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.5962059620596206,
+      "ig_target_pathway_rank": 149,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Rucaparib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2",
+        "PARP3"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.10897207260131836,
+      "ig_target_auroc": 0.8308841410456835,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "Ruxolitinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "JAK1",
+        "JAK2"
+      ],
+      "resolved_targets": [
+        "JAK1",
+        "JAK2"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.12054109573364258,
+      "ig_target_auroc": 0.5349382523057683,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.04336043360433606,
+      "ig_target_pathway_rank": 353,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "SB216763",
+      "n_cells": 5,
+      "raw_targets": [
+        "GSK3A",
+        "GSK3B"
+      ],
+      "resolved_targets": [
+        "GSK3A",
+        "GSK3B"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.12013006210327148,
+      "ig_target_auroc": 0.4708196550466364,
+      "ig_geneset_recall_at_5": 0.5,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.5,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8428184281842819,
+      "ig_target_pathway_rank": 58,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "SB505124",
+      "n_cells": 5,
+      "raw_targets": [
+        "TGFBR1",
+        "ACVR1B",
+        "ACVR1C"
+      ],
+      "resolved_targets": [
+        "TGFBR1",
+        "ACVR1B",
+        "ACVR1C"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.12116003036499023,
+      "ig_target_auroc": 0.49918360257078337,
+      "ig_geneset_recall_at_5": 0.3333333333333333,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "SB590885",
+      "n_cells": 5,
+      "raw_targets": [
+        "BRAF"
+      ],
+      "resolved_targets": [
+        "BRAF"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.11470365524291992,
+      "ig_target_auroc": 0.15256356815339722,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.975609756097561,
+      "ig_target_pathway_rank": 9,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "SCH772984",
+      "n_cells": 5,
+      "raw_targets": [
+        "ERK1",
+        "ERK2"
+      ],
+      "resolved_targets": [
+        "MAPK3",
+        "MAPK1"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.09890055656433105,
+      "ig_target_auroc": 0.4686050752957115,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.967479674796748,
+      "ig_target_pathway_rank": 12,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "SGC-CBP30",
+      "n_cells": 5,
+      "raw_targets": [
+        "EP300",
+        "CBP"
+      ],
+      "resolved_targets": [
+        "EP300"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.11610031127929688,
+      "ig_target_auroc": 0.6260421008753647,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.5826558265582655,
+      "ig_target_pathway_rank": 154,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "SGC0946",
+      "n_cells": 5,
+      "raw_targets": [
+        "DOT1L"
+      ],
+      "resolved_targets": [
+        "DOT1L"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.11528444290161133,
+      "ig_target_auroc": 0.5811275531471446,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.5799457994579946,
+      "ig_target_pathway_rank": 155,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "SL0101",
+      "n_cells": 5,
+      "raw_targets": [
+        "RSK",
+        "AURKB",
+        "PIM1",
+        "PIM3"
+      ],
+      "resolved_targets": [
+        "AURKB",
+        "PIM1",
+        "PIM3"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11477136611938477,
+      "ig_target_auroc": 0.6437380580163279,
+      "ig_geneset_recall_at_5": 0.3333333333333333,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 0.3333333333333333,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 0.3333333333333333,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.05691056910569103,
+      "ig_target_pathway_rank": 348,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "SN-38",
+      "n_cells": 5,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.1206517219543457,
+      "ig_target_auroc": 0.33243017924135054,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.20596205962059622,
+      "ig_target_pathway_rank": 293,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Sabutoclax",
+      "n_cells": 5,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "BFL1",
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "BCL2",
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.11460113525390625,
+      "ig_target_auroc": 0.7076233651190662,
+      "ig_geneset_recall_at_5": 0.5,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7452574525745257,
+      "ig_target_pathway_rank": 94,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Sapitinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "EGFR",
+        "ERBB2",
+        "ERBB3"
+      ],
+      "resolved_targets": [
+        "EGFR",
+        "ERBB2",
+        "ERBB3"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "ig_time_s": 0.11481261253356934,
+      "ig_target_auroc": 0.7444676046552023,
+      "ig_geneset_recall_at_5": 0.6666666666666666,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7262872628726287,
+      "ig_target_pathway_rank": 101,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Savolitinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "MET"
+      ],
+      "resolved_targets": [
+        "MET"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.11478304862976074,
+      "ig_target_auroc": 0.9935389745727387,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.11489272117614746
+    },
+    {
+      "drug": "Selumetinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "MEK1",
+        "MEK2"
+      ],
+      "resolved_targets": [
+        "MAP2K1",
+        "MAP2K2"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.12117862701416016,
+      "ig_target_auroc": 0.575777708300766,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.981029810298103,
+      "ig_target_pathway_rank": 7,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "n_cells": 5,
+      "raw_targets": [
+        "BIRC5"
+      ],
+      "resolved_targets": [
+        "BIRC5"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.09837198257446289,
+      "ig_target_auroc": 0.2827740725302209,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7181571815718157,
+      "ig_target_pathway_rank": 104,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Serdemetan",
+      "n_cells": 5,
+      "raw_targets": [
+        "MDM2"
+      ],
+      "resolved_targets": [
+        "MDM2"
+      ],
+      "target_pathway": "p53 pathway",
+      "matched_pathway": "p53 signaling pathway",
+      "ig_time_s": 0.10731911659240723,
+      "ig_target_auroc": 0.8971446436015006,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.49864498644986455,
+      "ig_target_pathway_rank": 185,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Sinularin",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "ig_time_s": 0.10622000694274902
+    },
+    {
+      "drug": "Sorafenib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PDGFR",
+        "KIT",
+        "VEGFR",
+        "RAF"
+      ],
+      "resolved_targets": [
+        "PDGFRA",
+        "KIT",
+        "KDR",
+        "BRAF"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.11546039581298828,
+      "ig_target_auroc": 0.7096383344624525,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.06504065040650409,
+      "ig_target_pathway_rank": 345,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Staurosporine",
+      "n_cells": 5,
+      "raw_targets": [
+        "Broad spectrum kinase inhibitor"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "ig_time_s": 0.10900998115539551
+    },
+    {
+      "drug": "TW 37",
+      "n_cells": 5,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "BCL2",
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.10614180564880371,
+      "ig_target_auroc": 0.6830024490646658,
+      "ig_geneset_recall_at_5": 0.5,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7940379403794038,
+      "ig_target_pathway_rank": 76,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Talazoparib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2",
+        "PARP3"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.11507916450500488,
+      "ig_target_auroc": 0.8049852353656418,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "Tamoxifen",
+      "n_cells": 5,
+      "raw_targets": [
+        "ESR1"
+      ],
+      "resolved_targets": [
+        "ESR1"
+      ],
+      "target_pathway": "Hormone-related",
+      "matched_pathway": "Steroid hormone biosynthesis",
+      "ig_time_s": 0.09699416160583496,
+      "ig_target_auroc": 0.012401000416840335,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.2737127371273713,
+      "ig_target_pathway_rank": 268,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Tanespimycin",
+      "n_cells": 5,
+      "raw_targets": [
+        "HSP90"
+      ],
+      "resolved_targets": [
+        "HSP90AA1",
+        "HSP90AB1",
+        "HSP90B1"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "ig_time_s": 0.10917949676513672,
+      "ig_target_auroc": 0.7748132708007643,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.2547425474254743,
+      "ig_target_pathway_rank": 275,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Taselisib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PI3K (beta sparing)"
+      ],
+      "resolved_targets": [
+        "PIK3CA"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.11509013175964355,
+      "ig_target_auroc": 0.9037098791162985,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8075880758807588,
+      "ig_target_pathway_rank": 71,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "n_cells": 5,
+      "raw_targets": [
+        "Telomerase"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.10929369926452637
+    },
+    {
+      "drug": "Temozolomide",
+      "n_cells": 5,
+      "raw_targets": [
+        "DNA alkylating agent"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.12116169929504395,
+      "ig_target_pathway_auroc": 0.17615176151761514,
+      "ig_target_pathway_rank": 304,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Temsirolimus",
+      "n_cells": 5,
+      "raw_targets": [
+        "MTOR"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10421943664550781,
+      "ig_target_auroc": 0.7889224676948728,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7317073170731707,
+      "ig_target_pathway_rank": 99,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Teniposide",
+      "n_cells": 5,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.09694528579711914,
+      "ig_target_pathway_auroc": 0.23035230352303526,
+      "ig_target_pathway_rank": 284,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Topotecan",
+      "n_cells": 5,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "ig_time_s": 0.10289788246154785,
+      "ig_target_auroc": 0.815808670279283,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.41734417344173447,
+      "ig_target_pathway_rank": 215,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Tozasertib",
+      "n_cells": 5,
+      "raw_targets": [
+        "AURKA",
+        "AURKB",
+        "AURKC",
+        "others"
+      ],
+      "resolved_targets": [
+        "AURKA",
+        "AURKB",
+        "AURKC"
+      ],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "ig_time_s": 0.10908961296081543,
+      "ig_target_auroc": 0.4787041862080944,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "Trametinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "MEK1",
+        "MEK2"
+      ],
+      "resolved_targets": [
+        "MAP2K1",
+        "MAP2K2"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.10900020599365234,
+      "ig_target_auroc": 0.26973581366265437,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.978319783197832,
+      "ig_target_pathway_rank": 8,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Tretinoin",
+      "n_cells": 5,
+      "raw_targets": [
+        "Retinoic acid"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.1090993881225586
+    },
+    {
+      "drug": "UMI-77",
+      "n_cells": 5,
+      "raw_targets": [
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.13227367401123047,
+      "ig_target_auroc": 0.6803355564818675,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.7425474254742548,
+      "ig_target_pathway_rank": 95,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "UNC0379",
+      "n_cells": 5,
+      "raw_targets": [
+        "SETD8"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.11525559425354004,
+      "ig_target_pathway_auroc": 0.6124661246612466,
+      "ig_target_pathway_rank": 143,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "UNC0638",
+      "n_cells": 5,
+      "raw_targets": [
+        "G9A",
+        "GLP"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.12118744850158691,
+      "ig_target_pathway_auroc": 0.5257452574525745,
+      "ig_target_pathway_rank": 175,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Ulixertinib",
+      "n_cells": 5,
+      "raw_targets": [
+        "ERK1",
+        "ERK2"
+      ],
+      "resolved_targets": [
+        "MAPK3",
+        "MAPK1"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.10014939308166504,
+      "ig_target_auroc": 0.5985097180970247,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.981029810298103,
+      "ig_target_pathway_rank": 7,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Uprosertib",
+      "n_cells": 5,
+      "raw_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "ig_time_s": 0.10336637496948242,
+      "ig_target_auroc": 0.7672398818829251,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8319783197831978,
+      "ig_target_pathway_rank": 62,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "VE-822",
+      "n_cells": 5,
+      "raw_targets": [
+        "ATR"
+      ],
+      "resolved_targets": [
+        "ATR"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.11003661155700684,
+      "ig_target_auroc": 0.8843789078782827,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "VE821",
+      "n_cells": 5,
+      "raw_targets": [
+        "ATR"
+      ],
+      "resolved_targets": [
+        "ATR"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.09884095191955566,
+      "ig_target_auroc": 0.9237182159233014,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "VX-11e",
+      "n_cells": 5,
+      "raw_targets": [
+        "ERK2"
+      ],
+      "resolved_targets": [
+        "MAPK1"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "ig_time_s": 0.11631011962890625,
+      "ig_target_auroc": 0.38849520633597334,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.9728997289972899,
+      "ig_target_pathway_rank": 10,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Veliparib",
+      "n_cells": 5,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2",
+        "PARP3"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "ig_time_s": 0.10660815238952637,
+      "ig_target_auroc": 0.5923223901337502,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "Venetoclax",
+      "n_cells": 5,
+      "raw_targets": [
+        "BCL2"
+      ],
+      "resolved_targets": [
+        "BCL2"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.10537934303283691,
+      "ig_target_auroc": 0.9652980408503543,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1,
+      "ig_target_pathway_auroc": 0.8075880758807588,
+      "ig_target_pathway_rank": 71,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Vinblastine",
+      "n_cells": 5,
+      "raw_targets": [
+        "Microtubule destabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "ig_time_s": 0.10889124870300293
+    },
+    {
+      "drug": "Vinorelbine",
+      "n_cells": 5,
+      "raw_targets": [
+        "Microtubule destabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "ig_time_s": 0.11362576484680176
+    },
+    {
+      "drug": "Vismodegib",
+      "n_cells": 5,
+      "raw_targets": [
+        "SMO"
+      ],
+      "resolved_targets": [
+        "SMO"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.10863327980041504,
+      "ig_target_auroc": 0.9028761984160066,
+      "ig_geneset_recall_at_5": 1.0,
+      "ig_geneset_hit_at_5": 1,
+      "ig_geneset_recall_at_10": 1.0,
+      "ig_geneset_hit_at_10": 1,
+      "ig_geneset_recall_at_20": 1.0,
+      "ig_geneset_hit_at_20": 1
+    },
+    {
+      "drug": "Vorinostat",
+      "n_cells": 5,
+      "raw_targets": [
+        "HDAC inhibitor Class I",
+        "IIa",
+        "IIb",
+        "IV"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "ig_time_s": 0.11882400512695312,
+      "ig_target_pathway_auroc": 0.6260162601626016,
+      "ig_target_pathway_rank": 138,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "WEHI-539",
+      "n_cells": 5,
+      "raw_targets": [
+        "BCL-XL"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "ig_time_s": 0.12163019180297852,
+      "ig_target_pathway_auroc": 0.7479674796747968,
+      "ig_target_pathway_rank": 93,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "WIKI4",
+      "n_cells": 5,
+      "raw_targets": [
+        "TNKS1",
+        "TNKS2"
+      ],
+      "resolved_targets": [
+        "TNKS",
+        "TNKS2"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.10719633102416992,
+      "ig_target_auroc": 0.6120056276379553,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.8319783197831978,
+      "ig_target_pathway_rank": 62,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "WZ4003",
+      "n_cells": 5,
+      "raw_targets": [
+        "NUAK1",
+        "NUAK2"
+      ],
+      "resolved_targets": [
+        "NUAK1",
+        "NUAK2"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ig_time_s": 0.09579157829284668,
+      "ig_target_auroc": 0.6604918972434995,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.08130081300813008,
+      "ig_target_pathway_rank": 339,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "n_cells": 5,
+      "raw_targets": [
+        "WEE1",
+        "CHEK1"
+      ],
+      "resolved_targets": [
+        "WEE1",
+        "CHEK1"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "ig_time_s": 0.10288548469543457,
+      "ig_target_auroc": 0.7808347662967016,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.7425474254742548,
+      "ig_target_pathway_rank": 95,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "Wnt-C59",
+      "n_cells": 5,
+      "raw_targets": [
+        "PORCN"
+      ],
+      "resolved_targets": [
+        "PORCN"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.11518120765686035,
+      "ig_target_auroc": 0.1080658607753231,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.8401084010840109,
+      "ig_target_pathway_rank": 59,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "XAV939",
+      "n_cells": 5,
+      "raw_targets": [
+        "TNKS1",
+        "TNKS2"
+      ],
+      "resolved_targets": [
+        "TNKS",
+        "TNKS2"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "ig_time_s": 0.10835647583007812,
+      "ig_target_auroc": 0.765723516231567,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0,
+      "ig_target_pathway_auroc": 0.9051490514905149,
+      "ig_target_pathway_rank": 35,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "YK-4-279",
+      "n_cells": 5,
+      "raw_targets": [
+        "RNA helicase A"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.11399674415588379
+    },
+    {
+      "drug": "ZM447439",
+      "n_cells": 5,
+      "raw_targets": [
+        "AURKA",
+        "AURKB"
+      ],
+      "resolved_targets": [
+        "AURKA",
+        "AURKB"
+      ],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "ig_time_s": 0.1026461124420166,
+      "ig_target_auroc": 0.3785628680110469,
+      "ig_geneset_recall_at_5": 0.0,
+      "ig_geneset_hit_at_5": 0,
+      "ig_geneset_recall_at_10": 0.0,
+      "ig_geneset_hit_at_10": 0,
+      "ig_geneset_recall_at_20": 0.0,
+      "ig_geneset_hit_at_20": 0
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "n_cells": 5,
+      "raw_targets": [
+        "Metabolism"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "ig_time_s": 0.1211707592010498,
+      "ig_target_pathway_auroc": 0.5826558265582655,
+      "ig_target_pathway_rank": 154,
+      "ig_target_pathway_in_top5": 0
+    },
+    {
+      "drug": "ascorbate (vitamin C)",
+      "n_cells": 5,
+      "raw_targets": [
+        "anti-oxidant proteins"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.1068570613861084
+    },
+    {
+      "drug": "glutathione",
+      "n_cells": 5,
+      "raw_targets": [
+        "anti-oxidant proteins"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": null,
+      "ig_time_s": 0.10704207420349121
+    }
+  ]
+}

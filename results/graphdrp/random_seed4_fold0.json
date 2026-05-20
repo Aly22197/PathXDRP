@@ -1,0 +1,32 @@
+{
+  "args": {
+    "model": "graphdrp",
+    "dataset": "GDSC2",
+    "split": "random",
+    "seed": 4,
+    "fold": 0,
+    "hidden_dim": 128,
+    "n_gin_layers": 5,
+    "n_gat_layers": 3,
+    "n_attn_heads": 8,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "epochs": 50,
+    "lr": 0.0005,
+    "log_interval": 10,
+    "early_stop_patience": 10
+  },
+  "test": {
+    "RMSE": 0.9546041111965272,
+    "MAE": 0.7136021256446838,
+    "PCC": 0.9370291829109192,
+    "Spearman": 0.9021476967793828,
+    "R2": 0.8776022791862488,
+    "Per-drug PCC": 0.7574501633644104,
+    "Per-cell PCC": 0.9221073985099792
+  },
+  "best_val_pcc": 0.9452577233314514,
+  "best_val_epoch": 49,
+  "total_train_sec": 3625.690957546234,
+  "n_params": 2859494
+}

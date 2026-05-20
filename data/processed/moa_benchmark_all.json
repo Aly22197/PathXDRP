@@ -1,0 +1,2917 @@
+{
+  "5-Fluorouracil": {
+    "drug_id": 1073,
+    "primary_targets": [
+      "Antimetabolite (DNA & RNA)"
+    ],
+    "smiles": "C1=C(C(=O)NC(=O)N1)F",
+    "target_genes": [
+      "Antimetabolite (DNA & RNA)"
+    ],
+    "target_pathway": "Other"
+  },
+  "5-azacytidine": {
+    "drug_id": 2156,
+    "primary_targets": [
+      "DNA methyltransferases"
+    ],
+    "smiles": "C1=NC(=NC(=O)N1[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O)N",
+    "target_genes": [
+      "DNA methyltransferases"
+    ],
+    "target_pathway": "Other"
+  },
+  "A-366": {
+    "drug_id": 2157,
+    "primary_targets": [
+      "EHMT1",
+      "EHMT2"
+    ],
+    "smiles": "COC1=C(C=C2C(=C1)C3(CCC3)C(=N2)N)OCCCN4CCCC4",
+    "target_genes": [
+      "EHMT1",
+      "EHMT2"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "ABT737": {
+    "drug_id": 1910,
+    "primary_targets": [
+      "BCL2",
+      "BCL-XL",
+      "BCL-W"
+    ],
+    "smiles": "CN(C)CC[C@H](CSC1=CC=CC=C1)NC2=C(C=C(C=C2)S(=O)(=O)NC(=O)C3=CC=C(C=C3)N4CCN(CC4)CC5=CC=CC=C5C6=CC=C(C=C6)Cl)[N+](=O)[O-]",
+    "target_genes": [
+      "BCL2",
+      "BCL-XL",
+      "BCL-W",
+      "BCL-B",
+      "BFL1"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "AGI-5198": {
+    "drug_id": 1913,
+    "primary_targets": [
+      "IDH1 (R132H)"
+    ],
+    "smiles": "CC1=CC=CC=C1C(C(=O)NC2CCCCC2)N(C3=CC(=CC=C3)F)C(=O)CN4C=CN=C4C",
+    "target_genes": [
+      "IDH1 (R132H)"
+    ],
+    "target_pathway": "Metabolism"
+  },
+  "AGI-6780": {
+    "drug_id": 1634,
+    "primary_targets": [
+      "IDH2 R140Q mutant"
+    ],
+    "smiles": "C1CC1NS(=O)(=O)C2=CC(=C(C=C2)C3=CSC=C3)NC(=O)NC4=CC=CC(=C4)C(F)(F)F",
+    "target_genes": [
+      "IDH2 R140Q mutant"
+    ],
+    "target_pathway": "Metabolism"
+  },
+  "AGK2": {
+    "drug_id": 2039,
+    "primary_targets": [
+      "BAZ2A",
+      "BAZ2B"
+    ],
+    "smiles": "C1=CC2=C(C=CC=N2)C(=C1)NC(=O)/C(=C/C3=CC=C(O3)C4=C(C=CC(=C4)Cl)Cl)/C#N",
+    "target_genes": [
+      "BAZ2A",
+      "BAZ2B"
+    ],
+    "target_pathway": "Chromatin histone acetylation"
+  },
+  "AMG-319": {
+    "drug_id": 2045,
+    "primary_targets": [
+      "PI3K (beta sparing)"
+    ],
+    "smiles": "C[C@@H](C1=C(N=C2C=C(C=CC2=C1)F)C3=CC=CC=N3)NC4=NC=NC5=C4NC=N5",
+    "target_genes": [
+      "PI3K (beta sparing)"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "AT13148": {
+    "drug_id": 2170,
+    "primary_targets": [
+      "AKT1"
+    ],
+    "smiles": "C1=CC(=CC=C1C2=CNN=C2)[C@@](CN)(C3=CC=C(C=C3)Cl)O",
+    "target_genes": [
+      "AKT1"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "AZ6102": {
+    "drug_id": 2109,
+    "primary_targets": [
+      "TNKS1",
+      "TNKS2"
+    ],
+    "smiles": "C[C@@H]1CN(C[C@@H](N1)C)C2=NC=C(C(=C2)C)C3=CC=C(C=C3)C4=NC5=C(C=CN5C)C(=O)N4",
+    "target_genes": [
+      "TNKS1",
+      "TNKS2"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "AZ960": {
+    "drug_id": 1250,
+    "primary_targets": [
+      "JAK2",
+      "JAK3"
+    ],
+    "smiles": "CC1=CC(=NN1)NC2=C(C=C(C(=N2)N[C@@H](C)C3=CC=C(C=C3)F)C#N)F",
+    "target_genes": [
+      "JAK2",
+      "JAK3"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "AZD1208": {
+    "drug_id": 1449,
+    "primary_targets": [
+      "PIM1",
+      "PIM2",
+      "PIM3"
+    ],
+    "smiles": "C1C[C@H](CN(C1)C2=C(C=CC=C2C3=CC=CC=C3)/C=C\\4/C(=O)NC(=O)S4)N",
+    "target_genes": [
+      "PIM1",
+      "PIM2",
+      "PIM3"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "AZD1332": {
+    "drug_id": 1463,
+    "primary_targets": [
+      "NTRK1",
+      "NTRK2",
+      "NTRK3"
+    ],
+    "smiles": "CC(C)OC1=NNC(=C1)NC2=NC(=NC=C2Cl)NC(C)C3=NC=C(C=C3)F",
+    "target_genes": [
+      "NTRK1",
+      "NTRK2",
+      "NTRK3"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "AZD2014": {
+    "drug_id": 1441,
+    "primary_targets": [
+      "mTORC1",
+      "mTORC2"
+    ],
+    "smiles": "C[C@H]1COCCN1C2=NC(=NC3=C2C=CC(=N3)C4=CC(=CC=C4)C(=O)NC)N5CCOC[C@@H]5C",
+    "target_genes": [
+      "mTORC1",
+      "mTORC2"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "AZD3759": {
+    "drug_id": 1915,
+    "primary_targets": [
+      "EGFR"
+    ],
+    "smiles": "C[C@@H]1CN(CCN1C(=O)OC2=C(C=C3C(=C2)C(=NC=N3)NC4=C(C(=CC=C4)Cl)F)OC)C",
+    "target_genes": [
+      "EGFR"
+    ],
+    "target_pathway": "EGFR signaling"
+  },
+  "AZD4547": {
+    "drug_id": 1786,
+    "primary_targets": [
+      "FGFR1",
+      "FGFR2",
+      "FGFR3"
+    ],
+    "smiles": "C[C@@H]1CN(C[C@@H](N1)C)C2=CC=C(C=C2)C(=O)NC3=NNC(=C3)CCC4=CC(=CC(=C4)OC)OC",
+    "target_genes": [
+      "FGFR1",
+      "FGFR2",
+      "FGFR3"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "AZD5153": {
+    "drug_id": 1706,
+    "primary_targets": [
+      "BRD4"
+    ],
+    "smiles": "C[C@@H]1C(=O)N(CCN1CCOC2=CC=C(C=C2)C3CCN(CC3)C4=NN5C(=NN=C5OC)C=C4)C",
+    "target_genes": [
+      "BRD4"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "AZD5363": {
+    "drug_id": 1916,
+    "primary_targets": [
+      "AKT1",
+      "AKT2",
+      "AKT3"
+    ],
+    "smiles": "C1CN(CCC1(C(=O)N[C@@H](CCO)C2=CC=C(C=C2)Cl)N)C3=NC=NC4=C3C=CN4",
+    "target_genes": [
+      "AKT1",
+      "AKT2",
+      "AKT3",
+      "ROCK2"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "AZD5438": {
+    "drug_id": 1401,
+    "primary_targets": [
+      "CDK2"
+    ],
+    "smiles": "CC1=NC=C(N1C(C)C)C2=NC(=NC=C2)NC3=CC=C(C=C3)S(=O)(=O)C",
+    "target_genes": [
+      "CDK2"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "AZD5582": {
+    "drug_id": 1617,
+    "primary_targets": [
+      "XIAP",
+      "cIAP"
+    ],
+    "smiles": "C[C@@H](C(=O)N[C@@H](C1CCCCC1)C(=O)N2CCC[C@H]2C(=O)N[C@@H]3[C@@H](CC4=CC=CC=C34)OCC#CC#CCO[C@@H]5CC6=CC=CC=C6[C@@H]5NC(=O)[C@@H]7CCCN7C(=O)[C@H](C8CCCCC8)NC(=O)[C@H](C)NC)NC",
+    "target_genes": [
+      "XIAP",
+      "cIAP"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "AZD5991": {
+    "drug_id": 1720,
+    "primary_targets": [
+      "MCL1"
+    ],
+    "smiles": "CC1=C2C(=NN1C)CSCC3=NN(C(=C3)CSC4=CC5=CC=CC=C5C(=C4)OCCCC6=C(N(C7=C6C=CC(=C27)Cl)C)C(=O)O)C",
+    "target_genes": [
+      "MCL1"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "AZD6482": {
+    "drug_id": 2169,
+    "primary_targets": [
+      "PI3Kbeta"
+    ],
+    "smiles": "CC1=CN2C(=O)C=C(N=C2C(=C1)[C@@H](C)NC3=CC=CC=C3C(=O)O)N4CCOCC4",
+    "target_genes": [
+      "PI3Kbeta"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "AZD6738": {
+    "drug_id": 1917,
+    "primary_targets": [
+      "ATR"
+    ],
+    "smiles": "C[C@@H]1COCCN1C2=NC(=NC(=C2)C3(CC3)[S@](=N)(=O)C)C4=CN=CC5=C4C=CN5",
+    "target_genes": [
+      "ATR"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "AZD7762": {
+    "drug_id": 1022,
+    "primary_targets": [
+      "CHEK1",
+      "CHEK2"
+    ],
+    "smiles": "C1C[C@@H](CNC1)NC(=O)C2=C(C=C(S2)C3=CC(=CC=C3)F)NC(=O)N",
+    "target_genes": [
+      "CHEK1",
+      "CHEK2"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "AZD8055": {
+    "drug_id": 1059,
+    "primary_targets": [
+      "MTORC1",
+      "MTORC2"
+    ],
+    "smiles": "C[C@H]1COCCN1C2=NC(=NC3=C2C=CC(=N3)C4=CC(=C(C=C4)OC)CO)N5CCOC[C@@H]5C",
+    "target_genes": [
+      "MTORC1",
+      "MTORC2"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "AZD8186": {
+    "drug_id": 1918,
+    "primary_targets": [
+      "PI3Kalpha",
+      "PI3Kbeta"
+    ],
+    "smiles": "C[C@H](C1=CC(=CC2=C1OC(=CC2=O)N3CCOCC3)C(=O)N(C)C)NC4=CC(=CC(=C4)F)F",
+    "target_genes": [
+      "PI3Kalpha",
+      "PI3Kbeta"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Acetalax": {
+    "drug_id": 1803,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "CC(=O)OC1=CC=C(C=C1)C2(C3=CC=CC=C3NC2=O)C4=CC=C(C=C4)OC(=O)C",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "Afatinib": {
+    "drug_id": 1032,
+    "primary_targets": [
+      "EGFR",
+      "ERBB2"
+    ],
+    "smiles": "CN(C)C/C=C/C(=O)NC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC(=C(C=C3)F)Cl)O[C@H]4CCOC4",
+    "target_genes": [
+      "EGFR",
+      "ERBB2"
+    ],
+    "target_pathway": "EGFR signaling"
+  },
+  "Afuresertib": {
+    "drug_id": 1912,
+    "primary_targets": [
+      "AKT1",
+      "AKT2",
+      "AKT3"
+    ],
+    "smiles": "CN1C(=C(C=N1)Cl)C2=C(SC(=C2)C(=O)N[C@@H](CC3=CC(=CC=C3)F)CN)Cl",
+    "target_genes": [
+      "AKT1",
+      "AKT2",
+      "AKT3"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Alisertib": {
+    "drug_id": 1051,
+    "primary_targets": [
+      "AURKA"
+    ],
+    "smiles": "COC1=C(C(=CC=C1)F)C2=NCC3=CN=C(N=C3C4=C2C=C(C=C4)Cl)NC5=CC(=C(C=C5)C(=O)O)OC",
+    "target_genes": [
+      "AURKA"
+    ],
+    "target_pathway": "Mitosis"
+  },
+  "Alpelisib": {
+    "drug_id": 1560,
+    "primary_targets": [
+      "PI3Kalpha"
+    ],
+    "smiles": "CC1=C(SC(=N1)NC(=O)N2CCC[C@H]2C(=O)N)C3=CC(=NC=C3)C(C)(C)C(F)(F)F",
+    "target_genes": [
+      "PI3Kalpha"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Avagacestat": {
+    "drug_id": 1072,
+    "primary_targets": [
+      "Amyloid beta20",
+      "Amyloid beta40"
+    ],
+    "smiles": "C1=CC(=CC=C1S(=O)(=O)N(CC2=C(C=C(C=C2)C3=NOC=N3)F)[C@H](CCC(F)(F)F)C(=O)N)Cl",
+    "target_genes": [
+      "Amyloid beta20",
+      "Amyloid beta40"
+    ],
+    "target_pathway": "Other"
+  },
+  "Axitinib": {
+    "drug_id": 1021,
+    "primary_targets": [
+      "PDGFR",
+      "KIT",
+      "VEGFR"
+    ],
+    "smiles": "CNC(=O)C1=CC=CC=C1SC2=CC3=C(C=C2)C(=NN3)/C=C/C4=CC=CC=N4",
+    "target_genes": [
+      "PDGFR",
+      "KIT",
+      "VEGFR"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "BEN": {
+    "drug_id": 1847,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "C1=CC=C(C=C1)C(=N)N",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "BI-2536": {
+    "drug_id": 1086,
+    "primary_targets": [
+      "PLK1",
+      "PLK2",
+      "PLK3"
+    ],
+    "smiles": "CC[C@@H]1C(=O)N(C2=CN=C(N=C2N1C3CCCC3)NC4=C(C=C(C=C4)C(=O)NC5CCN(CC5)C)OC)C",
+    "target_genes": [
+      "PLK1",
+      "PLK2",
+      "PLK3"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "BIBR-1532": {
+    "drug_id": 2043,
+    "primary_targets": [
+      "TERT"
+    ],
+    "smiles": "C/C(=C\\C(=O)NC1=CC=CC=C1C(=O)O)/C2=CC3=CC=CC=C3C=C2",
+    "target_genes": [
+      "TERT"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "BMS-345541": {
+    "drug_id": 1249,
+    "primary_targets": [
+      "IKK-1",
+      "IKK-2"
+    ],
+    "smiles": "CC1=CC2=C(C=C1)N=C(C3=NC=C(N23)C)NCCN.Cl",
+    "target_genes": [
+      "IKK-1",
+      "IKK-2"
+    ],
+    "target_pathway": "Other"
+  },
+  "BMS-536924": {
+    "drug_id": 1091,
+    "primary_targets": [
+      "IGF1R",
+      "IR"
+    ],
+    "smiles": "CC1=CC(=CC2=C1N=C(N2)C3=C(C=CNC3=O)NC[C@H](C4=CC(=CC=C4)Cl)O)N5CCOCC5",
+    "target_genes": [
+      "IGF1R",
+      "IR"
+    ],
+    "target_pathway": "IGF1R signaling"
+  },
+  "BMS-754807": {
+    "drug_id": 2171,
+    "primary_targets": [
+      "IGF1R",
+      "IR"
+    ],
+    "smiles": "C[C@]1(CCCN1C2=NN3C=CC=C3C(=N2)NC4=NNC(=C4)C5CC5)C(=O)NC6=CN=C(C=C6)F",
+    "target_genes": [
+      "IGF1R",
+      "IR"
+    ],
+    "target_pathway": "IGF1R signaling"
+  },
+  "BX795": {
+    "drug_id": 1037,
+    "primary_targets": [
+      "TBK1",
+      "PDK1 (PDPK1)",
+      "IKK"
+    ],
+    "smiles": "C1CCN(C1)C(=O)NC2=CC=CC(=C2)NC3=NC=C(C(=N3)NCCCNC(=O)C4=CC=CS4)I",
+    "target_genes": [
+      "TBK1",
+      "PDK1 (PDPK1)",
+      "IKK",
+      "AURKB",
+      "AURKC"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Bicalutamide": {
+    "drug_id": 1502,
+    "primary_targets": [
+      "AR"
+    ],
+    "smiles": "CC(CS(=O)(=O)C1=CC=C(C=C1)F)(C(=O)NC2=CC(=C(C=C2)C#N)C(F)(F)F)O",
+    "target_genes": [
+      "AR"
+    ],
+    "target_pathway": "Hormone-related"
+  },
+  "Bleomycin": {
+    "drug_id": 1812,
+    "primary_targets": [
+      "dsDNA break induction"
+    ],
+    "smiles": "CC1=C(N=C(N=C1N)[C@H](CC(=O)N)NC[C@@H](C(=O)N)N)C(=O)N[C@@H]([C@H](C2=CN=CN2)OC3C(C(C(C(O3)CO)O)O)OC4C(C(C(C(O4)CO)O)OC(=O)N)O)C(=O)N[C@H](C)[C@H]([C@H](C)C(=O)N[C@@H]([C@@H](C)O)C(=O)NCCC5=NC(=CS5)C6=NC(=CS6)C(=O)NCCC[S+](C)C)O",
+    "target_genes": [
+      "dsDNA break induction"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Bleomycin (50 uM)": {
+    "drug_id": 1378,
+    "primary_targets": [
+      "dsDNA break induction"
+    ],
+    "smiles": "CC1=C(N=C(N=C1N)[C@H](CC(=O)N)NC[C@@H](C(=O)N)N)C(=O)N[C@@H]([C@H](C2=CN=CN2)OC3C(C(C(C(O3)CO)O)O)OC4C(C(C(C(O4)CO)O)OC(=O)N)O)C(=O)N[C@H](C)[C@H]([C@H](C)C(=O)N[C@@H]([C@@H](C)O)C(=O)NCCC5=NC(=CS5)C6=NC(=CS6)C(=O)NCCC[S+](C)C)O",
+    "target_genes": [
+      "dsDNA break induction"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Bortezomib": {
+    "drug_id": 1191,
+    "primary_targets": [
+      "Proteasome"
+    ],
+    "smiles": "B([C@H](CC(C)C)NC(=O)[C@H](CC1=CC=CC=C1)NC(=O)C2=NC=CN=C2)(O)O",
+    "target_genes": [
+      "Proteasome"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "Bosutinib": {
+    "drug_id": 1019,
+    "primary_targets": [
+      "SRC",
+      "ABL",
+      "TEC"
+    ],
+    "smiles": "CN1CCN(CC1)CCCOC2=C(C=C3C(=C2)N=CC(=C3NC4=CC(=C(C=C4Cl)Cl)OC)C#N)OC",
+    "target_genes": [
+      "SRC",
+      "ABL",
+      "TEC"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Bromosporine": {
+    "drug_id": 1581,
+    "primary_targets": [
+      "CECR2",
+      "BRD2",
+      "BRD4"
+    ],
+    "smiles": "CCOC(=O)NC1=CC(=NN2C1=NN=C2C)C3=CC(=C(C=C3)C)NS(=O)(=O)C",
+    "target_genes": [
+      "CECR2",
+      "BRD2",
+      "BRD4",
+      "BRD9"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "Buparlisib": {
+    "drug_id": 1873,
+    "primary_targets": [
+      "PI3Kalpha",
+      "PI3Kdelta",
+      "PI3Kbeta"
+    ],
+    "smiles": "C1COCCN1C2=NC(=NC(=C2)C3=CN=C(C=C3C(F)(F)F)N)N4CCOCC4",
+    "target_genes": [
+      "PI3Kalpha",
+      "PI3Kdelta",
+      "PI3Kbeta",
+      "PI3Kgamma"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "CCT-018159": {
+    "drug_id": 1170,
+    "primary_targets": [
+      "HSP90"
+    ],
+    "smiles": "CCC1=CC(=C(C=C1O)O)C2=NNC(=C2C3=CC4=C(C=C3)OCCO4)C",
+    "target_genes": [
+      "HSP90"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "CCT007093": {
+    "drug_id": 1067,
+    "primary_targets": [
+      "PPM1D"
+    ],
+    "smiles": "C1/C(=C\\C2=CC=CS2)/C(=O)/C(=C/C3=CC=CS3)/C1",
+    "target_genes": [
+      "PPM1D"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "CHIR-99021": {
+    "drug_id": 2175,
+    "primary_targets": [
+      "GSK3A",
+      "GSK3B"
+    ],
+    "smiles": "CC1=CN=C(N1)C2=CN=C(N=C2C3=C(C=C(C=C3)Cl)Cl)NCCNC4=NC=C(C=C4)C#N",
+    "target_genes": [
+      "GSK3A",
+      "GSK3B"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "CPI-637": {
+    "drug_id": 2158,
+    "primary_targets": [
+      "EP300"
+    ],
+    "smiles": "C[C@@H]1CC(=O)NC2=CC=CC(=C2N1)C3=CC4=C(C=C3)N(N=C4C5=CN(N=C5)C)C",
+    "target_genes": [
+      "EP300"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "CZC24832": {
+    "drug_id": 1615,
+    "primary_targets": [
+      "PI3Kgamma"
+    ],
+    "smiles": "CC(C)(C)NS(=O)(=O)C1=CN=CC(=C1)C2=CN3C(=NC(=N3)N)C(=C2)F",
+    "target_genes": [
+      "PI3Kgamma"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Camptothecin": {
+    "drug_id": 1003,
+    "primary_targets": [
+      "TOP1"
+    ],
+    "smiles": "CC[C@@]1(C2=C(COC1=O)C(=O)N3CC4=CC5=CC=CC=C5N=C4C3=C2)O",
+    "target_genes": [
+      "TOP1"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Cediranib": {
+    "drug_id": 1922,
+    "primary_targets": [
+      "VEGFR",
+      "FLT1",
+      "FLT2"
+    ],
+    "smiles": "CC1=CC2=C(N1)C=CC(=C2F)OC3=NC=NC4=CC(=C(C=C43)OC)OCCCN5CCCC5",
+    "target_genes": [
+      "VEGFR",
+      "FLT1",
+      "FLT2",
+      "FLT3",
+      "FLT4",
+      "KIT",
+      "PDGFRB"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "Cisplatin": {
+    "drug_id": 1005,
+    "primary_targets": [
+      "DNA crosslinker"
+    ],
+    "smiles": "N.N.Cl[Pt]Cl",
+    "target_genes": [
+      "DNA crosslinker"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Crizotinib": {
+    "drug_id": 1083,
+    "primary_targets": [
+      "MET",
+      "ALK",
+      "ROS1"
+    ],
+    "smiles": "C[C@H](C1=C(C=CC(=C1Cl)F)Cl)OC2=C(N=CC(=C2)C3=CN(N=C3)C4CCNCC4)N",
+    "target_genes": [
+      "MET",
+      "ALK",
+      "ROS1"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "Cyclophosphamide": {
+    "drug_id": 1512,
+    "primary_targets": [
+      "Alkylating agent"
+    ],
+    "smiles": "C1CNP(=O)(OC1)N(CCCl)CCCl",
+    "target_genes": [
+      "Alkylating agent"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Cytarabine": {
+    "drug_id": 1006,
+    "primary_targets": [
+      "Antimetabolite"
+    ],
+    "smiles": "C1=CN(C(=O)N=C1N)[C@H]2[C@H]([C@@H]([C@H](O2)CO)O)O",
+    "target_genes": [
+      "Antimetabolite"
+    ],
+    "target_pathway": "Other"
+  },
+  "Dabrafenib": {
+    "drug_id": 1373,
+    "primary_targets": [
+      "BRAF"
+    ],
+    "smiles": "CC(C)(C)C1=NC(=C(S1)C2=NC(=NC=C2)N)C3=C(C(=CC=C3)NS(=O)(=O)C4=C(C=CC=C4F)F)F",
+    "target_genes": [
+      "BRAF"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "Dacarbazine": {
+    "drug_id": 1815,
+    "primary_targets": [
+      "CP11A"
+    ],
+    "smiles": "CN(C)/N=N/C1=C(NC=N1)C(=O)N",
+    "target_genes": [
+      "CP11A"
+    ],
+    "target_pathway": "Other"
+  },
+  "Dactinomycin": {
+    "drug_id": 1811,
+    "primary_targets": [
+      "RNA polymerase"
+    ],
+    "smiles": "C[C@@H]1[C@@H](C(=O)N[C@@H](C(=O)N2CCC[C@H]2C(=O)N(CC(=O)N([C@H](C(=O)O1)C(C)C)C)C)C(C)C)NC(=O)C3=C4C(=C(C=C3)C)OC5=C(C(=O)C(=C(C5=N4)C(=O)N[C@H]6[C@H](OC(=O)[C@@H](N(C(=O)CN(C(=O)[C@@H]7CCCN7C(=O)[C@H](NC6=O)C(C)C)C)C)C(C)C)C)N)C",
+    "target_genes": [
+      "RNA polymerase"
+    ],
+    "target_pathway": "Other"
+  },
+  "Dactolisib": {
+    "drug_id": 1057,
+    "primary_targets": [
+      "PI3K (class 1)",
+      "MTORC1",
+      "MTORC2"
+    ],
+    "smiles": "CC(C)(C#N)C1=CC=C(C=C1)N2C3=C4C=C(C=CC4=NC=C3N(C2=O)C)C5=CC6=CC=CC=C6N=C5",
+    "target_genes": [
+      "PI3K (class 1)",
+      "MTORC1",
+      "MTORC2"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Daporinad": {
+    "drug_id": 1248,
+    "primary_targets": [
+      "NAMPT"
+    ],
+    "smiles": "C1CN(CCC1CCCCNC(=O)/C=C/C2=CN=CC=C2)C(=O)C3=CC=CC=C3",
+    "target_genes": [
+      "NAMPT"
+    ],
+    "target_pathway": "Metabolism"
+  },
+  "Dasatinib": {
+    "drug_id": 1079,
+    "primary_targets": [
+      "ABL",
+      "SRC",
+      "Ephrins"
+    ],
+    "smiles": "CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=CC(=NC(=N3)C)N4CCN(CC4)CCO",
+    "target_genes": [
+      "ABL",
+      "SRC",
+      "Ephrins",
+      "PDGFR",
+      "KIT"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Dihydrorotenone": {
+    "drug_id": 1827,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "CC(C)[C@H]1CC2=C(O1)C=CC3=C2O[C@@H]4COC5=CC(=C(C=C5[C@@H]4C3=O)OC)OC",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "Dinaciclib": {
+    "drug_id": 1180,
+    "primary_targets": [
+      "CDK1",
+      "CDK2",
+      "CDK5"
+    ],
+    "smiles": "CCC1=C2N=C(C=C(N2N=C1)NCC3=C[N+](=CC=C3)[O-])N4CCCC[C@H]4CCO",
+    "target_genes": [
+      "CDK1",
+      "CDK2",
+      "CDK5",
+      "CDK9"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "Docetaxel": {
+    "drug_id": 1007,
+    "primary_targets": [
+      "Microtubule stabiliser"
+    ],
+    "smiles": "CC1=C2[C@H](C(=O)[C@@]3([C@H](C[C@@H]4[C@]([C@H]3[C@@H]([C@@](C2(C)C)(C[C@@H]1OC(=O)[C@@H]([C@H](C5=CC=CC=C5)NC(=O)OC(C)(C)C)O)O)OC(=O)C6=CC=CC=C6)(CO4)OC(=O)C)O)C)O",
+    "target_genes": [
+      "Microtubule stabiliser"
+    ],
+    "target_pathway": "Mitosis"
+  },
+  "Doramapimod": {
+    "drug_id": 1042,
+    "primary_targets": [
+      "p38",
+      "JNK2"
+    ],
+    "smiles": "CC1=CC=C(C=C1)N2C(=CC(=N2)C(C)(C)C)NC(=O)NC3=CC=C(C4=CC=CC=C43)OCCN5CCOCC5",
+    "target_genes": [
+      "p38",
+      "JNK2"
+    ],
+    "target_pathway": "JNK and p38 signaling"
+  },
+  "EHT-1864": {
+    "drug_id": 1069,
+    "primary_targets": [
+      "RAC1",
+      "RAC2",
+      "RAC3"
+    ],
+    "smiles": "C1COCCN1CC2=CC(=O)C(=CO2)OCCCCCSC3=C4C=CC(=CC4=NC=C3)C(F)(F)F.Cl.Cl",
+    "target_genes": [
+      "RAC1",
+      "RAC2",
+      "RAC3"
+    ],
+    "target_pathway": "Cytoskeleton"
+  },
+  "EPZ004777": {
+    "drug_id": 1237,
+    "primary_targets": [
+      "DOT1L"
+    ],
+    "smiles": "CC(C)N(CCCNC(=O)NC1=CC=C(C=C1)C(C)(C)C)C[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=CC4=C(N=CN=C43)N)O)O",
+    "target_genes": [
+      "DOT1L"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "EPZ5676": {
+    "drug_id": 1563,
+    "primary_targets": [
+      "DOT1L"
+    ],
+    "smiles": "CC(C)N(C[C@@H]1[C@H]([C@H]([C@@H](O1)N2C=NC3=C(N=CN=C32)N)O)O)C4CC(C4)CCC5=NC6=C(N5)C=C(C=C6)C(C)(C)C",
+    "target_genes": [
+      "DOT1L"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "Elephantin": {
+    "drug_id": 1835,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "CC(=CC(=O)O[C@H]1CC2=C[C@@H](C[C@@]3([C@H](O3)[C@@H]4[C@@H]1C(=C)C(=O)O4)C)OC2=O)C",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "Elesclomol": {
+    "drug_id": 1031,
+    "primary_targets": [
+      "HSP90"
+    ],
+    "smiles": "CN(C(=S)C1=CC=CC=C1)NC(=O)CC(=O)NN(C)C(=S)C2=CC=CC=C2",
+    "target_genes": [
+      "HSP90"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "Entinostat": {
+    "drug_id": 1593,
+    "primary_targets": [
+      "HDAC1",
+      "HDAC3"
+    ],
+    "smiles": "C1=CC=C(C(=C1)N)NC(=O)C2=CC=C(C=C2)CNC(=O)OCC3=CN=CC=C3",
+    "target_genes": [
+      "HDAC1",
+      "HDAC3"
+    ],
+    "target_pathway": "Chromatin histone acetylation"
+  },
+  "Entospletinib": {
+    "drug_id": 1630,
+    "primary_targets": [
+      "SYK"
+    ],
+    "smiles": "C1COCCN1C2=CC=C(C=C2)NC3=NC(=CN4C3=NC=C4)C5=CC6=C(C=C5)C=NN6",
+    "target_genes": [
+      "SYK"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Epirubicin": {
+    "drug_id": 1511,
+    "primary_targets": [
+      "Anthracycline"
+    ],
+    "smiles": "C[C@H]1[C@@H]([C@H](C[C@@H](O1)O[C@H]2C[C@@](CC3=C2C(=C4C(=C3O)C(=O)C5=C(C4=O)C(=CC=C5)OC)O)(C(=O)CO)O)N)O",
+    "target_genes": [
+      "Anthracycline"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Erlotinib": {
+    "drug_id": 1168,
+    "primary_targets": [
+      "EGFR"
+    ],
+    "smiles": "COCCOC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC=CC(=C3)C#C)OCCOC",
+    "target_genes": [
+      "EGFR"
+    ],
+    "target_pathway": "EGFR signaling"
+  },
+  "Fludarabine": {
+    "drug_id": 1813,
+    "primary_targets": [
+      "Antimetabolite"
+    ],
+    "smiles": "C1=NC2=C(N=C(N=C2N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)F)N",
+    "target_genes": [
+      "Antimetabolite"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Foretinib": {
+    "drug_id": 2040,
+    "primary_targets": [
+      "MET",
+      "KDR",
+      "TIE2"
+    ],
+    "smiles": "COC1=CC2=C(C=CN=C2C=C1OCCCN3CCOCC3)OC4=C(C=C(C=C4)NC(=O)C5(CC5)C(=O)NC6=CC=C(C=C6)F)F",
+    "target_genes": [
+      "MET",
+      "KDR",
+      "TIE2",
+      "VEGFR3/FLT4",
+      "RON",
+      "PDGFR",
+      "FGFR1",
+      "EGFR"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "Fulvestrant": {
+    "drug_id": 1200,
+    "primary_targets": [
+      "ESR"
+    ],
+    "smiles": "C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)[C@@H](CC4=C3C=CC(=C4)O)CCCCCCCCCS(=O)CCCC(C(F)(F)F)(F)F",
+    "target_genes": [
+      "ESR"
+    ],
+    "target_pathway": "Hormone-related"
+  },
+  "GDC0810": {
+    "drug_id": 1925,
+    "primary_targets": [
+      "ESR1",
+      "ESR2"
+    ],
+    "smiles": "CC/C(=C(/C1=CC=C(C=C1)/C=C/C(=O)O)\\C2=CC3=C(C=C2)NN=C3)/C4=C(C=C(C=C4)F)Cl",
+    "target_genes": [
+      "ESR1",
+      "ESR2"
+    ],
+    "target_pathway": "Hormone-related"
+  },
+  "GNE-317": {
+    "drug_id": 1926,
+    "primary_targets": [
+      "PI3Kalpha"
+    ],
+    "smiles": "CC1=C(SC2=C1N=C(N=C2N3CCOCC3)C4=CN=C(N=C4)N)C5(COC5)OC",
+    "target_genes": [
+      "PI3Kalpha"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "GSK-LSD1": {
+    "drug_id": 1583,
+    "primary_targets": [
+      "KDM1"
+    ],
+    "smiles": "C1CNCCC1N[C@@H]2C[C@H]2C3=CC=CC=C3",
+    "target_genes": [
+      "KDM1"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "GSK-LSD1-2HCl ": {
+    "drug_id": 2154,
+    "primary_targets": [
+      "LSD1"
+    ],
+    "smiles": "C1CNCCC1N[C@@H]2C[C@H]2C3=CC=CC=C3",
+    "target_genes": [
+      "LSD1"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "GSK1904529A": {
+    "drug_id": 1093,
+    "primary_targets": [
+      "IGF1R",
+      "IR"
+    ],
+    "smiles": "CCC1=CC(=C(C=C1N2CCC(CC2)N3CCN(CC3)S(=O)(=O)C)OC)NC4=NC=CC(=N4)C5=C(N=C6N5C=CC=C6)C7=CC(=C(C=C7)OC)C(=O)NC8=C(C=CC=C8F)F",
+    "target_genes": [
+      "IGF1R",
+      "IR"
+    ],
+    "target_pathway": "IGF1R signaling"
+  },
+  "GSK2110183B": {
+    "drug_id": 1778,
+    "primary_targets": [
+      "AKT1",
+      "AKT2",
+      "AKT3"
+    ],
+    "smiles": "CN1C(=C(C=N1)Cl)C2=C(SC(=C2)C(=O)N[C@@H](CC3=CC(=CC=C3)F)CN)Cl.Cl",
+    "target_genes": [
+      "AKT1",
+      "AKT2",
+      "AKT3"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "GSK2256098C": {
+    "drug_id": 1776,
+    "primary_targets": [
+      "FAK1"
+    ],
+    "smiles": "CC1=NN(C(=C1)NC2=NC=C(C(=C2)NC3=CC=CC=C3C(=O)NOC)Cl)C(C)C",
+    "target_genes": [
+      "FAK1"
+    ],
+    "target_pathway": "Cytoskeleton"
+  },
+  "GSK2578215A": {
+    "drug_id": 1927,
+    "primary_targets": [
+      "LRRK2"
+    ],
+    "smiles": "C1=CC=C(C=C1)COC2=C(C=C(C=C2)C3=CC(=NC=C3)F)C(=O)NC4=CN=CC=C4",
+    "target_genes": [
+      "LRRK2"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "GSK2606414": {
+    "drug_id": 1618,
+    "primary_targets": [
+      "PERK"
+    ],
+    "smiles": "CN1C=C(C2=C(N=CN=C21)N)C3=CC4=C(C=C3)N(CC4)C(=O)CC5=CC(=CC=C5)C(F)(F)F",
+    "target_genes": [
+      "PERK"
+    ],
+    "target_pathway": "Metabolism"
+  },
+  "GSK269962A": {
+    "drug_id": 1192,
+    "primary_targets": [
+      "ROCK1",
+      "ROCK2"
+    ],
+    "smiles": "CCN1C2=CC(=NC=C2N=C1C3=NON=C3N)OC4=CC=CC(=C4)NC(=O)C5=CC=C(C=C5)OCCN6CCOCC6",
+    "target_genes": [
+      "ROCK1",
+      "ROCK2"
+    ],
+    "target_pathway": "Cytoskeleton"
+  },
+  "GSK2801": {
+    "drug_id": 1580,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "CCCOC1=CC2=C(C=C(N2C=C1)C(=O)C)C3=CC=CC=C3S(=O)(=O)C",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "GSK2830371": {
+    "drug_id": 2359,
+    "primary_targets": [
+      "WIP1"
+    ],
+    "smiles": "CC1=C(C=C(C=N1)Cl)NCC2=CC=C(S2)C(=O)N[C@@H](CC3CCCC3)C(=O)NC4CC4",
+    "target_genes": [
+      "WIP1"
+    ],
+    "target_pathway": "Other"
+  },
+  "GSK2830371A": {
+    "drug_id": 1782,
+    "primary_targets": [
+      "PPM1D"
+    ],
+    "smiles": "CC1=C(C=C(C=N1)Cl)NCC2=CC=C(S2)C(=O)N[C@@H](CC3CCCC3)C(=O)NC4CC4",
+    "target_genes": [
+      "PPM1D"
+    ],
+    "target_pathway": "Other"
+  },
+  "GSK343": {
+    "drug_id": 1627,
+    "primary_targets": [
+      "EZH2"
+    ],
+    "smiles": "CCCC1=C(C(=O)NC(=C1)C)CNC(=O)C2=C3C=NN(C3=CC(=C2)C4=CC(=NC=C4)N5CCN(CC5)C)C(C)C",
+    "target_genes": [
+      "EZH2"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "GSK591": {
+    "drug_id": 2110,
+    "primary_targets": [
+      "PMRT5"
+    ],
+    "smiles": "C1CC(C1)NC2=NC=CC(=C2)C(=O)NC[C@@H](CN3CCC4=CC=CC=C4C3)O",
+    "target_genes": [
+      "PMRT5"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "GSK626616AC": {
+    "drug_id": 1779,
+    "primary_targets": [
+      "DYRK1A"
+    ],
+    "smiles": "C1=CC(=C(C(=C1)Cl)N=C2NC(=O)/C(=C/C3=CC4=NC=CN=C4C=C3)/S2)Cl",
+    "target_genes": [
+      "DYRK1A"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "GW441756": {
+    "drug_id": 1023,
+    "primary_targets": [
+      "NTRK1"
+    ],
+    "smiles": "CN1C=C(C2=CC=CC=C21)/C=C\\3/C4=C(C=CC=N4)NC3=O.Cl",
+    "target_genes": [
+      "NTRK1"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "Gallibiscoquinazole": {
+    "drug_id": 1830,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "COC1=C(C(=C2C(=C1)C(=O)NC(N2)(NC(=O)OC)NC(=O)OC)OC)OC",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "Gefitinib": {
+    "drug_id": 1010,
+    "primary_targets": [
+      "EGFR"
+    ],
+    "smiles": "COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)OCCCN4CCOCC4",
+    "target_genes": [
+      "EGFR"
+    ],
+    "target_pathway": "EGFR signaling"
+  },
+  "Gemcitabine": {
+    "drug_id": 1190,
+    "primary_targets": [
+      "Pyrimidine antimetabolite"
+    ],
+    "smiles": "C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F",
+    "target_genes": [
+      "Pyrimidine antimetabolite"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "HKMTI-1-005": {
+    "drug_id": 2010,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "CN1CCN(CC1)C2=NC3=CC(=C(C=C3C(=N2)NC4CCN(CC4)CC5=CC=CC=C5)OC)OC",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "I-BET-762": {
+    "drug_id": 1624,
+    "primary_targets": [
+      "BRD2",
+      "BRD3",
+      "BRD4"
+    ],
+    "smiles": "CCNC(=O)C[C@H]1C2=NN=C(N2C3=C(C=C(C=C3)OC)C(=N1)C4=CC=C(C=C4)Cl)C",
+    "target_genes": [
+      "BRD2",
+      "BRD3",
+      "BRD4"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "I-BRD9": {
+    "drug_id": 1928,
+    "primary_targets": [
+      "BRD9"
+    ],
+    "smiles": "CCN1C=C(C2=C(C1=O)C=C(S2)C(=NC3CCS(=O)(=O)CC3)N)C4=CC(=CC=C4)C(F)(F)F",
+    "target_genes": [
+      "BRD9"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "ICL-SIRT078": {
+    "drug_id": 2011,
+    "primary_targets": [
+      "SIR2"
+    ],
+    "smiles": "COC1=C(C2=CC=CC=C2C=C1)CN3C=NC4=C(C3=O)C5=C(S4)CC(CC5)NCC6=CN=CC=C6",
+    "target_genes": [
+      "SIR2"
+    ],
+    "target_pathway": "Other"
+  },
+  "IOX2": {
+    "drug_id": 2174,
+    "primary_targets": [
+      "EGLN1"
+    ],
+    "smiles": "C1=CC=C(C=C1)CN2C3=CC=CC=C3C(=C(C2=O)C(=O)NCC(=O)O)O",
+    "target_genes": [
+      "EGLN1"
+    ],
+    "target_pathway": "Other"
+  },
+  "IWP-2": {
+    "drug_id": 1576,
+    "primary_targets": [
+      "PORCN"
+    ],
+    "smiles": "CC1=CC2=C(C=C1)N=C(S2)NC(=O)CSC3=NC4=C(C(=O)N3C5=CC=CC=C5)SCC4",
+    "target_genes": [
+      "PORCN"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "Ibrutinib": {
+    "drug_id": 1799,
+    "primary_targets": [
+      "BTK"
+    ],
+    "smiles": "C=CC(=O)N1CCC[C@H](C1)N2C3=NC=NC(=C3C(=N2)C4=CC=C(C=C4)OC5=CC=CC=C5)N",
+    "target_genes": [
+      "BTK"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Ipatasertib": {
+    "drug_id": 1924,
+    "primary_targets": [
+      "AKT1",
+      "AKT",
+      "AKT3"
+    ],
+    "smiles": "C[C@@H]1C[C@H](C2=C1C(=NC=N2)N3CCN(CC3)C(=O)[C@H](CNC(C)C)C4=CC=C(C=C4)Cl)O",
+    "target_genes": [
+      "AKT1",
+      "AKT",
+      "AKT3"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Irinotecan": {
+    "drug_id": 1088,
+    "primary_targets": [
+      "TOP1"
+    ],
+    "smiles": "CCC1=C2CN3C(=CC4=C(C3=O)COC(=O)[C@@]4(CC)O)C2=NC5=C1C=C(C=C5)OC(=O)N6CCC(CC6)N7CCCCC7",
+    "target_genes": [
+      "TOP1"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "JNK Inhibitor VIII": {
+    "drug_id": 1043,
+    "primary_targets": [
+      "JNK"
+    ],
+    "smiles": "CCOC1=C(C(=CC(=N1)NC(=O)CC2=C(C=CC(=C2)OC)OC)N)C#N",
+    "target_genes": [
+      "JNK"
+    ],
+    "target_pathway": "JNK and p38 signaling"
+  },
+  "JQ1": {
+    "drug_id": 2172,
+    "primary_targets": [
+      "BRD2",
+      "BRD3",
+      "BRD4"
+    ],
+    "smiles": "CC1=C(SC2=C1C(=N[C@H](C3=NN=C(N32)C)CC(=O)OC(C)(C)C)C4=CC=C(C=C4)Cl)C",
+    "target_genes": [
+      "BRD2",
+      "BRD3",
+      "BRD4",
+      "BRDT"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "KRAS (G12C) Inhibitor-12": {
+    "drug_id": 1855,
+    "primary_targets": [
+      "KRAS (G12C)"
+    ],
+    "smiles": "C=CC(=O)N1CCN(CC1)C(=O)CNC2=CC(=C(C=C2O)Cl)I",
+    "target_genes": [
+      "KRAS (G12C)"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "KU-55933": {
+    "drug_id": 1030,
+    "primary_targets": [
+      "ATM"
+    ],
+    "smiles": "C1COCCN1C2=CC(=O)C=C(O2)C3=C4C(=CC=C3)SC5=CC=CC=C5S4",
+    "target_genes": [
+      "ATM"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "L-Oxonoreleagnine": {
+    "drug_id": 1831,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "C1CNC(=O)C2=C1C3=CC=CC=C3N2",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "LCL161": {
+    "drug_id": 1557,
+    "primary_targets": [
+      "XIAP",
+      "IAP1",
+      "IAP2"
+    ],
+    "smiles": "C[C@@H](C(=O)N[C@@H](C1CCCCC1)C(=O)N2CCC[C@H]2C3=NC(=CS3)C(=O)C4=CC=C(C=C4)F)NC",
+    "target_genes": [
+      "XIAP",
+      "IAP1",
+      "IAP2"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "LGK974": {
+    "drug_id": 1598,
+    "primary_targets": [
+      "PORCN"
+    ],
+    "smiles": "CC1=CC(=CN=C1C2=CC(=NC=C2)C)CC(=O)NC3=NC=C(C=C3)C4=NC=CN=C4",
+    "target_genes": [
+      "PORCN"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "LJI308": {
+    "drug_id": 2107,
+    "primary_targets": [
+      "RSK2",
+      "RSK1",
+      "RSK3"
+    ],
+    "smiles": "C1COCCN1C2=CC=C(C=C2)C3=C(C=NC=C3)C4=CC(=C(C(=C4)F)O)F",
+    "target_genes": [
+      "RSK2",
+      "RSK1",
+      "RSK3"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "LMP744": {
+    "drug_id": 1843,
+    "primary_targets": [
+      "TOP1"
+    ],
+    "smiles": "COC1=C(C=C2C(=C1)C3=C(C4=CC5=C(C=C4C3=O)OCO5)N(C2=O)CCCNCCO)OC",
+    "target_genes": [
+      "TOP1"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "LY2109761": {
+    "drug_id": 1852,
+    "primary_targets": [
+      "TGFB1"
+    ],
+    "smiles": "C1CC2=C(C(=NN2C1)C3=CC=CC=N3)C4=C5C=CC(=CC5=NC=C4)OCCN6CCOCC6",
+    "target_genes": [
+      "TGFB1"
+    ],
+    "target_pathway": "Other"
+  },
+  "Lapatinib": {
+    "drug_id": 1558,
+    "primary_targets": [
+      "EGFR",
+      "ERBB2"
+    ],
+    "smiles": "CS(=O)(=O)CCNCC1=CC=C(O1)C2=CC3=C(C=C2)N=CN=C3NC4=CC(=C(C=C4)OCC5=CC(=CC=C5)F)Cl",
+    "target_genes": [
+      "EGFR",
+      "ERBB2"
+    ],
+    "target_pathway": "EGFR signaling"
+  },
+  "Leflunomide": {
+    "drug_id": 1578,
+    "primary_targets": [
+      "Pyrimidine synthesis inhibitor"
+    ],
+    "smiles": "CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F",
+    "target_genes": [
+      "Pyrimidine synthesis inhibitor"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Lenalidomide": {
+    "drug_id": 1020,
+    "primary_targets": [
+      "CRBN"
+    ],
+    "smiles": "C1CC(=O)NC(=O)C1N2CC3=C(C2=O)C=CC=C3N",
+    "target_genes": [
+      "CRBN"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "Lestaurtinib": {
+    "drug_id": 1024,
+    "primary_targets": [
+      "FLT3",
+      "JAK2",
+      "NTRK1"
+    ],
+    "smiles": "C[C@@]12[C@](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)CNC6=O)(CO)O",
+    "target_genes": [
+      "FLT3",
+      "JAK2",
+      "NTRK1",
+      "NTRK2",
+      "NTRK3"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Linsitinib": {
+    "drug_id": 1510,
+    "primary_targets": [
+      "IGF1R"
+    ],
+    "smiles": "CC1(CC(C1)C2=NC(=C3N2C=CN=C3N)C4=CC5=C(C=C4)C=CC(=N5)C6=CC=CC=C6)O",
+    "target_genes": [
+      "IGF1R"
+    ],
+    "target_pathway": "IGF1R signaling"
+  },
+  "Luminespib": {
+    "drug_id": 1559,
+    "primary_targets": [
+      "HSP90"
+    ],
+    "smiles": "CCNC(=O)C1=NOC(=C1C2=CC=C(C=C2)CN3CCOCC3)C4=CC(=C(C=C4O)O)C(C)C",
+    "target_genes": [
+      "HSP90"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "MG-132": {
+    "drug_id": 1862,
+    "primary_targets": [
+      "Proteasome",
+      "CAPN1"
+    ],
+    "smiles": "CC(C)C[C@@H](C=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)OCC1=CC=CC=C1",
+    "target_genes": [
+      "Proteasome",
+      "CAPN1"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "MIM1": {
+    "drug_id": 1996,
+    "primary_targets": [
+      "MCL1"
+    ],
+    "smiles": "CC1=CSC(=NC2CCCCC2)N1/N=C/C3=C(C(=C(C=C3)O)O)O",
+    "target_genes": [
+      "MCL1"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "MIRA-1": {
+    "drug_id": 1931,
+    "primary_targets": [
+      "TP53"
+    ],
+    "smiles": "CCC(=O)OCN1C(=O)C=CC1=O",
+    "target_genes": [
+      "TP53"
+    ],
+    "target_pathway": "p53 pathway"
+  },
+  "MK-1775": {
+    "drug_id": 1179,
+    "primary_targets": [
+      "WEE1",
+      "PLK1"
+    ],
+    "smiles": "CC(C)(C1=NC(=CC=C1)N2C3=NC(=NC=C3C(=O)N2CC=C)NC4=CC=C(C=C4)N5CCN(CC5)C)O",
+    "target_genes": [
+      "WEE1",
+      "PLK1"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "MK-2206": {
+    "drug_id": 1053,
+    "primary_targets": [
+      "AKT1",
+      "AKT2"
+    ],
+    "smiles": "C1CC(C1)(C2=CC=C(C=C2)C3=C(C=C4C(=N3)C=CN5C4=NNC5=O)C6=CC=CC=C6)N",
+    "target_genes": [
+      "AKT1",
+      "AKT2"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "MK-8776": {
+    "drug_id": 2046,
+    "primary_targets": [
+      "CHEK1",
+      "CHEK2",
+      "CDK2"
+    ],
+    "smiles": "CN1C=C(C=N1)C2=C3N=C(C(=C(N3N=C2)N)Br)[C@@H]4CCCNC4",
+    "target_genes": [
+      "CHEK1",
+      "CHEK2",
+      "CDK2"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "ML323": {
+    "drug_id": 1629,
+    "primary_targets": [
+      "USP1",
+      "UAF1"
+    ],
+    "smiles": "CC1=CN=C(N=C1NCC2=CC=C(C=C2)N3C=CN=N3)C4=CC=CC=C4C(C)C",
+    "target_genes": [
+      "USP1",
+      "UAF1"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "MN-64": {
+    "drug_id": 1854,
+    "primary_targets": [
+      "TNKS1",
+      "TNKS2"
+    ],
+    "smiles": "CC(C)C1=CC=C(C=C1)C2=CC(=O)C3=CC=CC=C3O2",
+    "target_genes": [
+      "TNKS1",
+      "TNKS2"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "Methotrexate": {
+    "drug_id": 1008,
+    "primary_targets": [
+      "Antimetabolite"
+    ],
+    "smiles": "CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)N[C@@H](CCC(=O)O)C(=O)O",
+    "target_genes": [
+      "Antimetabolite"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Mirin": {
+    "drug_id": 1048,
+    "primary_targets": [
+      "MRE11"
+    ],
+    "smiles": "C1=CC(=CC=C1/C=C\\2/C(=O)N=C(S2)N)O",
+    "target_genes": [
+      "MRE11"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "Mitoxantrone": {
+    "drug_id": 1810,
+    "primary_targets": [
+      "TOP2"
+    ],
+    "smiles": "C1=CC(=C2C(=C1NCCNCCO)C(=O)C3=C(C=CC(=C3C2=O)O)O)NCCNCCO",
+    "target_genes": [
+      "TOP2"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Motesanib": {
+    "drug_id": 1029,
+    "primary_targets": [
+      "VEGFR",
+      "RET",
+      "KIT"
+    ],
+    "smiles": "CC1(CNC2=C1C=CC(=C2)NC(=O)C3=C(N=CC=C3)NCC4=CC=NC=C4)C",
+    "target_genes": [
+      "VEGFR",
+      "RET",
+      "KIT",
+      "PDGFR"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "Mycophenolic acid": {
+    "drug_id": 2055,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "CC1=C2COC(=O)C2=C(C(=C1OC)C/C=C(\\C)/CCC(=O)O)O",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "N-acetyl cysteine": {
+    "drug_id": 2499,
+    "primary_targets": [
+      "Metabolism"
+    ],
+    "smiles": "CC(=O)N[C@@H](CS)C(=O)O",
+    "target_genes": [
+      "Metabolism"
+    ],
+    "target_pathway": "Metabolism"
+  },
+  "NU7441": {
+    "drug_id": 1038,
+    "primary_targets": [
+      "DNAPK"
+    ],
+    "smiles": "C1COCCN1C2=CC(=O)C3=C(O2)C(=CC=C3)C4=CC=CC5=C4SC6=CC=CC=C56",
+    "target_genes": [
+      "DNAPK"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "NVP-ADW742": {
+    "drug_id": 1932,
+    "primary_targets": [
+      "IGF1R"
+    ],
+    "smiles": "C1CCN(C1)CC2CC(C2)N3C=C(C4=C(N=CN=C43)N)C5=CC(=CC=C5)OCC6=CC=CC=C6",
+    "target_genes": [
+      "IGF1R"
+    ],
+    "target_pathway": "IGF1R signaling"
+  },
+  "Navitoclax": {
+    "drug_id": 1011,
+    "primary_targets": [
+      "BCL2",
+      "BCL-XL",
+      "BCL-W"
+    ],
+    "smiles": "CC1(CCC(=C(C1)CN2CCN(CC2)C3=CC=C(C=C3)C(=O)NS(=O)(=O)C4=CC(=C(C=C4)N[C@H](CCN5CCOCC5)CSC6=CC=CC=C6)S(=O)(=O)C(F)(F)F)C7=CC=C(C=C7)Cl)C",
+    "target_genes": [
+      "BCL2",
+      "BCL-XL",
+      "BCL-W"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "Nelarabine": {
+    "drug_id": 1814,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "COC1=NC(=NC2=C1N=CN2[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Nilotinib": {
+    "drug_id": 1013,
+    "primary_targets": [
+      "ABL"
+    ],
+    "smiles": "CC1=C(C=C(C=C1)C(=O)NC2=CC(=CC(=C2)C(F)(F)F)N3C=C(N=C3)C)NC4=NC=CC(=N4)C5=CN=CC=C5",
+    "target_genes": [
+      "ABL"
+    ],
+    "target_pathway": "ABL signaling"
+  },
+  "Niraparib": {
+    "drug_id": 1177,
+    "primary_targets": [
+      "PARP1",
+      "PARP2"
+    ],
+    "smiles": "C1C[C@H](CNC1)C2=CC=C(C=C2)N3C=C4C=CC=C(C4=N3)C(=O)N",
+    "target_genes": [
+      "PARP1",
+      "PARP2"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "Nutlin-3a (-)": {
+    "drug_id": 1047,
+    "primary_targets": [
+      "MDM2"
+    ],
+    "smiles": "CC(C)OC1=C(C=CC(=C1)OC)C2=N[C@H]([C@H](N2C(=O)N3CCNC(=O)C3)C4=CC=C(C=C4)Cl)C5=CC=C(C=C5)Cl",
+    "target_genes": [
+      "MDM2"
+    ],
+    "target_pathway": "p53 pathway"
+  },
+  "OF-1": {
+    "drug_id": 1853,
+    "primary_targets": [
+      "BRPF1B",
+      "BRPF2"
+    ],
+    "smiles": "CC1=C(C=CC(=C1)Br)S(=O)(=O)NC2=CC3=C(C=C2OC)N(C(=O)N3C)C",
+    "target_genes": [
+      "BRPF1B",
+      "BRPF2"
+    ],
+    "target_pathway": "Chromatin histone acetylation"
+  },
+  "OSI-027": {
+    "drug_id": 1594,
+    "primary_targets": [
+      "MTORC1",
+      "MTORC2"
+    ],
+    "smiles": "COC1=CC=CC2=C1NC(=C2)C3=C4C(=NC=NN4C(=N3)C5CCC(CC5)C(=O)O)N",
+    "target_genes": [
+      "MTORC1",
+      "MTORC2"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "OTX015": {
+    "drug_id": 1626,
+    "primary_targets": [
+      "BRD2",
+      "BRD3",
+      "BRD4"
+    ],
+    "smiles": "CC1=C(SC2=C1C(=N[C@H](C3=NN=C(N32)C)CC(=O)NC4=CC=C(C=C4)O)C5=CC=C(C=C5)Cl)C",
+    "target_genes": [
+      "BRD2",
+      "BRD3",
+      "BRD4"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "Obatoclax Mesylate": {
+    "drug_id": 1068,
+    "primary_targets": [
+      "BCL2",
+      "BCL-XL",
+      "BCL-W"
+    ],
+    "smiles": "CC1=CC(=C(N1)/C=C\\2/C(=C/C(=C/3\\C=C4C=CC=CC4=N3)/N2)OC)C.CS(=O)(=O)O",
+    "target_genes": [
+      "BCL2",
+      "BCL-XL",
+      "BCL-W",
+      "MCL1"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "Olaparib": {
+    "drug_id": 1017,
+    "primary_targets": [
+      "PARP1",
+      "PARP2"
+    ],
+    "smiles": "C1CC1C(=O)N2CCN(CC2)C(=O)C3=C(C=CC(=C3)CC4=NNC(=O)C5=CC=CC=C54)F",
+    "target_genes": [
+      "PARP1",
+      "PARP2"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "Osimertinib": {
+    "drug_id": 1919,
+    "primary_targets": [
+      "EGFR"
+    ],
+    "smiles": "CN1C=C(C2=CC=CC=C21)C3=NC(=NC=C3)NC4=C(C=C(C(=C4)NC(=O)C=C)N(C)CCN(C)C)OC",
+    "target_genes": [
+      "EGFR"
+    ],
+    "target_pathway": "EGFR signaling"
+  },
+  "Oxaliplatin": {
+    "drug_id": 1089,
+    "primary_targets": [
+      "DNA alkylating agent"
+    ],
+    "smiles": "C1CC[C@H]([C@@H](C1)[NH-])[NH-].C(=O)(C(=O)O)O.[Pt+2]",
+    "target_genes": [
+      "DNA alkylating agent"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "P22077": {
+    "drug_id": 1933,
+    "primary_targets": [
+      "USP7",
+      "USP47"
+    ],
+    "smiles": "CC(=O)C1=CC(=C(S1)SC2=C(C=C(C=C2)F)F)[N+](=O)[O-]",
+    "target_genes": [
+      "USP7",
+      "USP47"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "PCI-34051": {
+    "drug_id": 1621,
+    "primary_targets": [
+      "HDAC8",
+      "HDAC6",
+      "HDAC1"
+    ],
+    "smiles": "COC1=CC=C(C=C1)CN2C=CC3=C2C=C(C=C3)C(=O)NO",
+    "target_genes": [
+      "HDAC8",
+      "HDAC6",
+      "HDAC1"
+    ],
+    "target_pathway": "Chromatin histone acetylation"
+  },
+  "PD0325901": {
+    "drug_id": 1060,
+    "primary_targets": [
+      "MEK1",
+      "MEK2"
+    ],
+    "smiles": "C1=CC(=C(C=C1I)F)NC2=C(C=CC(=C2F)F)C(=O)NOC[C@@H](CO)O",
+    "target_genes": [
+      "MEK1",
+      "MEK2"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "PD173074": {
+    "drug_id": 1049,
+    "primary_targets": [
+      "FGFR1",
+      "FGFR2",
+      "FGFR3"
+    ],
+    "smiles": "CCN(CC)CCCCNC1=NC2=NC(=C(C=C2C=N1)C3=CC(=CC(=C3)OC)OC)NC(=O)NC(C)(C)C",
+    "target_genes": [
+      "FGFR1",
+      "FGFR2",
+      "FGFR3"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "PF-4708671": {
+    "drug_id": 1129,
+    "primary_targets": [
+      "S6K1"
+    ],
+    "smiles": "CCC1=CN=CN=C1N2CCN(CC2)CC3=NC4=C(N3)C=C(C=C4)C(F)(F)F",
+    "target_genes": [
+      "S6K1"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "PFI-1": {
+    "drug_id": 2173,
+    "primary_targets": [
+      "BRD4"
+    ],
+    "smiles": "CN1CC2=C(C=CC(=C2)NS(=O)(=O)C3=CC=CC=C3OC)NC1=O",
+    "target_genes": [
+      "BRD4"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "PFI3": {
+    "drug_id": 1620,
+    "primary_targets": [
+      "Polybromo 1",
+      "SMARCA4",
+      "SMARCA2"
+    ],
+    "smiles": "C1[C@@H]2CN([C@H]1CN2C3=CC=CC=N3)/C=C/C(=O)C4=CC=CC=C4O",
+    "target_genes": [
+      "Polybromo 1",
+      "SMARCA4",
+      "SMARCA2"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "PLX-4720": {
+    "drug_id": 1036,
+    "primary_targets": [
+      "BRAF"
+    ],
+    "smiles": "CCCS(=O)(=O)NC1=C(C(=C(C=C1)F)C(=O)C2=CNC3=C2C=C(C=N3)Cl)F",
+    "target_genes": [
+      "BRAF"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "POMHEX": {
+    "drug_id": 2148,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "CC(C)(C)C(=O)OCOP(=O)(C1CCCN(C1=O)O)OCOC(=O)C(C)(C)C",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "PRIMA-1MET": {
+    "drug_id": 1131,
+    "primary_targets": [
+      "TP53 activation"
+    ],
+    "smiles": "COCC1(C(=O)C2CCN1CC2)CO",
+    "target_genes": [
+      "TP53 activation"
+    ],
+    "target_pathway": "p53 pathway"
+  },
+  "PRT062607": {
+    "drug_id": 1631,
+    "primary_targets": [
+      "SYK"
+    ],
+    "smiles": "C1CC[C@H]([C@H](C1)N)NC2=NC=C(C(=N2)NC3=CC(=CC=C3)N4N=CC=N4)C(=O)N",
+    "target_genes": [
+      "SYK"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Paclitaxel": {
+    "drug_id": 1080,
+    "primary_targets": [
+      "Microtubule stabiliser"
+    ],
+    "smiles": "CC1=C2[C@H](C(=O)[C@@]3([C@H](C[C@@H]4[C@]([C@H]3[C@@H]([C@@](C2(C)C)(C[C@@H]1OC(=O)[C@@H]([C@H](C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+    "target_genes": [
+      "Microtubule stabiliser"
+    ],
+    "target_pathway": "Mitosis"
+  },
+  "Palbociclib": {
+    "drug_id": 1054,
+    "primary_targets": [
+      "CDK4",
+      "CDK6"
+    ],
+    "smiles": "CC1=C(C(=O)N(C2=NC(=NC=C12)NC3=NC=C(C=C3)N4CCNCC4)C5CCCC5)C(=O)C",
+    "target_genes": [
+      "CDK4",
+      "CDK6"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "Pevonedistat": {
+    "drug_id": 1529,
+    "primary_targets": [
+      "NAE"
+    ],
+    "smiles": "C1CC2=CC=CC=C2[C@H]1NC3=C4C=CN(C4=NC=N3)[C@@H]5C[C@H]([C@H](C5)O)COS(=O)(=O)N",
+    "target_genes": [
+      "NAE"
+    ],
+    "target_pathway": "Other"
+  },
+  "Picolinici-acid": {
+    "drug_id": 1635,
+    "primary_targets": [
+      "Inflammatory related"
+    ],
+    "smiles": "C1=CC=NC(=C1)C(=O)[O-]",
+    "target_genes": [
+      "Inflammatory related"
+    ],
+    "target_pathway": "Other"
+  },
+  "Pictilisib": {
+    "drug_id": 1058,
+    "primary_targets": [
+      "PI3K (class 1)"
+    ],
+    "smiles": "CS(=O)(=O)N1CCN(CC1)CC2=CC3=C(S2)C(=NC(=N3)C4=C5C=NNC5=CC=C4)N6CCOCC6",
+    "target_genes": [
+      "PI3K (class 1)"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Piperlongumine": {
+    "drug_id": 1243,
+    "primary_targets": [
+      "Induces reactive oxygen species"
+    ],
+    "smiles": "COC1=CC(=CC(=C1OC)OC)/C=C/C(=O)N2CCC=CC2=O",
+    "target_genes": [
+      "Induces reactive oxygen species"
+    ],
+    "target_pathway": "Other"
+  },
+  "Podophyllotoxin bromide": {
+    "drug_id": 1825,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "COC1=CC(=CC(=C1OC)OC)[C@H]2[C@@H]3[C@H](COC3=O)C(C4=CC5=C(C=C24)OCO5)Br",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "Pyridostatin": {
+    "drug_id": 2044,
+    "primary_targets": [
+      "G-quadruplex stabiliser"
+    ],
+    "smiles": "C1=CC=C2C(=C1)C(=CC(=N2)NC(=O)C3=CC(=CC(=N3)C(=O)NC4=NC5=CC=CC=C5C(=C4)OCCN)OCCN)OCCN",
+    "target_genes": [
+      "G-quadruplex stabiliser"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "RO-3306": {
+    "drug_id": 1052,
+    "primary_targets": [
+      "CDK1"
+    ],
+    "smiles": "C1=CC2=C(C=CC(=C2)C=C3C(=O)NC(=NCC4=CC=CS4)S3)N=C1",
+    "target_genes": [
+      "CDK1"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "RVX-208": {
+    "drug_id": 1625,
+    "primary_targets": [
+      "BRD4"
+    ],
+    "smiles": "CC1=CC(=CC(=C1OCCO)C)C2=NC3=C(C(=CC(=C3)OC)OC)C(=O)N2",
+    "target_genes": [
+      "BRD4"
+    ],
+    "target_pathway": "Chromatin other"
+  },
+  "Rapamycin": {
+    "drug_id": 1084,
+    "primary_targets": [
+      "MTORC1"
+    ],
+    "smiles": "C[C@@H]1CC[C@H]2C[C@@H](/C(=C/C=C/C=C/[C@H](C[C@H](C(=O)[C@@H]([C@@H](/C(=C/[C@H](C(=O)C[C@H](OC(=O)[C@@H]3CCCCN3C(=O)C(=O)[C@@]1(O2)O)[C@H](C)C[C@@H]4CC[C@H]([C@@H](C4)OC)O)C)/C)O)OC)C)C)/C)OC",
+    "target_genes": [
+      "MTORC1"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Refametinib": {
+    "drug_id": 1014,
+    "primary_targets": [
+      "MEK1",
+      "MEK2"
+    ],
+    "smiles": "COC1=CC(=C(C(=C1NS(=O)(=O)C2(CC2)C[C@@H](CO)O)NC3=C(C=C(C=C3)I)F)F)F",
+    "target_genes": [
+      "MEK1",
+      "MEK2"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "Remodelin": {
+    "drug_id": 2057,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "C1CCC(=NNC2=NC(=CS2)C3=CC=C(C=C3)C#N)C1",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "Ribociclib": {
+    "drug_id": 1632,
+    "primary_targets": [
+      "CDK4",
+      "CDK6"
+    ],
+    "smiles": "CN(C)C(=O)C1=CC2=CN=C(N=C2N1C3CCCC3)NC4=NC=C(C=C4)N5CCNCC5",
+    "target_genes": [
+      "CDK4",
+      "CDK6"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "Romidepsin": {
+    "drug_id": 1817,
+    "primary_targets": [
+      "HDAC1",
+      "HDAC2",
+      "HDAC3"
+    ],
+    "smiles": "C/C=C\\1/C(=O)N[C@H](C(=O)O[C@H]\\2CC(=O)N[C@@H](C(=O)N[C@H](CSSCC/C=C2)C(=O)N1)C(C)C)C(C)C",
+    "target_genes": [
+      "HDAC1",
+      "HDAC2",
+      "HDAC3",
+      "HDAC8"
+    ],
+    "target_pathway": "Chromatin histone acetylation"
+  },
+  "Rucaparib": {
+    "drug_id": 1175,
+    "primary_targets": [
+      "PARP1",
+      "PARP2"
+    ],
+    "smiles": "CNCC1=CC=C(C=C1)C2=C3CCNC(=O)C4=C3C(=CC(=C4)F)N2",
+    "target_genes": [
+      "PARP1",
+      "PARP2"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "Ruxolitinib": {
+    "drug_id": 1507,
+    "primary_targets": [
+      "JAK1",
+      "JAK2"
+    ],
+    "smiles": "C1CCC(C1)[C@@H](CC#N)N2C=C(C=N2)C3=C4C=CNC4=NC=N3",
+    "target_genes": [
+      "JAK1",
+      "JAK2"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "SB216763": {
+    "drug_id": 1025,
+    "primary_targets": [
+      "GSK3A",
+      "GSK3B"
+    ],
+    "smiles": "CN1C=C(C2=CC=CC=C21)C3=C(C(=O)NC3=O)C4=C(C=C(C=C4)Cl)Cl",
+    "target_genes": [
+      "GSK3A",
+      "GSK3B"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "SB505124": {
+    "drug_id": 1194,
+    "primary_targets": [
+      "TGFBR1",
+      "ACVR1B",
+      "ACVR1C"
+    ],
+    "smiles": "CC1=NC(=CC=C1)C2=C(N=C(N2)C(C)(C)C)C3=CC4=C(C=C3)OCO4",
+    "target_genes": [
+      "TGFBR1",
+      "ACVR1B",
+      "ACVR1C"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "SB590885": {
+    "drug_id": 1061,
+    "primary_targets": [
+      "BRAF"
+    ],
+    "smiles": "CN(C)CCOC1=CC=C(C=C1)C2=NC(=C(N2)C3=CC=NC=C3)C4=CC5=C(C=C4)C(=NO)CC5",
+    "target_genes": [
+      "BRAF"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "SCH772984": {
+    "drug_id": 1564,
+    "primary_targets": [
+      "ERK1",
+      "ERK2"
+    ],
+    "smiles": "C1CN(C[C@@H]1C(=O)NC2=CC3=C(C=C2)NN=C3C4=CC=NC=C4)CC(=O)N5CCN(CC5)C6=CC=C(C=C6)C7=NC=CC=N7",
+    "target_genes": [
+      "ERK1",
+      "ERK2"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "SGC-CBP30": {
+    "drug_id": 1582,
+    "primary_targets": [
+      "EP300",
+      "CBP"
+    ],
+    "smiles": "CC1=C(C(=NO1)C)C2=CC3=C(C=C2)N(C(=N3)CCC4=CC(=C(C=C4)OC)Cl)C[C@H](C)N5CCOCC5",
+    "target_genes": [
+      "EP300",
+      "CBP"
+    ],
+    "target_pathway": "Chromatin histone acetylation"
+  },
+  "SGC0946": {
+    "drug_id": 2177,
+    "primary_targets": [
+      "DOT1L"
+    ],
+    "smiles": "CC(C)N(CCCNC(=O)NC1=CC=C(C=C1)C(C)(C)C)C[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=C(C4=C(N=CN=C43)N)Br)O)O",
+    "target_genes": [
+      "DOT1L"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "SL0101": {
+    "drug_id": 1039,
+    "primary_targets": [
+      "RSK",
+      "AURKB",
+      "PIM1"
+    ],
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(OC3=CC(=CC(=C3C2=O)O)O)C4=CC=C(C=C4)O)O)OC(=O)C)OC(=O)C",
+    "target_genes": [
+      "RSK",
+      "AURKB",
+      "PIM1",
+      "PIM3"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "SN-38": {
+    "drug_id": 1494,
+    "primary_targets": [
+      "TOP1"
+    ],
+    "smiles": "CCC1=C2CN3C(=CC4=C(C3=O)COC(=O)[C@@]4(CC)O)C2=NC5=C1C=C(C=C5)O",
+    "target_genes": [
+      "TOP1"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Sabutoclax": {
+    "drug_id": 1849,
+    "primary_targets": [
+      "BCL2",
+      "BCL-XL",
+      "BFL1"
+    ],
+    "smiles": "CC1=CC2=C(C(=C(C=C2C(=C1C3=C(C4=CC(=C(C(=C4C=C3C)C(=O)NC[C@H](C)C5=CC=CC=C5)O)O)O)O)O)O)C(=O)NC[C@H](C)C6=CC=CC=C6",
+    "target_genes": [
+      "BCL2",
+      "BCL-XL",
+      "BFL1",
+      "MCL1"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "Sapitinib": {
+    "drug_id": 1549,
+    "primary_targets": [
+      "EGFR",
+      "ERBB2",
+      "ERBB3"
+    ],
+    "smiles": "CNC(=O)CN1CCC(CC1)OC2=C(C=C3C(=C2)C(=NC=N3)NC4=C(C(=CC=C4)Cl)F)OC",
+    "target_genes": [
+      "EGFR",
+      "ERBB2",
+      "ERBB3"
+    ],
+    "target_pathway": "EGFR signaling"
+  },
+  "Savolitinib": {
+    "drug_id": 1936,
+    "primary_targets": [
+      "MET"
+    ],
+    "smiles": "C[C@@H](C1=CN2C=CN=C2C=C1)N3C4=NC(=CN=C4N=N3)C5=CN(N=C5)C",
+    "target_genes": [
+      "MET"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "Schweinfurthin A": {
+    "drug_id": 1845,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "CC(=CCC/C(=C/CC1=C(C=C(C=C1O)/C=C/C2=CC3=C(C(=C2)O)O[C@@]4(C[C@H]([C@H](C([C@H]4C3)(C)C)O)O)C)O)/C)C",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "Selumetinib": {
+    "drug_id": 1062,
+    "primary_targets": [
+      "MEK1",
+      "MEK2"
+    ],
+    "smiles": "CN1C=NC2=C1C=C(C(=C2F)NC3=C(C=C(C=C3)Br)Cl)C(=O)NOCCO",
+    "target_genes": [
+      "MEK1",
+      "MEK2"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "Sepantronium bromide": {
+    "drug_id": 1941,
+    "primary_targets": [
+      "BIRC5"
+    ],
+    "smiles": "CC1=[N+](C2=C(N1CCOC)C(=O)C3=CC=CC=C3C2=O)CC4=NC=CN=C4.[Br-]",
+    "target_genes": [
+      "BIRC5"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "Serdemetan": {
+    "drug_id": 1133,
+    "primary_targets": [
+      "MDM2"
+    ],
+    "smiles": "C1=CC=C2C(=C1)C(=CN2)CCNC3=CC=C(C=C3)NC4=CC=NC=C4",
+    "target_genes": [
+      "MDM2"
+    ],
+    "target_pathway": "p53 pathway"
+  },
+  "Sinularin": {
+    "drug_id": 1838,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "C/C/1=C\\CC[C@]([C@H]2C[C@@H](CC[C@]3([C@@H](O3)CC1)C)C(=C)C(=O)O2)(C)O",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "Unclassified"
+  },
+  "Sorafenib": {
+    "drug_id": 1085,
+    "primary_targets": [
+      "PDGFR",
+      "KIT",
+      "VEGFR"
+    ],
+    "smiles": "CNC(=O)C1=NC=CC(=C1)OC2=CC=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F",
+    "target_genes": [
+      "PDGFR",
+      "KIT",
+      "VEGFR",
+      "RAF"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Staurosporine": {
+    "drug_id": 1034,
+    "primary_targets": [
+      "Broad spectrum kinase inhibitor"
+    ],
+    "smiles": "C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)CNC6=O)NC)OC",
+    "target_genes": [
+      "Broad spectrum kinase inhibitor"
+    ],
+    "target_pathway": "RTK signaling"
+  },
+  "TW 37": {
+    "drug_id": 1149,
+    "primary_targets": [
+      "BCL2",
+      "BCL-XL",
+      "MCL1"
+    ],
+    "smiles": "CC(C)C1=CC=CC=C1CC2=CC(=C(C(=C2O)O)O)C(=O)NC3=CC=C(C=C3)S(=O)(=O)C4=CC=CC=C4C(C)(C)C",
+    "target_genes": [
+      "BCL2",
+      "BCL-XL",
+      "MCL1"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "Talazoparib": {
+    "drug_id": 1259,
+    "primary_targets": [
+      "PARP1",
+      "PARP2"
+    ],
+    "smiles": "CN1C(=NC=N1)[C@@H]2[C@H](NC3=CC(=CC4=C3C2=NNC4=O)F)C5=CC=C(C=C5)F",
+    "target_genes": [
+      "PARP1",
+      "PARP2"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "Tamoxifen": {
+    "drug_id": 1199,
+    "primary_targets": [
+      "ESR1"
+    ],
+    "smiles": "CC/C(=C(\\C1=CC=CC=C1)/C2=CC=C(C=C2)OCCN(C)C)/C3=CC=CC=C3",
+    "target_genes": [
+      "ESR1"
+    ],
+    "target_pathway": "Hormone-related"
+  },
+  "Tanespimycin": {
+    "drug_id": 1026,
+    "primary_targets": [
+      "HSP90"
+    ],
+    "smiles": "C[C@H]1C[C@@H]([C@@H]([C@H](/C=C(/[C@@H]([C@H](/C=C\\C=C(\\C(=O)NC2=CC(=O)C(=C(C1)C2=O)NCC=C)/C)OC)OC(=O)N)\\C)C)O)OC",
+    "target_genes": [
+      "HSP90"
+    ],
+    "target_pathway": "Protein stability and degradation"
+  },
+  "Taselisib": {
+    "drug_id": 1561,
+    "primary_targets": [
+      "PI3K (beta sparing)"
+    ],
+    "smiles": "CC1=NN(C(=N1)C2=CN3CCOC4=C(C3=N2)C=CC(=C4)C5=CN(N=C5)C(C)(C)C(=O)N)C(C)C",
+    "target_genes": [
+      "PI3K (beta sparing)"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Telomerase Inhibitor IX": {
+    "drug_id": 1930,
+    "primary_targets": [
+      "Telomerase"
+    ],
+    "smiles": "C1=CC(=CC(=C1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O",
+    "target_genes": [
+      "Telomerase"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "Temozolomide": {
+    "drug_id": 1375,
+    "primary_targets": [
+      "DNA alkylating agent"
+    ],
+    "smiles": "CN1C(=O)N2C=NC(=C2N=N1)C(=O)N",
+    "target_genes": [
+      "DNA alkylating agent"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Temsirolimus": {
+    "drug_id": 1016,
+    "primary_targets": [
+      "MTOR"
+    ],
+    "smiles": "C[C@@H]1CC[C@H]2C[C@@H](/C(=C/C=C/C=C/[C@H](C[C@H](C(=O)[C@@H]([C@@H](/C(=C/[C@H](C(=O)C[C@H](OC(=O)[C@@H]3CCCCN3C(=O)C(=O)[C@@]1(O2)O)[C@H](C)C[C@@H]4CC[C@H]([C@@H](C4)OC)OC(=O)C(C)(CO)CO)C)/C)O)OC)C)C)/C)OC",
+    "target_genes": [
+      "MTOR"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "Teniposide": {
+    "drug_id": 1809,
+    "primary_targets": [
+      "nan"
+    ],
+    "smiles": "COC1=CC(=CC(=C1O)OC)[C@H]2[C@@H]3[C@H](COC3=O)[C@@H](C4=CC5=C(C=C24)OCO5)O[C@H]6[C@@H]([C@H]([C@H]7[C@H](O6)CO[C@H](O7)C8=CC=CS8)O)O",
+    "target_genes": [
+      "nan"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Topotecan": {
+    "drug_id": 1808,
+    "primary_targets": [
+      "TOP1"
+    ],
+    "smiles": "CC[C@@]1(C2=C(COC1=O)C(=O)N3CC4=CC5=C(C=CC(=C5CN(C)C)O)N=C4C3=C2)O",
+    "target_genes": [
+      "TOP1"
+    ],
+    "target_pathway": "DNA replication"
+  },
+  "Tozasertib": {
+    "drug_id": 1096,
+    "primary_targets": [
+      "AURKA",
+      "AURKB",
+      "AURKC"
+    ],
+    "smiles": "CC1=CC(=NN1)NC2=CC(=NC(=N2)SC3=CC=C(C=C3)NC(=O)C4CC4)N5CCN(CC5)C",
+    "target_genes": [
+      "AURKA",
+      "AURKB",
+      "AURKC",
+      "others"
+    ],
+    "target_pathway": "Mitosis"
+  },
+  "Trametinib": {
+    "drug_id": 1372,
+    "primary_targets": [
+      "MEK1",
+      "MEK2"
+    ],
+    "smiles": "CC1=C2C(=C(N(C1=O)C)NC3=C(C=C(C=C3)I)F)C(=O)N(C(=O)N2C4=CC=CC(=C4)NC(=O)C)C5CC5",
+    "target_genes": [
+      "MEK1",
+      "MEK2"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "Tretinoin": {
+    "drug_id": 1009,
+    "primary_targets": [
+      "Retinoic acid"
+    ],
+    "smiles": "CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C",
+    "target_genes": [
+      "Retinoic acid"
+    ],
+    "target_pathway": "Other"
+  },
+  "UMI-77": {
+    "drug_id": 1939,
+    "primary_targets": [
+      "MCL1"
+    ],
+    "smiles": "C1=CC=C2C(=C1)C(=CC(=C2O)SCC(=O)O)NS(=O)(=O)C3=CC=C(C=C3)Br",
+    "target_genes": [
+      "MCL1"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "UNC0379": {
+    "drug_id": 2159,
+    "primary_targets": [
+      "SETD8"
+    ],
+    "smiles": "COC1=C(C=C2C(=C1)C(=NC(=N2)N3CCCC3)NCCCCCN4CCCC4)OC",
+    "target_genes": [
+      "SETD8"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "UNC0638": {
+    "drug_id": 2038,
+    "primary_targets": [
+      "G9A",
+      "GLP"
+    ],
+    "smiles": "CC(C)N1CCC(CC1)NC2=NC(=NC3=CC(=C(C=C32)OC)OCCCN4CCCC4)C5CCCCC5",
+    "target_genes": [
+      "G9A",
+      "GLP"
+    ],
+    "target_pathway": "Chromatin histone methylation"
+  },
+  "Ulixertinib": {
+    "drug_id": 1908,
+    "primary_targets": [
+      "ERK1",
+      "ERK2"
+    ],
+    "smiles": "CC(C)NC1=NC=C(C(=C1)C2=CNC(=C2)C(=O)N[C@H](CO)C3=CC(=CC=C3)Cl)Cl",
+    "target_genes": [
+      "ERK1",
+      "ERK2"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "Uprosertib": {
+    "drug_id": 1553,
+    "primary_targets": [
+      "AKT1",
+      "AKT2",
+      "AKT3"
+    ],
+    "smiles": "CN1C(=C(C=N1)Cl)C2=C(OC(=C2)C(=O)N[C@@H](CC3=CC(=C(C=C3)F)F)CN)Cl",
+    "target_genes": [
+      "AKT1",
+      "AKT2",
+      "AKT3"
+    ],
+    "target_pathway": "PI3K/MTOR signaling"
+  },
+  "VE-822": {
+    "drug_id": 1613,
+    "primary_targets": [
+      "ATR"
+    ],
+    "smiles": "CC(C)S(=O)(=O)C1=CC=C(C=C1)C2=CN=C(C(=N2)C3=CC(=NO3)C4=CC=C(C=C4)CNC)N",
+    "target_genes": [
+      "ATR"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "VE821": {
+    "drug_id": 2111,
+    "primary_targets": [
+      "ATR"
+    ],
+    "smiles": "CS(=O)(=O)C1=CC=C(C=C1)C2=CN=C(C(=N2)C(=O)NC3=CC=CC=C3)N",
+    "target_genes": [
+      "ATR"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "VX-11e": {
+    "drug_id": 2096,
+    "primary_targets": [
+      "ERK2"
+    ],
+    "smiles": "CC1=CN=C(N=C1C2=CNC(=C2)C(=O)N[C@H](CO)C3=CC(=CC=C3)Cl)NC4=C(C=C(C=C4)F)Cl",
+    "target_genes": [
+      "ERK2"
+    ],
+    "target_pathway": "ERK MAPK signaling"
+  },
+  "Veliparib": {
+    "drug_id": 1018,
+    "primary_targets": [
+      "PARP1",
+      "PARP2"
+    ],
+    "smiles": "C[C@@]1(CCCN1)C2=NC3=C(C=CC=C3N2)C(=O)N",
+    "target_genes": [
+      "PARP1",
+      "PARP2"
+    ],
+    "target_pathway": "Genome integrity"
+  },
+  "Venetoclax": {
+    "drug_id": 1909,
+    "primary_targets": [
+      "BCL2"
+    ],
+    "smiles": "CC1(CCC(=C(C1)C2=CC=C(C=C2)Cl)CN3CCN(CC3)C4=CC(=C(C=C4)C(=O)NS(=O)(=O)C5=CC(=C(C=C5)NCC6CCOCC6)[N+](=O)[O-])OC7=CN=C8C(=C7)C=CN8)C",
+    "target_genes": [
+      "BCL2"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "Vinblastine": {
+    "drug_id": 1004,
+    "primary_targets": [
+      "Microtubule destabiliser"
+    ],
+    "smiles": "CC[C@@]1(C[C@H]2C[C@@](C3=C(CCN(C2)C1)C4=CC=CC=C4N3)(C5=C(C=C6C(=C5)[C@]78CCN9[C@H]7[C@@](C=CC9)([C@H]([C@@]([C@@H]8N6C)(C(=O)OC)O)OC(=O)C)CC)OC)C(=O)OC)O",
+    "target_genes": [
+      "Microtubule destabiliser"
+    ],
+    "target_pathway": "Mitosis"
+  },
+  "Vinorelbine": {
+    "drug_id": 2048,
+    "primary_targets": [
+      "Microtubule destabiliser"
+    ],
+    "smiles": "CCC1=C[C@H]2C[C@@](C3=C(CN(C2)C1)C4=CC=CC=C4N3)(C5=C(C=C6C(=C5)[C@]78CCN9[C@H]7[C@@](C=CC9)([C@H]([C@@]([C@@H]8N6C)(C(=O)OC)O)OC(=O)C)CC)OC)C(=O)OC",
+    "target_genes": [
+      "Microtubule destabiliser"
+    ],
+    "target_pathway": "Mitosis"
+  },
+  "Vismodegib": {
+    "drug_id": 1033,
+    "primary_targets": [
+      "SMO"
+    ],
+    "smiles": "CS(=O)(=O)C1=CC(=C(C=C1)C(=O)NC2=CC(=C(C=C2)Cl)C3=CC=CC=N3)Cl",
+    "target_genes": [
+      "SMO"
+    ],
+    "target_pathway": "Other"
+  },
+  "Vorinostat": {
+    "drug_id": 1012,
+    "primary_targets": [
+      "HDAC inhibitor Class I",
+      "IIa",
+      "IIb"
+    ],
+    "smiles": "C1=CC=C(C=C1)NC(=O)CCCCCCC(=O)NO",
+    "target_genes": [
+      "HDAC inhibitor Class I",
+      "IIa",
+      "IIb",
+      "IV"
+    ],
+    "target_pathway": "Chromatin histone acetylation"
+  },
+  "WEHI-539": {
+    "drug_id": 1997,
+    "primary_targets": [
+      "BCL-XL"
+    ],
+    "smiles": "C1CC2=C(C=C(C=C2)C3=NC(=C(S3)CCCOC4=CC=C(C=C4)CN)C(=O)O)/C(=N/NC5=NC6=CC=CC=C6S5)/C1",
+    "target_genes": [
+      "BCL-XL"
+    ],
+    "target_pathway": "Apoptosis regulation"
+  },
+  "WIKI4": {
+    "drug_id": 1940,
+    "primary_targets": [
+      "TNKS1",
+      "TNKS2"
+    ],
+    "smiles": "COC1=CC=C(C=C1)N2C(=NN=C2SCCCN3C(=O)C4=CC=CC5=C4C(=CC=C5)C3=O)C6=CC=NC=C6",
+    "target_genes": [
+      "TNKS1",
+      "TNKS2"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "WZ4003": {
+    "drug_id": 1614,
+    "primary_targets": [
+      "NUAK1",
+      "NUAK2"
+    ],
+    "smiles": "CCC(=O)NC1=CC(=CC=C1)OC2=NC(=NC=C2Cl)NC3=C(C=C(C=C3)N4CCN(CC4)C)OC",
+    "target_genes": [
+      "NUAK1",
+      "NUAK2"
+    ],
+    "target_pathway": "Other, kinases"
+  },
+  "Wee1 Inhibitor": {
+    "drug_id": 1046,
+    "primary_targets": [
+      "WEE1",
+      "CHEK1"
+    ],
+    "smiles": "C1=CC=C(C(=C1)C2=CC3=C(C4=C(N3)C=CC(=C4)O)C5=C2C(=O)NC5=O)Cl",
+    "target_genes": [
+      "WEE1",
+      "CHEK1"
+    ],
+    "target_pathway": "Cell cycle"
+  },
+  "Wnt-C59": {
+    "drug_id": 1622,
+    "primary_targets": [
+      "PORCN"
+    ],
+    "smiles": "CC1=NC=CC(=C1)C2=CC=C(C=C2)CC(=O)NC3=CC=C(C=C3)C4=CN=CC=C4",
+    "target_genes": [
+      "PORCN"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "XAV939": {
+    "drug_id": 1268,
+    "primary_targets": [
+      "TNKS1",
+      "TNKS2"
+    ],
+    "smiles": "C1CSCC2=C1N=C(NC2=O)C3=CC=C(C=C3)C(F)(F)F",
+    "target_genes": [
+      "TNKS1",
+      "TNKS2"
+    ],
+    "target_pathway": "WNT signaling"
+  },
+  "YK-4-279": {
+    "drug_id": 1239,
+    "primary_targets": [
+      "RNA helicase A"
+    ],
+    "smiles": "COC1=CC=C(C=C1)C(=O)CC2(C3=C(C=CC(=C3NC2=O)Cl)Cl)O",
+    "target_genes": [
+      "RNA helicase A"
+    ],
+    "target_pathway": "Other"
+  },
+  "ZM447439": {
+    "drug_id": 1050,
+    "primary_targets": [
+      "AURKA",
+      "AURKB"
+    ],
+    "smiles": "COC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC=C(C=C3)NC(=O)C4=CC=CC=C4)OCCCN5CCOCC5",
+    "target_genes": [
+      "AURKA",
+      "AURKB"
+    ],
+    "target_pathway": "Mitosis"
+  },
+  "alpha-lipoic acid": {
+    "drug_id": 2498,
+    "primary_targets": [
+      "Metabolism"
+    ],
+    "smiles": "C1CSSC1CCCCC(=O)O",
+    "target_genes": [
+      "Metabolism"
+    ],
+    "target_pathway": "Metabolism"
+  },
+  "ascorbate (vitamin C)": {
+    "drug_id": 2438,
+    "primary_targets": [
+      "anti-oxidant proteins"
+    ],
+    "smiles": "C([C@@H]([C@@H]1C(=C(C(=O)O1)O)O)O)O",
+    "target_genes": [
+      "anti-oxidant proteins"
+    ],
+    "target_pathway": "Other"
+  },
+  "glutathione": {
+    "drug_id": 2439,
+    "primary_targets": [
+      "anti-oxidant proteins"
+    ],
+    "smiles": "C(CC(=O)N[C@@H](CS)C(=O)NCC(=O)O)[C@@H](C(=O)O)N",
+    "target_genes": [
+      "anti-oxidant proteins"
+    ],
+    "target_pathway": "Other"
+  }
+}

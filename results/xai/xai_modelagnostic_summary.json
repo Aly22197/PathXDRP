@@ -1,0 +1,42 @@
+{
+  "pathxdrp": {
+    "n_drugs_evaluated": 237,
+    "perm_pw_target_pathway_auroc_mean": 0.49729823517747374,
+    "occ_pw_target_pathway_auroc_mean": 0.35111375503998943,
+    "perm_pw_target_in_top5_rate": 0.018292682926829267,
+    "occ_pw_target_in_top5_rate": 0.0,
+    "perm_pw_target_in_top10_rate": 0.024390243902439025,
+    "occ_pw_target_in_top10_rate": 0.012195121951219513,
+    "faith_curve_comp_auc_mean": 0.9491478959373533
+  },
+  "drpreter": {
+    "n_drugs_evaluated": 237,
+    "perm_pw_target_pathway_auroc_mean": 0.43902439024390244,
+    "occ_pw_target_pathway_auroc_mean": 0.44751801176548356,
+    "perm_pw_target_in_top5_rate": 0.0,
+    "occ_pw_target_in_top5_rate": 0.0,
+    "perm_pw_target_in_top10_rate": 0.0,
+    "occ_pw_target_in_top10_rate": 0.006097560975609756,
+    "faith_curve_comp_auc_mean": 1.1638768016789027
+  },
+  "graphdrp": {
+    "n_drugs_evaluated": 237,
+    "perm_pw_target_pathway_auroc_mean": 0.4952409280190363,
+    "occ_pw_target_pathway_auroc_mean": 0.5137814792782074,
+    "perm_pw_target_in_top5_rate": 0.0,
+    "occ_pw_target_in_top5_rate": 0.012195121951219513,
+    "perm_pw_target_in_top10_rate": 0.018292682926829267,
+    "occ_pw_target_in_top10_rate": 0.024390243902439025,
+    "faith_curve_comp_auc_mean": 0.35726966764443885
+  },
+  "cdrscan": {
+    "n_drugs_evaluated": 237,
+    "perm_pw_target_pathway_auroc_mean": 0.47723742481327247,
+    "occ_pw_target_pathway_auroc_mean": 0.5309174433207746,
+    "perm_pw_target_in_top5_rate": 0.0,
+    "occ_pw_target_in_top5_rate": 0.0,
+    "perm_pw_target_in_top10_rate": 0.006097560975609756,
+    "occ_pw_target_in_top10_rate": 0.012195121951219513,
+    "faith_curve_comp_auc_mean": 0.17859777859363013
+  }
+}

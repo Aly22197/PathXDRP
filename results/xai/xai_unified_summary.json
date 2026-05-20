@@ -1,0 +1,154 @@
+{
+  "per_model": {
+    "pathxdrp": {
+      "multimodel_n_drugs": 237,
+      "agnostic_n_drugs": 237,
+      "multimodel_internal_agreement": {
+        "ig_target_auroc vs attn_target_auroc": {
+          "n": 160,
+          "spearman": 0.7097925130504701
+        }
+      },
+      "cross_runner_agreement": {
+        "ig_target_auroc vs occ_pw_target_pathway_auroc": {
+          "n": 124,
+          "rho": 0.126983756127094
+        },
+        "ig_target_auroc vs perm_pw_target_pathway_auroc": {
+          "n": 124,
+          "rho": 0.19369610358684763
+        },
+        "occ_pw_target_pathway_auroc vs perm_pw_target_pathway_auroc": {
+          "n": 164,
+          "rho": 0.14321269141367785
+        }
+      }
+    },
+    "drpreter": {
+      "multimodel_n_drugs": 237,
+      "agnostic_n_drugs": 237,
+      "multimodel_internal_agreement": {
+        "ig_target_auroc vs attn_target_auroc": {
+          "n": 160,
+          "spearman": 0.8000638871842987
+        }
+      },
+      "cross_runner_agreement": {
+        "ig_target_auroc vs occ_pw_target_pathway_auroc": {
+          "n": 124,
+          "rho": 0.07060455254118622
+        },
+        "ig_target_auroc vs perm_pw_target_pathway_auroc": {
+          "n": 124,
+          "rho": 0.1588614885081064
+        },
+        "occ_pw_target_pathway_auroc vs perm_pw_target_pathway_auroc": {
+          "n": 164,
+          "rho": 0.4333300230855771
+        }
+      }
+    },
+    "graphdrp": {
+      "multimodel_n_drugs": 237,
+      "agnostic_n_drugs": 237,
+      "multimodel_internal_agreement": {
+        "ig_target_auroc vs attn_target_auroc": {
+          "n": 0,
+          "spearman": NaN
+        }
+      },
+      "cross_runner_agreement": {
+        "ig_target_auroc vs occ_pw_target_pathway_auroc": {
+          "n": 127,
+          "rho": -0.06732119870872907
+        },
+        "ig_target_auroc vs perm_pw_target_pathway_auroc": {
+          "n": 127,
+          "rho": 0.011336755845825117
+        },
+        "occ_pw_target_pathway_auroc vs perm_pw_target_pathway_auroc": {
+          "n": 164,
+          "rho": 0.6838022387604088
+        }
+      }
+    },
+    "cdrscan": {
+      "multimodel_n_drugs": 237,
+      "agnostic_n_drugs": 237,
+      "multimodel_internal_agreement": {
+        "ig_target_auroc vs attn_target_auroc": {
+          "n": 0,
+          "spearman": NaN
+        }
+      },
+      "cross_runner_agreement": {
+        "ig_target_auroc vs occ_pw_target_pathway_auroc": {
+          "n": 127,
+          "rho": 0.1466809235264854
+        },
+        "ig_target_auroc vs perm_pw_target_pathway_auroc": {
+          "n": 127,
+          "rho": 0.029507918200178215
+        },
+        "occ_pw_target_pathway_auroc vs perm_pw_target_pathway_auroc": {
+          "n": 164,
+          "rho": 0.7216262248623684
+        }
+      }
+    }
+  },
+  "method_agreement": {
+    "pathxdrp vs drpreter (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.9196077684356748
+    },
+    "pathxdrp vs graphdrp (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.3875501558195976
+    },
+    "pathxdrp vs cdrscan (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.3294000297225272
+    },
+    "drpreter vs pathxdrp (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.9196077684356748
+    },
+    "drpreter vs graphdrp (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.3306675839266444
+    },
+    "drpreter vs cdrscan (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.31827112567561056
+    },
+    "graphdrp vs pathxdrp (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.3875501558195976
+    },
+    "graphdrp vs drpreter (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.3306675839266444
+    },
+    "graphdrp vs cdrscan (IG target AUROC)": {
+      "n": 163,
+      "rho": 0.5438207944847504
+    },
+    "cdrscan vs pathxdrp (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.3294000297225272
+    },
+    "cdrscan vs drpreter (IG target AUROC)": {
+      "n": 160,
+      "rho": 0.31827112567561056
+    },
+    "cdrscan vs graphdrp (IG target AUROC)": {
+      "n": 163,
+      "rho": 0.5438207944847504
+    }
+  },
+  "global": {
+    "n_models_with_multimodel": 4,
+    "n_models_with_agnostic": 4
+  }
+}

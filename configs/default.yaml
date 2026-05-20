@@ -1,0 +1,72 @@
+# PathXDRP default configuration
+# Override any field on the CLI: python -m pathxdrp.train split=cell_blind seed=1
+
+data:
+  version: GDSC2              # GDSC1 | GDSC2
+  require_smiles: true
+  fg_vocab_size: 256          # Morgan-2 bits for FG one-hot
+
+model:
+  hidden_dim: 256
+  n_gat_layers: 4
+  n_attn_heads: 8
+  dropout: 0.1
+  mask_type: soft             # hard | soft | none
+  entropy_reg_weight: 0.01
+  evidential_lam: 0.01
+  use_molformer: false        # true requires ~1.5 GB VRAM extra
+
+  # Encoder ablation switches (Phase 4)
+  drug_encoder_type: gat      # gat | molformer | graph_mamba
+  cell_encoder_type: pathway_set  # pathway_set | gene_mamba | scgpt
+
+  # Graph-Mamba drug encoder (only used when drug_encoder_type == graph_mamba)
+  graph_mamba:
+    n_gat_layers: 2           # local message passing before Mamba
+    n_mamba_layers: 2         # bidirectional Mamba blocks over atom sequence
+    ordering: degree          # degree | canonical | random
+
+  # GeneMamba cell encoder (only used when cell_encoder_type == gene_mamba)
+  gene_mamba:
+    backbone_id: mineself2016/GeneMamba
+    top_k: 2048               # top-K expressed genes per cell (GeneMamba convention)
+    freeze_backbone: true     # only train the pathway adapter
+    n_layers_fallback: 4      # if HF download fails, build a small Bi-Mamba stack
+    backbone_dim_fallback: 256
+
+training:
+  split: random               # random | cell_blind | drug_blind | scaffold_blind | tissue_blind
+  seed: 0
+  fold: 0
+  batch_size: 256
+  epochs: 150
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  grad_clip: 1.0
+  scheduler: cosine           # cosine | plateau
+  ensemble_seeds: [0, 1, 2, 3, 4]
+
+eval:
+  primary_metric: PCC
+  coverage_thresholds: [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  n_ece_bins: 15
+
+explain:
+  moa_benchmark_path: data/processed/moa_benchmark.json
+  n_ig_steps: 50
+  methods:
+    - attention_rollout
+    - integrated_gradients
+    - gnnexplainer
+    - pgexplainer
+
+logging:
+  project: pathxdrp
+  entity: null                # set to your wandb username
+  log_interval: 10
+
+paths:
+  processed: data/processed
+  checkpoints: checkpoints
+  results: results
+  figures: figures

@@ -1,0 +1,32 @@
+{
+  "args": {
+    "model": "drpreter",
+    "dataset": "GDSC2",
+    "split": "random",
+    "seed": 1,
+    "fold": 0,
+    "hidden_dim": 128,
+    "n_gin_layers": 5,
+    "n_gat_layers": 3,
+    "n_attn_heads": 8,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "epochs": 50,
+    "lr": 0.0005,
+    "log_interval": 10,
+    "early_stop_patience": 10
+  },
+  "test": {
+    "RMSE": 1.0679508523062236,
+    "MAE": 0.7888991832733154,
+    "PCC": 0.9230512380599976,
+    "Spearman": 0.8816268375840152,
+    "R2": 0.8510681986808777,
+    "Per-drug PCC": 0.6980020999908447,
+    "Per-cell PCC": 0.9001120328903198
+  },
+  "best_val_pcc": 0.9302589297294617,
+  "best_val_epoch": 50,
+  "total_train_sec": 6216.454944610596,
+  "n_params": 627073
+}

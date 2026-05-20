@@ -1,0 +1,4759 @@
+{
+  "summary": {
+    "attention": {
+      "target_auroc": 0.5691901438956019,
+      "sensitivity_alignment": 0.5583784989693615,
+      "faithfulness_suff": 0.028154252144166187,
+      "faithfulness_comp": 0.02345921561310563,
+      "sparsity": 0.9999574182943148
+    },
+    "integrated_gradients": {
+      "target_auroc": 0.7984392912218305,
+      "faithfulness_suff": NaN,
+      "faithfulness_comp": NaN,
+      "sparsity": NaN
+    }
+  },
+  "per_drug": [
+    {
+      "drug": "5-Fluorouracil",
+      "n_cells": 5,
+      "attn_time_s": 0.45270276069641113,
+      "raw_targets": [
+        "Antimetabolite (DNA & RNA)"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5208085612366231,
+      "attention_faithfulness_suff": 0.002849102020263672,
+      "attention_faithfulness_comp": 0.0018290281295776367,
+      "attention_sparsity": 1.0000000809463185,
+      "ig_atom_error": "The expanded size of the tensor (900) must match the existing size (45) at non-singleton dimension 0.  Target sizes: [900, 256].  Tensor sizes: [45, 1]"
+    },
+    {
+      "drug": "5-azacytidine",
+      "n_cells": 5,
+      "attn_time_s": 0.029576539993286133,
+      "raw_targets": [
+        "DNA methyltransferases"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.561122448979592,
+      "attention_faithfulness_suff": 0.00032079219818115234,
+      "attention_faithfulness_comp": 0.0017797350883483887,
+      "attention_sparsity": 0.9996962548348235,
+      "ig_atom_error": "The expanded size of the tensor (1700) must match the existing size (85) at non-singleton dimension 0.  Target sizes: [1700, 256].  Tensor sizes: [85, 1]"
+    },
+    {
+      "drug": "A-366",
+      "n_cells": 5,
+      "attn_time_s": 0.022878646850585938,
+      "raw_targets": [
+        "EHMT1",
+        "EHMT2"
+      ],
+      "resolved_targets": [
+        "EHMT1",
+        "EHMT2"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.49385128445625553,
+      "attention_sensitivity_alignment": 0.5452945022886173,
+      "attention_faithfulness_suff": 0.0066680908203125,
+      "attention_faithfulness_comp": 0.00156402587890625,
+      "attention_sparsity": 1.0000001112164127,
+      "ig_target_auroc": 0.7339638372153613,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "ABT737",
+      "n_cells": 5,
+      "attn_time_s": 0.0277101993560791,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "BCL-W",
+        "BCL-B",
+        "BFL1"
+      ],
+      "resolved_targets": [
+        "BCL2"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.9908555648186745,
+      "attention_sensitivity_alignment": 0.5971471065440779,
+      "attention_faithfulness_suff": 0.041004180908203125,
+      "attention_faithfulness_comp": 0.038728952407836914,
+      "attention_sparsity": 0.9999998911845673,
+      "ig_target_auroc": 0.9915589829095457,
+      "ig_atom_error": "The expanded size of the tensor (5600) must match the existing size (280) at non-singleton dimension 0.  Target sizes: [5600, 256].  Tensor sizes: [280, 1]"
+    },
+    {
+      "drug": "AGI-5198",
+      "n_cells": 5,
+      "attn_time_s": 0.023642778396606445,
+      "raw_targets": [
+        "IDH1 (R132H)"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5580540612783588,
+      "attention_faithfulness_suff": 0.002694368362426758,
+      "attention_faithfulness_comp": 0.0022208690643310547,
+      "attention_sparsity": 1.000000003354595,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "AGI-6780",
+      "n_cells": 5,
+      "attn_time_s": 0.025125503540039062,
+      "raw_targets": [
+        "IDH2 R140Q mutant"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5976621272327456,
+      "attention_faithfulness_suff": 0.0007753372192382812,
+      "attention_faithfulness_comp": 0.0011272430419921875,
+      "attention_sparsity": 1.0000000078002853,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "AGK2",
+      "n_cells": 5,
+      "attn_time_s": 0.030558109283447266,
+      "raw_targets": [
+        "BAZ2A",
+        "BAZ2B"
+      ],
+      "resolved_targets": [
+        "BAZ2A",
+        "BAZ2B"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.49210567453493825,
+      "attention_sensitivity_alignment": 0.5329645320541998,
+      "attention_faithfulness_suff": 0.0027632713317871094,
+      "attention_faithfulness_comp": 0.0050241947174072266,
+      "attention_sparsity": 1.000000016339972,
+      "ig_target_auroc": 0.6685946537439424,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "AMG-319",
+      "n_cells": 5,
+      "attn_time_s": 0.02214193344116211,
+      "raw_targets": [
+        "PI3K (beta sparing)"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6404363735850347,
+      "attention_faithfulness_suff": 0.006615638732910156,
+      "attention_faithfulness_comp": 0.006297111511230469,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "AT13148",
+      "n_cells": 5,
+      "attn_time_s": 0.024380207061767578,
+      "raw_targets": [
+        "AKT1"
+      ],
+      "resolved_targets": [
+        "AKT1"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.9908555648186745,
+      "attention_sensitivity_alignment": 0.5233747135870866,
+      "attention_faithfulness_suff": 0.01120758056640625,
+      "attention_faithfulness_comp": 0.002471923828125,
+      "attention_sparsity": 1.000000121722933,
+      "ig_target_auroc": 0.9659233013755731,
+      "ig_atom_error": "The expanded size of the tensor (2200) must match the existing size (110) at non-singleton dimension 0.  Target sizes: [2200, 256].  Tensor sizes: [110, 1]"
+    },
+    {
+      "drug": "AZ6102",
+      "n_cells": 5,
+      "attn_time_s": 0.024864673614501953,
+      "raw_targets": [
+        "TNKS1",
+        "TNKS2"
+      ],
+      "resolved_targets": [
+        "TNKS",
+        "TNKS2"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.4905684956490021,
+      "attention_sensitivity_alignment": 0.5528326122228231,
+      "attention_faithfulness_suff": 0.0002238750457763672,
+      "attention_faithfulness_comp": 0.012986540794372559,
+      "attention_sparsity": 1.0000000078002853,
+      "ig_target_auroc": 0.28109530509092806,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "AZ960",
+      "n_cells": 5,
+      "attn_time_s": 0.02455759048461914,
+      "raw_targets": [
+        "JAK2",
+        "JAK3"
+      ],
+      "resolved_targets": [
+        "JAK2",
+        "JAK3"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.7425485904851232,
+      "attention_sensitivity_alignment": 0.5249961896052431,
+      "attention_faithfulness_suff": 0.0032576322555541992,
+      "attention_faithfulness_comp": 6.961822509765625e-05,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_target_auroc": 0.9770465322286488,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "AZD1208",
+      "n_cells": 5,
+      "attn_time_s": 0.0248568058013916,
+      "raw_targets": [
+        "PIM1",
+        "PIM2",
+        "PIM3"
+      ],
+      "resolved_targets": [
+        "PIM1",
+        "PIM2",
+        "PIM3"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4938509640437728,
+      "attention_sensitivity_alignment": 0.5130298442906575,
+      "attention_faithfulness_suff": 0.012408971786499023,
+      "attention_faithfulness_comp": 0.008545875549316406,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_target_auroc": 0.6901684905332639,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "AZD1332",
+      "n_cells": 5,
+      "attn_time_s": 0.025070667266845703,
+      "raw_targets": [
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "resolved_targets": [
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4902032308494007,
+      "attention_sensitivity_alignment": 0.5321150519031141,
+      "attention_faithfulness_suff": 0.011866331100463867,
+      "attention_faithfulness_comp": 0.013526201248168945,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_target_auroc": 0.7079729025534132,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "AZD2014",
+      "n_cells": 5,
+      "attn_time_s": 0.025545358657836914,
+      "raw_targets": [
+        "mTORC1",
+        "mTORC2"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5020544982698962,
+      "attention_faithfulness_suff": 0.0038807541131973267,
+      "attention_faithfulness_comp": 0.006807900965213776,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.891725719049604,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "AZD3759",
+      "n_cells": 5,
+      "attn_time_s": 0.024877548217773438,
+      "raw_targets": [
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "EGFR"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "attention_target_auroc": 0.4902042517715715,
+      "attention_sensitivity_alignment": 0.6272625181662043,
+      "attention_faithfulness_suff": 0.0011992156505584717,
+      "attention_faithfulness_comp": 0.013134628534317017,
+      "attention_sparsity": 0.9997339276853588,
+      "ig_target_auroc": 0.9854105877448938,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "AZD4547",
+      "n_cells": 5,
+      "attn_time_s": 0.023934125900268555,
+      "raw_targets": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3"
+      ],
+      "resolved_targets": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.48916102136529444,
+      "attention_sensitivity_alignment": 0.528617728624411,
+      "attention_faithfulness_suff": 0.020600080490112305,
+      "attention_faithfulness_comp": 0.00885629653930664,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.9505297898210874,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "AZD5153",
+      "n_cells": 5,
+      "attn_time_s": 0.02420353889465332,
+      "raw_targets": [
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5641219723183392,
+      "attention_faithfulness_suff": 0.0115966796875,
+      "attention_faithfulness_comp": 0.019494295120239258,
+      "attention_sparsity": 1.000000070647056,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (3500) must match the existing size (175) at non-singleton dimension 0.  Target sizes: [3500, 256].  Tensor sizes: [175, 1]"
+    },
+    {
+      "drug": "AZD5363",
+      "n_cells": 5,
+      "attn_time_s": 0.027093887329101562,
+      "raw_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3",
+        "ROCK2"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3",
+        "ROCK2"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4966126426598572,
+      "attention_sensitivity_alignment": 0.5499682582110996,
+      "attention_faithfulness_suff": 0.010617077350616455,
+      "attention_faithfulness_comp": 0.020127594470977783,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_target_auroc": 0.9674162280473187,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "AZD5438",
+      "n_cells": 5,
+      "attn_time_s": 0.0260922908782959,
+      "raw_targets": [
+        "CDK2"
+      ],
+      "resolved_targets": [
+        "CDK2"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5490916955017301,
+      "attention_faithfulness_suff": 0.0051863668486475945,
+      "attention_faithfulness_comp": 0.011849439702928066,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_target_auroc": 0.8331596498541058,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "AZD5582",
+      "n_cells": 5,
+      "attn_time_s": 0.024211406707763672,
+      "raw_targets": [
+        "XIAP",
+        "cIAP"
+      ],
+      "resolved_targets": [
+        "XIAP"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.9964829095456441,
+      "attention_sensitivity_alignment": 0.547890625,
+      "attention_faithfulness_suff": 0.017153263092041016,
+      "attention_faithfulness_comp": 0.022415876388549805,
+      "attention_sparsity": 0.9999998665254993,
+      "ig_target_auroc": 0.829668611921634,
+      "ig_atom_error": "The expanded size of the tensor (7400) must match the existing size (370) at non-singleton dimension 0.  Target sizes: [7400, 256].  Tensor sizes: [370, 1]"
+    },
+    {
+      "drug": "AZD5991",
+      "n_cells": 5,
+      "attn_time_s": 0.025667905807495117,
+      "raw_targets": [
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.49330450187578156,
+      "attention_sensitivity_alignment": 0.5255967078189301,
+      "attention_faithfulness_suff": 0.0210111141204834,
+      "attention_faithfulness_comp": 0.010503411293029785,
+      "attention_sparsity": 0.999999833497345,
+      "ig_target_auroc": 0.892611504793664,
+      "ig_atom_error": "The expanded size of the tensor (4600) must match the existing size (230) at non-singleton dimension 0.  Target sizes: [4600, 256].  Tensor sizes: [230, 1]"
+    },
+    {
+      "drug": "AZD6482",
+      "n_cells": 5,
+      "attn_time_s": 0.02374887466430664,
+      "raw_targets": [
+        "PI3Kbeta"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5018929150892374,
+      "attention_faithfulness_suff": 0.0025517940521240234,
+      "attention_faithfulness_comp": 0.00769418478012085,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "AZD6738",
+      "n_cells": 5,
+      "attn_time_s": 0.02425837516784668,
+      "raw_targets": [
+        "ATR"
+      ],
+      "resolved_targets": [
+        "ATR"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5543786962477865,
+      "attention_faithfulness_suff": 0.01760578155517578,
+      "attention_faithfulness_comp": 0.016042590141296387,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.9065756565235514,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "AZD7762",
+      "n_cells": 5,
+      "attn_time_s": 0.025153636932373047,
+      "raw_targets": [
+        "CHEK1",
+        "CHEK2"
+      ],
+      "resolved_targets": [
+        "CHEK1",
+        "CHEK2"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.5443883858465034,
+      "attention_faithfulness_suff": 0.00434565544128418,
+      "attention_faithfulness_comp": 0.008139610290527344,
+      "attention_sparsity": 0.9999999199238425,
+      "ig_target_auroc": 0.7248970871762805,
+      "ig_atom_error": "The expanded size of the tensor (2500) must match the existing size (125) at non-singleton dimension 0.  Target sizes: [2500, 256].  Tensor sizes: [125, 1]"
+    },
+    {
+      "drug": "AZD8055",
+      "n_cells": 5,
+      "attn_time_s": 0.02969670295715332,
+      "raw_targets": [
+        "MTORC1",
+        "MTORC2"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.9869737390579407,
+      "attention_sensitivity_alignment": 0.5144812537195,
+      "attention_faithfulness_suff": 0.003071308135986328,
+      "attention_faithfulness_comp": 0.0032694339752197266,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.9216340141725718,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "AZD8186",
+      "n_cells": 5,
+      "attn_time_s": 0.026267051696777344,
+      "raw_targets": [
+        "PI3Kalpha",
+        "PI3Kbeta"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5606602292091283,
+      "attention_faithfulness_suff": 0.001071382313966751,
+      "attention_faithfulness_comp": 0.01098247617483139,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Acetalax",
+      "n_cells": 5,
+      "attn_time_s": 0.030707836151123047,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.651358024691358,
+      "attention_faithfulness_suff": 0.03383505344390869,
+      "attention_faithfulness_comp": 0.0052607059478759766,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "Afatinib",
+      "n_cells": 5,
+      "attn_time_s": 0.02366161346435547,
+      "raw_targets": [
+        "EGFR",
+        "ERBB2"
+      ],
+      "resolved_targets": [
+        "EGFR",
+        "ERBB2"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "attention_target_auroc": 0.7426528060028138,
+      "attention_sensitivity_alignment": 0.7184238340599816,
+      "attention_faithfulness_suff": 0.01587986946105957,
+      "attention_faithfulness_comp": 0.014104604721069336,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.9891615861601792,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "Afuresertib",
+      "n_cells": 5,
+      "attn_time_s": 0.023576021194458008,
+      "raw_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.4966128191766545,
+      "attention_sensitivity_alignment": 0.5359016338668181,
+      "attention_faithfulness_suff": 0.004922270774841309,
+      "attention_faithfulness_comp": 0.013717293739318848,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_target_auroc": 0.9822303282959874,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "Alisertib",
+      "n_cells": 5,
+      "attn_time_s": 0.023044824600219727,
+      "raw_targets": [
+        "AURKA"
+      ],
+      "resolved_targets": [
+        "AURKA"
+      ],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5311035874286105,
+      "attention_faithfulness_suff": 0.023258686065673828,
+      "attention_faithfulness_comp": 0.018401622772216797,
+      "attention_sparsity": 1.0000000311214605,
+      "ig_target_auroc": 0.8578053355564819,
+      "ig_atom_error": "The expanded size of the tensor (3700) must match the existing size (185) at non-singleton dimension 0.  Target sizes: [3700, 256].  Tensor sizes: [185, 1]"
+    },
+    {
+      "drug": "Alpelisib",
+      "n_cells": 5,
+      "attn_time_s": 0.02617049217224121,
+      "raw_targets": [
+        "PI3Kalpha"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5269850706830492,
+      "attention_faithfulness_suff": 0.019170820713043213,
+      "attention_faithfulness_comp": 0.01801079511642456,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "Avagacestat",
+      "n_cells": 5,
+      "attn_time_s": 0.025211811065673828,
+      "raw_targets": [
+        "Amyloid beta20",
+        "Amyloid beta40"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5672998918334233,
+      "attention_faithfulness_suff": 0.0004665851593017578,
+      "attention_faithfulness_comp": 0.011456727981567383,
+      "attention_sparsity": 0.9988425879912367,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "Axitinib",
+      "n_cells": 5,
+      "attn_time_s": 0.027665138244628906,
+      "raw_targets": [
+        "PDGFR",
+        "KIT",
+        "VEGFR"
+      ],
+      "resolved_targets": [
+        "PDGFRA",
+        "KIT",
+        "KDR"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4902032308494007,
+      "attention_sensitivity_alignment": 0.5567843897223429,
+      "attention_faithfulness_suff": 0.016706466674804688,
+      "attention_faithfulness_comp": 0.011439651250839233,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_target_auroc": 0.9102483932603787,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "BEN",
+      "n_cells": 5,
+      "attn_time_s": 0.0259554386138916,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5637311385459534,
+      "attention_faithfulness_suff": 0.002141594886779785,
+      "attention_faithfulness_comp": 0.003920435905456543,
+      "attention_sparsity": 0.9996162099109347,
+      "ig_atom_error": "The expanded size of the tensor (900) must match the existing size (45) at non-singleton dimension 0.  Target sizes: [900, 256].  Tensor sizes: [45, 1]"
+    },
+    {
+      "drug": "BI-2536",
+      "n_cells": 5,
+      "attn_time_s": 0.025339126586914062,
+      "raw_targets": [
+        "PLK1",
+        "PLK2",
+        "PLK3"
+      ],
+      "resolved_targets": [
+        "PLK1",
+        "PLK2",
+        "PLK3"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.4938509640437728,
+      "attention_sensitivity_alignment": 0.5647015610651974,
+      "attention_faithfulness_suff": 0.0028905868530273438,
+      "attention_faithfulness_comp": 0.0025634765625,
+      "attention_sparsity": 1.0000000884248017,
+      "ig_target_auroc": 0.7479590064269585,
+      "ig_atom_error": "The expanded size of the tensor (3800) must match the existing size (190) at non-singleton dimension 0.  Target sizes: [3800, 256].  Tensor sizes: [190, 1]"
+    },
+    {
+      "drug": "BIBR-1532",
+      "n_cells": 5,
+      "attn_time_s": 0.026549816131591797,
+      "raw_targets": [
+        "TERT"
+      ],
+      "resolved_targets": [
+        "TERT"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5846741481882098,
+      "attention_faithfulness_suff": 0.00648808479309082,
+      "attention_faithfulness_comp": 0.026604652404785156,
+      "attention_sparsity": 0.9999999199238425,
+      "ig_target_auroc": 0.81471446436015,
+      "ig_atom_error": "The expanded size of the tensor (2500) must match the existing size (125) at non-singleton dimension 0.  Target sizes: [2500, 256].  Tensor sizes: [125, 1]"
+    },
+    {
+      "drug": "BMS-345541",
+      "n_cells": 5,
+      "attn_time_s": 0.025246381759643555,
+      "raw_targets": [
+        "IKK-1",
+        "IKK-2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5643575674439871,
+      "attention_faithfulness_suff": 0.02463698387145996,
+      "attention_faithfulness_comp": 0.046499013900756836,
+      "attention_sparsity": 0.9999998067968376,
+      "ig_atom_error": "The expanded size of the tensor (2000) must match the existing size (100) at non-singleton dimension 0.  Target sizes: [2000, 256].  Tensor sizes: [100, 1]"
+    },
+    {
+      "drug": "BMS-536924",
+      "n_cells": 5,
+      "attn_time_s": 0.023554563522338867,
+      "raw_targets": [
+        "IGF1R",
+        "IR"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.49106398499374737,
+      "attention_sensitivity_alignment": 0.5066323632597147,
+      "attention_faithfulness_suff": 0.003515861928462982,
+      "attention_faithfulness_comp": 0.006604503840208054,
+      "attention_sparsity": 0.9999999105088254,
+      "ig_target_auroc": 0.975145894122551,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "BMS-754807",
+      "n_cells": 5,
+      "attn_time_s": 0.02640819549560547,
+      "raw_targets": [
+        "IGF1R",
+        "IR"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5162956123251599,
+      "attention_faithfulness_suff": 0.020461320877075195,
+      "attention_faithfulness_comp": 0.020584866404533386,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.8989683201333889,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "BX795",
+      "n_cells": 5,
+      "attn_time_s": 0.02497124671936035,
+      "raw_targets": [
+        "TBK1",
+        "PDK1 (PDPK1)",
+        "IKK",
+        "AURKB",
+        "AURKC"
+      ],
+      "resolved_targets": [
+        "TBK1",
+        "AURKB",
+        "AURKC"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4902032308494007,
+      "attention_sensitivity_alignment": 0.5960207612456747,
+      "attention_faithfulness_suff": 0.01847514510154724,
+      "attention_faithfulness_comp": 0.029659539461135864,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.692791384401598,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "Bicalutamide",
+      "n_cells": 5,
+      "attn_time_s": 0.023899078369140625,
+      "raw_targets": [
+        "AR"
+      ],
+      "resolved_targets": [
+        "AR"
+      ],
+      "target_pathway": "Hormone-related",
+      "matched_pathway": "Steroid hormone biosynthesis",
+      "attention_target_auroc": 0.4923666110879533,
+      "attention_sensitivity_alignment": 0.5406574394463668,
+      "attention_faithfulness_suff": 0.0037736892700195312,
+      "attention_faithfulness_comp": 0.0032889842987060547,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.943466027511463,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Bleomycin",
+      "n_cells": 5,
+      "attn_time_s": 0.030039072036743164,
+      "raw_targets": [
+        "dsDNA break induction"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5399725651577504,
+      "attention_faithfulness_suff": 0.01721477508544922,
+      "attention_faithfulness_comp": 0.04869842529296875,
+      "attention_sparsity": 1.000000086861321,
+      "ig_atom_error": "The expanded size of the tensor (9600) must match the existing size (480) at non-singleton dimension 0.  Target sizes: [9600, 256].  Tensor sizes: [480, 1]"
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "n_cells": 5,
+      "attn_time_s": 0.02509331703186035,
+      "raw_targets": [
+        "dsDNA break induction"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5044769939444128,
+      "attention_faithfulness_suff": 0.009940385818481445,
+      "attention_faithfulness_comp": 0.030991792678833008,
+      "attention_sparsity": 1.000000086861321,
+      "ig_atom_error": "The expanded size of the tensor (9600) must match the existing size (480) at non-singleton dimension 0.  Target sizes: [9600, 256].  Tensor sizes: [480, 1]"
+    },
+    {
+      "drug": "Bortezomib",
+      "n_cells": 5,
+      "attn_time_s": 0.035889387130737305,
+      "raw_targets": [
+        "Proteasome"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5538775101072538,
+      "attention_faithfulness_suff": 0.08145809173583984,
+      "attention_faithfulness_comp": 0.0008940696716308594,
+      "attention_sparsity": 0.9999998755352487,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "Bosutinib",
+      "n_cells": 5,
+      "attn_time_s": 0.025060415267944336,
+      "raw_targets": [
+        "SRC",
+        "ABL",
+        "TEC"
+      ],
+      "resolved_targets": [
+        "SRC",
+        "ABL1",
+        "TEC"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.49421573736321,
+      "attention_sensitivity_alignment": 0.5224513525529222,
+      "attention_faithfulness_suff": 0.009421288967132568,
+      "attention_faithfulness_comp": 0.00037288665771484375,
+      "attention_sparsity": 1.0000001059858352,
+      "ig_target_auroc": 0.9192287649817614,
+      "ig_atom_error": "The expanded size of the tensor (3600) must match the existing size (180) at non-singleton dimension 0.  Target sizes: [3600, 256].  Tensor sizes: [180, 1]"
+    },
+    {
+      "drug": "Bromosporine",
+      "n_cells": 5,
+      "attn_time_s": 0.024053573608398438,
+      "raw_targets": [
+        "CECR2",
+        "BRD2",
+        "BRD4",
+        "BRD9"
+      ],
+      "resolved_targets": [
+        "CECR2",
+        "BRD2",
+        "BRD4",
+        "BRD9"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4902027203085101,
+      "attention_sensitivity_alignment": 0.5661454046639233,
+      "attention_faithfulness_suff": 0.0047311484813690186,
+      "attention_faithfulness_comp": 0.014946192502975464,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_target_auroc": 0.44958048882172075,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "Buparlisib",
+      "n_cells": 5,
+      "attn_time_s": 0.026432514190673828,
+      "raw_targets": [
+        "PI3Kalpha",
+        "PI3Kdelta",
+        "PI3Kbeta",
+        "PI3Kgamma"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.519496140866718,
+      "attention_faithfulness_suff": 0.005493104457855225,
+      "attention_faithfulness_comp": 0.006699502468109131,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "CCT-018159",
+      "n_cells": 5,
+      "attn_time_s": 0.023891448974609375,
+      "raw_targets": [
+        "HSP90"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5622837370242215,
+      "attention_faithfulness_suff": 0.023749947547912598,
+      "attention_faithfulness_comp": 0.011502623558044434,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "CCT007093",
+      "n_cells": 5,
+      "attn_time_s": 0.027576923370361328,
+      "raw_targets": [
+        "PPM1D"
+      ],
+      "resolved_targets": [
+        "PPM1D"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.6479465004726725,
+      "attention_faithfulness_suff": 0.005410194396972656,
+      "attention_faithfulness_comp": 0.004889965057373047,
+      "attention_sparsity": 1.0000001218873018,
+      "ig_target_auroc": 0.7583889120466861,
+      "ig_atom_error": "The expanded size of the tensor (1800) must match the existing size (90) at non-singleton dimension 0.  Target sizes: [1800, 256].  Tensor sizes: [90, 1]"
+    },
+    {
+      "drug": "CHIR-99021",
+      "n_cells": 5,
+      "attn_time_s": 0.02295374870300293,
+      "raw_targets": [
+        "GSK3A",
+        "GSK3B"
+      ],
+      "resolved_targets": [
+        "GSK3A",
+        "GSK3B"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.496612995675056,
+      "attention_sensitivity_alignment": 0.6038062283737025,
+      "attention_faithfulness_suff": 0.11226344108581543,
+      "attention_faithfulness_comp": 0.0005190372467041016,
+      "attention_sparsity": 1.0000000078002853,
+      "ig_target_auroc": 0.8612891459538325,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "CPI-637",
+      "n_cells": 5,
+      "attn_time_s": 0.025175809860229492,
+      "raw_targets": [
+        "EP300"
+      ],
+      "resolved_targets": [
+        "EP300"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5779387354760828,
+      "attention_faithfulness_suff": 0.0036029815673828125,
+      "attention_faithfulness_comp": 0.0064427852630615234,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.9609212171738224,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "CZC24832",
+      "n_cells": 5,
+      "attn_time_s": 0.024161815643310547,
+      "raw_targets": [
+        "PI3Kgamma"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5901006905597779,
+      "attention_faithfulness_suff": 0.005820274353027344,
+      "attention_faithfulness_comp": 0.005665302276611328,
+      "attention_sparsity": 0.9999999199238425,
+      "ig_atom_error": "The expanded size of the tensor (2500) must match the existing size (125) at non-singleton dimension 0.  Target sizes: [2500, 256].  Tensor sizes: [125, 1]"
+    },
+    {
+      "drug": "Camptothecin",
+      "n_cells": 5,
+      "attn_time_s": 0.024094343185424805,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "attention_target_auroc": 0.49385160483534807,
+      "attention_sensitivity_alignment": 0.5154908178094861,
+      "attention_faithfulness_suff": 0.0015854835510253906,
+      "attention_faithfulness_comp": 0.0028710365295410156,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "Cediranib",
+      "n_cells": 5,
+      "attn_time_s": 0.02967548370361328,
+      "raw_targets": [
+        "VEGFR",
+        "FLT1",
+        "FLT2",
+        "FLT3",
+        "FLT4",
+        "KIT",
+        "PDGFRB"
+      ],
+      "resolved_targets": [
+        "KDR",
+        "FLT1",
+        "FLT3",
+        "FLT4",
+        "KIT",
+        "PDGFRB"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.49020169906707667,
+      "attention_sensitivity_alignment": 0.558622072237629,
+      "attention_faithfulness_suff": 0.0029451847076416016,
+      "attention_faithfulness_comp": 0.0003726482391357422,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.8914890290300724,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Cisplatin",
+      "n_cells": 5,
+      "attn_time_s": 0.026529788970947266,
+      "raw_targets": [
+        "DNA crosslinker"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5984760802469136,
+      "attention_faithfulness_suff": 0.05685877799987793,
+      "attention_faithfulness_comp": 0.014826864004135132,
+      "attention_sparsity": 1.000000018671601,
+      "ig_atom_error": "The expanded size of the tensor (500) must match the existing size (25) at non-singleton dimension 0.  Target sizes: [500, 256].  Tensor sizes: [25, 1]"
+    },
+    {
+      "drug": "Crizotinib",
+      "n_cells": 5,
+      "attn_time_s": 0.02684473991394043,
+      "raw_targets": [
+        "MET",
+        "ALK",
+        "ROS1"
+      ],
+      "resolved_targets": [
+        "MET",
+        "ALK",
+        "ROS1"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.49421573736321,
+      "attention_sensitivity_alignment": 0.5721693750825737,
+      "attention_faithfulness_suff": 0.0003287792205810547,
+      "attention_faithfulness_comp": 0.0016965866088867188,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_target_auroc": 0.7419141914191418,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "n_cells": 5,
+      "attn_time_s": 0.024202585220336914,
+      "raw_targets": [
+        "Alkylating agent"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5247753015469946,
+      "attention_faithfulness_suff": 0.0037491321563720703,
+      "attention_faithfulness_comp": 0.009752511978149414,
+      "attention_sparsity": 0.9999999670153958,
+      "ig_atom_error": "The expanded size of the tensor (1400) must match the existing size (70) at non-singleton dimension 0.  Target sizes: [1400, 256].  Tensor sizes: [70, 1]"
+    },
+    {
+      "drug": "Cytarabine",
+      "n_cells": 5,
+      "attn_time_s": 0.02363419532775879,
+      "raw_targets": [
+        "Antimetabolite"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5513304159750515,
+      "attention_faithfulness_suff": 0.0015709400177001953,
+      "attention_faithfulness_comp": 0.018902063369750977,
+      "attention_sparsity": 0.9996962548348235,
+      "ig_atom_error": "The expanded size of the tensor (1700) must match the existing size (85) at non-singleton dimension 0.  Target sizes: [1700, 256].  Tensor sizes: [85, 1]"
+    },
+    {
+      "drug": "Dabrafenib",
+      "n_cells": 5,
+      "attn_time_s": 0.03827047348022461,
+      "raw_targets": [
+        "BRAF"
+      ],
+      "resolved_targets": [
+        "BRAF"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "attention_target_auroc": 0.995180283451438,
+      "attention_sensitivity_alignment": 0.5722011898323418,
+      "attention_faithfulness_suff": 0.025636792182922363,
+      "attention_faithfulness_comp": 0.03365194797515869,
+      "attention_sparsity": 1.000000070647056,
+      "ig_target_auroc": 0.9428407669862442,
+      "ig_atom_error": "The expanded size of the tensor (3500) must match the existing size (175) at non-singleton dimension 0.  Target sizes: [3500, 256].  Tensor sizes: [175, 1]"
+    },
+    {
+      "drug": "Dacarbazine",
+      "n_cells": 5,
+      "attn_time_s": 0.03281283378601074,
+      "raw_targets": [
+        "CP11A"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6071330589849109,
+      "attention_faithfulness_suff": 0.008319854736328125,
+      "attention_faithfulness_comp": 0.003753662109375,
+      "attention_sparsity": 1.00000004433598,
+      "ig_atom_error": "The expanded size of the tensor (1300) must match the existing size (65) at non-singleton dimension 0.  Target sizes: [1300, 256].  Tensor sizes: [65, 1]"
+    },
+    {
+      "drug": "Dactinomycin",
+      "n_cells": 5,
+      "attn_time_s": 0.02465057373046875,
+      "raw_targets": [
+        "RNA polymerase"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5319067215363511,
+      "attention_faithfulness_suff": 0.019638538360595703,
+      "attention_faithfulness_comp": 0.024216651916503906,
+      "attention_sparsity": 0.9999997824937875,
+      "ig_atom_error": "The expanded size of the tensor (9000) must match the existing size (450) at non-singleton dimension 0.  Target sizes: [9000, 256].  Tensor sizes: [450, 1]"
+    },
+    {
+      "drug": "Dactolisib",
+      "n_cells": 5,
+      "attn_time_s": 0.023847103118896484,
+      "raw_targets": [
+        "PI3K (class 1)",
+        "MTORC1",
+        "MTORC2"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.49624843684868697,
+      "attention_sensitivity_alignment": 0.5308563600521234,
+      "attention_faithfulness_suff": 0.0064144134521484375,
+      "attention_faithfulness_comp": 0.0012297630310058594,
+      "attention_sparsity": 1.0000001059858352,
+      "ig_target_auroc": 0.9424239266360983,
+      "ig_atom_error": "The expanded size of the tensor (3600) must match the existing size (180) at non-singleton dimension 0.  Target sizes: [3600, 256].  Tensor sizes: [180, 1]"
+    },
+    {
+      "drug": "Daporinad",
+      "n_cells": 5,
+      "attn_time_s": 0.023203611373901367,
+      "raw_targets": [
+        "NAMPT"
+      ],
+      "resolved_targets": [
+        "NAMPT"
+      ],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "attention_target_auroc": 0.4966131721550646,
+      "attention_sensitivity_alignment": 0.6124,
+      "attention_faithfulness_suff": 0.006823062896728516,
+      "attention_faithfulness_comp": 0.01696634292602539,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.9308566069195499,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Dasatinib",
+      "n_cells": 5,
+      "attn_time_s": 0.02526068687438965,
+      "raw_targets": [
+        "ABL",
+        "SRC",
+        "Ephrins",
+        "PDGFR",
+        "KIT"
+      ],
+      "resolved_targets": [
+        "ABL1",
+        "SRC",
+        "PDGFRA",
+        "KIT"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4942154359268331,
+      "attention_sensitivity_alignment": 0.5108423268401885,
+      "attention_faithfulness_suff": 0.0023140013217926025,
+      "attention_faithfulness_comp": 0.01212003268301487,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.9370212100682682,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "n_cells": 5,
+      "attn_time_s": 0.02517533302307129,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.555116598079561,
+      "attention_faithfulness_suff": 0.014658689498901367,
+      "attention_faithfulness_comp": 0.003341197967529297,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Dinaciclib",
+      "n_cells": 5,
+      "attn_time_s": 0.03403830528259277,
+      "raw_targets": [
+        "CDK1",
+        "CDK2",
+        "CDK5",
+        "CDK9"
+      ],
+      "resolved_targets": [
+        "CDK1",
+        "CDK2",
+        "CDK5",
+        "CDK9"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.614877012871958,
+      "attention_sensitivity_alignment": 0.5184599359592608,
+      "attention_faithfulness_suff": 0.020980358123779297,
+      "attention_faithfulness_comp": 0.019887447357177734,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.8757751836989942,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Docetaxel",
+      "n_cells": 5,
+      "attn_time_s": 0.025346040725708008,
+      "raw_targets": [
+        "Microtubule stabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5182983221033162,
+      "attention_faithfulness_suff": 0.010394096374511719,
+      "attention_faithfulness_comp": 0.011082172393798828,
+      "attention_sparsity": 0.9999999060268216,
+      "ig_atom_error": "The expanded size of the tensor (5800) must match the existing size (290) at non-singleton dimension 0.  Target sizes: [5800, 256].  Tensor sizes: [290, 1]"
+    },
+    {
+      "drug": "Doramapimod",
+      "n_cells": 5,
+      "attn_time_s": 0.02564716339111328,
+      "raw_targets": [
+        "p38",
+        "JNK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "JNK and p38 signaling",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5036252464165192,
+      "attention_faithfulness_suff": 0.01348114013671875,
+      "attention_faithfulness_comp": 0.016480445861816406,
+      "attention_sparsity": 0.9999998580021838,
+      "ig_atom_error": "The expanded size of the tensor (3900) must match the existing size (195) at non-singleton dimension 0.  Target sizes: [3900, 256].  Tensor sizes: [195, 1]"
+    },
+    {
+      "drug": "EHT-1864",
+      "n_cells": 5,
+      "attn_time_s": 0.02321910858154297,
+      "raw_targets": [
+        "RAC1",
+        "RAC2",
+        "RAC3"
+      ],
+      "resolved_targets": [
+        "RAC1",
+        "RAC2",
+        "RAC3"
+      ],
+      "target_pathway": "Cytoskeleton",
+      "matched_pathway": "Regulation of actin cytoskeleton",
+      "attention_target_auroc": 0.4930171964564877,
+      "attention_sensitivity_alignment": 0.5458131487889273,
+      "attention_faithfulness_suff": 0.004449367523193359,
+      "attention_faithfulness_comp": 0.0062863826751708984,
+      "attention_sparsity": 1.0000000311214605,
+      "ig_target_auroc": 0.9221643216953275,
+      "ig_atom_error": "The expanded size of the tensor (3700) must match the existing size (185) at non-singleton dimension 0.  Target sizes: [3700, 256].  Tensor sizes: [185, 1]"
+    },
+    {
+      "drug": "EPZ004777",
+      "n_cells": 5,
+      "attn_time_s": 0.024602890014648438,
+      "raw_targets": [
+        "DOT1L"
+      ],
+      "resolved_targets": [
+        "DOT1L"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.48983951646519386,
+      "attention_sensitivity_alignment": 0.5284713964856652,
+      "attention_faithfulness_suff": 0.00041794776916503906,
+      "attention_faithfulness_comp": 0.00988316535949707,
+      "attention_sparsity": 0.9988723772158797,
+      "ig_target_auroc": 0.7258753647353064,
+      "ig_atom_error": "The expanded size of the tensor (3900) must match the existing size (195) at non-singleton dimension 0.  Target sizes: [3900, 256].  Tensor sizes: [195, 1]"
+    },
+    {
+      "drug": "EPZ5676",
+      "n_cells": 5,
+      "attn_time_s": 0.02614617347717285,
+      "raw_targets": [
+        "DOT1L"
+      ],
+      "resolved_targets": [
+        "DOT1L"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5752948645126801,
+      "attention_faithfulness_suff": 0.011780500411987305,
+      "attention_faithfulness_comp": 0.010324954986572266,
+      "attention_sparsity": 0.999999997869752,
+      "ig_target_auroc": 0.7722488536890371,
+      "ig_atom_error": "The expanded size of the tensor (4100) must match the existing size (205) at non-singleton dimension 0.  Target sizes: [4100, 256].  Tensor sizes: [205, 1]"
+    },
+    {
+      "drug": "Elephantin",
+      "n_cells": 5,
+      "attn_time_s": 0.025508403778076172,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5350891632373114,
+      "attention_faithfulness_suff": 0.03451758623123169,
+      "attention_faithfulness_comp": 0.004769086837768555,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "Elesclomol",
+      "n_cells": 5,
+      "attn_time_s": 0.023306608200073242,
+      "raw_targets": [
+        "HSP90"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6825259515570934,
+      "attention_faithfulness_suff": 0.0004737377166748047,
+      "attention_faithfulness_comp": 0.0018870830535888672,
+      "attention_sparsity": 0.9999029064064872,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "Entinostat",
+      "n_cells": 5,
+      "attn_time_s": 0.02404928207397461,
+      "raw_targets": [
+        "HDAC1",
+        "HDAC3"
+      ],
+      "resolved_targets": [
+        "HDAC1",
+        "HDAC3"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.4915585430670627,
+      "attention_sensitivity_alignment": 0.5541457094955038,
+      "attention_faithfulness_suff": 0.018615365028381348,
+      "attention_faithfulness_comp": 0.022171497344970703,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_target_auroc": 0.842712729925486,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "Entospletinib",
+      "n_cells": 5,
+      "attn_time_s": 0.02750229835510254,
+      "raw_targets": [
+        "SYK"
+      ],
+      "resolved_targets": [
+        "SYK"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4902042517715715,
+      "attention_sensitivity_alignment": 0.5410285097025578,
+      "attention_faithfulness_suff": 0.01155245304107666,
+      "attention_faithfulness_comp": 0.005705714225769043,
+      "attention_sparsity": 0.999999898758791,
+      "ig_target_auroc": 0.9474781158816173,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "Epirubicin",
+      "n_cells": 5,
+      "attn_time_s": 0.025040864944458008,
+      "raw_targets": [
+        "Anthracycline"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.570717364429149,
+      "attention_faithfulness_suff": 0.0018992424011230469,
+      "attention_faithfulness_comp": 0.001239776611328125,
+      "attention_sparsity": 0.9997437603452369,
+      "ig_atom_error": "The expanded size of the tensor (3900) must match the existing size (195) at non-singleton dimension 0.  Target sizes: [3900, 256].  Tensor sizes: [195, 1]"
+    },
+    {
+      "drug": "Erlotinib",
+      "n_cells": 5,
+      "attn_time_s": 0.02536296844482422,
+      "raw_targets": [
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "EGFR"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "attention_target_auroc": 0.49439870779491457,
+      "attention_sensitivity_alignment": 0.5696998377501352,
+      "attention_faithfulness_suff": 0.0642058253288269,
+      "attention_faithfulness_comp": 0.11353027820587158,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.9925489787411421,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Fludarabine",
+      "n_cells": 5,
+      "attn_time_s": 0.027980327606201172,
+      "raw_targets": [
+        "Antimetabolite"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5455144032921811,
+      "attention_faithfulness_suff": 0.0006170272827148438,
+      "attention_faithfulness_comp": 0.009481191635131836,
+      "attention_sparsity": 0.9999998067968376,
+      "ig_atom_error": "The expanded size of the tensor (2000) must match the existing size (100) at non-singleton dimension 0.  Target sizes: [2000, 256].  Tensor sizes: [100, 1]"
+    },
+    {
+      "drug": "Foretinib",
+      "n_cells": 5,
+      "attn_time_s": 0.02517843246459961,
+      "raw_targets": [
+        "MET",
+        "KDR",
+        "TIE2",
+        "VEGFR3/FLT4",
+        "RON",
+        "PDGFR",
+        "FGFR1",
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "MET",
+        "KDR",
+        "FLT1",
+        "PDGFRA",
+        "FGFR1",
+        "EGFR"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.49421483295981655,
+      "attention_sensitivity_alignment": 0.5291373715521903,
+      "attention_faithfulness_suff": 0.023935556411743164,
+      "attention_faithfulness_comp": 0.02612757682800293,
+      "attention_sparsity": 0.999999833497345,
+      "ig_target_auroc": 0.9000625423463804,
+      "ig_atom_error": "The expanded size of the tensor (4600) must match the existing size (230) at non-singleton dimension 0.  Target sizes: [4600, 256].  Tensor sizes: [230, 1]"
+    },
+    {
+      "drug": "Fulvestrant",
+      "n_cells": 5,
+      "attn_time_s": 0.025028467178344727,
+      "raw_targets": [
+        "ESR"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Hormone-related",
+      "matched_pathway": "Steroid hormone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5313241337832871,
+      "attention_faithfulness_suff": 0.0238192081451416,
+      "attention_faithfulness_comp": 0.019222259521484375,
+      "attention_sparsity": 0.999999997869752,
+      "ig_atom_error": "The expanded size of the tensor (4100) must match the existing size (205) at non-singleton dimension 0.  Target sizes: [4100, 256].  Tensor sizes: [205, 1]"
+    },
+    {
+      "drug": "GDC0810",
+      "n_cells": 5,
+      "attn_time_s": 0.02594470977783203,
+      "raw_targets": [
+        "ESR1",
+        "ESR2"
+      ],
+      "resolved_targets": [
+        "ESR1",
+        "ESR2"
+      ],
+      "target_pathway": "Hormone-related",
+      "matched_pathway": "Steroid hormone biosynthesis",
+      "attention_target_auroc": 0.4791308425824605,
+      "attention_sensitivity_alignment": 0.5012529653513315,
+      "attention_faithfulness_suff": 0.0014142990112304688,
+      "attention_faithfulness_comp": 0.0018849372863769531,
+      "attention_sparsity": 1.0000001017551283,
+      "ig_target_auroc": 0.919467458704601,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "GNE-317",
+      "n_cells": 5,
+      "attn_time_s": 0.025050640106201172,
+      "raw_targets": [
+        "PI3Kalpha"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5120761245674741,
+      "attention_faithfulness_suff": 0.007555365562438965,
+      "attention_faithfulness_comp": 0.00534212589263916,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "GSK-LSD1",
+      "n_cells": 5,
+      "attn_time_s": 0.02327132225036621,
+      "raw_targets": [
+        "KDM1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5040329218106996,
+      "attention_faithfulness_suff": 0.0008661746978759766,
+      "attention_faithfulness_comp": 0.0006973743438720703,
+      "attention_sparsity": 1.0000000085980536,
+      "ig_atom_error": "The expanded size of the tensor (1600) must match the existing size (80) at non-singleton dimension 0.  Target sizes: [1600, 256].  Tensor sizes: [80, 1]"
+    },
+    {
+      "drug": "GSK-LSD1-2HCl ",
+      "n_cells": 5,
+      "attn_time_s": 0.023667573928833008,
+      "raw_targets": [
+        "LSD1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5460204081632654,
+      "attention_faithfulness_suff": 0.0011898279190063477,
+      "attention_faithfulness_comp": 0.0008788108825683594,
+      "attention_sparsity": 1.0000000085980536,
+      "ig_atom_error": "The expanded size of the tensor (1600) must match the existing size (80) at non-singleton dimension 0.  Target sizes: [1600, 256].  Tensor sizes: [80, 1]"
+    },
+    {
+      "drug": "GSK1904529A",
+      "n_cells": 5,
+      "attn_time_s": 0.029751062393188477,
+      "raw_targets": [
+        "IGF1R",
+        "IR"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4824666527719883,
+      "attention_sensitivity_alignment": 0.578444972915841,
+      "attention_faithfulness_suff": 0.002991914749145508,
+      "attention_faithfulness_comp": 0.0005710124969482422,
+      "attention_sparsity": 1.0000000597728929,
+      "ig_target_auroc": 0.9644122551062944,
+      "ig_atom_error": "The expanded size of the tensor (6100) must match the existing size (305) at non-singleton dimension 0.  Target sizes: [6100, 256].  Tensor sizes: [305, 1]"
+    },
+    {
+      "drug": "GSK2110183B",
+      "n_cells": 5,
+      "attn_time_s": 0.025233983993530273,
+      "raw_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.9909067222511725,
+      "attention_sensitivity_alignment": 0.5370096021947873,
+      "attention_faithfulness_suff": 0.013038158416748047,
+      "attention_faithfulness_comp": 0.08140826225280762,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_target_auroc": 0.9800590585374327,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "GSK2256098C",
+      "n_cells": 5,
+      "attn_time_s": 0.025589942932128906,
+      "raw_targets": [
+        "FAK1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Cytoskeleton",
+      "matched_pathway": "Regulation of actin cytoskeleton",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6057613168724281,
+      "attention_faithfulness_suff": 0.013172388076782227,
+      "attention_faithfulness_comp": 0.004271268844604492,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "GSK2578215A",
+      "n_cells": 5,
+      "attn_time_s": 0.0225679874420166,
+      "raw_targets": [
+        "LRRK2"
+      ],
+      "resolved_targets": [
+        "LRRK2"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5248755387751011,
+      "attention_faithfulness_suff": 0.0032672882080078125,
+      "attention_faithfulness_comp": 0.0038695335388183594,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_target_auroc": 0.5968632763651521,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "GSK2606414",
+      "n_cells": 5,
+      "attn_time_s": 0.027212142944335938,
+      "raw_targets": [
+        "PERK"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5247265625,
+      "attention_faithfulness_suff": 0.006469368934631348,
+      "attention_faithfulness_comp": 0.013228654861450195,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "GSK269962A",
+      "n_cells": 5,
+      "attn_time_s": 0.03326869010925293,
+      "raw_targets": [
+        "ROCK1",
+        "ROCK2"
+      ],
+      "resolved_targets": [
+        "ROCK1",
+        "ROCK2"
+      ],
+      "target_pathway": "Cytoskeleton",
+      "matched_pathway": "Regulation of actin cytoskeleton",
+      "attention_target_auroc": 0.4923662133291647,
+      "attention_sensitivity_alignment": 0.5321795565170362,
+      "attention_faithfulness_suff": 0.017684876918792725,
+      "attention_faithfulness_comp": 0.021998614072799683,
+      "attention_sparsity": 0.9999999775034779,
+      "ig_target_auroc": 0.9076389974467198,
+      "ig_atom_error": "The expanded size of the tensor (4200) must match the existing size (210) at non-singleton dimension 0.  Target sizes: [4200, 256].  Tensor sizes: [210, 1]"
+    },
+    {
+      "drug": "GSK2801",
+      "n_cells": 5,
+      "attn_time_s": 0.031218528747558594,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6130041152263375,
+      "attention_faithfulness_suff": 0.003981351852416992,
+      "attention_faithfulness_comp": 0.00042366981506347656,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "GSK2830371",
+      "n_cells": 5,
+      "attn_time_s": 0.03490185737609863,
+      "raw_targets": [
+        "WIP1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5761606542104446,
+      "attention_faithfulness_suff": 0.000335693359375,
+      "attention_faithfulness_comp": 0.011904478073120117,
+      "attention_sparsity": 0.999732049105456,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "GSK2830371A",
+      "n_cells": 5,
+      "attn_time_s": 0.034351348876953125,
+      "raw_targets": [
+        "PPM1D"
+      ],
+      "resolved_targets": [
+        "PPM1D"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.41944560233430594,
+      "attention_sensitivity_alignment": 0.5527572016460905,
+      "attention_faithfulness_suff": 0.009871482849121094,
+      "attention_faithfulness_comp": 0.006726264953613281,
+      "attention_sparsity": 0.999999898758791,
+      "ig_target_auroc": 0.7033659858274282,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "GSK343",
+      "n_cells": 5,
+      "attn_time_s": 0.030588150024414062,
+      "raw_targets": [
+        "EZH2"
+      ],
+      "resolved_targets": [
+        "EZH2"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.6000925890204852,
+      "attention_faithfulness_suff": 0.01049947738647461,
+      "attention_faithfulness_comp": 0.007339954376220703,
+      "attention_sparsity": 0.9999999224307262,
+      "ig_target_auroc": 0.8013234681117132,
+      "ig_atom_error": "The expanded size of the tensor (4000) must match the existing size (200) at non-singleton dimension 0.  Target sizes: [4000, 256].  Tensor sizes: [200, 1]"
+    },
+    {
+      "drug": "GSK591",
+      "n_cells": 5,
+      "attn_time_s": 0.030051708221435547,
+      "raw_targets": [
+        "PMRT5"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5330871037242229,
+      "attention_faithfulness_suff": 0.02118062973022461,
+      "attention_faithfulness_comp": 0.020406484603881836,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "GSK626616AC",
+      "n_cells": 5,
+      "attn_time_s": 0.03066849708557129,
+      "raw_targets": [
+        "DYRK1A"
+      ],
+      "resolved_targets": [
+        "DYRK1A"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4966131721550646,
+      "attention_sensitivity_alignment": 0.6396707818930041,
+      "attention_faithfulness_suff": 0.0016746222972869873,
+      "attention_faithfulness_comp": 0.0006858408451080322,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "GW441756",
+      "n_cells": 5,
+      "attn_time_s": 0.02465081214904785,
+      "raw_targets": [
+        "NTRK1"
+      ],
+      "resolved_targets": [
+        "NTRK1"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.48330033347228013,
+      "attention_sensitivity_alignment": 0.5908937263385614,
+      "attention_faithfulness_suff": 0.03754782676696777,
+      "attention_faithfulness_comp": 0.07088470458984375,
+      "attention_sparsity": 1.000000121722933,
+      "ig_target_auroc": 0.9815027094622759,
+      "ig_atom_error": "The expanded size of the tensor (2200) must match the existing size (110) at non-singleton dimension 0.  Target sizes: [2200, 256].  Tensor sizes: [110, 1]"
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "n_cells": 5,
+      "attn_time_s": 0.02559208869934082,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5721262002743485,
+      "attention_faithfulness_suff": 0.00511622428894043,
+      "attention_faithfulness_comp": 0.00742793083190918,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "Gefitinib",
+      "n_cells": 5,
+      "attn_time_s": 0.025383949279785156,
+      "raw_targets": [
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "EGFR"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "attention_target_auroc": 0.4920539808253439,
+      "attention_sensitivity_alignment": 0.6226402485883257,
+      "attention_faithfulness_suff": 0.018857985734939575,
+      "attention_faithfulness_comp": 0.03650408983230591,
+      "attention_sparsity": 0.999999898758791,
+      "ig_target_auroc": 0.9951021258857857,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "Gemcitabine",
+      "n_cells": 5,
+      "attn_time_s": 0.024246692657470703,
+      "raw_targets": [
+        "Pyrimidine antimetabolite"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5546967895362664,
+      "attention_faithfulness_suff": 0.008300304412841797,
+      "attention_faithfulness_comp": 0.008358001708984375,
+      "attention_sparsity": 1.0000001218873018,
+      "ig_atom_error": "The expanded size of the tensor (1800) must match the existing size (90) at non-singleton dimension 0.  Target sizes: [1800, 256].  Tensor sizes: [90, 1]"
+    },
+    {
+      "drug": "HKMTI-1-005",
+      "n_cells": 5,
+      "attn_time_s": 0.031572580337524414,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5741662894220613,
+      "attention_faithfulness_suff": 0.0052907466888427734,
+      "attention_faithfulness_comp": 0.0035959482192993164,
+      "attention_sparsity": 1.000000070647056,
+      "ig_atom_error": "The expanded size of the tensor (3500) must match the existing size (175) at non-singleton dimension 0.  Target sizes: [3500, 256].  Tensor sizes: [175, 1]"
+    },
+    {
+      "drug": "I-BET-762",
+      "n_cells": 5,
+      "attn_time_s": 0.028797149658203125,
+      "raw_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.49421573736321,
+      "attention_sensitivity_alignment": 0.5576173758728444,
+      "attention_faithfulness_suff": 0.03321033716201782,
+      "attention_faithfulness_comp": 0.010603398084640503,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_target_auroc": 0.28108389786347054,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "I-BRD9",
+      "n_cells": 5,
+      "attn_time_s": 0.0241849422454834,
+      "raw_targets": [
+        "BRD9"
+      ],
+      "resolved_targets": [
+        "BRD9"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4902042517715715,
+      "attention_sensitivity_alignment": 0.5776003207591299,
+      "attention_faithfulness_suff": 0.07331514358520508,
+      "attention_faithfulness_comp": 0.010783195495605469,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.5814922884535223,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "n_cells": 5,
+      "attn_time_s": 0.024676084518432617,
+      "raw_targets": [
+        "SIR2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5168251094009355,
+      "attention_faithfulness_suff": 0.0032672882080078125,
+      "attention_faithfulness_comp": 0.0087432861328125,
+      "attention_sparsity": 1.000000070647056,
+      "ig_atom_error": "The expanded size of the tensor (3500) must match the existing size (175) at non-singleton dimension 0.  Target sizes: [3500, 256].  Tensor sizes: [175, 1]"
+    },
+    {
+      "drug": "IOX2",
+      "n_cells": 5,
+      "attn_time_s": 0.027456283569335938,
+      "raw_targets": [
+        "EGLN1"
+      ],
+      "resolved_targets": [
+        "EGLN1"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.6297577854671281,
+      "attention_faithfulness_suff": 0.0014769434928894043,
+      "attention_faithfulness_comp": 0.0052397847175598145,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_target_auroc": 0.932888703626511,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "IWP-2",
+      "n_cells": 5,
+      "attn_time_s": 0.0267031192779541,
+      "raw_targets": [
+        "PORCN"
+      ],
+      "resolved_targets": [
+        "PORCN"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.4913505627344727,
+      "attention_sensitivity_alignment": 0.5534217344916934,
+      "attention_faithfulness_suff": 0.0015017986297607422,
+      "attention_faithfulness_comp": 0.00015211105346679688,
+      "attention_sparsity": 0.999999898758791,
+      "ig_target_auroc": 0.6253647353063776,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "Ibrutinib",
+      "n_cells": 5,
+      "attn_time_s": 0.024717092514038086,
+      "raw_targets": [
+        "BTK"
+      ],
+      "resolved_targets": [
+        "BTK"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4915850354314298,
+      "attention_sensitivity_alignment": 0.6673828125000001,
+      "attention_faithfulness_suff": 0.02319049835205078,
+      "attention_faithfulness_comp": 0.02863970398902893,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.7458315964985411,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Ipatasertib",
+      "n_cells": 5,
+      "attn_time_s": 0.024965763092041016,
+      "raw_targets": [
+        "AKT1",
+        "AKT",
+        "AKT3"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT3"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.496612995675056,
+      "attention_sensitivity_alignment": 0.5479635136489692,
+      "attention_faithfulness_suff": 0.5260838121175766,
+      "attention_faithfulness_comp": 0.0029826462268829346,
+      "attention_sparsity": 1.0000000078002853,
+      "ig_target_auroc": 0.9816320150070345,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "Irinotecan",
+      "n_cells": 5,
+      "attn_time_s": 0.031097888946533203,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "attention_target_auroc": 0.49624843684868697,
+      "attention_sensitivity_alignment": 0.5608732989826927,
+      "attention_faithfulness_suff": 0.021476268768310547,
+      "attention_faithfulness_comp": 0.02992844581604004,
+      "attention_sparsity": 0.9999997973928113,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (4300) must match the existing size (215) at non-singleton dimension 0.  Target sizes: [4300, 256].  Tensor sizes: [215, 1]"
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "n_cells": 5,
+      "attn_time_s": 0.027947664260864258,
+      "raw_targets": [
+        "JNK"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "JNK and p38 signaling",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5759378954208132,
+      "attention_faithfulness_suff": 0.0013244152069091797,
+      "attention_faithfulness_comp": 0.006316661834716797,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "JQ1",
+      "n_cells": 5,
+      "attn_time_s": 0.02605128288269043,
+      "raw_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4",
+        "BRDT"
+      ],
+      "resolved_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4",
+        "BRDT"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4902027203085101,
+      "attention_sensitivity_alignment": 0.5140043090181594,
+      "attention_faithfulness_suff": 0.02250194549560547,
+      "attention_faithfulness_comp": 0.006471157073974609,
+      "attention_sparsity": 0.999999898758791,
+      "ig_target_auroc": 0.2810724894470791,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "n_cells": 5,
+      "attn_time_s": 0.028629779815673828,
+      "raw_targets": [
+        "KRAS (G12C)"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.54959299409745,
+      "attention_faithfulness_suff": 0.015018343925476074,
+      "attention_faithfulness_comp": 0.022092461585998535,
+      "attention_sparsity": 0.9999999092660391,
+      "ig_atom_error": "The expanded size of the tensor (2300) must match the existing size (115) at non-singleton dimension 0.  Target sizes: [2300, 256].  Tensor sizes: [115, 1]"
+    },
+    {
+      "drug": "KU-55933",
+      "n_cells": 5,
+      "attn_time_s": 0.024296998977661133,
+      "raw_targets": [
+        "ATM"
+      ],
+      "resolved_targets": [
+        "ATM"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4924708211754898,
+      "attention_sensitivity_alignment": 0.5352333856794413,
+      "attention_faithfulness_suff": 0.0004279613494873047,
+      "attention_faithfulness_comp": 0.004634857177734375,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_target_auroc": 0.9709774906210922,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "n_cells": 5,
+      "attn_time_s": 0.023928403854370117,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5207681755829905,
+      "attention_faithfulness_suff": 0.0011777877807617188,
+      "attention_faithfulness_comp": 0.0007550716400146484,
+      "attention_sparsity": 0.9996823371062566,
+      "ig_atom_error": "The expanded size of the tensor (1400) must match the existing size (70) at non-singleton dimension 0.  Target sizes: [1400, 256].  Tensor sizes: [70, 1]"
+    },
+    {
+      "drug": "LCL161",
+      "n_cells": 5,
+      "attn_time_s": 0.02280139923095703,
+      "raw_targets": [
+        "XIAP",
+        "IAP1",
+        "IAP2"
+      ],
+      "resolved_targets": [
+        "XIAP"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.9957013338891205,
+      "attention_sensitivity_alignment": 0.5741883859167809,
+      "attention_faithfulness_suff": 0.0008306503295898438,
+      "attention_faithfulness_comp": 0.013380765914916992,
+      "attention_sparsity": 0.9988708476141129,
+      "ig_target_auroc": 0.8270633597332222,
+      "ig_atom_error": "The expanded size of the tensor (3500) must match the existing size (175) at non-singleton dimension 0.  Target sizes: [3500, 256].  Tensor sizes: [175, 1]"
+    },
+    {
+      "drug": "LGK974",
+      "n_cells": 5,
+      "attn_time_s": 0.0289914608001709,
+      "raw_targets": [
+        "PORCN"
+      ],
+      "resolved_targets": [
+        "PORCN"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5638459505879245,
+      "attention_faithfulness_suff": 0.00299835205078125,
+      "attention_faithfulness_comp": 0.009990453720092773,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_target_auroc": 0.6916423509795748,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "LJI308",
+      "n_cells": 5,
+      "attn_time_s": 0.02814626693725586,
+      "raw_targets": [
+        "RSK2",
+        "RSK1",
+        "RSK3"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5407817790089258,
+      "attention_faithfulness_suff": 0.020850419998168945,
+      "attention_faithfulness_comp": 0.03481292724609375,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "LMP744",
+      "n_cells": 5,
+      "attn_time_s": 0.0242311954498291,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.547599451303155,
+      "attention_faithfulness_suff": 0.0025954246520996094,
+      "attention_faithfulness_comp": 0.006452083587646484,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "LY2109761",
+      "n_cells": 5,
+      "attn_time_s": 0.024373769760131836,
+      "raw_targets": [
+        "TGFB1"
+      ],
+      "resolved_targets": [
+        "TGFB1"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.9966913297207171,
+      "attention_sensitivity_alignment": 0.528914779522395,
+      "attention_faithfulness_suff": 0.005106925964355469,
+      "attention_faithfulness_comp": 0.012479543685913086,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.9239266360983742,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Lapatinib",
+      "n_cells": 5,
+      "attn_time_s": 0.03272652626037598,
+      "raw_targets": [
+        "EGFR",
+        "ERBB2"
+      ],
+      "resolved_targets": [
+        "EGFR",
+        "ERBB2"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "attention_target_auroc": 0.9953103017039238,
+      "attention_sensitivity_alignment": 0.6876073457524112,
+      "attention_faithfulness_suff": 0.0012840479612350464,
+      "attention_faithfulness_comp": 0.0184716135263443,
+      "attention_sparsity": 0.9988779192663166,
+      "ig_target_auroc": 0.9718618102235423,
+      "ig_atom_error": "The expanded size of the tensor (4000) must match the existing size (200) at non-singleton dimension 0.  Target sizes: [4000, 256].  Tensor sizes: [200, 1]"
+    },
+    {
+      "drug": "Leflunomide",
+      "n_cells": 5,
+      "attn_time_s": 0.026842594146728516,
+      "raw_targets": [
+        "Pyrimidine synthesis inhibitor"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5777320530406951,
+      "attention_faithfulness_suff": 0.0018448829650878906,
+      "attention_faithfulness_comp": 0.0006215572357177734,
+      "attention_sparsity": 0.999999996754411,
+      "ig_atom_error": "The expanded size of the tensor (1900) must match the existing size (95) at non-singleton dimension 0.  Target sizes: [1900, 256].  Tensor sizes: [95, 1]"
+    },
+    {
+      "drug": "Lenalidomide",
+      "n_cells": 5,
+      "attn_time_s": 0.024770736694335938,
+      "raw_targets": [
+        "CRBN"
+      ],
+      "resolved_targets": [
+        "CRBN"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5726548339660066,
+      "attention_faithfulness_suff": 0.0002846717834472656,
+      "attention_faithfulness_comp": 0.005873203277587891,
+      "attention_sparsity": 0.999999996754411,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (1900) must match the existing size (95) at non-singleton dimension 0.  Target sizes: [1900, 256].  Tensor sizes: [95, 1]"
+    },
+    {
+      "drug": "Lestaurtinib",
+      "n_cells": 5,
+      "attn_time_s": 0.02471613883972168,
+      "raw_targets": [
+        "FLT3",
+        "JAK2",
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "resolved_targets": [
+        "FLT3",
+        "JAK2",
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.5947310819262038,
+      "attention_sensitivity_alignment": 0.5085813148788928,
+      "attention_faithfulness_suff": 0.002516508102416992,
+      "attention_faithfulness_comp": 0.009635210037231445,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.8784031686470711,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Linsitinib",
+      "n_cells": 5,
+      "attn_time_s": 0.030215978622436523,
+      "raw_targets": [
+        "IGF1R"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.49564922884535223,
+      "attention_sensitivity_alignment": 0.5506341656757828,
+      "attention_faithfulness_suff": 0.0031507015228271484,
+      "attention_faithfulness_comp": 0.012088537216186523,
+      "attention_sparsity": 1.0000000078002853,
+      "ig_target_auroc": 0.9275739891621508,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "Luminespib",
+      "n_cells": 5,
+      "attn_time_s": 0.024042606353759766,
+      "raw_targets": [
+        "HSP90"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5780816488307572,
+      "attention_faithfulness_suff": 0.02085399627685547,
+      "attention_faithfulness_comp": 0.009876251220703125,
+      "attention_sparsity": 1.000000003354595,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "MG-132",
+      "n_cells": 5,
+      "attn_time_s": 0.02712535858154297,
+      "raw_targets": [
+        "Proteasome",
+        "CAPN1"
+      ],
+      "resolved_targets": [
+        "CAPN1"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "attention_target_auroc": 0.49056898707794916,
+      "attention_sensitivity_alignment": 0.5217632653061225,
+      "attention_faithfulness_suff": 0.13737010955810547,
+      "attention_faithfulness_comp": 0.03720545768737793,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.7962692788661943,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "MIM1",
+      "n_cells": 5,
+      "attn_time_s": 0.029901504516601562,
+      "raw_targets": [
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.6042955585735124,
+      "attention_faithfulness_suff": 0.011669635772705078,
+      "attention_faithfulness_comp": 0.011325240135192871,
+      "attention_sparsity": 1.0000001112164127,
+      "ig_target_auroc": 0.8391517298874531,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "MIRA-1",
+      "n_cells": 5,
+      "attn_time_s": 0.04979586601257324,
+      "raw_targets": [
+        "TP53"
+      ],
+      "resolved_targets": [
+        "TP53"
+      ],
+      "target_pathway": "p53 pathway",
+      "matched_pathway": "p53 signaling pathway",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5434667723609459,
+      "attention_faithfulness_suff": 0.00970768928527832,
+      "attention_faithfulness_comp": 0.00531768798828125,
+      "attention_sparsity": 1.00000004433598,
+      "ig_target_auroc": 0.9474260108378492,
+      "ig_atom_error": "The expanded size of the tensor (1300) must match the existing size (65) at non-singleton dimension 0.  Target sizes: [1300, 256].  Tensor sizes: [65, 1]"
+    },
+    {
+      "drug": "MK-1775",
+      "n_cells": 5,
+      "attn_time_s": 0.03679656982421875,
+      "raw_targets": [
+        "WEE1",
+        "PLK1"
+      ],
+      "resolved_targets": [
+        "WEE1",
+        "PLK1"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.5705509314308363,
+      "attention_faithfulness_suff": 0.00637209415435791,
+      "attention_faithfulness_comp": 0.004275918006896973,
+      "attention_sparsity": 1.0000000311214605,
+      "ig_expr_error": "Input contains NaN.",
+      "ig_atom_error": "The expanded size of the tensor (3700) must match the existing size (185) at non-singleton dimension 0.  Target sizes: [3700, 256].  Tensor sizes: [185, 1]"
+    },
+    {
+      "drug": "MK-2206",
+      "n_cells": 5,
+      "attn_time_s": 0.028056859970092773,
+      "raw_targets": [
+        "AKT1",
+        "AKT2"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.496612995675056,
+      "attention_sensitivity_alignment": 0.5538049940546969,
+      "attention_faithfulness_suff": 0.015885233879089355,
+      "attention_faithfulness_comp": 0.010267257690429688,
+      "attention_sparsity": 0.999999898758791,
+      "ig_target_auroc": 0.9795216507738002,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "MK-8776",
+      "n_cells": 5,
+      "attn_time_s": 0.025542736053466797,
+      "raw_targets": [
+        "CHEK1",
+        "CHEK2",
+        "CDK2"
+      ],
+      "resolved_targets": [
+        "CHEK1",
+        "CHEK2",
+        "CDK2"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.49421573736321,
+      "attention_sensitivity_alignment": 0.6259703840497931,
+      "attention_faithfulness_suff": 0.00913989543914795,
+      "attention_faithfulness_comp": 0.0020695924758911133,
+      "attention_sparsity": 0.9999999092660391,
+      "ig_target_auroc": 0.888830988361994,
+      "ig_atom_error": "The expanded size of the tensor (2300) must match the existing size (115) at non-singleton dimension 0.  Target sizes: [2300, 256].  Tensor sizes: [115, 1]"
+    },
+    {
+      "drug": "ML323",
+      "n_cells": 5,
+      "attn_time_s": 0.028286457061767578,
+      "raw_targets": [
+        "USP1",
+        "UAF1"
+      ],
+      "resolved_targets": [
+        "USP1"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "attention_target_auroc": 0.490542934556065,
+      "attention_sensitivity_alignment": 0.505390625,
+      "attention_faithfulness_suff": 0.003022432327270508,
+      "attention_faithfulness_comp": 0.005497932434082031,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.9727490621092122,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "MN-64",
+      "n_cells": 5,
+      "attn_time_s": 0.025837182998657227,
+      "raw_targets": [
+        "TNKS1",
+        "TNKS2"
+      ],
+      "resolved_targets": [
+        "TNKS",
+        "TNKS2"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.4915845969464853,
+      "attention_sensitivity_alignment": 0.5049573704718182,
+      "attention_faithfulness_suff": 0.0025146007537841797,
+      "attention_faithfulness_comp": 0.0038728713989257812,
+      "attention_sparsity": 0.9999998067968376,
+      "ig_target_auroc": 0.28109530509092806,
+      "ig_atom_error": "The expanded size of the tensor (2000) must match the existing size (100) at non-singleton dimension 0.  Target sizes: [2000, 256].  Tensor sizes: [100, 1]"
+    },
+    {
+      "drug": "Methotrexate",
+      "n_cells": 5,
+      "attn_time_s": 0.03904247283935547,
+      "raw_targets": [
+        "Antimetabolite"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5143359375000001,
+      "attention_faithfulness_suff": 0.0035066604614257812,
+      "attention_faithfulness_comp": 0.012634038925170898,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Mirin",
+      "n_cells": 5,
+      "attn_time_s": 0.02473163604736328,
+      "raw_targets": [
+        "MRE11"
+      ],
+      "resolved_targets": [
+        "MRE11"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5063633592440178,
+      "attention_faithfulness_suff": 0.004147768020629883,
+      "attention_faithfulness_comp": 0.011304855346679688,
+      "attention_sparsity": 1.0000002394069443,
+      "ig_target_auroc": 0.9993226344310129,
+      "ig_atom_error": "The expanded size of the tensor (1500) must match the existing size (75) at non-singleton dimension 0.  Target sizes: [1500, 256].  Tensor sizes: [75, 1]"
+    },
+    {
+      "drug": "Mitoxantrone",
+      "n_cells": 5,
+      "attn_time_s": 0.028559446334838867,
+      "raw_targets": [
+        "TOP2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5609876543209877,
+      "attention_faithfulness_suff": 0.022509336471557617,
+      "attention_faithfulness_comp": 0.01603412628173828,
+      "attention_sparsity": 1.0000000078002853,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "Motesanib",
+      "n_cells": 5,
+      "attn_time_s": 0.027850866317749023,
+      "raw_targets": [
+        "VEGFR",
+        "RET",
+        "KIT",
+        "PDGFR"
+      ],
+      "resolved_targets": [
+        "KDR",
+        "RET",
+        "KIT",
+        "PDGFRA"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.48970764500495073,
+      "attention_sensitivity_alignment": 0.5237166991552957,
+      "attention_faithfulness_suff": 0.013173580169677734,
+      "attention_faithfulness_comp": 0.0021333694458007812,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_target_auroc": 0.9367606441190265,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "n_cells": 5,
+      "attn_time_s": 0.02495598793029785,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5176530612244897,
+      "attention_faithfulness_suff": 0.0106467604637146,
+      "attention_faithfulness_comp": 0.01023399829864502,
+      "attention_sparsity": 0.9999999092660391,
+      "ig_atom_error": "The expanded size of the tensor (2300) must match the existing size (115) at non-singleton dimension 0.  Target sizes: [2300, 256].  Tensor sizes: [115, 1]"
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "n_cells": 5,
+      "attn_time_s": 0.02588796615600586,
+      "raw_targets": [
+        "Metabolism"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5747698807907046,
+      "attention_faithfulness_suff": 0.7366423606872559,
+      "attention_faithfulness_comp": 0.029184818267822266,
+      "attention_sparsity": 0.9999998939651075,
+      "ig_atom_error": "The expanded size of the tensor (1000) must match the existing size (50) at non-singleton dimension 0.  Target sizes: [1000, 256].  Tensor sizes: [50, 1]"
+    },
+    {
+      "drug": "NU7441",
+      "n_cells": 5,
+      "attn_time_s": 0.025027036666870117,
+      "raw_targets": [
+        "DNAPK"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5165051903114187,
+      "attention_faithfulness_suff": 0.025231480598449707,
+      "attention_faithfulness_comp": 0.011422991752624512,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "NVP-ADW742",
+      "n_cells": 5,
+      "attn_time_s": 0.02596902847290039,
+      "raw_targets": [
+        "IGF1R"
+      ],
+      "resolved_targets": [
+        "IGF1R"
+      ],
+      "target_pathway": "IGF1R signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4966131721550646,
+      "attention_sensitivity_alignment": 0.5318921447425574,
+      "attention_faithfulness_suff": 0.004370510578155518,
+      "attention_faithfulness_comp": 0.004236370325088501,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.9652459358065861,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "Navitoclax",
+      "n_cells": 5,
+      "attn_time_s": 0.02634739875793457,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "BCL-W"
+      ],
+      "resolved_targets": [
+        "BCL2"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.9904908295122967,
+      "attention_sensitivity_alignment": 0.5354406130268199,
+      "attention_faithfulness_suff": 0.023761749267578125,
+      "attention_faithfulness_comp": 0.0211179256439209,
+      "attention_sparsity": 0.9999999547568419,
+      "ig_target_auroc": 0.9922363484785327,
+      "ig_atom_error": "The expanded size of the tensor (6500) must match the existing size (325) at non-singleton dimension 0.  Target sizes: [6500, 256].  Tensor sizes: [325, 1]"
+    },
+    {
+      "drug": "Nelarabine",
+      "n_cells": 5,
+      "attn_time_s": 0.025206565856933594,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6306721536351165,
+      "attention_faithfulness_suff": 0.0007224082946777344,
+      "attention_faithfulness_comp": 0.0027742385864257812,
+      "attention_sparsity": 0.9997098116590698,
+      "ig_atom_error": "The expanded size of the tensor (2100) must match the existing size (105) at non-singleton dimension 0.  Target sizes: [2100, 256].  Tensor sizes: [105, 1]"
+    },
+    {
+      "drug": "Nilotinib",
+      "n_cells": 5,
+      "attn_time_s": 0.035123586654663086,
+      "raw_targets": [
+        "ABL"
+      ],
+      "resolved_targets": [
+        "ABL1"
+      ],
+      "target_pathway": "ABL signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5136560302866414,
+      "attention_faithfulness_suff": 0.01755964756011963,
+      "attention_faithfulness_comp": 0.011992573738098145,
+      "attention_sparsity": 0.9999998580021838,
+      "ig_target_auroc": 0.9114214255939974,
+      "ig_atom_error": "The expanded size of the tensor (3900) must match the existing size (195) at non-singleton dimension 0.  Target sizes: [3900, 256].  Tensor sizes: [195, 1]"
+    },
+    {
+      "drug": "Niraparib",
+      "n_cells": 5,
+      "attn_time_s": 0.02641749382019043,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.595602804450541,
+      "attention_faithfulness_suff": 0.0017051100730895996,
+      "attention_faithfulness_comp": 0.00842428207397461,
+      "attention_sparsity": 0.9997178430520064,
+      "ig_target_auroc": 0.943098327340941,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "n_cells": 5,
+      "attn_time_s": 0.02657341957092285,
+      "raw_targets": [
+        "MDM2"
+      ],
+      "resolved_targets": [
+        "MDM2"
+      ],
+      "target_pathway": "p53 pathway",
+      "matched_pathway": "p53 signaling pathway",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5064407451446691,
+      "attention_faithfulness_suff": 0.03061211109161377,
+      "attention_faithfulness_comp": 0.038042664527893066,
+      "attention_sparsity": 0.9999999224307262,
+      "ig_target_auroc": 0.9898395164651939,
+      "ig_atom_error": "The expanded size of the tensor (4000) must match the existing size (200) at non-singleton dimension 0.  Target sizes: [4000, 256].  Tensor sizes: [200, 1]"
+    },
+    {
+      "drug": "OF-1",
+      "n_cells": 5,
+      "attn_time_s": 0.02624058723449707,
+      "raw_targets": [
+        "BRPF1B",
+        "BRPF2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.534663014544192,
+      "attention_faithfulness_suff": 0.011879444122314453,
+      "attention_faithfulness_comp": 0.009196281433105469,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "OSI-027",
+      "n_cells": 5,
+      "attn_time_s": 0.02342987060546875,
+      "raw_targets": [
+        "MTORC1",
+        "MTORC2"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.9884066277615673,
+      "attention_sensitivity_alignment": 0.5053407247160627,
+      "attention_faithfulness_suff": 0.011512041091918945,
+      "attention_faithfulness_comp": 0.0031963586807250977,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_target_auroc": 0.9557107127969987,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "OTX015",
+      "n_cells": 5,
+      "attn_time_s": 0.024084806442260742,
+      "raw_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD2",
+        "BRD3",
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4902032308494007,
+      "attention_sensitivity_alignment": 0.5303036148296747,
+      "attention_faithfulness_suff": 0.0005053281784057617,
+      "attention_faithfulness_comp": 0.000797271728515625,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.28108389786347054,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "n_cells": 5,
+      "attn_time_s": 0.026322603225708008,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "BCL-W",
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "BCL2",
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.7425485904851232,
+      "attention_sensitivity_alignment": 0.5009024017770374,
+      "attention_faithfulness_suff": 0.009634613990783691,
+      "attention_faithfulness_comp": 0.005728721618652344,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.9040696159658173,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Olaparib",
+      "n_cells": 5,
+      "attn_time_s": 0.02433323860168457,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.6158343242172017,
+      "attention_faithfulness_suff": 0.0012375116348266602,
+      "attention_faithfulness_comp": 0.009690284729003906,
+      "attention_sparsity": 0.9997337397756731,
+      "ig_target_auroc": 0.9566984523995623,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "Osimertinib",
+      "n_cells": 5,
+      "attn_time_s": 0.02405095100402832,
+      "raw_targets": [
+        "EGFR"
+      ],
+      "resolved_targets": [
+        "EGFR"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "attention_target_auroc": 0.9921321383909962,
+      "attention_sensitivity_alignment": 0.7090657111952408,
+      "attention_faithfulness_suff": 0.04361903667449951,
+      "attention_faithfulness_comp": 0.029716849327087402,
+      "attention_sparsity": 1.0000000311214605,
+      "ig_target_auroc": 0.9952584410170904,
+      "ig_atom_error": "The expanded size of the tensor (3700) must match the existing size (185) at non-singleton dimension 0.  Target sizes: [3700, 256].  Tensor sizes: [185, 1]"
+    },
+    {
+      "drug": "Oxaliplatin",
+      "n_cells": 5,
+      "attn_time_s": 0.026380538940429688,
+      "raw_targets": [
+        "DNA alkylating agent"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5077619236358832,
+      "attention_faithfulness_suff": 0.016489386558532715,
+      "attention_faithfulness_comp": 0.012804865837097168,
+      "attention_sparsity": 1.0000002394069443,
+      "ig_atom_error": "The expanded size of the tensor (1500) must match the existing size (75) at non-singleton dimension 0.  Target sizes: [1500, 256].  Tensor sizes: [75, 1]"
+    },
+    {
+      "drug": "P22077",
+      "n_cells": 5,
+      "attn_time_s": 0.043340444564819336,
+      "raw_targets": [
+        "USP7",
+        "USP47"
+      ],
+      "resolved_targets": [
+        "USP7",
+        "USP47"
+      ],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.5613953022152427,
+      "attention_faithfulness_suff": 0.008502602577209473,
+      "attention_faithfulness_comp": 0.013172149658203125,
+      "attention_sparsity": 0.9999998067968376,
+      "ig_target_auroc": 0.6099734250429889,
+      "ig_atom_error": "The expanded size of the tensor (2000) must match the existing size (100) at non-singleton dimension 0.  Target sizes: [2000, 256].  Tensor sizes: [100, 1]"
+    },
+    {
+      "drug": "PCI-34051",
+      "n_cells": 5,
+      "attn_time_s": 0.022385835647583008,
+      "raw_targets": [
+        "HDAC8",
+        "HDAC6",
+        "HDAC1"
+      ],
+      "resolved_targets": [
+        "HDAC8",
+        "HDAC6",
+        "HDAC1"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.49421573736321,
+      "attention_sensitivity_alignment": 0.5626711932410016,
+      "attention_faithfulness_suff": 0.018734216690063477,
+      "attention_faithfulness_comp": 0.014009475708007812,
+      "attention_sparsity": 1.000000121722933,
+      "ig_target_auroc": 0.782925134618725,
+      "ig_atom_error": "The expanded size of the tensor (2200) must match the existing size (110) at non-singleton dimension 0.  Target sizes: [2200, 256].  Tensor sizes: [110, 1]"
+    },
+    {
+      "drug": "PD0325901",
+      "n_cells": 5,
+      "attn_time_s": 0.023279190063476562,
+      "raw_targets": [
+        "MEK1",
+        "MEK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6473114017703792,
+      "attention_faithfulness_suff": 0.042908668518066406,
+      "attention_faithfulness_comp": 0.026633262634277344,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "PD173074",
+      "n_cells": 5,
+      "attn_time_s": 0.025098323822021484,
+      "raw_targets": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3"
+      ],
+      "resolved_targets": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.6552718429737711,
+      "attention_sensitivity_alignment": 0.510734575241115,
+      "attention_faithfulness_suff": 0.006271839141845703,
+      "attention_faithfulness_comp": 0.030066251754760742,
+      "attention_sparsity": 1.0000000884248017,
+      "ig_target_auroc": 0.9792252909501477,
+      "ig_atom_error": "The expanded size of the tensor (3800) must match the existing size (190) at non-singleton dimension 0.  Target sizes: [3800, 256].  Tensor sizes: [190, 1]"
+    },
+    {
+      "drug": "PF-4708671",
+      "n_cells": 5,
+      "attn_time_s": 0.02667379379272461,
+      "raw_targets": [
+        "S6K1"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5089237425635478,
+      "attention_faithfulness_suff": 0.011066913604736328,
+      "attention_faithfulness_comp": 0.007470250129699707,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "PFI-1",
+      "n_cells": 5,
+      "attn_time_s": 0.025373220443725586,
+      "raw_targets": [
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4902042517715715,
+      "attention_sensitivity_alignment": 0.5341814575424917,
+      "attention_faithfulness_suff": 0.005730271339416504,
+      "attention_faithfulness_comp": 0.014458298683166504,
+      "attention_sparsity": 1.0000001112164127,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "PFI3",
+      "n_cells": 5,
+      "attn_time_s": 0.03550243377685547,
+      "raw_targets": [
+        "Polybromo 1",
+        "SMARCA4",
+        "SMARCA2"
+      ],
+      "resolved_targets": [
+        "SMARCA4",
+        "SMARCA2"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.496612995675056,
+      "attention_sensitivity_alignment": 0.6379769299023957,
+      "attention_faithfulness_suff": 0.0006961822509765625,
+      "attention_faithfulness_comp": 0.0008819103240966797,
+      "attention_sparsity": 1.0000001112164127,
+      "ig_target_auroc": 0.7513417747902662,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "PLX-4720",
+      "n_cells": 5,
+      "attn_time_s": 0.027479171752929688,
+      "raw_targets": [
+        "BRAF"
+      ],
+      "resolved_targets": [
+        "BRAF"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "attention_target_auroc": 0.9875989995831597,
+      "attention_sensitivity_alignment": 0.5257108490093221,
+      "attention_faithfulness_suff": 0.03077709674835205,
+      "attention_faithfulness_comp": 0.037323832511901855,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_target_auroc": 0.8756773655689871,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "POMHEX",
+      "n_cells": 5,
+      "attn_time_s": 0.025309085845947266,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.574115990141341,
+      "attention_faithfulness_suff": 0.05567041039466858,
+      "attention_faithfulness_comp": 0.0024660825729370117,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "n_cells": 5,
+      "attn_time_s": 0.02458477020263672,
+      "raw_targets": [
+        "TP53 activation"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "p53 pathway",
+      "matched_pathway": "p53 signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6373647309861302,
+      "attention_faithfulness_suff": 0.001117110252380371,
+      "attention_faithfulness_comp": 0.0024118423461914062,
+      "attention_sparsity": 0.9999999670153958,
+      "ig_atom_error": "The expanded size of the tensor (1400) must match the existing size (70) at non-singleton dimension 0.  Target sizes: [1400, 256].  Tensor sizes: [70, 1]"
+    },
+    {
+      "drug": "PRT062607",
+      "n_cells": 5,
+      "attn_time_s": 0.024217844009399414,
+      "raw_targets": [
+        "SYK"
+      ],
+      "resolved_targets": [
+        "SYK"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5243239072566646,
+      "attention_faithfulness_suff": 0.004066050052642822,
+      "attention_faithfulness_comp": 0.014506042003631592,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.9583159649854106,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Paclitaxel",
+      "n_cells": 5,
+      "attn_time_s": 0.03710007667541504,
+      "raw_targets": [
+        "Microtubule stabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5237729292659294,
+      "attention_faithfulness_suff": 0.006892204284667969,
+      "attention_faithfulness_comp": 0.0011649131774902344,
+      "attention_sparsity": 0.9999999944466109,
+      "ig_atom_error": "The expanded size of the tensor (6200) must match the existing size (310) at non-singleton dimension 0.  Target sizes: [6200, 256].  Tensor sizes: [310, 1]"
+    },
+    {
+      "drug": "Palbociclib",
+      "n_cells": 5,
+      "attn_time_s": 0.03761553764343262,
+      "raw_targets": [
+        "CDK4",
+        "CDK6"
+      ],
+      "resolved_targets": [
+        "CDK4",
+        "CDK6"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.547199101598626,
+      "attention_faithfulness_suff": 0.0014488548040390015,
+      "attention_faithfulness_comp": 0.006497025489807129,
+      "attention_sparsity": 0.9997354522439516,
+      "ig_target_auroc": 0.9275181074461987,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Pevonedistat",
+      "n_cells": 5,
+      "attn_time_s": 0.038683414459228516,
+      "raw_targets": [
+        "NAE"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5633450513791238,
+      "attention_faithfulness_suff": 0.013284087181091309,
+      "attention_faithfulness_comp": 0.7185050249099731,
+      "attention_sparsity": 0.999999898758791,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "Picolinici-acid",
+      "n_cells": 5,
+      "attn_time_s": 0.035657644271850586,
+      "raw_targets": [
+        "Inflammatory related"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6112418502372594,
+      "attention_faithfulness_suff": 0.00017690658569335938,
+      "attention_faithfulness_comp": 0.000850677490234375,
+      "attention_sparsity": 1.0000000809463185,
+      "ig_atom_error": "The expanded size of the tensor (900) must match the existing size (45) at non-singleton dimension 0.  Target sizes: [900, 256].  Tensor sizes: [45, 1]"
+    },
+    {
+      "drug": "Pictilisib",
+      "n_cells": 5,
+      "attn_time_s": 0.023573637008666992,
+      "raw_targets": [
+        "PI3K (class 1)"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5182652926410358,
+      "attention_faithfulness_suff": 0.008738517761230469,
+      "attention_faithfulness_comp": 0.005124926567077637,
+      "attention_sparsity": 1.000000070647056,
+      "ig_atom_error": "The expanded size of the tensor (3500) must match the existing size (175) at non-singleton dimension 0.  Target sizes: [3500, 256].  Tensor sizes: [175, 1]"
+    },
+    {
+      "drug": "Piperlongumine",
+      "n_cells": 5,
+      "attn_time_s": 0.024008512496948242,
+      "raw_targets": [
+        "Induces reactive oxygen species"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5527681660899654,
+      "attention_faithfulness_suff": 0.004313945770263672,
+      "attention_faithfulness_comp": 0.009029030799865723,
+      "attention_sparsity": 0.9999999092660391,
+      "ig_atom_error": "The expanded size of the tensor (2300) must match the existing size (115) at non-singleton dimension 0.  Target sizes: [2300, 256].  Tensor sizes: [115, 1]"
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "n_cells": 5,
+      "attn_time_s": 0.025900840759277344,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5662551440329219,
+      "attention_faithfulness_suff": 0.0032150745391845703,
+      "attention_faithfulness_comp": 0.008849382400512695,
+      "attention_sparsity": 1.0000001115049821,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "Pyridostatin",
+      "n_cells": 5,
+      "attn_time_s": 0.029065847396850586,
+      "raw_targets": [
+        "G-quadruplex stabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6079819431619986,
+      "attention_faithfulness_suff": 0.0001729726791381836,
+      "attention_faithfulness_comp": 0.012171149253845215,
+      "attention_sparsity": 0.9999109916682444,
+      "ig_atom_error": "The expanded size of the tensor (4400) must match the existing size (220) at non-singleton dimension 0.  Target sizes: [4400, 256].  Tensor sizes: [220, 1]"
+    },
+    {
+      "drug": "RO-3306",
+      "n_cells": 5,
+      "attn_time_s": 0.04056119918823242,
+      "raw_targets": [
+        "CDK1"
+      ],
+      "resolved_targets": [
+        "CDK1"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5464933676367403,
+      "attention_faithfulness_suff": 0.00011473894119262695,
+      "attention_faithfulness_comp": 0.010420441627502441,
+      "attention_sparsity": 0.9997178430520064,
+      "ig_target_auroc": 0.9124114214255941,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "RVX-208",
+      "n_cells": 5,
+      "attn_time_s": 0.02891063690185547,
+      "raw_targets": [
+        "BRD4"
+      ],
+      "resolved_targets": [
+        "BRD4"
+      ],
+      "target_pathway": "Chromatin other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.6113961652714016,
+      "attention_faithfulness_suff": 0.0004837512969970703,
+      "attention_faithfulness_comp": 0.012801647186279297,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "Rapamycin",
+      "n_cells": 5,
+      "attn_time_s": 0.028211116790771484,
+      "raw_targets": [
+        "MTORC1"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.49564922884535223,
+      "attention_sensitivity_alignment": 0.5150302657227864,
+      "attention_faithfulness_suff": 0.00023698806762695312,
+      "attention_faithfulness_comp": 0.0013852119445800781,
+      "attention_sparsity": 0.9999999547568419,
+      "ig_target_auroc": 0.920331388078366,
+      "ig_atom_error": "The expanded size of the tensor (6500) must match the existing size (325) at non-singleton dimension 0.  Target sizes: [6500, 256].  Tensor sizes: [325, 1]"
+    },
+    {
+      "drug": "Refametinib",
+      "n_cells": 5,
+      "attn_time_s": 0.022891998291015625,
+      "raw_targets": [
+        "MEK1",
+        "MEK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6303806228373703,
+      "attention_faithfulness_suff": 0.028969526290893555,
+      "attention_faithfulness_comp": 0.01499319076538086,
+      "attention_sparsity": 0.999999898758791,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "Remodelin",
+      "n_cells": 5,
+      "attn_time_s": 0.025152206420898438,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5531409788166546,
+      "attention_faithfulness_suff": 0.005069732666015625,
+      "attention_faithfulness_comp": 0.0009925365447998047,
+      "attention_sparsity": 0.9999998067968376,
+      "ig_atom_error": "The expanded size of the tensor (2000) must match the existing size (100) at non-singleton dimension 0.  Target sizes: [2000, 256].  Tensor sizes: [100, 1]"
+    },
+    {
+      "drug": "Ribociclib",
+      "n_cells": 5,
+      "attn_time_s": 0.03130292892456055,
+      "raw_targets": [
+        "CDK4",
+        "CDK6"
+      ],
+      "resolved_targets": [
+        "CDK4",
+        "CDK6"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.9127195039341358,
+      "attention_sensitivity_alignment": 0.5216333153055706,
+      "attention_faithfulness_suff": 0.0016320347785949707,
+      "attention_faithfulness_comp": 0.008129894733428955,
+      "attention_sparsity": 0.999733833730516,
+      "ig_target_auroc": 0.9297847949559689,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "Romidepsin",
+      "n_cells": 5,
+      "attn_time_s": 0.036684274673461914,
+      "raw_targets": [
+        "HDAC1",
+        "HDAC2",
+        "HDAC3",
+        "HDAC8"
+      ],
+      "resolved_targets": [
+        "HDAC1",
+        "HDAC2",
+        "HDAC3",
+        "HDAC8"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.8710589400177184,
+      "attention_sensitivity_alignment": 0.5675720164609054,
+      "attention_faithfulness_suff": 0.06487083435058594,
+      "attention_faithfulness_comp": 0.008621692657470703,
+      "attention_sparsity": 0.9999998305143618,
+      "ig_expr_error": "Input contains NaN.",
+      "ig_atom_error": "The expanded size of the tensor (3600) must match the existing size (180) at non-singleton dimension 0.  Target sizes: [3600, 256].  Tensor sizes: [180, 1]"
+    },
+    {
+      "drug": "Rucaparib",
+      "n_cells": 5,
+      "attn_time_s": 0.03571605682373047,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.49385128445625553,
+      "attention_sensitivity_alignment": 0.5042560553633219,
+      "attention_faithfulness_suff": 0.0018048286437988281,
+      "attention_faithfulness_comp": 0.00901341438293457,
+      "attention_sparsity": 0.9997178430520064,
+      "ig_target_auroc": 0.9817622844041477,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "Ruxolitinib",
+      "n_cells": 5,
+      "attn_time_s": 0.0287017822265625,
+      "raw_targets": [
+        "JAK1",
+        "JAK2"
+      ],
+      "resolved_targets": [
+        "JAK1",
+        "JAK2"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.9908811422020739,
+      "attention_sensitivity_alignment": 0.5995332906771049,
+      "attention_faithfulness_suff": 0.005063533782958984,
+      "attention_faithfulness_comp": 0.002918243408203125,
+      "attention_sparsity": 0.9999999092660391,
+      "ig_target_auroc": 0.9563597519670679,
+      "ig_atom_error": "The expanded size of the tensor (2300) must match the existing size (115) at non-singleton dimension 0.  Target sizes: [2300, 256].  Tensor sizes: [115, 1]"
+    },
+    {
+      "drug": "SB216763",
+      "n_cells": 5,
+      "attn_time_s": 0.03673744201660156,
+      "raw_targets": [
+        "GSK3A",
+        "GSK3B"
+      ],
+      "resolved_targets": [
+        "GSK3A",
+        "GSK3B"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.5570182765879248,
+      "attention_faithfulness_suff": 0.002557992935180664,
+      "attention_faithfulness_comp": 0.0026721954345703125,
+      "attention_sparsity": 0.9999999199238425,
+      "ig_target_auroc": 0.8659788442499088,
+      "ig_atom_error": "The expanded size of the tensor (2500) must match the existing size (125) at non-singleton dimension 0.  Target sizes: [2500, 256].  Tensor sizes: [125, 1]"
+    },
+    {
+      "drug": "SB505124",
+      "n_cells": 5,
+      "attn_time_s": 0.032788991928100586,
+      "raw_targets": [
+        "TGFBR1",
+        "ACVR1B",
+        "ACVR1C"
+      ],
+      "resolved_targets": [
+        "TGFBR1",
+        "ACVR1B",
+        "ACVR1C"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.48866597186034394,
+      "attention_sensitivity_alignment": 0.5453514739229024,
+      "attention_faithfulness_suff": 0.014430999755859375,
+      "attention_faithfulness_comp": 0.010223627090454102,
+      "attention_sparsity": 0.9999999199238425,
+      "ig_target_auroc": 0.81902032308494,
+      "ig_atom_error": "The expanded size of the tensor (2500) must match the existing size (125) at non-singleton dimension 0.  Target sizes: [2500, 256].  Tensor sizes: [125, 1]"
+    },
+    {
+      "drug": "SB590885",
+      "n_cells": 5,
+      "attn_time_s": 0.02770829200744629,
+      "raw_targets": [
+        "BRAF"
+      ],
+      "resolved_targets": [
+        "BRAF"
+      ],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "attention_target_auroc": 0.49346081700708627,
+      "attention_sensitivity_alignment": 0.5036332179930796,
+      "attention_faithfulness_suff": 0.034328460693359375,
+      "attention_faithfulness_comp": 0.02694082260131836,
+      "attention_sparsity": 1.000000003354595,
+      "ig_target_auroc": 0.8868278449353897,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "SCH772984",
+      "n_cells": 5,
+      "attn_time_s": 0.03765606880187988,
+      "raw_targets": [
+        "ERK1",
+        "ERK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.598592944906857,
+      "attention_faithfulness_suff": 0.032543182373046875,
+      "attention_faithfulness_comp": 0.040509939193725586,
+      "attention_sparsity": 1.000000106434019,
+      "ig_atom_error": "The expanded size of the tensor (4400) must match the existing size (220) at non-singleton dimension 0.  Target sizes: [4400, 256].  Tensor sizes: [220, 1]"
+    },
+    {
+      "drug": "SGC-CBP30",
+      "n_cells": 5,
+      "attn_time_s": 0.03281140327453613,
+      "raw_targets": [
+        "EP300",
+        "CBP"
+      ],
+      "resolved_targets": [
+        "EP300"
+      ],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.959722801167153,
+      "attention_sensitivity_alignment": 0.537119341563786,
+      "attention_faithfulness_suff": 0.0004367828369140625,
+      "attention_faithfulness_comp": 0.002012968063354492,
+      "attention_sparsity": 1.0000001059858352,
+      "ig_target_auroc": 0.9489891621508962,
+      "ig_atom_error": "The expanded size of the tensor (3600) must match the existing size (180) at non-singleton dimension 0.  Target sizes: [3600, 256].  Tensor sizes: [180, 1]"
+    },
+    {
+      "drug": "SGC0946",
+      "n_cells": 5,
+      "attn_time_s": 0.03408956527709961,
+      "raw_targets": [
+        "DOT1L"
+      ],
+      "resolved_targets": [
+        "DOT1L"
+      ],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "attention_target_auroc": 0.4902042517715715,
+      "attention_sensitivity_alignment": 0.5346260387811634,
+      "attention_faithfulness_suff": 0.004947960376739502,
+      "attention_faithfulness_comp": 0.0018299221992492676,
+      "attention_sparsity": 0.9999999224307262,
+      "ig_target_auroc": 0.8790120883701542,
+      "ig_atom_error": "The expanded size of the tensor (4000) must match the existing size (200) at non-singleton dimension 0.  Target sizes: [4000, 256].  Tensor sizes: [200, 1]"
+    },
+    {
+      "drug": "SL0101",
+      "n_cells": 5,
+      "attn_time_s": 0.0325777530670166,
+      "raw_targets": [
+        "RSK",
+        "AURKB",
+        "PIM1",
+        "PIM3"
+      ],
+      "resolved_targets": [
+        "AURKB",
+        "PIM1",
+        "PIM3"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.49494528400208443,
+      "attention_sensitivity_alignment": 0.5614186851211073,
+      "attention_faithfulness_suff": 0.005845785140991211,
+      "attention_faithfulness_comp": 0.0020694732666015625,
+      "attention_sparsity": 1.0000000311214605,
+      "ig_target_auroc": 0.6648775403856175,
+      "ig_atom_error": "The expanded size of the tensor (3700) must match the existing size (185) at non-singleton dimension 0.  Target sizes: [3700, 256].  Tensor sizes: [185, 1]"
+    },
+    {
+      "drug": "SN-38",
+      "n_cells": 5,
+      "attn_time_s": 0.03456711769104004,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "attention_target_auroc": 0.49624843684868697,
+      "attention_sensitivity_alignment": 0.550635478637101,
+      "attention_faithfulness_suff": 0.0013947486877441406,
+      "attention_faithfulness_comp": 0.015366077423095703,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Sabutoclax",
+      "n_cells": 5,
+      "attn_time_s": 0.03308844566345215,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "BFL1",
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "BCL2",
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.7425485904851232,
+      "attention_sensitivity_alignment": 0.5811504185795301,
+      "attention_faithfulness_suff": 0.01634812355041504,
+      "attention_faithfulness_comp": 0.011968851089477539,
+      "attention_sparsity": 1.0000000339700077,
+      "ig_target_auroc": 0.9217602000937939,
+      "ig_atom_error": "The expanded size of the tensor (5200) must match the existing size (260) at non-singleton dimension 0.  Target sizes: [5200, 256].  Tensor sizes: [260, 1]"
+    },
+    {
+      "drug": "Sapitinib",
+      "n_cells": 5,
+      "attn_time_s": 0.024183034896850586,
+      "raw_targets": [
+        "EGFR",
+        "ERBB2",
+        "ERBB3"
+      ],
+      "resolved_targets": [
+        "EGFR",
+        "ERBB2",
+        "ERBB3"
+      ],
+      "target_pathway": "EGFR signaling",
+      "matched_pathway": "EGFR tyrosine kinase inhibitor resistance",
+      "attention_target_auroc": 0.6577384054194892,
+      "attention_sensitivity_alignment": 0.6313912009512486,
+      "attention_faithfulness_suff": 0.013988494873046875,
+      "attention_faithfulness_comp": 0.020752310752868652,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.9583637311099531,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Savolitinib",
+      "n_cells": 5,
+      "attn_time_s": 0.026482343673706055,
+      "raw_targets": [
+        "MET"
+      ],
+      "resolved_targets": [
+        "MET"
+      ],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.49338265944143395,
+      "attention_sensitivity_alignment": 0.5551137692539009,
+      "attention_faithfulness_suff": 0.004134178161621094,
+      "attention_faithfulness_comp": 0.005432605743408203,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_target_auroc": 0.9941642350979575,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "n_cells": 5,
+      "attn_time_s": 0.037842750549316406,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5568175582990398,
+      "attention_faithfulness_suff": 0.027550458908081055,
+      "attention_faithfulness_comp": 0.022700071334838867,
+      "attention_sparsity": 0.9999999224307262,
+      "ig_atom_error": "The expanded size of the tensor (4000) must match the existing size (200) at non-singleton dimension 0.  Target sizes: [4000, 256].  Tensor sizes: [200, 1]"
+    },
+    {
+      "drug": "Selumetinib",
+      "n_cells": 5,
+      "attn_time_s": 0.036562442779541016,
+      "raw_targets": [
+        "MEK1",
+        "MEK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5587018227830786,
+      "attention_faithfulness_suff": 0.05616474151611328,
+      "attention_faithfulness_comp": 0.032198190689086914,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "n_cells": 5,
+      "attn_time_s": 0.03673124313354492,
+      "raw_targets": [
+        "BIRC5"
+      ],
+      "resolved_targets": [
+        "BIRC5"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.4861140058357649,
+      "attention_sensitivity_alignment": 0.5031240602759864,
+      "attention_faithfulness_suff": 0.20684480667114258,
+      "attention_faithfulness_comp": 0.7138590812683105,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_target_auroc": 0.8780220925385578,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "Serdemetan",
+      "n_cells": 5,
+      "attn_time_s": 0.03224349021911621,
+      "raw_targets": [
+        "MDM2"
+      ],
+      "resolved_targets": [
+        "MDM2"
+      ],
+      "target_pathway": "p53 pathway",
+      "matched_pathway": "p53 signaling pathway",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5569234978283917,
+      "attention_faithfulness_suff": 0.02528548240661621,
+      "attention_faithfulness_comp": 0.01629018783569336,
+      "attention_sparsity": 0.9999999199238425,
+      "ig_target_auroc": 0.9652980408503543,
+      "ig_atom_error": "The expanded size of the tensor (2500) must match the existing size (125) at non-singleton dimension 0.  Target sizes: [2500, 256].  Tensor sizes: [125, 1]"
+    },
+    {
+      "drug": "Sinularin",
+      "n_cells": 5,
+      "attn_time_s": 0.03423142433166504,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Unclassified",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6014266117969822,
+      "attention_faithfulness_suff": 0.0027173757553100586,
+      "attention_faithfulness_comp": 0.015233993530273438,
+      "attention_sparsity": 1.0000001112164127,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "Sorafenib",
+      "n_cells": 5,
+      "attn_time_s": 0.024360179901123047,
+      "raw_targets": [
+        "PDGFR",
+        "KIT",
+        "VEGFR",
+        "RAF"
+      ],
+      "resolved_targets": [
+        "PDGFRA",
+        "KIT",
+        "KDR"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4902032308494007,
+      "attention_sensitivity_alignment": 0.5429516522436433,
+      "attention_faithfulness_suff": 0.004890471696853638,
+      "attention_faithfulness_comp": 0.007884830236434937,
+      "attention_sparsity": 1.0000000078002853,
+      "ig_target_auroc": 0.9091714434601355,
+      "ig_atom_error": "The expanded size of the tensor (3200) must match the existing size (160) at non-singleton dimension 0.  Target sizes: [3200, 256].  Tensor sizes: [160, 1]"
+    },
+    {
+      "drug": "Staurosporine",
+      "n_cells": 5,
+      "attn_time_s": 0.02511739730834961,
+      "raw_targets": [
+        "Broad spectrum kinase inhibitor"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "RTK signaling",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5607081516712908,
+      "attention_faithfulness_suff": 0.005599498748779297,
+      "attention_faithfulness_comp": 0.0032176971435546875,
+      "attention_sparsity": 1.000000070647056,
+      "ig_atom_error": "The expanded size of the tensor (3500) must match the existing size (175) at non-singleton dimension 0.  Target sizes: [3500, 256].  Tensor sizes: [175, 1]"
+    },
+    {
+      "drug": "TW 37",
+      "n_cells": 5,
+      "attn_time_s": 0.02622199058532715,
+      "raw_targets": [
+        "BCL2",
+        "BCL-XL",
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "BCL2",
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.7369600333489656,
+      "attention_sensitivity_alignment": 0.5343858131487889,
+      "attention_faithfulness_suff": 0.004403233528137207,
+      "attention_faithfulness_comp": 0.0004634857177734375,
+      "attention_sparsity": 0.999999997869752,
+      "ig_target_auroc": 0.8522223959147517,
+      "ig_atom_error": "The expanded size of the tensor (4100) must match the existing size (205) at non-singleton dimension 0.  Target sizes: [4100, 256].  Tensor sizes: [205, 1]"
+    },
+    {
+      "drug": "Talazoparib",
+      "n_cells": 5,
+      "attn_time_s": 0.022686481475830078,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.5739926987560844,
+      "attention_faithfulness_suff": 0.0012841224670410156,
+      "attention_faithfulness_comp": 0.011591672897338867,
+      "attention_sparsity": 0.9997266054933187,
+      "ig_target_auroc": 0.940961909228284,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "Tamoxifen",
+      "n_cells": 5,
+      "attn_time_s": 0.023793458938598633,
+      "raw_targets": [
+        "ESR1"
+      ],
+      "resolved_targets": [
+        "ESR1"
+      ],
+      "target_pathway": "Hormone-related",
+      "matched_pathway": "Steroid hormone biosynthesis",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5141835677770723,
+      "attention_faithfulness_suff": 0.004508495330810547,
+      "attention_faithfulness_comp": 0.0005021095275878906,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_target_auroc": 0.7830867027928303,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "Tanespimycin",
+      "n_cells": 5,
+      "attn_time_s": 0.028080463409423828,
+      "raw_targets": [
+        "HSP90"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Protein stability and degradation",
+      "matched_pathway": "Fatty acid degradation",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5340104647583872,
+      "attention_faithfulness_suff": 0.0028382539749145508,
+      "attention_faithfulness_comp": 0.01473081111907959,
+      "attention_sparsity": 0.9999999775034779,
+      "ig_atom_error": "The expanded size of the tensor (4200) must match the existing size (210) at non-singleton dimension 0.  Target sizes: [4200, 256].  Tensor sizes: [210, 1]"
+    },
+    {
+      "drug": "Taselisib",
+      "n_cells": 5,
+      "attn_time_s": 0.025206327438354492,
+      "raw_targets": [
+        "PI3K (beta sparing)"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5619632712379442,
+      "attention_faithfulness_suff": 0.011107683181762695,
+      "attention_faithfulness_comp": 0.010265350341796875,
+      "attention_sparsity": 1.000000003354595,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "n_cells": 5,
+      "attn_time_s": 0.024106264114379883,
+      "raw_targets": [
+        "Telomerase"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5375054295165225,
+      "attention_faithfulness_suff": 0.009821414947509766,
+      "attention_faithfulness_comp": 0.021814346313476562,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "Temozolomide",
+      "n_cells": 5,
+      "attn_time_s": 0.022854089736938477,
+      "raw_targets": [
+        "DNA alkylating agent"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5866693090236491,
+      "attention_faithfulness_suff": 0.0003418922424316406,
+      "attention_faithfulness_comp": 0.004878044128417969,
+      "attention_sparsity": 0.9999999670153958,
+      "ig_atom_error": "The expanded size of the tensor (1400) must match the existing size (70) at non-singleton dimension 0.  Target sizes: [1400, 256].  Tensor sizes: [70, 1]"
+    },
+    {
+      "drug": "Temsirolimus",
+      "n_cells": 5,
+      "attn_time_s": 0.02285456657409668,
+      "raw_targets": [
+        "MTOR"
+      ],
+      "resolved_targets": [
+        "MTOR"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.4966131721550646,
+      "attention_sensitivity_alignment": 0.5854996593639069,
+      "attention_faithfulness_suff": 0.020578384399414062,
+      "attention_faithfulness_comp": 0.026842594146728516,
+      "attention_sparsity": 0.9999997951289292,
+      "ig_target_auroc": 0.8990204251771572,
+      "ig_atom_error": "The expanded size of the tensor (7300) must match the existing size (365) at non-singleton dimension 0.  Target sizes: [7300, 256].  Tensor sizes: [365, 1]"
+    },
+    {
+      "drug": "Teniposide",
+      "n_cells": 5,
+      "attn_time_s": 0.022869348526000977,
+      "raw_targets": [
+        "nan"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6007681755829904,
+      "attention_faithfulness_suff": 0.0069539546966552734,
+      "attention_faithfulness_comp": 0.024681568145751953,
+      "attention_sparsity": 0.999999833497345,
+      "ig_atom_error": "The expanded size of the tensor (4600) must match the existing size (230) at non-singleton dimension 0.  Target sizes: [4600, 256].  Tensor sizes: [230, 1]"
+    },
+    {
+      "drug": "Topotecan",
+      "n_cells": 5,
+      "attn_time_s": 0.022939443588256836,
+      "raw_targets": [
+        "TOP1"
+      ],
+      "resolved_targets": [
+        "TOP1"
+      ],
+      "target_pathway": "DNA replication",
+      "matched_pathway": "DNA replication",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5671330589849108,
+      "attention_faithfulness_suff": 0.011590957641601562,
+      "attention_faithfulness_comp": 0.00032901763916015625,
+      "attention_sparsity": 0.999999898758791,
+      "ig_target_auroc": 0.28110671112963737,
+      "ig_atom_error": "The expanded size of the tensor (3100) must match the existing size (155) at non-singleton dimension 0.  Target sizes: [3100, 256].  Tensor sizes: [155, 1]"
+    },
+    {
+      "drug": "Tozasertib",
+      "n_cells": 5,
+      "attn_time_s": 0.022014379501342773,
+      "raw_targets": [
+        "AURKA",
+        "AURKB",
+        "AURKC",
+        "others"
+      ],
+      "resolved_targets": [
+        "AURKA",
+        "AURKB",
+        "AURKC"
+      ],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4925482021886399,
+      "attention_sensitivity_alignment": 0.5673336938885885,
+      "attention_faithfulness_suff": 0.022875666618347168,
+      "attention_faithfulness_comp": 0.01389622688293457,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.6746569393781484,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "Trametinib",
+      "n_cells": 5,
+      "attn_time_s": 0.024605751037597656,
+      "raw_targets": [
+        "MEK1",
+        "MEK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6431166600607742,
+      "attention_faithfulness_suff": 0.04666566848754883,
+      "attention_faithfulness_comp": 0.025391578674316406,
+      "attention_sparsity": 1.0000000311214605,
+      "ig_atom_error": "The expanded size of the tensor (3700) must match the existing size (185) at non-singleton dimension 0.  Target sizes: [3700, 256].  Tensor sizes: [185, 1]"
+    },
+    {
+      "drug": "Tretinoin",
+      "n_cells": 5,
+      "attn_time_s": 0.023209810256958008,
+      "raw_targets": [
+        "Retinoic acid"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6332179930795847,
+      "attention_faithfulness_suff": 0.017966508865356445,
+      "attention_faithfulness_comp": 0.013914823532104492,
+      "attention_sparsity": 1.000000121722933,
+      "ig_atom_error": "The expanded size of the tensor (2200) must match the existing size (110) at non-singleton dimension 0.  Target sizes: [2200, 256].  Tensor sizes: [110, 1]"
+    },
+    {
+      "drug": "UMI-77",
+      "n_cells": 5,
+      "attn_time_s": 0.023434162139892578,
+      "raw_targets": [
+        "MCL1"
+      ],
+      "resolved_targets": [
+        "MCL1"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.49218424343476447,
+      "attention_sensitivity_alignment": 0.5093808158543333,
+      "attention_faithfulness_suff": 0.007372379302978516,
+      "attention_faithfulness_comp": 0.0011658668518066406,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_target_auroc": 0.8379533138807836,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "UNC0379",
+      "n_cells": 5,
+      "attn_time_s": 0.030063867568969727,
+      "raw_targets": [
+        "SETD8"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5541974749761078,
+      "attention_faithfulness_suff": 0.0010378360748291016,
+      "attention_faithfulness_comp": 0.010825037956237793,
+      "attention_sparsity": 0.9997304138664534,
+      "ig_atom_error": "The expanded size of the tensor (3000) must match the existing size (150) at non-singleton dimension 0.  Target sizes: [3000, 256].  Tensor sizes: [150, 1]"
+    },
+    {
+      "drug": "UNC0638",
+      "n_cells": 5,
+      "attn_time_s": 0.024796009063720703,
+      "raw_targets": [
+        "G9A",
+        "GLP"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone methylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6122353915428809,
+      "attention_faithfulness_suff": 0.009148478507995605,
+      "attention_faithfulness_comp": 0.004752039909362793,
+      "attention_sparsity": 1.0000000311214605,
+      "ig_atom_error": "The expanded size of the tensor (3700) must match the existing size (185) at non-singleton dimension 0.  Target sizes: [3700, 256].  Tensor sizes: [185, 1]"
+    },
+    {
+      "drug": "Ulixertinib",
+      "n_cells": 5,
+      "attn_time_s": 0.028577804565429688,
+      "raw_targets": [
+        "ERK1",
+        "ERK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5875906311604129,
+      "attention_faithfulness_suff": 0.04514890909194946,
+      "attention_faithfulness_comp": 0.06185781955718994,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "Uprosertib",
+      "n_cells": 5,
+      "attn_time_s": 0.026706695556640625,
+      "raw_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "resolved_targets": [
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "target_pathway": "PI3K/MTOR signaling",
+      "matched_pathway": "mTOR signaling pathway",
+      "attention_target_auroc": 0.9909067222511725,
+      "attention_sensitivity_alignment": 0.5197034137528699,
+      "attention_faithfulness_suff": 0.008185267448425293,
+      "attention_faithfulness_comp": 0.0055599212646484375,
+      "attention_sparsity": 1.0000000685225665,
+      "ig_target_auroc": 0.9826298419315616,
+      "ig_atom_error": "The expanded size of the tensor (2800) must match the existing size (140) at non-singleton dimension 0.  Target sizes: [2800, 256].  Tensor sizes: [140, 1]"
+    },
+    {
+      "drug": "VE-822",
+      "n_cells": 5,
+      "attn_time_s": 0.02349686622619629,
+      "raw_targets": [
+        "ATR"
+      ],
+      "resolved_targets": [
+        "ATR"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.5472782685853169,
+      "attention_faithfulness_suff": 0.01602935791015625,
+      "attention_faithfulness_comp": 0.015389442443847656,
+      "attention_sparsity": 1.0000000221803313,
+      "ig_target_auroc": 0.869268445185494,
+      "ig_atom_error": "The expanded size of the tensor (3300) must match the existing size (165) at non-singleton dimension 0.  Target sizes: [3300, 256].  Tensor sizes: [165, 1]"
+    },
+    {
+      "drug": "VE821",
+      "n_cells": 5,
+      "attn_time_s": 0.024772167205810547,
+      "raw_targets": [
+        "ATR"
+      ],
+      "resolved_targets": [
+        "ATR"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.553298450805376,
+      "attention_faithfulness_suff": 0.024622857570648193,
+      "attention_faithfulness_comp": 0.017248213291168213,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_target_auroc": 0.8500416840350146,
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "VX-11e",
+      "n_cells": 5,
+      "attn_time_s": 0.02429032325744629,
+      "raw_targets": [
+        "ERK2"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "ERK MAPK signaling",
+      "matched_pathway": "MAPK signaling pathway",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5586465657111952,
+      "attention_faithfulness_suff": 0.017848551273345947,
+      "attention_faithfulness_comp": 0.032656073570251465,
+      "attention_sparsity": 1.000000003354595,
+      "ig_atom_error": "The expanded size of the tensor (3400) must match the existing size (170) at non-singleton dimension 0.  Target sizes: [3400, 256].  Tensor sizes: [170, 1]"
+    },
+    {
+      "drug": "Veliparib",
+      "n_cells": 5,
+      "attn_time_s": 0.033307552337646484,
+      "raw_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "resolved_targets": [
+        "PARP1",
+        "PARP2"
+      ],
+      "target_pathway": "Genome integrity",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.6533976266201567,
+      "attention_faithfulness_suff": 0.0014102458953857422,
+      "attention_faithfulness_comp": 0.0015354156494140625,
+      "attention_sparsity": 0.9996998077395157,
+      "ig_target_auroc": 0.8732218227294044,
+      "ig_atom_error": "The expanded size of the tensor (1800) must match the existing size (90) at non-singleton dimension 0.  Target sizes: [1800, 256].  Tensor sizes: [90, 1]"
+    },
+    {
+      "drug": "Venetoclax",
+      "n_cells": 5,
+      "attn_time_s": 0.026000499725341797,
+      "raw_targets": [
+        "BCL2"
+      ],
+      "resolved_targets": [
+        "BCL2"
+      ],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "attention_target_auroc": 0.9908555648186745,
+      "attention_sensitivity_alignment": 0.5777005579872365,
+      "attention_faithfulness_suff": 0.03355717658996582,
+      "attention_faithfulness_comp": 0.030074000358581543,
+      "attention_sparsity": 1.0000000597728929,
+      "ig_target_auroc": 0.9935910796165068,
+      "ig_atom_error": "The expanded size of the tensor (6100) must match the existing size (305) at non-singleton dimension 0.  Target sizes: [6100, 256].  Tensor sizes: [305, 1]"
+    },
+    {
+      "drug": "Vinblastine",
+      "n_cells": 5,
+      "attn_time_s": 0.0273897647857666,
+      "raw_targets": [
+        "Microtubule destabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5400130778129872,
+      "attention_faithfulness_suff": 0.0021796226501464844,
+      "attention_faithfulness_comp": 0.01294708251953125,
+      "attention_sparsity": 0.9997624823738833,
+      "ig_atom_error": "The expanded size of the tensor (5900) must match the existing size (295) at non-singleton dimension 0.  Target sizes: [5900, 256].  Tensor sizes: [295, 1]"
+    },
+    {
+      "drug": "Vinorelbine",
+      "n_cells": 5,
+      "attn_time_s": 0.02839803695678711,
+      "raw_targets": [
+        "Microtubule destabiliser"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5134870200108167,
+      "attention_faithfulness_suff": 0.0006556510925292969,
+      "attention_faithfulness_comp": 0.002804279327392578,
+      "attention_sparsity": 1.0000000008953742,
+      "ig_atom_error": "The expanded size of the tensor (5700) must match the existing size (285) at non-singleton dimension 0.  Target sizes: [5700, 256].  Tensor sizes: [285, 1]"
+    },
+    {
+      "drug": "Vismodegib",
+      "n_cells": 5,
+      "attn_time_s": 0.025343656539916992,
+      "raw_targets": [
+        "SMO"
+      ],
+      "resolved_targets": [
+        "SMO"
+      ],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.4942163401417257,
+      "attention_sensitivity_alignment": 0.6147532574125372,
+      "attention_faithfulness_suff": 0.004913330078125,
+      "attention_faithfulness_comp": 0.0033462047576904297,
+      "attention_sparsity": 1.0000001154681075,
+      "ig_target_auroc": 0.8079408086702793,
+      "ig_atom_error": "The expanded size of the tensor (2700) must match the existing size (135) at non-singleton dimension 0.  Target sizes: [2700, 256].  Tensor sizes: [135, 1]"
+    },
+    {
+      "drug": "Vorinostat",
+      "n_cells": 5,
+      "attn_time_s": 0.024249792098999023,
+      "raw_targets": [
+        "HDAC inhibitor Class I",
+        "IIa",
+        "IIb",
+        "IV"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Chromatin histone acetylation",
+      "matched_pathway": "ATP-dependent chromatin remodeling",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5291189147649437,
+      "attention_faithfulness_suff": 0.02402561902999878,
+      "attention_faithfulness_comp": 0.005579888820648193,
+      "attention_sparsity": 0.999999996754411,
+      "ig_atom_error": "The expanded size of the tensor (1900) must match the existing size (95) at non-singleton dimension 0.  Target sizes: [1900, 256].  Tensor sizes: [95, 1]"
+    },
+    {
+      "drug": "WEHI-539",
+      "n_cells": 5,
+      "attn_time_s": 0.03829622268676758,
+      "raw_targets": [
+        "BCL-XL"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Apoptosis regulation",
+      "matched_pathway": "Apoptosis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5481305756958135,
+      "attention_faithfulness_suff": 0.014888644218444824,
+      "attention_faithfulness_comp": 0.023282766342163086,
+      "attention_sparsity": 0.999999997869752,
+      "ig_atom_error": "The expanded size of the tensor (4100) must match the existing size (205) at non-singleton dimension 0.  Target sizes: [4100, 256].  Tensor sizes: [205, 1]"
+    },
+    {
+      "drug": "WIKI4",
+      "n_cells": 5,
+      "attn_time_s": 0.02418041229248047,
+      "raw_targets": [
+        "TNKS1",
+        "TNKS2"
+      ],
+      "resolved_targets": [
+        "TNKS",
+        "TNKS2"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.4903340107341983,
+      "attention_sensitivity_alignment": 0.548607355327204,
+      "attention_faithfulness_suff": 0.000946044921875,
+      "attention_faithfulness_comp": 0.0013399124145507812,
+      "attention_sparsity": 1.0000000884248017,
+      "ig_target_auroc": 0.28109530509092806,
+      "ig_atom_error": "The expanded size of the tensor (3800) must match the existing size (190) at non-singleton dimension 0.  Target sizes: [3800, 256].  Tensor sizes: [190, 1]"
+    },
+    {
+      "drug": "WZ4003",
+      "n_cells": 5,
+      "attn_time_s": 0.025293827056884766,
+      "raw_targets": [
+        "NUAK1",
+        "NUAK2"
+      ],
+      "resolved_targets": [
+        "NUAK1",
+        "NUAK2"
+      ],
+      "target_pathway": "Other, kinases",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "attention_target_auroc": 0.419623781981137,
+      "attention_sensitivity_alignment": 0.5177655183056209,
+      "attention_faithfulness_suff": 0.0034804344177246094,
+      "attention_faithfulness_comp": 0.011715888977050781,
+      "attention_sparsity": 1.000000070647056,
+      "ig_target_auroc": 0.28109530509092806,
+      "ig_atom_error": "The expanded size of the tensor (3500) must match the existing size (175) at non-singleton dimension 0.  Target sizes: [3500, 256].  Tensor sizes: [175, 1]"
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "n_cells": 5,
+      "attn_time_s": 0.021452665328979492,
+      "raw_targets": [
+        "WEE1",
+        "CHEK1"
+      ],
+      "resolved_targets": [
+        "WEE1",
+        "CHEK1"
+      ],
+      "target_pathway": "Cell cycle",
+      "matched_pathway": "Cell cycle",
+      "attention_target_auroc": 0.4942160387681726,
+      "attention_sensitivity_alignment": 0.5221741481882098,
+      "attention_faithfulness_suff": 0.008546317927539349,
+      "attention_faithfulness_comp": 0.010173792950809002,
+      "attention_sparsity": 0.9999999404525507,
+      "ig_expr_error": "Input contains NaN.",
+      "ig_atom_error": "The expanded size of the tensor (2600) must match the existing size (130) at non-singleton dimension 0.  Target sizes: [2600, 256].  Tensor sizes: [130, 1]"
+    },
+    {
+      "drug": "Wnt-C59",
+      "n_cells": 5,
+      "attn_time_s": 0.023409366607666016,
+      "raw_targets": [
+        "PORCN"
+      ],
+      "resolved_targets": [
+        "PORCN"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.49577949145477285,
+      "attention_sensitivity_alignment": 0.6222367964198913,
+      "attention_faithfulness_suff": 0.012336969375610352,
+      "attention_faithfulness_comp": 0.01706385612487793,
+      "attention_sparsity": 0.9999999883683398,
+      "ig_target_auroc": 0.6289078782826177,
+      "ig_atom_error": "The expanded size of the tensor (2900) must match the existing size (145) at non-singleton dimension 0.  Target sizes: [2900, 256].  Tensor sizes: [145, 1]"
+    },
+    {
+      "drug": "XAV939",
+      "n_cells": 5,
+      "attn_time_s": 0.02754688262939453,
+      "raw_targets": [
+        "TNKS1",
+        "TNKS2"
+      ],
+      "resolved_targets": [
+        "TNKS",
+        "TNKS2"
+      ],
+      "target_pathway": "WNT signaling",
+      "matched_pathway": "Wnt signaling pathway",
+      "attention_target_auroc": 0.49478922411547077,
+      "attention_sensitivity_alignment": 0.5014098460600518,
+      "attention_faithfulness_suff": 0.0036509037017822266,
+      "attention_faithfulness_comp": 4.76837158203125e-07,
+      "attention_sparsity": 1.00000017865936,
+      "ig_target_auroc": 0.28109530509092806,
+      "ig_atom_error": "The expanded size of the tensor (2100) must match the existing size (105) at non-singleton dimension 0.  Target sizes: [2100, 256].  Tensor sizes: [105, 1]"
+    },
+    {
+      "drug": "YK-4-279",
+      "n_cells": 5,
+      "attn_time_s": 0.02629375457763672,
+      "raw_targets": [
+        "RNA helicase A"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5217681847037989,
+      "attention_faithfulness_suff": 0.0022031068801879883,
+      "attention_faithfulness_comp": 0.005357086658477783,
+      "attention_sparsity": 1.0000001112164127,
+      "ig_atom_error": "The expanded size of the tensor (2400) must match the existing size (120) at non-singleton dimension 0.  Target sizes: [2400, 256].  Tensor sizes: [120, 1]"
+    },
+    {
+      "drug": "ZM447439",
+      "n_cells": 5,
+      "attn_time_s": 0.024908781051635742,
+      "raw_targets": [
+        "AURKA",
+        "AURKB"
+      ],
+      "resolved_targets": [
+        "AURKA",
+        "AURKB"
+      ],
+      "target_pathway": "Mitosis",
+      "matched_pathway": null,
+      "attention_target_auroc": 0.4885623469334584,
+      "attention_sensitivity_alignment": 0.5310380622837371,
+      "attention_faithfulness_suff": 9.112805128097534e-05,
+      "attention_faithfulness_comp": 0.015587598085403442,
+      "attention_sparsity": 0.9997425411965516,
+      "ig_target_auroc": 0.8029284560471054,
+      "ig_atom_error": "The expanded size of the tensor (3800) must match the existing size (190) at non-singleton dimension 0.  Target sizes: [3800, 256].  Tensor sizes: [190, 1]"
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "n_cells": 5,
+      "attn_time_s": 0.024459362030029297,
+      "raw_targets": [
+        "Metabolism"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Metabolism",
+      "matched_pathway": "Fructose and mannose metabolism",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.5001257482018007,
+      "attention_faithfulness_suff": 0.01038217544555664,
+      "attention_faithfulness_comp": 0.008570194244384766,
+      "attention_sparsity": 1.000000129577436,
+      "ig_atom_error": "The expanded size of the tensor (1200) must match the existing size (60) at non-singleton dimension 0.  Target sizes: [1200, 256].  Tensor sizes: [60, 1]"
+    },
+    {
+      "drug": "ascorbate (vitamin C)",
+      "n_cells": 5,
+      "attn_time_s": 0.0240170955657959,
+      "raw_targets": [
+        "anti-oxidant proteins"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6226903369390818,
+      "attention_faithfulness_suff": 0.9900822639465332,
+      "attention_faithfulness_comp": 0.7291069030761719,
+      "attention_sparsity": 1.000000129577436,
+      "ig_atom_error": "The expanded size of the tensor (1200) must match the existing size (60) at non-singleton dimension 0.  Target sizes: [1200, 256].  Tensor sizes: [60, 1]"
+    },
+    {
+      "drug": "glutathione",
+      "n_cells": 5,
+      "attn_time_s": 0.032338857650756836,
+      "raw_targets": [
+        "anti-oxidant proteins"
+      ],
+      "resolved_targets": [],
+      "target_pathway": "Other",
+      "matched_pathway": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "target_auroc_skip": "no resolved target genes",
+      "attention_sensitivity_alignment": 0.6179804357952488,
+      "attention_faithfulness_suff": 1.2248377799987793,
+      "attention_faithfulness_comp": 0.4656214714050293,
+      "attention_sparsity": 0.9999998067968376,
+      "ig_atom_error": "The expanded size of the tensor (2000) must match the existing size (100) at non-singleton dimension 0.  Target sizes: [2000, 256].  Tensor sizes: [100, 1]"
+    }
+  ]
+}

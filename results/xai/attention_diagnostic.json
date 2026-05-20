@@ -1,0 +1,529 @@
+{
+  "summary": {
+    "n_drugs": 30,
+    "n_pathways": 370,
+    "mean_drug_attn_entropy": 1.8457092103516546,
+    "max_possible_entropy": 5.91350300563827,
+    "mean_per_atom_entropy": 0.6493543301835767,
+    "mean_within_atom_cosine_sim": 0.365490959584713,
+    "mean_cross_drug_cosine_sim": 0.5428933501243591,
+    "median_cross_drug_cosine_sim": 0.5622708797454834,
+    "max_pathway_variance": 0.034503404051065445,
+    "frac_pathways_with_zero_var": 0.01891891891891892,
+    "verdict_drug_invariant_collapse": 0.0,
+    "verdict_within_atom_uniformity": 0.0,
+    "verdict_softmax_saturation": 0.0
+  },
+  "per_drug": [
+    {
+      "drug_id": 1862,
+      "drug": "MG-132",
+      "n_atoms": 170,
+      "drug_attn_entropy": 2.228676587101611,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.28974735736846924,
+      "mean_per_atom_entropy": 0.8733810106030255,
+      "top1_pathway": "Toxoplasmosis",
+      "top5_pathways": [
+        "Toxoplasmosis",
+        "Gastric cancer",
+        "Thyroid cancer",
+        "Systemic lupus erythematosus",
+        "Choline metabolism in cancer"
+      ]
+    },
+    {
+      "drug_id": 1003,
+      "drug": "Camptothecin",
+      "n_atoms": 130,
+      "drug_attn_entropy": 1.6596312893260794,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.43277037143707275,
+      "mean_per_atom_entropy": 0.6692162011411114,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Toxoplasmosis",
+        "Intestinal immune network for IgA production",
+        "2-Oxocarboxylic acid metabolism"
+      ]
+    },
+    {
+      "drug_id": 1034,
+      "drug": "Staurosporine",
+      "n_atoms": 175,
+      "drug_attn_entropy": 1.3191407753225382,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.4755266010761261,
+      "mean_per_atom_entropy": 0.3929779121000302,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Gastric cancer",
+        "Pathways of neurodegeneration - multiple diseases",
+        "Biotin metabolism",
+        "Thyroid cancer"
+      ]
+    },
+    {
+      "drug_id": 1060,
+      "drug": "PD0325901",
+      "n_atoms": 130,
+      "drug_attn_entropy": 2.650180744711919,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.3441712558269501,
+      "mean_per_atom_entropy": 1.245631472956834,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Thyroid cancer",
+        "Autoimmune thyroid disease",
+        "Toxoplasmosis",
+        "Biotin metabolism"
+      ]
+    },
+    {
+      "drug_id": 1054,
+      "drug": "Palbociclib",
+      "n_atoms": 165,
+      "drug_attn_entropy": 1.3968637163249475,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.49902287125587463,
+      "mean_per_atom_entropy": 0.5626837810426972,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Gastric cancer",
+        "Choline metabolism in cancer",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Staphylococcus aureus infection"
+      ]
+    },
+    {
+      "drug_id": 1053,
+      "drug": "MK-2206",
+      "n_atoms": 155,
+      "drug_attn_entropy": 2.0502294855474146,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.436280220746994,
+      "mean_per_atom_entropy": 0.9485081214310891,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Toxoplasmosis",
+        "Gastric cancer",
+        "Choline metabolism in cancer",
+        "Regulation of lipolysis in adipocytes"
+      ]
+    },
+    {
+      "drug_id": 1047,
+      "drug": "Nutlin-3a (-)",
+      "n_atoms": 200,
+      "drug_attn_entropy": 1.7172153449138063,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.48666879534721375,
+      "mean_per_atom_entropy": 0.7008314750161198,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Regulation of lipolysis in adipocytes",
+        "Intestinal immune network for IgA production",
+        "Pathways of neurodegeneration - multiple diseases",
+        "Toxoplasmosis"
+      ]
+    },
+    {
+      "drug_id": 1073,
+      "drug": "5-Fluorouracil",
+      "n_atoms": 45,
+      "drug_attn_entropy": 1.854053055683016,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.2893485128879547,
+      "mean_per_atom_entropy": 0.5834303038929984,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Toxoplasmosis",
+        "Thyroid cancer",
+        "Choline metabolism in cancer",
+        "Staphylococcus aureus infection"
+      ]
+    },
+    {
+      "drug_id": 1011,
+      "drug": "Navitoclax",
+      "n_atoms": 325,
+      "drug_attn_entropy": 2.023678089358559,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.5500972867012024,
+      "mean_per_atom_entropy": 1.0032720034323228,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Regulation of lipolysis in adipocytes",
+        "Toxoplasmosis",
+        "Pathways of neurodegeneration - multiple diseases",
+        "Gastric cancer"
+      ]
+    },
+    {
+      "drug_id": 1049,
+      "drug": "PD173074",
+      "n_atoms": 190,
+      "drug_attn_entropy": 1.6534536653898408,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.2727997303009033,
+      "mean_per_atom_entropy": 0.29569772345689893,
+      "top1_pathway": "Gastric cancer",
+      "top5_pathways": [
+        "Gastric cancer",
+        "Autoimmune thyroid disease",
+        "Glycerophospholipid metabolism",
+        "Systemic lupus erythematosus",
+        "Regulation of lipolysis in adipocytes"
+      ]
+    },
+    {
+      "drug_id": 1372,
+      "drug": "Trametinib",
+      "n_atoms": 185,
+      "drug_attn_entropy": 2.5548906753355025,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.3178507387638092,
+      "mean_per_atom_entropy": 1.1481384891842503,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Autoimmune thyroid disease",
+        "Thyroid cancer",
+        "Toxoplasmosis",
+        "Biotin metabolism"
+      ]
+    },
+    {
+      "drug_id": 1510,
+      "drug": "Linsitinib",
+      "n_atoms": 160,
+      "drug_attn_entropy": 2.0480350824827003,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.3172892928123474,
+      "mean_per_atom_entropy": 0.7411267448297064,
+      "top1_pathway": "Glycerophospholipid metabolism",
+      "top5_pathways": [
+        "Glycerophospholipid metabolism",
+        "Systemic lupus erythematosus",
+        "Choline metabolism in cancer",
+        "Toxoplasmosis",
+        "Autoimmune thyroid disease"
+      ]
+    },
+    {
+      "drug_id": 1017,
+      "drug": "Olaparib",
+      "n_atoms": 160,
+      "drug_attn_entropy": 1.8536126081218347,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.33832013607025146,
+      "mean_per_atom_entropy": 0.7375975387509227,
+      "top1_pathway": "Glycosaminoglycan biosynthesis - keratan sulfate",
+      "top5_pathways": [
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Gastric cancer",
+        "Systemic lupus erythematosus",
+        "Regulation of lipolysis in adipocytes",
+        "Hormone signaling"
+      ]
+    },
+    {
+      "drug_id": 1058,
+      "drug": "Pictilisib",
+      "n_atoms": 175,
+      "drug_attn_entropy": 2.2590611840543064,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.28645774722099304,
+      "mean_per_atom_entropy": 0.887201625903209,
+      "top1_pathway": "Gastric cancer",
+      "top5_pathways": [
+        "Gastric cancer",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Toxoplasmosis",
+        "2-Oxocarboxylic acid metabolism",
+        "Choline metabolism in cancer"
+      ]
+    },
+    {
+      "drug_id": 1179,
+      "drug": "MK-1775",
+      "n_atoms": 185,
+      "drug_attn_entropy": 0.9310379505876285,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.7461345195770264,
+      "mean_per_atom_entropy": 0.4113678401620615,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Intestinal immune network for IgA production",
+        "Regulation of lipolysis in adipocytes",
+        "Choline metabolism in cancer",
+        "Th17 cell differentiation"
+      ]
+    },
+    {
+      "drug_id": 1007,
+      "drug": "Docetaxel",
+      "n_atoms": 290,
+      "drug_attn_entropy": 1.3112585273599588,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.5764184594154358,
+      "mean_per_atom_entropy": 0.4907366046634675,
+      "top1_pathway": "Toxoplasmosis",
+      "top5_pathways": [
+        "Toxoplasmosis",
+        "Autoimmune thyroid disease",
+        "Systemic lupus erythematosus",
+        "Intestinal immune network for IgA production",
+        "Glycosaminoglycan biosynthesis - keratan sulfate"
+      ]
+    },
+    {
+      "drug_id": 1089,
+      "drug": "Oxaliplatin",
+      "n_atoms": 75,
+      "drug_attn_entropy": 1.6141309880374914,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.4475022852420807,
+      "mean_per_atom_entropy": 0.7597801420967413,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Toxoplasmosis",
+        "Choline metabolism in cancer",
+        "Hormone signaling",
+        "Regulation of lipolysis in adipocytes"
+      ]
+    },
+    {
+      "drug_id": 1559,
+      "drug": "Luminespib",
+      "n_atoms": 170,
+      "drug_attn_entropy": 1.6354169364896063,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.3516520857810974,
+      "mean_per_atom_entropy": 0.4685087845180093,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Toxoplasmosis",
+        "Thyroid cancer",
+        "Choline metabolism in cancer",
+        "Gastric cancer"
+      ]
+    },
+    {
+      "drug_id": 1560,
+      "drug": "Alpelisib",
+      "n_atoms": 150,
+      "drug_attn_entropy": 2.0765923850671433,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.21570579707622528,
+      "mean_per_atom_entropy": 0.5316894945714288,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Regulation of lipolysis in adipocytes",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Toxoplasmosis",
+        "Glycerophospholipid metabolism"
+      ]
+    },
+    {
+      "drug_id": 1093,
+      "drug": "GSK1904529A",
+      "n_atoms": 305,
+      "drug_attn_entropy": 1.2488594345516617,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.5766043066978455,
+      "mean_per_atom_entropy": 0.43088790844827957,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Gastric cancer",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Choline metabolism in cancer",
+        "Staphylococcus aureus infection"
+      ]
+    },
+    {
+      "drug_id": 1088,
+      "drug": "Irinotecan",
+      "n_atoms": 215,
+      "drug_attn_entropy": 1.5541188275885025,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.3403034508228302,
+      "mean_per_atom_entropy": 0.49656486525346677,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Toxoplasmosis",
+        "Hormone signaling",
+        "Choline metabolism in cancer"
+      ]
+    },
+    {
+      "drug_id": 1598,
+      "drug": "LGK974",
+      "n_atoms": 150,
+      "drug_attn_entropy": 1.7230575659112228,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.34030425548553467,
+      "mean_per_atom_entropy": 0.6345260278434062,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Toxoplasmosis",
+        "Thyroid cancer",
+        "Pathways of neurodegeneration - multiple diseases",
+        "Gastric cancer"
+      ]
+    },
+    {
+      "drug_id": 1561,
+      "drug": "Taselisib",
+      "n_atoms": 170,
+      "drug_attn_entropy": 2.4555795952053616,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.23842285573482513,
+      "mean_per_atom_entropy": 0.9350730669336561,
+      "top1_pathway": "Regulation of lipolysis in adipocytes",
+      "top5_pathways": [
+        "Regulation of lipolysis in adipocytes",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Toxoplasmosis",
+        "2-Oxocarboxylic acid metabolism",
+        "Gastric cancer"
+      ]
+    },
+    {
+      "drug_id": 1931,
+      "drug": "MIRA-1",
+      "n_atoms": 65,
+      "drug_attn_entropy": 1.9057917290895245,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.21728377044200897,
+      "mean_per_atom_entropy": 0.4373918584586934,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Toxoplasmosis",
+        "Choline metabolism in cancer",
+        "Amoebiasis",
+        "Glycosaminoglycan biosynthesis - keratan sulfate"
+      ]
+    },
+    {
+      "drug_id": 1083,
+      "drug": "Crizotinib",
+      "n_atoms": 150,
+      "drug_attn_entropy": 1.4158994058220948,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.3445983827114105,
+      "mean_per_atom_entropy": 0.3144679705660305,
+      "top1_pathway": "Toxoplasmosis",
+      "top5_pathways": [
+        "Toxoplasmosis",
+        "Autoimmune thyroid disease",
+        "Systemic lupus erythematosus",
+        "Central carbon metabolism in cancer",
+        "Choline metabolism in cancer"
+      ]
+    },
+    {
+      "drug_id": 1558,
+      "drug": "Lapatinib",
+      "n_atoms": 200,
+      "drug_attn_entropy": 2.1458954382267525,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.27256420254707336,
+      "mean_per_atom_entropy": 0.6487041238526783,
+      "top1_pathway": "Glycosaminoglycan biosynthesis - keratan sulfate",
+      "top5_pathways": [
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Toxoplasmosis",
+        "Circadian entrainment",
+        "Taurine and hypotaurine metabolism",
+        "Endometrial cancer"
+      ]
+    },
+    {
+      "drug_id": 1549,
+      "drug": "Sapitinib",
+      "n_atoms": 165,
+      "drug_attn_entropy": 2.481611374045462,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.19596372544765472,
+      "mean_per_atom_entropy": 0.791737796240037,
+      "top1_pathway": "Relaxin signaling pathway",
+      "top5_pathways": [
+        "Relaxin signaling pathway",
+        "Circadian entrainment",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Autoimmune thyroid disease",
+        "Gastric cancer"
+      ]
+    },
+    {
+      "drug_id": 1237,
+      "drug": "EPZ004777",
+      "n_atoms": 195,
+      "drug_attn_entropy": 1.9811216567825838,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.2171352207660675,
+      "mean_per_atom_entropy": 0.47882047629470015,
+      "top1_pathway": "Autoimmune thyroid disease",
+      "top5_pathways": [
+        "Autoimmune thyroid disease",
+        "Systemic lupus erythematosus",
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Choline metabolism in cancer",
+        "Thyroid cancer"
+      ]
+    },
+    {
+      "drug_id": 1032,
+      "drug": "Afatinib",
+      "n_atoms": 170,
+      "drug_attn_entropy": 2.1003859554442625,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.2013111561536789,
+      "mean_per_atom_entropy": 0.44012355975281164,
+      "top1_pathway": "Glycosaminoglycan biosynthesis - keratan sulfate",
+      "top5_pathways": [
+        "Glycosaminoglycan biosynthesis - keratan sulfate",
+        "Relaxin signaling pathway",
+        "Circadian entrainment",
+        "Toxoplasmosis",
+        "Autoimmune thyroid disease"
+      ]
+    },
+    {
+      "drug_id": 1375,
+      "drug": "Temozolomide",
+      "n_atoms": 70,
+      "drug_attn_entropy": 1.521796236666312,
+      "max_entropy": 5.91350300563827,
+      "within_atom_cosine": 0.3464733958244324,
+      "mean_per_atom_entropy": 0.4205549821106117,
+      "top1_pathway": "Systemic lupus erythematosus",
+      "top5_pathways": [
+        "Systemic lupus erythematosus",
+        "Toxoplasmosis",
+        "Regulation of lipolysis in adipocytes",
+        "Intestinal immune network for IgA production",
+        "Glycerophospholipid metabolism"
+      ]
+    }
+  ]
+}

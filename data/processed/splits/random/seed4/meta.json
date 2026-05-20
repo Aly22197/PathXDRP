@@ -1,0 +1,14 @@
+{
+  "df_hash": "7ee45c5d",
+  "n_rows": 150459,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_folds": 5,
+  "name": "random",
+  "seed": 4
+}

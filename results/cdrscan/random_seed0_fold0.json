@@ -1,0 +1,32 @@
+{
+  "args": {
+    "model": "cdrscan",
+    "dataset": "GDSC2",
+    "split": "random",
+    "seed": 0,
+    "fold": 0,
+    "hidden_dim": 256,
+    "n_gin_layers": 5,
+    "n_gat_layers": 3,
+    "n_attn_heads": 8,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "epochs": 60,
+    "lr": 0.0005,
+    "log_interval": 10,
+    "early_stop_patience": 10
+  },
+  "test": {
+    "RMSE": 0.9999468610473086,
+    "MAE": 0.7445695400238037,
+    "PCC": 0.9339998364448547,
+    "Spearman": 0.8975285066907664,
+    "R2": 0.8714417219161987,
+    "Per-drug PCC": 0.7360643744468689,
+    "Per-cell PCC": 0.9129109978675842
+  },
+  "best_val_pcc": 0.9377202987670898,
+  "best_val_epoch": 56,
+  "total_train_sec": 2503.4391753673553,
+  "n_params": 10713601
+}

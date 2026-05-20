@@ -1,0 +1,49 @@
+# Core ML
+torch>=2.2.0
+torch-geometric>=2.5.0
+torchmetrics>=1.3.0
+lightning>=2.2.0
+
+# Chemistry
+rdkit>=2023.9.0
+# torch-scatter, torch-sparse, torch-cluster are installed separately
+# matching your CUDA version — see README
+
+# Foundation model embeddings
+transformers>=4.40.0
+# MolFormer: pip install git+https://github.com/IBM/molformer.git  (or HuggingFace hub)
+# GeneMamba: weights auto-downloaded from HuggingFace (mineself2016/GeneMamba)
+
+# Mamba (optional, CUDA-only) — required for drug_encoder_type=graph_mamba
+# or cell_encoder_type=gene_mamba. Smoke tests auto-skip if not installed.
+# Install: pip install mamba-ssm[causal-conv1d] --no-build-isolation
+# mamba-ssm>=2.2.0
+# causal-conv1d>=1.4.0
+
+# Data
+pandas>=2.2.0
+numpy>=1.26.0
+openpyxl>=3.1.0          # read Cell_Lines_Details.xlsx
+requests>=2.31.0          # PubChem REST API
+tqdm>=4.66.0
+
+# Explainability
+captum>=0.7.0             # Integrated Gradients, SHAP
+# dig: pip install dig-graph (SubgraphX)
+
+# Config / experiment tracking
+hydra-core>=1.3.0
+omegaconf>=2.3.0
+wandb>=0.17.0
+
+# Evaluation / stats
+scikit-learn>=1.4.0
+scipy>=1.13.0
+
+# Visualisation
+matplotlib>=3.8.0
+seaborn>=0.13.0
+Pillow>=10.3.0
+
+# Dev
+pytest>=8.0.0

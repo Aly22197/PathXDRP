@@ -1,0 +1,156 @@
+# ============================================================================
+# PathXDRP — .gitignore
+# Goal: ship only the code, the curated MoA benchmark, the splits, and the
+# manuscript sources. Raw data is re-fetched from upstream providers
+# (GDSC2, DepMap, KEGG, PubChem) per the Data Availability statement.
+# ============================================================================
+
+# ---------- Python / packaging ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# ---------- Test / type-check / coverage caches ----------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+.env
+
+# ---------- IDE / editor ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# ---------- OS junk ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Claude Code session data (private) ----------
+.claude/
+
+# ============================================================================
+# Raw data — do NOT commit. Fetch from the original providers documented in
+# the Data Availability section of the manuscript.
+# ============================================================================
+
+# GDSC raw dumps
+GDSC2-dataset.csv
+GDSC_DATASET.csv
+Cell_Lines_Details.xlsx
+Compounds-annotation.csv
+
+# Gene-tractability / Open Targets dumps
+gene_identifiers_*.csv
+gene_tractabilty_*.csv
+gene_tractability_*.csv
+
+# DepMap RNA-seq matrix (~500 MB) and anything else under data/raw/
+data/raw/
+
+# ---------- External validation data (when added) ----------
+data/external/
+
+# ============================================================================
+# Processed data — large, regeneratable, excluded.
+#
+# What IS released through this repo (kept in data/processed/, not ignored):
+#   moa_benchmark.json, moa_benchmark_all.json   (curated MoA list)
+#   pathway_gene_map.json                        (KEGG pathway → genes)
+#   cosmic_to_depmap.csv                         (ID map)
+#   drugs_with_smiles.parquet                    (resolved PubChem SMILES)
+#
+# What is NOT released here (regenerate locally):
+# ============================================================================
+data/processed/splits/                # ~73 MB; regenerate via scripts/build_splits.py
+
+# ============================================================================
+# Training / inference artefacts — too large for git, regeneratable.
+# Reviewers reproduce by running scripts/run_sweep.py + scripts/train_baseline.py.
+# ============================================================================
+checkpoints/                          # ~4.3 GB of trained weights
+logs/                                 # per-run training logs
+
+# ---------- Results: keep the current numbers, drop archived sweeps ----------
+results/archive/
+
+# ============================================================================
+# Generated figures — regeneratable via eval/plot_results.py.
+# Only Pipeline.pdf is kept (referenced by the README).
+# ============================================================================
+figures/
+!figures/Pipeline.pdf
+
+# ============================================================================
+# Project-internal / dev-only directories — not part of the released pipeline.
+# ============================================================================
+notebooks/                            # EDA + Kaggle scratch notebooks
+docs/                                 # internal design notes, methodology drafts
+proposal/                             # thesis-proposal PowerPoint and builder
+els-cas-templates/                    # Elsevier CAS templates (download separately)
+elsarticle/                           # Elsevier elsarticle templates (download separately)
+
+# ---------- Helper scripts not part of the published pipeline ----------
+scripts/gen_kaggle_notebook.py
+scripts/run_v3_sweep.ps1
+scripts/run_final_sweep.ps1
+
+# ============================================================================
+# LaTeX build artefacts (manuscript/, supplementary/, highlights/)
+# ============================================================================
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.dvi
+manuscript/*.pdf                      # compiled outputs go on Zenodo/release page
+!manuscript/figures/*.pdf             # …but DO keep the figure PDFs the manuscript uses
+!manuscript/figures/Pipeline.pdf
+
+# ============================================================================
+# Manuscript — LaTeX sources, compiled PDFs, and figures are not part of the
+# code release. The paper itself is distributed via Zenodo / the journal.
+# ============================================================================
+manuscript/
+
+# ============================================================================
+# Local utility / scratch
+# ============================================================================
+_*.py                                 # scratch one-off scripts (e.g. _audit_cites.py)
+scratch/
+tmp/
+*.bak
+*.orig
