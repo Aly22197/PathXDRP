@@ -1,0 +1,21 @@
+{
+  "args": {
+    "ckpt": "checkpoints/deepcdr/random_seed0_fold0_fw.pt",
+    "expr": "data/raw/OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+    "response": "data/external/PRISM_response_nocollapse.csv",
+    "model": "deepcdr",
+    "source_name": "prismNC",
+    "exclude_train_cells": true,
+    "clip_sigma": 10.0,
+    "iqr_fence": 3.0
+  },
+  "test": {
+    "RMSE": 3.201792638020254,
+    "MAE": 2.6870411962934204,
+    "PCC": 0.6786362863804801,
+    "Spearman": 0.664797492942235,
+    "R2": -0.757106825464195,
+    "Per-drug PCC": 0.06831063800698979,
+    "n_pairs": 14423
+  }
+}

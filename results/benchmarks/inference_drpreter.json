@@ -1,0 +1,11 @@
+{
+  "model": "drpreter",
+  "split": "random",
+  "n_params": 627201,
+  "peak_gpu_mb": 890.35107421875,
+  "throughput_samples_per_s": 2019.9008878688007,
+  "inference_ms_per_pair": 0.49507379595000867,
+  "n_test": 15104,
+  "device": "cuda",
+  "batch_size": 256
+}

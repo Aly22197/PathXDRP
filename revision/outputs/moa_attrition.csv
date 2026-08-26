@@ -1,0 +1,238 @@
+drug,n_raw_targets,n_symbolish,n_in_depmap,n_in_kegg,free_text_only,target_pathway
+5-Fluorouracil,1,0,0,0,True,Other
+5-azacytidine,1,3,3,3,False,Other
+A-366,2,2,2,2,False,Chromatin histone methylation
+ABT737,3,1,1,1,False,Apoptosis regulation
+AGI-5198,1,1,1,1,False,Metabolism
+AGI-6780,1,1,1,1,False,Metabolism
+AGK2,2,2,2,2,False,Chromatin histone acetylation
+AMG-319,1,1,1,1,False,PI3K/MTOR signaling
+AT13148,1,1,1,1,False,PI3K/MTOR signaling
+AZ6102,2,2,2,0,False,WNT signaling
+AZ960,2,2,2,2,False,"Other, kinases"
+AZD1208,3,3,3,2,False,"Other, kinases"
+AZD1332,3,3,3,3,False,RTK signaling
+AZD2014,2,1,1,1,False,PI3K/MTOR signaling
+AZD3759,1,1,1,1,False,EGFR signaling
+AZD4547,3,3,3,3,False,RTK signaling
+AZD5153,1,1,1,0,False,Chromatin other
+AZD5363,3,3,3,3,False,"Other, kinases"
+AZD5438,1,1,1,1,False,Cell cycle
+AZD5582,2,1,1,1,False,Apoptosis regulation
+AZD5991,1,1,1,1,False,Apoptosis regulation
+AZD6482,1,0,0,0,True,PI3K/MTOR signaling
+AZD6738,1,1,1,1,False,Genome integrity
+AZD7762,2,2,2,2,False,Cell cycle
+AZD8055,2,1,1,1,False,PI3K/MTOR signaling
+AZD8186,2,0,0,0,True,PI3K/MTOR signaling
+Acetalax,1,0,0,0,True,Unclassified
+Afatinib,2,2,2,2,False,EGFR signaling
+Afuresertib,3,3,3,3,False,PI3K/MTOR signaling
+Alisertib,1,1,1,1,False,Mitosis
+Alpelisib,1,0,0,0,True,PI3K/MTOR signaling
+Avagacestat,2,0,0,0,True,Other
+Axitinib,3,3,3,3,False,RTK signaling
+BEN,1,0,0,0,True,Unclassified
+BI-2536,3,3,3,3,False,Cell cycle
+BIBR-1532,1,1,1,1,False,Genome integrity
+BMS-345541,2,0,0,0,True,Other
+BMS-536924,2,1,1,1,False,IGF1R signaling
+BMS-754807,2,1,1,1,False,IGF1R signaling
+BX795,3,2,2,2,False,"Other, kinases"
+Bicalutamide,1,1,1,1,False,Hormone-related
+Bleomycin,1,0,0,0,True,DNA replication
+Bleomycin (50 uM),1,0,0,0,True,DNA replication
+Bortezomib,1,3,3,3,False,Protein stability and degradation
+Bosutinib,3,3,3,3,False,"Other, kinases"
+Bromosporine,3,3,3,1,False,Chromatin other
+Buparlisib,3,0,0,0,True,PI3K/MTOR signaling
+CCT-018159,1,3,3,3,False,Protein stability and degradation
+CCT007093,1,1,1,1,False,Cell cycle
+CHIR-99021,2,2,2,2,False,WNT signaling
+CPI-637,1,1,1,1,False,Chromatin histone methylation
+CZC24832,1,0,0,0,True,PI3K/MTOR signaling
+Camptothecin,1,1,1,0,False,DNA replication
+Cediranib,3,2,2,2,False,RTK signaling
+Cisplatin,1,0,0,0,True,DNA replication
+Crizotinib,3,3,3,2,False,RTK signaling
+Cyclophosphamide,1,0,0,0,True,DNA replication
+Cytarabine,1,0,0,0,True,Other
+Dabrafenib,1,1,1,1,False,ERK MAPK signaling
+Dacarbazine,1,0,0,0,True,Other
+Dactinomycin,1,0,0,0,True,Other
+Dactolisib,3,2,2,2,False,PI3K/MTOR signaling
+Daporinad,1,1,1,1,False,Metabolism
+Dasatinib,3,2,2,2,False,"Other, kinases"
+Dihydrorotenone,1,0,0,0,True,Unclassified
+Dinaciclib,3,3,3,3,False,Cell cycle
+Docetaxel,1,0,0,0,True,Mitosis
+Doramapimod,2,0,0,0,True,JNK and p38 signaling
+EHT-1864,3,3,3,3,False,Cytoskeleton
+EPZ004777,1,1,1,1,False,Chromatin histone methylation
+EPZ5676,1,1,1,1,False,Chromatin histone methylation
+Elephantin,1,0,0,0,True,Unclassified
+Elesclomol,1,3,3,3,False,Protein stability and degradation
+Entinostat,2,10,10,10,False,Chromatin histone acetylation
+Entospletinib,1,1,1,1,False,"Other, kinases"
+Epirubicin,1,0,0,0,True,DNA replication
+Erlotinib,1,1,1,1,False,EGFR signaling
+Fludarabine,1,0,0,0,True,DNA replication
+Foretinib,3,2,2,2,False,RTK signaling
+Fulvestrant,1,0,0,0,True,Hormone-related
+GDC0810,2,2,2,2,False,Hormone-related
+GNE-317,1,0,0,0,True,PI3K/MTOR signaling
+GSK-LSD1,1,0,0,0,True,Chromatin histone methylation
+GSK-LSD1-2HCl ,1,0,0,0,True,Chromatin histone methylation
+GSK1904529A,2,1,1,1,False,IGF1R signaling
+GSK2110183B,3,3,3,3,False,PI3K/MTOR signaling
+GSK2256098C,1,0,0,0,True,Cytoskeleton
+GSK2578215A,1,1,1,1,False,"Other, kinases"
+GSK2606414,1,0,0,0,True,Metabolism
+GSK269962A,2,2,2,2,False,Cytoskeleton
+GSK2801,1,0,0,0,True,Chromatin other
+GSK2830371,1,0,0,0,True,Other
+GSK2830371A,1,1,1,1,False,Other
+GSK343,1,1,1,1,False,Chromatin histone methylation
+GSK591,1,0,0,0,True,Chromatin histone methylation
+GSK626616AC,1,1,1,0,False,"Other, kinases"
+GW441756,1,1,1,1,False,RTK signaling
+Gallibiscoquinazole,1,0,0,0,True,Unclassified
+Gefitinib,1,1,1,1,False,EGFR signaling
+Gemcitabine,1,0,0,0,True,DNA replication
+HKMTI-1-005,1,0,0,0,True,Unclassified
+I-BET-762,3,3,3,0,False,Chromatin other
+I-BRD9,1,1,1,1,False,Chromatin other
+ICL-SIRT078,1,0,0,0,True,Other
+IOX2,1,1,1,1,False,Other
+IWP-2,1,1,1,1,False,WNT signaling
+Ibrutinib,1,1,1,1,False,"Other, kinases"
+Ipatasertib,3,3,3,3,False,PI3K/MTOR signaling
+Irinotecan,1,1,1,0,False,DNA replication
+JNK Inhibitor VIII,1,0,0,0,True,JNK and p38 signaling
+JQ1,3,3,3,0,False,Chromatin other
+KRAS (G12C) Inhibitor-12,1,1,1,1,False,ERK MAPK signaling
+KU-55933,1,1,1,1,False,Genome integrity
+L-Oxonoreleagnine,1,0,0,0,True,Unclassified
+LCL161,3,1,1,1,False,Apoptosis regulation
+LGK974,1,1,1,1,False,WNT signaling
+LJI308,3,0,0,0,True,PI3K/MTOR signaling
+LMP744,1,1,1,0,False,DNA replication
+LY2109761,1,1,1,1,False,Other
+Lapatinib,2,2,2,2,False,EGFR signaling
+Leflunomide,1,0,0,0,True,DNA replication
+Lenalidomide,1,1,1,0,False,Protein stability and degradation
+Lestaurtinib,3,3,3,3,False,"Other, kinases"
+Linsitinib,1,1,1,1,False,IGF1R signaling
+Luminespib,1,3,3,3,False,Protein stability and degradation
+MG-132,2,4,4,4,False,Protein stability and degradation
+MIM1,1,1,1,1,False,Apoptosis regulation
+MIRA-1,1,1,1,1,False,p53 pathway
+MK-1775,2,2,2,2,False,Cell cycle
+MK-2206,2,2,2,2,False,PI3K/MTOR signaling
+MK-8776,3,3,3,3,False,Cell cycle
+ML323,2,1,1,1,False,Protein stability and degradation
+MN-64,2,2,2,0,False,WNT signaling
+Methotrexate,1,0,0,0,True,DNA replication
+Mirin,1,1,1,1,False,Genome integrity
+Mitoxantrone,1,2,2,2,False,DNA replication
+Motesanib,3,3,3,3,False,RTK signaling
+Mycophenolic acid,1,0,0,0,True,Unclassified
+N-acetyl cysteine,1,0,0,0,True,Metabolism
+NU7441,1,0,0,0,True,Genome integrity
+NVP-ADW742,1,1,1,1,False,IGF1R signaling
+Navitoclax,3,1,1,1,False,Apoptosis regulation
+Nelarabine,1,0,0,0,True,DNA replication
+Nilotinib,1,1,1,1,False,ABL signaling
+Niraparib,2,3,3,3,False,Genome integrity
+Nutlin-3a (-),1,1,1,1,False,p53 pathway
+OF-1,2,0,0,0,True,Chromatin histone acetylation
+OSI-027,2,1,1,1,False,PI3K/MTOR signaling
+OTX015,3,3,3,0,False,Chromatin other
+Obatoclax Mesylate,3,1,1,1,False,Apoptosis regulation
+Olaparib,2,3,3,3,False,Genome integrity
+Osimertinib,1,1,1,1,False,EGFR signaling
+Oxaliplatin,1,0,0,0,True,DNA replication
+P22077,2,2,2,1,False,Protein stability and degradation
+PCI-34051,3,10,10,10,False,Chromatin histone acetylation
+PD0325901,2,2,2,2,False,ERK MAPK signaling
+PD173074,3,3,3,3,False,RTK signaling
+PF-4708671,1,0,0,0,True,PI3K/MTOR signaling
+PFI-1,1,1,1,0,False,Chromatin other
+PFI3,3,2,2,2,False,Chromatin other
+PLX-4720,1,1,1,1,False,ERK MAPK signaling
+POMHEX,1,0,0,0,True,Unclassified
+PRIMA-1MET,1,0,0,0,True,p53 pathway
+PRT062607,1,1,1,1,False,"Other, kinases"
+Paclitaxel,1,0,0,0,True,Mitosis
+Palbociclib,2,2,2,2,False,Cell cycle
+Pevonedistat,1,0,0,0,True,Other
+Picolinici-acid,1,0,0,0,True,Other
+Pictilisib,1,1,1,1,False,PI3K/MTOR signaling
+Piperlongumine,1,0,0,0,True,Other
+Podophyllotoxin bromide,1,0,0,0,True,Unclassified
+Pyridostatin,1,0,0,0,True,DNA replication
+RO-3306,1,1,1,1,False,Cell cycle
+RVX-208,1,1,1,0,False,Chromatin other
+Rapamycin,1,1,1,1,False,PI3K/MTOR signaling
+Refametinib,2,2,2,2,False,ERK MAPK signaling
+Remodelin,1,0,0,0,True,Unclassified
+Ribociclib,2,2,2,2,False,Cell cycle
+Romidepsin,3,10,10,10,False,Chromatin histone acetylation
+Rucaparib,2,3,3,3,False,Genome integrity
+Ruxolitinib,2,2,2,2,False,"Other, kinases"
+SB216763,2,2,2,2,False,WNT signaling
+SB505124,3,3,3,3,False,RTK signaling
+SB590885,1,1,1,1,False,ERK MAPK signaling
+SCH772984,2,2,2,2,False,ERK MAPK signaling
+SGC-CBP30,2,1,1,1,False,Chromatin histone acetylation
+SGC0946,1,1,1,1,False,Chromatin histone methylation
+SL0101,3,2,2,2,False,"Other, kinases"
+SN-38,1,1,1,0,False,DNA replication
+Sabutoclax,3,1,1,1,False,Apoptosis regulation
+Sapitinib,3,3,3,3,False,EGFR signaling
+Savolitinib,1,1,1,1,False,RTK signaling
+Schweinfurthin A,1,0,0,0,True,Unclassified
+Selumetinib,2,2,2,2,False,ERK MAPK signaling
+Sepantronium bromide,1,1,1,1,False,Apoptosis regulation
+Serdemetan,1,1,1,1,False,p53 pathway
+Sinularin,1,0,0,0,True,Unclassified
+Sorafenib,3,3,3,3,False,"Other, kinases"
+Staurosporine,1,0,0,0,True,RTK signaling
+TW 37,3,2,2,2,False,Apoptosis regulation
+Talazoparib,2,3,3,3,False,Genome integrity
+Tamoxifen,1,1,1,1,False,Hormone-related
+Tanespimycin,1,3,3,3,False,Protein stability and degradation
+Taselisib,1,1,1,1,False,PI3K/MTOR signaling
+Telomerase Inhibitor IX,1,0,0,0,True,Genome integrity
+Temozolomide,1,0,0,0,True,DNA replication
+Temsirolimus,1,1,1,1,False,PI3K/MTOR signaling
+Teniposide,1,0,0,0,True,DNA replication
+Topotecan,1,1,1,0,False,DNA replication
+Tozasertib,3,3,3,2,False,Mitosis
+Trametinib,2,2,2,2,False,ERK MAPK signaling
+Tretinoin,1,0,0,0,True,Other
+UMI-77,1,1,1,1,False,Apoptosis regulation
+UNC0379,1,0,0,0,True,Chromatin histone methylation
+UNC0638,2,0,0,0,True,Chromatin histone methylation
+Ulixertinib,2,2,2,2,False,ERK MAPK signaling
+Uprosertib,3,3,3,3,False,PI3K/MTOR signaling
+VE-822,1,1,1,1,False,Genome integrity
+VE821,1,1,1,1,False,Genome integrity
+VX-11e,1,1,1,1,False,ERK MAPK signaling
+Veliparib,2,3,3,3,False,Genome integrity
+Venetoclax,1,1,1,1,False,Apoptosis regulation
+Vinblastine,1,0,0,0,True,Mitosis
+Vinorelbine,1,0,0,0,True,Mitosis
+Vismodegib,1,1,1,1,False,Other
+Vorinostat,3,0,0,0,True,Chromatin histone acetylation
+WEHI-539,1,0,0,0,True,Apoptosis regulation
+WIKI4,2,2,2,0,False,WNT signaling
+WZ4003,2,2,2,0,False,"Other, kinases"
+Wee1 Inhibitor,2,2,2,2,False,Cell cycle
+Wnt-C59,1,1,1,1,False,WNT signaling
+XAV939,2,2,2,0,False,WNT signaling
+YK-4-279,1,0,0,0,True,Other
+ZM447439,2,2,2,2,False,Mitosis
+alpha-lipoic acid,1,0,0,0,True,Metabolism
+ascorbate (vitamin C),1,0,0,0,True,Other
+glutathione,1,0,0,0,True,Other

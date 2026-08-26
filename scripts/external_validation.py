@@ -98,8 +98,25 @@ def main():
     p.add_argument("--ckpt",     required=True)
     p.add_argument("--expr",     default=str(EXT_DIR / "CCLE_expression.csv"))
     p.add_argument("--response", default=str(EXT_DIR / "CTRPv2_response.csv"))
+    p.add_argument("--model", default="pathxdrp",
+                   choices=["pathxdrp", "graphdrp", "drpreter", "cdrscan",
+                            "deepcdr"],
+                   help="architecture of the checkpoint being evaluated")
     p.add_argument("--source_name", default="ccle_ctrpv2",
                    help="Used in output filenames")
+    p.add_argument("--exclude-train-cells", dest="exclude_train_cells",
+                   action="store_true", default=True,
+                   help="drop external cell lines that are in the GDSC2 "
+                        "training cohort (default: on)")
+    p.add_argument("--keep-train-cells", dest="exclude_train_cells",
+                   action="store_false",
+                   help="keep them, for a diagnostic run")
+    p.add_argument("--clip-sigma", dest="clip_sigma", type=float, default=10.0,
+                   help="clip z-scored external expression to +/- this many "
+                        "sigma; 0 to disable (default: 10)")
+    p.add_argument("--iqr-fence", dest="iqr_fence", type=float, default=3.0,
+                   help="drop responses outside Q1/Q3 -/+ fence*IQR; 0 to "
+                        "disable (default: 3)")
     args = p.parse_args()
 
     expr_path = Path(args.expr)
@@ -135,14 +152,110 @@ def main():
         for pw, genes in pathway_gene_symbols.items()
         if any(g in gene_to_idx for g in genes)
     }
+    # Build the model from the configuration the checkpoint was trained with,
+    # not from constructor defaults. The published run uses hidden_dim 256 and
+    # four GAT layers, so defaults give a shape mismatch on load_state_dict.
+    # Every run records its arguments beside its results, so read them there.
+    ckpt_path = Path(args.ckpt)
+    cfg = {}
+    cfg_src = "constructor defaults"
+    res_json = (ROOT / "results" / ckpt_path.parent.name /
+                f"{ckpt_path.stem}.json")
+    if res_json.exists():
+        rec = json.loads(res_json.read_text(encoding="utf-8"))
+        rec_args = rec.get("args", {})
+        keep = ("hidden_dim", "n_gat_layers", "n_attn_heads", "dropout",
+                "mask_type", "evidential_lam", "drug_encoder_type",
+                "cell_encoder_type", "n_pw_transformer_layers",
+                "frac_active_sharpness", "use_morgan_fp", "aux_auc_weight",
+                "cross_attn_residual", "drop_h_mol", "attn_aux_weight")
+        cfg = {k: rec_args[k] for k in keep if k in rec_args}
+        cfg_src = res_json.name
+    print(f"  model configuration from: {cfg_src}", flush=True)
+    if cfg:
+        print("   ", {k: cfg[k] for k in sorted(cfg)}, flush=True)
+
+    # The trained PathXDRP concatenates a global Morgan fingerprint into h_mol.
+    # With drop_h_mol the head never reads h_mol, so the fingerprint cannot
+    # change a prediction, but the encoder still requires the tensor. CDRScan
+    # is fingerprint-based throughout and needs it as its drug input.
+    fp_cache = None
+    if cfg.get("use_morgan_fp") or args.model == "cdrscan":
+        from pathxdrp.baselines.cdrscan import build_fp_cache
+        print("  building Morgan fingerprints for the drug set", flush=True)
+        fp_cache = build_fp_cache(drugs_df)
+
     sample_g = next(iter(graph_cache.values()))
-    model = PathXDRP(
-        node_in_dim=sample_g.x.size(1),
-        edge_in_dim=sample_g.edge_attr.size(1),
-        n_genes=expr_train.shape[1],
-        pathway_gene_map=pathway_gene_map,
-    ).to(device)
-    model.load_state_dict(torch.load(args.ckpt, map_location=device))
+    node_dim = sample_g.x.size(1)
+    edge_dim = (sample_g.edge_attr.size(1)
+                if sample_g.edge_attr is not None
+                and sample_g.edge_attr.numel() > 0 else 9)
+    n_genes = expr_train.shape[1]
+
+    def _pick(*names, **defaults):
+        """Constructor kwargs recorded for this run, with fallbacks."""
+        out = dict(defaults)
+        for n in names:
+            if n in cfg:
+                out[n] = cfg[n]
+        return out
+
+    if args.model == "pathxdrp":
+        model = PathXDRP(node_in_dim=node_dim, edge_in_dim=edge_dim,
+                         n_genes=n_genes, pathway_gene_map=pathway_gene_map,
+                         **cfg).to(device)
+    elif args.model == "graphdrp":
+        from pathxdrp.baselines.graphdrp import GraphDRP
+        model = GraphDRP(node_in_dim=node_dim, n_genes=n_genes,
+                         **_pick("hidden_dim", "n_gin_layers", "dropout")
+                         ).to(device)
+    elif args.model == "deepcdr":
+        from pathxdrp.baselines.deepcdr import DeepCDR
+        model = DeepCDR(node_in_dim=node_dim, n_genes=n_genes,
+                        **_pick("hidden_dim", "n_gcn_layers", "dropout")
+                        ).to(device)
+    elif args.model == "drpreter":
+        from pathxdrp.baselines.drpreter import DRPreter
+        kw = _pick("hidden_dim", "n_gat_layers", "n_attn_heads", "dropout")
+        # n_pw_stats is not recorded in the run arguments and its default has
+        # changed since these checkpoints were trained. The first gene
+        # projection has one input per statistic, so the checkpoint states its
+        # own value; read it rather than assume the current default.
+        _sd = torch.load(args.ckpt, map_location="cpu")
+        _w = _sd.get("cell_enc.gene_proj.0.weight")
+        if _w is not None:
+            kw["n_pw_stats"] = int(_w.shape[1])
+            print(f"  n_pw_stats from checkpoint: {kw['n_pw_stats']}",
+                  flush=True)
+        model = DRPreter(node_in_dim=node_dim, edge_in_dim=edge_dim,
+                         n_genes=n_genes, pathway_gene_map=pathway_gene_map,
+                         **kw).to(device)
+    elif args.model == "cdrscan":
+        from pathxdrp.baselines.cdrscan import CDRScan
+        model = CDRScan(n_genes=n_genes,
+                        **_pick("hidden_dim", "dropout")).to(device)
+    else:
+        raise ValueError(f"unknown model: {args.model}")
+
+    # Some checkpoints predate buffers that are now derived at construction
+    # (an index table, for instance). Those are recomputed correctly from the
+    # pathway map, so a missing buffer is harmless, but anything else is not:
+    # report exactly what did not match instead of silently tolerating it.
+    _state = torch.load(args.ckpt, map_location=device)
+    missing, unexpected = model.load_state_dict(_state, strict=False)
+    if missing or unexpected:
+        print(f"  state_dict: {len(missing)} missing, "
+              f"{len(unexpected)} unexpected", flush=True)
+        for k in list(missing)[:6]:
+            print(f"    missing   : {k}", flush=True)
+        for k in list(unexpected)[:6]:
+            print(f"    unexpected: {k}", flush=True)
+        weighty = [k for k in list(missing) + list(unexpected)
+                   if k.endswith((".weight", ".bias"))]
+        if weighty:
+            raise RuntimeError(
+                "checkpoint does not match the model on learned parameters: "
+                + ", ".join(weighty[:5]))
     model.eval()
 
     # --- Load + align external data ---
@@ -155,6 +268,15 @@ def main():
     train_std  = expr_train.std(axis=0).replace(0, 1.0)
     expr_ext = (expr_ext - train_mean) / train_std
 
+    # A small number of externally-normalised cell lines carry extreme values
+    # after this transform, which are artefacts of the source normalisation
+    # rather than biology. Clip them so a handful of genes cannot dominate.
+    if args.clip_sigma and args.clip_sigma > 0:
+        n_clipped = int((expr_ext.abs() > args.clip_sigma).sum().sum())
+        expr_ext = expr_ext.clip(-args.clip_sigma, args.clip_sigma)
+        print(f"  clipped {n_clipped:,} expression values to "
+              f"+/-{args.clip_sigma:g} sigma", flush=True)
+
     print("Loading external response file", flush=True)
     resp = load_external_response(resp_path)
 
@@ -163,11 +285,43 @@ def main():
     resp["matched_drug_id"] = resp["DRUG_NAME"].astype(str).str.lower().map(name_to_id)
     resp = resp.dropna(subset=["matched_drug_id"]).copy()
     resp["matched_drug_id"] = resp["matched_drug_id"].astype(int)
+    # Cell lines that appear in the GDSC2 training cohort are not a held-out
+    # test: the model has already learned representations for them. Drop them
+    # so the transfer estimate is genuinely out-of-cohort.
+    if args.exclude_train_cells:
+        map_path = ROOT / "data" / "processed" / "cosmic_to_depmap.csv"
+        if map_path.exists() and "ModelID" in resp.columns:
+            cmap = pd.read_csv(map_path)
+            train_cosmic = set(int(c) for c in expr_train.index
+                               if pd.notna(c))
+            train_models = set(
+                cmap.loc[cmap["COSMICID"].isin(train_cosmic), "ModelID"]
+                    .dropna().astype(str))
+            before_cells = resp["ModelID"].nunique()
+            before_rows = len(resp)
+            resp = resp[~resp["ModelID"].astype(str).isin(train_models)].copy()
+            print(f"  Excluded training cell lines: "
+                  f"{before_cells - resp['ModelID'].nunique()} of "
+                  f"{before_cells} cell lines "
+                  f"({before_rows - len(resp):,} rows)", flush=True)
+
+    # Dose-response fits far outside the bulk are extrapolations beyond the
+    # tested concentration range rather than measurements.
+    if args.iqr_fence and args.iqr_fence > 0 and len(resp):
+        q1, q3 = resp["y_true"].quantile([0.25, 0.75])
+        iqr = q3 - q1
+        lo, hi = q1 - args.iqr_fence * iqr, q3 + args.iqr_fence * iqr
+        n_before = len(resp)
+        resp = resp[(resp["y_true"] >= lo) & (resp["y_true"] <= hi)].copy()
+        print(f"  IQR x{args.iqr_fence:g} fence [{lo:.2f}, {hi:.2f}] "
+              f"removed {n_before - len(resp):,} implausible fits", flush=True)
+
     print(f"  Matched {len(resp):,} response rows to {resp['matched_drug_id'].nunique()} train-time drugs",
           flush=True)
 
     # --- Predict ---
     y_true_all, y_pred_all, drug_ids_all, cell_ids_all = [], [], [], []
+    epi_all, ale_all = [], []
     pbar = tqdm(resp.itertuples(index=False), total=len(resp),
                 desc="External eval", unit="row")
     with torch.no_grad():
@@ -179,10 +333,37 @@ def main():
             if cell is None or cell not in expr_ext.index:
                 continue
             expr_row = torch.tensor(expr_ext.loc[cell].values, dtype=torch.float, device=device).unsqueeze(0)
-            batch    = Batch.from_data_list([graph_cache[drug_id]]).to(device)
-            out = model(drug_batch=batch, expr=expr_row)
+            fp = None
+            if fp_cache is not None:
+                arr = fp_cache.get(drug_id)
+                if arr is None:
+                    continue
+                fp = torch.tensor(arr, dtype=torch.float, device=device).unsqueeze(0)
+
+            if args.model == "cdrscan":
+                # fingerprint model: no molecular graph in the forward pass
+                out = model(fp=fp, expr=expr_row)
+            elif args.model == "pathxdrp":
+                batch = Batch.from_data_list([graph_cache[drug_id]]).to(device)
+                out = model(drug_batch=batch, expr=expr_row, morgan_fp=fp)
+            else:
+                batch = Batch.from_data_list([graph_cache[drug_id]]).to(device)
+                out = model(drug_batch=batch, expr=expr_row)
+
+            # PathXDRP returns the evidential parameters under "pred"; the
+            # baselines return a plain tensor there.
+            _p = out["pred"]
+            if isinstance(_p, dict):
+                y_pred_all.append(float(_p["pred"].item()))
+                epi_all.append(float(_p["epistemic"].item())
+                               if "epistemic" in _p else float("nan"))
+                ale_all.append(float(_p["aleatoric"].item())
+                               if "aleatoric" in _p else float("nan"))
+            else:
+                y_pred_all.append(float(_p.item()))
+                epi_all.append(float("nan"))
+                ale_all.append(float("nan"))
             y_true_all.append(float(r.y_true))
-            y_pred_all.append(float(out["pred"]["pred"].item()))
             drug_ids_all.append(drug_id)
             cell_ids_all.append(cell)
     pbar.close()
@@ -198,8 +379,11 @@ def main():
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     ckpt_name = Path(args.ckpt).stem
-    out_path  = RESULTS_DIR / f"{args.source_name}_{ckpt_name}.json"
-    preds_path = RESULTS_DIR / f"{args.source_name}_{ckpt_name}_preds.csv"
+    # Checkpoint stems are identical across architectures, so the model name
+    # has to be part of the filename or each run overwrites the previous one.
+    tag = f"{args.source_name}_{args.model}_{ckpt_name}"
+    out_path  = RESULTS_DIR / f"{tag}.json"
+    preds_path = RESULTS_DIR / f"{tag}_preds.csv"
 
     with open(out_path, "w") as f:
         json.dump({"args": vars(args), "test": rep}, f, indent=2)
@@ -208,6 +392,8 @@ def main():
         "cell_id": cell_ids_all,
         "y_true":  y_true,
         "y_pred":  y_pred,
+        "epistemic": epi_all,
+        "aleatoric": ale_all,
     }).to_csv(preds_path, index=False)
 
     print(f"\nExternal results -> {out_path}", flush=True)

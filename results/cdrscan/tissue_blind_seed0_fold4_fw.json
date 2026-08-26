@@ -1,0 +1,35 @@
+{
+  "args": {
+    "model": "cdrscan",
+    "dataset": "GDSC2",
+    "run_tag": "fw",
+    "norm": "foldwise",
+    "split": "tissue_blind",
+    "seed": 0,
+    "fold": 4,
+    "hidden_dim": 128,
+    "n_gin_layers": 5,
+    "n_gcn_layers": 3,
+    "n_gat_layers": 3,
+    "n_attn_heads": 8,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "epochs": 50,
+    "lr": 0.0005,
+    "log_interval": 10,
+    "early_stop_patience": 10
+  },
+  "test": {
+    "RMSE": 1.3280033280233254,
+    "MAE": 1.008856177330017,
+    "PCC": 0.8876039981842041,
+    "Spearman": 0.8448589967900785,
+    "R2": 0.785368025302887,
+    "Per-drug PCC": 0.4643990397453308,
+    "Per-cell PCC": 0.9102314710617065
+  },
+  "best_val_pcc": 0.879964292049408,
+  "best_val_epoch": 19,
+  "total_train_sec": 1384.5376780033112,
+  "n_params": 5307905
+}

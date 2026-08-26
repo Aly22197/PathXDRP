@@ -58,7 +58,24 @@ RESULTS_JSONS = {
 }
 
 
+# Optional run tag: when set (via --run_tag) the checkpoint and the train-args
+# JSON are read from `<split>_seed<S>_fold<F>_<tag>` instead of the default
+# random/seed0 run. This is what lets the W6 ablation score each variant's
+# faithfulness with the same code path as the headline models.
+RUN_TAG: str = ""
+
+
+def _tagged(path: Path) -> Path:
+    if not RUN_TAG:
+        return path
+    return path.with_name(f"{path.stem}_{RUN_TAG}{path.suffix}")
+
+
 def _load_train_args(model_name: str) -> dict:
+    p = _tagged(RESULTS_JSONS[model_name])
+    if p.exists():
+        with open(p) as f:
+            return json.load(f).get("args", {})
     p = RESULTS_JSONS[model_name]
     if p.exists():
         with open(p) as f:
@@ -138,13 +155,13 @@ def load_data():
 
 def load_model(model_name: str, expr_matrix, pathway_gene_map, sample_g, device):
     args = _load_train_args(model_name)
-    ckpt = DEFAULT_CKPTS[model_name]
+    ckpt = _tagged(DEFAULT_CKPTS[model_name])
     if not ckpt.exists():
         raise FileNotFoundError(f"Checkpoint not found: {ckpt}")
 
     if model_name == "pathxdrp":
         from pathxdrp.models.pathxdrp import PathXDRP
-        ckpt_path = DEFAULT_CKPTS["pathxdrp"]
+        ckpt_path = _tagged(DEFAULT_CKPTS["pathxdrp"])
         ckpt_raw = torch.load(ckpt_path, map_location=device, weights_only=True)
         _gp_w = ckpt_raw.get("cell_enc.gene_proj.0.weight")
         n_pw_stats = int(_gp_w.shape[1]) if _gp_w is not None else 4
@@ -165,6 +182,7 @@ def load_model(model_name: str, expr_matrix, pathway_gene_map, sample_g, device)
             cross_attn_residual=args.get("cross_attn_residual", False),
             drop_h_mol=args.get("drop_h_mol", False),
             attn_aux_weight=args.get("attn_aux_weight", 0.0),
+            pool_mode=args.get("pool_mode", "auto"),
         )
         model = model.to(device)
         model.load_state_dict(ckpt_raw)
@@ -591,7 +609,13 @@ def main():
     p.add_argument("--n_cells_per_drug", type=int, default=5)
     p.add_argument("--ig_steps", type=int, default=20)
     p.add_argument("--device", default=None)
+    p.add_argument("--run_tag", default="",
+                   help="Score the checkpoint/results tagged with this "
+                        "suffix (e.g. abA) instead of the default run.")
     args = p.parse_args()
+
+    global RUN_TAG
+    RUN_TAG = args.run_tag
 
     device = torch.device(args.device or ("cuda" if torch.cuda.is_available() else "cpu"))
     moa = json.load(open(args.moa_json))
@@ -609,7 +633,8 @@ def main():
                              graph_cache, fp_cache,
                              pathway_gene_map, pathway_names, gene_list,
                              moa, device)
-        out_json = out_dir / f"xai_multimodel_{model_name}.json"
+        _sfx = f"_{RUN_TAG}" if RUN_TAG else ""
+        out_json = out_dir / f"xai_multimodel_{model_name}{_sfx}.json"
 
         # Aggregate
         def _mean(key):
@@ -658,7 +683,8 @@ def main():
             print(f"     {k:32s} {v}", flush=True)
 
     # Cross-model summary
-    cross_summary_path = out_dir / "xai_multimodel_summary.json"
+    _sfx = f"_{RUN_TAG}" if RUN_TAG else ""
+    cross_summary_path = out_dir / f"xai_multimodel_summary{_sfx}.json"
     with open(cross_summary_path, "w") as f:
         json.dump(summaries, f, indent=2)
     print(f"\nCross-model summary -> {cross_summary_path}", flush=True)

@@ -1,0 +1,6 @@
+fold,held_out_tissue,test_rows,val_rows,train_rows,test_cell_lines,test_drugs,purity
+0,lung_NSCLC_adenocarcinoma,6026,6026,138407,56,247,1.0
+1,breast,4883,4882,140694,45,247,1.0
+2,large_intestine,4606,4606,141247,41,247,1.0
+3,lung_small_cell_carcinoma,4176,4175,142108,41,247,1.0
+4,ovary,3793,3792,142874,36,247,1.0

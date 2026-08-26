@@ -1,0 +1,35 @@
+{
+  "args": {
+    "model": "graphdrp",
+    "dataset": "GDSC2",
+    "run_tag": "fw",
+    "norm": "foldwise",
+    "split": "tissue_blind",
+    "seed": 0,
+    "fold": 0,
+    "hidden_dim": 128,
+    "n_gin_layers": 5,
+    "n_gcn_layers": 3,
+    "n_gat_layers": 3,
+    "n_attn_heads": 8,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "epochs": 50,
+    "lr": 0.0005,
+    "log_interval": 10,
+    "early_stop_patience": 10
+  },
+  "test": {
+    "RMSE": 1.411891598614461,
+    "MAE": 1.0810234546661377,
+    "PCC": 0.8643778562545776,
+    "Spearman": 0.8144675017579817,
+    "R2": 0.7470012903213501,
+    "Per-drug PCC": 0.2538033723831177,
+    "Per-cell PCC": 0.896941065788269
+  },
+  "best_val_pcc": 0.8605602383613586,
+  "best_val_epoch": 3,
+  "total_train_sec": 1012.936895608902,
+  "n_params": 2859494
+}

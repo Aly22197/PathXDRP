@@ -36,9 +36,11 @@ venv/
 env/
 .env
 
-# ---------- IDE / editor ----------
+# ---------- IDE / editor / local tool state ----------
 .vscode/
 .idea/
+.claude/
+.cursor/
 *.swp
 *.swo
 *.swn
@@ -47,9 +49,6 @@ env/
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# ---------- Claude Code session data (private) ----------
-.claude/
 
 # ============================================================================
 # Raw data — do NOT commit. Fetch from the original providers documented in
@@ -70,8 +69,12 @@ gene_tractability_*.csv
 # DepMap RNA-seq matrix (~500 MB) and anything else under data/raw/
 data/raw/
 
-# ---------- External validation data (when added) ----------
+# ---------- External validation data ----------
 data/external/
+
+# PRISM Repurposing bulk downloads (~1.9 GB). Fetch from the DepMap portal;
+# scripts/prepare_prism.py turns them into data/external/.
+data/PRISM/
 
 # ============================================================================
 # Processed data — large, regeneratable, excluded.
@@ -85,6 +88,7 @@ data/external/
 # What is NOT released here (regenerate locally):
 # ============================================================================
 data/processed/splits/                # ~73 MB; regenerate via scripts/build_splits.py
+data/processed/expression_raw_by_cosmic.parquet   # 53 MB DepMap cache; rebuilt by load_expression(cache=True)
 
 # ============================================================================
 # Training / inference artefacts — too large for git, regeneratable.
@@ -98,10 +102,15 @@ results/archive/
 
 # ============================================================================
 # Generated figures — regeneratable via eval/plot_results.py.
-# Only Pipeline.pdf is kept (referenced by the README).
+# Only the handful the README displays are kept; everything else is rebuilt.
 # ============================================================================
 figures/*
 !figures/Pipeline.png
+!figures/fig1a_architecture.png
+!figures/fig1b_pipeline.png
+!figures/fig1_split_comparison_pcc.png
+!figures/fig6_xai_benchmark.png
+!figures/fig11_faithfulness_curve.png
 
 # ============================================================================
 # Project-internal / dev-only directories — not part of the released pipeline.
@@ -145,6 +154,19 @@ manuscript/*.pdf                      # compiled outputs go on Zenodo/release pa
 # code release. The paper itself is distributed via Zenodo / the journal.
 # ============================================================================
 manuscript/
+
+# Revision working directory: manuscript sources, the response-to-reviewers
+# letter, LaTeX tooling and run logs. The reproducible analysis that used to
+# live here now sits in revision/ at the repo root and IS released.
+Editor_Comments/
+
+# Run logs and process bookkeeping under the released revision/ tree.
+revision/outputs/*.log
+revision/outputs/*.err
+revision/outputs/*.pid
+revision/outputs/queue_logs/
+revision/outputs/sweep_logs/
+revision/outputs/ablation_logs/
 
 # ============================================================================
 # Local utility / scratch

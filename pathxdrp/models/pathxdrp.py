@@ -104,6 +104,17 @@ class PathXDRP(nn.Module):
         # backward compatibility with v3 checkpoints; new training runs should
         # set True.
         cross_attn_residual: bool = False,
+        # Atom -> molecule pooling mode, decoupled from ``cross_attn_residual``.
+        #   "auto"     : legacy behaviour -- mean pool iff cross_attn_residual,
+        #                otherwise the max-attention-weighted pool.
+        #   "mean"     : always mean pool.
+        #   "attention": always the max-attention-weighted pool.
+        # The two were previously tied together, which made it impossible to
+        # tell whether a faithfulness gain came from the residual or from the
+        # pooling change (Reviewer #5, point 3). "auto" reproduces every
+        # published checkpoint exactly; the explicit modes exist so the
+        # ablation can vary one factor at a time.
+        pool_mode: str = "auto",
         # When True, drop the parallel ``h_mol`` (GAT global readout) input to
         # the head. h_mol is an alternative drug representation that competes
         # with the cross-attention path; even with the residual fix the head
@@ -219,6 +230,9 @@ class PathXDRP(nn.Module):
         # n_pathways is required so soft_mask_logit gets shape (1,1,1,P),
         # giving a per-pathway learnable bias that actually influences softmax.
         self.cross_attn_residual = cross_attn_residual
+        if pool_mode not in ("auto", "mean", "attention"):
+            raise ValueError(f"pool_mode must be auto|mean|attention, got {pool_mode!r}")
+        self.pool_mode = pool_mode
         self.cross_attn = PathwayMaskedCrossAttention(
             hidden_dim=hidden_dim,
             n_heads=n_attn_heads,
@@ -331,7 +345,14 @@ class PathXDRP(nn.Module):
         # DRPreter does, and its attention is faithful as a result). Without
         # the residual, we fall back to the historical max-attention-weighted
         # pool that v3 checkpoints depend on.
-        if self.cross_attn_residual:
+        # ``pool_mode`` decouples this choice from ``cross_attn_residual`` so
+        # the ablation can attribute the faithfulness gain to one or the other.
+        if self.pool_mode == "auto":
+            use_mean = self.cross_attn_residual
+        else:
+            use_mean = self.pool_mode == "mean"
+
+        if use_mean:
             from torch_geometric.nn import global_mean_pool
             h_drug_context = global_mean_pool(context, drug_batch.batch)         # (B, D)
         else:

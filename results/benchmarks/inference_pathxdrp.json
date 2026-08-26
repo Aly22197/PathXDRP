@@ -1,0 +1,11 @@
+{
+  "model": "pathxdrp",
+  "split": "random",
+  "n_params": 2342404,
+  "peak_gpu_mb": 1169.01171875,
+  "throughput_samples_per_s": 1231.538421941167,
+  "inference_ms_per_pair": 0.8119925307923296,
+  "n_test": 15046,
+  "device": "cuda",
+  "batch_size": 256
+}

@@ -1,0 +1,24 @@
+{
+  "pathxdrp": {
+    "n_drugs_evaluated": 237,
+    "ig_target_auroc_mean": 0.8151399827455268,
+    "ig_target_auroc_median": 0.9052184560229956,
+    "attn_target_auroc_mean": 0.6343822120806503,
+    "attn_target_auroc_median": 0.4942163401417257,
+    "ig_geneset_recall_at_5_mean": 0.6090625,
+    "ig_geneset_recall_at_10_mean": 0.673125,
+    "ig_geneset_recall_at_20_mean": 0.6821875000000001,
+    "ig_geneset_hit_at_5_rate": 0.6625,
+    "ig_geneset_hit_at_10_rate": 0.71875,
+    "attn_geneset_recall_at_5_mean": 0.26523517382413087,
+    "attn_geneset_recall_at_10_mean": 0.2971370143149284,
+    "attn_geneset_recall_at_20_mean": 0.48466257668711654,
+    "attn_geneset_hit_at_5_rate": 0.3312883435582822,
+    "attn_geneset_hit_at_10_rate": 0.3619631901840491,
+    "ig_target_pathway_auroc_mean": 0.49277045565486705,
+    "attn_target_pathway_auroc_mean": 0.5060810364201204,
+    "attn_sensitivity_alignment_mean": 0.5525514514019797,
+    "attn_faithfulness_suff_mean": 0.022483546551089056,
+    "attn_faithfulness_comp_mean": 0.02046295089100955
+  }
+}

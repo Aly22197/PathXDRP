@@ -68,9 +68,61 @@ def load_drugs_with_smiles() -> pd.DataFrame:
     return pd.read_parquet(path)
 
 
-def load_expression() -> pd.DataFrame:
+def fit_gene_stats(
+    expr: pd.DataFrame,
+    train_cosmic_ids,
+) -> tuple[pd.Series, pd.Series]:
+    """
+    Fit per-gene mean/std on the TRAINING cell lines of one fold only.
+
+    Fitting these moments on the full cohort leaks distributional information
+    about held-out cell lines into the cell-blind, tissue-blind and
+    scaffold-blind evaluations. Every training entry point must therefore call
+    this with the fold's training COSMIC_IDs and pass the result to
+    ``apply_gene_stats`` for all three partitions.
+
+    Args:
+        expr:             raw log2(TPM+1) matrix, index=COSMIC_ID.
+        train_cosmic_ids: iterable of COSMIC_IDs in the fold's TRAIN partition.
+
+    Returns:
+        (mean, std) as pd.Series indexed by gene symbol. Zero-variance genes
+        get std = 1.0 so the transform is a pure centring for them.
+    """
+    ids = sorted({int(c) for c in train_cosmic_ids})
+    present = [c for c in ids if c in expr.index]
+    if len(present) < 2:
+        raise ValueError(
+            f"fit_gene_stats needs >=2 training cell lines, got {len(present)}"
+        )
+    sub = expr.loc[present]
+    mean = sub.mean(axis=0)
+    std = sub.std(axis=0)
+    std[std == 0] = 1.0
+    return mean, std
+
+
+def apply_gene_stats(
+    expr: pd.DataFrame,
+    stats: tuple[pd.Series, pd.Series],
+) -> pd.DataFrame:
+    """Apply fold-fitted per-gene moments to an expression matrix."""
+    mean, std = stats
+    return ((expr - mean) / std).astype("float32")
+
+
+def load_expression(standardize: bool = True, cache: bool = True) -> pd.DataFrame:
     """
     Load and return the DepMap expression matrix indexed by COSMIC_ID.
+
+    Args:
+        standardize: if True (default, legacy behaviour) Z-score each gene over
+            the full retained cohort. **Training entry points must pass
+            standardize=False** and instead fit the moments per fold with
+            ``fit_gene_stats``/``apply_gene_stats``; the cohort-wide transform
+            leaks held-out cell-line statistics into blind splits.
+        cache: cache the parsed matrix as parquet next to the raw CSV, so the
+            507 MB CSV is parsed once rather than on every run of a sweep.
 
     Steps:
       1. Read cosmic_to_depmap.csv for COSMIC_ID <-> ModelID mapping.
@@ -91,6 +143,22 @@ def load_expression() -> pd.DataFrame:
     """
     expr_path = ROOT / "data" / "raw" / "OmicsExpressionProteinCodingGenesTPMLogp1.csv"
     mapping_path = PROCESSED / "cosmic_to_depmap.csv"
+    cache_path = PROCESSED / "expression_raw_by_cosmic.parquet"
+
+    # Fast path: the parsed, COSMIC-indexed, *unstandardised* matrix.
+    if cache and cache_path.exists():
+        print(f"  Loading cached raw expression matrix ({cache_path.name})")
+        expr = pd.read_parquet(cache_path)
+        expr.index = pd.Index(expr.index.astype(int), name="COSMIC_ID")
+        if standardize:
+            print("  Z-scoring expression matrix per gene (cohort-wide)")
+            mean = expr.mean(axis=0)
+            std = expr.std(axis=0)
+            std[std == 0] = 1.0
+            expr = (expr - mean) / std
+        print(f"  Expression matrix ready: {expr.shape[0]} cell lines "
+              f"x {expr.shape[1]:,} genes")
+        return expr.astype("float32")
 
     if not expr_path.exists():
         raise FileNotFoundError(
@@ -135,14 +203,26 @@ def load_expression() -> pd.DataFrame:
     # Reindex by COSMIC_ID
     expr.index = pd.Index([model_to_cosmic[m] for m in expr.index], name="COSMIC_ID", dtype=int)
 
-    # Z-score per gene across cell lines
-    print("  Z-scoring expression matrix per gene")
-    t0 = time.time()
-    mean = expr.mean(axis=0)
-    std = expr.std(axis=0)
-    std[std == 0] = 1.0
-    expr = (expr - mean) / std
-    print(f"  Z-scored in {time.time()-t0:.1f}s")
+    # Persist the raw (unstandardised) COSMIC-indexed matrix for later runs.
+    if cache:
+        try:
+            expr.astype("float32").to_parquet(cache_path)
+            print(f"  Cached raw expression matrix -> {cache_path.name}")
+        except Exception as exc:  # pragma: no cover - cache is best-effort
+            print(f"  [warn] could not write expression cache: {exc}")
+
+    if standardize:
+        # Legacy cohort-wide transform. Leaks held-out cell-line moments into
+        # blind splits; retained only for backwards compatibility.
+        print("  Z-scoring expression matrix per gene (cohort-wide)")
+        t0 = time.time()
+        mean = expr.mean(axis=0)
+        std = expr.std(axis=0)
+        std[std == 0] = 1.0
+        expr = (expr - mean) / std
+        print(f"  Z-scored in {time.time()-t0:.1f}s")
+    else:
+        print("  Returning RAW log2(TPM+1); fold-wise moments fitted by caller")
 
     print(f"  Expression matrix ready: {expr.shape[0]} cell lines x {expr.shape[1]:,} genes")
     return expr.astype("float32")
@@ -153,6 +233,7 @@ def load_expression() -> pd.DataFrame:
 def build_master_df(
     version: str = "GDSC2",
     require_smiles: bool = True,
+    standardize: bool = True,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
     Merge IC50 responses, drug SMILES, cell metadata, and expression data.
@@ -184,7 +265,7 @@ def build_master_df(
     print(f"  Drugs with SMILES: {len(drugs)}")
 
     print("Loading expression matrix")
-    expr_matrix = load_expression()
+    expr_matrix = load_expression(standardize=standardize)
 
     # Merge response + drug annotations
     df = response.merge(

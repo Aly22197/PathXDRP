@@ -1,0 +1,35 @@
+{
+  "args": {
+    "model": "deepcdr",
+    "dataset": "GDSC2",
+    "run_tag": "fw",
+    "norm": "foldwise",
+    "split": "tissue_blind",
+    "seed": 0,
+    "fold": 0,
+    "hidden_dim": 128,
+    "n_gin_layers": 5,
+    "n_gcn_layers": 3,
+    "n_gat_layers": 3,
+    "n_attn_heads": 8,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "epochs": 50,
+    "lr": 0.0005,
+    "log_interval": 10,
+    "early_stop_patience": 10
+  },
+  "test": {
+    "RMSE": 1.4201026182302183,
+    "MAE": 1.104326844215393,
+    "PCC": 0.8695366382598877,
+    "Spearman": 0.8193909289707666,
+    "R2": 0.7440500259399414,
+    "Per-drug PCC": 0.2515103220939636,
+    "Per-cell PCC": 0.9003710150718689
+  },
+  "best_val_pcc": 0.8676720261573792,
+  "best_val_epoch": 7,
+  "total_train_sec": 1153.9678146839142,
+  "n_params": 5033020
+}

@@ -1,0 +1,11 @@
+{
+  "model": "cdrscan",
+  "split": "random",
+  "n_params": 10713601,
+  "peak_gpu_mb": 72.12646484375,
+  "throughput_samples_per_s": 3930.3274984652676,
+  "inference_ms_per_pair": 0.25443172366437267,
+  "n_test": 15104,
+  "device": "cuda",
+  "batch_size": 256
+}

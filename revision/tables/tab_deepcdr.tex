@@ -1,0 +1,16 @@
+\begin{table}[!ht]
+\centering\small
+\caption{DeepCDR on the five split regimes. Expression-only configuration, since this benchmark carries no mutation or methylation channel, so these numbers are below those in the original paper and are not a reproduction of them. Single seed under fold-wise normalisation, against five seeds for the models in Table~\ref{tab:pred}; no standard deviation is therefore quoted. The final column gives the range of five-seed mean PCC across GraphDRP, DRPreter, CDRScan and PathXDRP on the same split, for placement rather than for a significance claim.}
+\label{tab:deepcdr}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrc@{}}
+\toprule
+\textbf{Split} & \textbf{PCC} & \textbf{RMSE} & \textbf{Spearman} & \textbf{Others (PCC)} \\
+\midrule
+random & 0.9220 & 1.1024 & 0.8801 & 0.925--0.937 \\
+cell-blind & 0.8855 & 1.3380 & 0.8388 & 0.864--0.890 \\
+drug-blind & 0.5964 & 2.5191 & 0.5027 & 0.513--0.634 \\
+scaffold-blind & 0.4237 & 2.8775 & 0.4020 & 0.385--0.553 \\
+tissue-blind & 0.8695 & 1.4201 & 0.8194 & 0.848--0.871 \\
+\bottomrule
+\end{tabular*}
+\end{table}

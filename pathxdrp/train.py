@@ -351,11 +351,17 @@ def evaluate(
         epistemic = np.nan_to_num(epistemic, nan=0.0,    posinf=0.0,  neginf=0.0)
         aleatoric = np.nan_to_num(aleatoric, nan=0.0,    posinf=0.0,  neginf=0.0)
 
+    # Total predictive variance sigma^2 = sigma^2_epistemic + sigma^2_aleatoric.
+    # The submitted runs passed `epistemic` alone here, which does not match the
+    # definition of sigma_i given in the Methods section; using the total
+    # variance is both the documented quantity and the better-calibrated one.
+    total_var = epistemic + aleatoric
+
     report = regression_report(
         y_true, y_pred,
         drug_ids=drug_ids,
         cell_ids=cosmic_ids,
-        uncertainties=epistemic,
+        uncertainties=total_var,
     )
     report["epistemic_mean"] = float(np.nan_to_num(epistemic, nan=0.0, posinf=0.0).mean())
     report["aleatoric_mean"] = float(np.nan_to_num(aleatoric, nan=0.0, posinf=0.0).mean())
@@ -384,7 +390,13 @@ def main(args: argparse.Namespace) -> None:
     from pathxdrp.data.splits import load_split
 
     print(f"\nLoading data", flush=True)
-    df, expr_matrix = build_master_df(version=args.dataset, require_smiles=True)
+    # norm="foldwise": expression is returned RAW here and standardised below
+    # using moments fitted on this fold's TRAINING cell lines only.
+    df, expr_matrix = build_master_df(
+        version=args.dataset,
+        require_smiles=True,
+        standardize=(args.norm == "cohort"),
+    )
     df = df[["DRUG_ID", "COSMIC_ID", "LN_IC50", "AUC", "SMILES"]]
     n_genes = expr_matrix.shape[1]
     print(f"  df: {len(df):,} rows | expr_matrix: {expr_matrix.shape}", flush=True)
@@ -432,6 +444,27 @@ def main(args: argparse.Namespace) -> None:
     print(f"Split sizes ({args.split}/seed{args.seed}/fold{args.fold}): "
           f"train={len(train_idx):,} | val={len(val_idx):,} | test={len(test_idx):,}")
 
+    # ---- Fold-wise expression standardisation (W3) ----
+    # Reviewer #3: cohort-wide Z-scoring computed before splitting leaks the
+    # moments of held-out cell lines into cell-blind/tissue-blind evaluation.
+    # Fit on the training partition's cell lines only, then transform all three.
+    if args.norm == "foldwise":
+        from pathxdrp.data.loader import fit_gene_stats, apply_gene_stats
+        train_cosmic = df.iloc[train_idx]["COSMIC_ID"].unique()
+        gene_stats = fit_gene_stats(expr_matrix, train_cosmic)
+        expr_matrix = apply_gene_stats(expr_matrix, gene_stats)
+        print(f"  Fold-wise Z-scoring fitted on {len(train_cosmic)} training "
+              f"cell lines ({len(set(df['COSMIC_ID'])) - len(train_cosmic)} "
+              f"held-out cell lines excluded from the moments)")
+        # persist so XAI / external validation reuse the same transform
+        gene_stats_out = {
+            "mean": gene_stats[0].astype("float32").to_dict(),
+            "std": gene_stats[1].astype("float32").to_dict(),
+        }
+    else:
+        gene_stats_out = None
+        print("  [legacy] cohort-wide Z-scoring (leaks held-out moments)")
+
     train_ds = GDSCDataset(df.iloc[train_idx], graph_cache, expr_matrix, fp_cache=fp_cache)
     val_ds   = GDSCDataset(df.iloc[val_idx],   graph_cache, expr_matrix, fp_cache=fp_cache)
     test_ds  = GDSCDataset(df.iloc[test_idx],  graph_cache, expr_matrix, fp_cache=fp_cache)
@@ -476,6 +509,7 @@ def main(args: argparse.Namespace) -> None:
         use_morgan_fp=args.use_morgan_fp,
         aux_auc_weight=args.aux_auc_weight,
         cross_attn_residual=args.cross_attn_residual,
+        pool_mode=args.pool_mode,
         drop_h_mol=args.drop_h_mol,
         attn_aux_weight=args.attn_aux_weight,
         # Phase 4 encoder switches
@@ -496,6 +530,49 @@ def main(args: argparse.Namespace) -> None:
 
     n_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Model parameters: {n_params:,}", flush=True)
+
+    if getattr(args, "measure", False):
+        # Reviewer #4 minor point 8: memory and inference cost alongside
+        # parameters and training time. Measured on the same model and loader
+        # the reported runs use, so the numbers are comparable with the
+        # baselines measured by scripts/train_baseline.py.
+        import json as _json
+        import time as _time
+
+        model.eval()
+        if device.type == "cuda":
+            torch.cuda.empty_cache()
+            torch.cuda.reset_peak_memory_stats()
+
+        evaluate(model, test_loader, device, desc="warmup")   # warm the kernels
+        if device.type == "cuda":
+            torch.cuda.reset_peak_memory_stats()
+
+        _t0 = _time.time()
+        evaluate(model, test_loader, device, desc="measure")
+        if device.type == "cuda":
+            torch.cuda.synchronize()
+        _elapsed = _time.time() - _t0
+
+        _n = len(test_loader.dataset)
+        _peak = (torch.cuda.max_memory_allocated() / 1024 ** 2
+                 if device.type == "cuda" else float("nan"))
+        _thr = _n / _elapsed if _elapsed > 0 else float("nan")
+        _rec = {"model": "pathxdrp", "split": args.split, "n_params": int(n_params),
+                "peak_gpu_mb": _peak, "throughput_samples_per_s": _thr,
+                "inference_ms_per_pair": (1000.0 / _thr) if _thr else float("nan"),
+                "n_test": int(_n), "device": str(device),
+                "batch_size": args.batch_size}
+        _dir = ROOT / "results" / "benchmarks"
+        _dir.mkdir(parents=True, exist_ok=True)
+        _p = _dir / "inference_pathxdrp.json"
+        _p.write_text(_json.dumps(_rec, indent=2), encoding="utf-8")
+        print(f"  peak GPU memory : {_peak:.1f} MB")
+        print(f"  throughput      : {_thr:,.0f} samples/s "
+              f"(batch {args.batch_size}, n={_n:,})")
+        print(f"  inference       : {1000.0 / _thr:.3f} ms per drug-cell pair")
+        print(f"  wrote {_p}", flush=True)
+        return
 
     # ---- Precision setup ----
     # bf16 is the default on CUDA: same exponent range as fp32 (no overflow in
@@ -573,6 +650,17 @@ def main(args: argparse.Namespace) -> None:
     ckpt_dir = ROOT / "checkpoints" / "pathxdrp"
     ckpt_dir.mkdir(parents=True, exist_ok=True)
     ckpt_path = ckpt_dir / f"{base_stem}.pt"
+
+    # Persist the fold's expression moments next to the checkpoint so that XAI
+    # and external (PRISM) evaluation apply exactly the same transform.
+    if gene_stats_out is not None:
+        import numpy as _np
+        _np.savez_compressed(
+            ckpt_dir / f"{base_stem}_genestats.npz",
+            genes=_np.array(list(gene_stats_out["mean"].keys()), dtype=object),
+            mean=_np.array(list(gene_stats_out["mean"].values()), dtype="float32"),
+            std=_np.array(list(gene_stats_out["std"].values()), dtype="float32"),
+        )
 
     best_val_pcc            = -float("inf")
     best_val_epoch          = 0
@@ -760,6 +848,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train PathXDRP")
     parser.add_argument("--dataset",       default="GDSC2")
     parser.add_argument(
+        "--norm", default="foldwise", choices=["foldwise", "cohort"],
+        help="Expression standardisation. 'foldwise' (default) fits per-gene "
+             "mean/std on the fold's TRAINING cell lines only. 'cohort' is the "
+             "legacy behaviour that fits over all 697 cell lines before "
+             "splitting and leaks held-out moments into blind splits.",
+    )
+    parser.add_argument(
         "--split", default="random",
         choices=["random", "cell_blind", "drug_blind", "scaffold_blind", "tissue_blind"],
     )
@@ -808,6 +903,9 @@ if __name__ == "__main__":
                              "range and is stable for evidential heads. fp16 is fast but unstable. "
                              "fp32 is the slowest but safest fallback.")
     parser.add_argument("--log_interval",  type=int,   default=10)
+    parser.add_argument("--measure", action="store_true",
+                        help="measure peak memory and inference cost, then "
+                             "exit without training (Reviewer #4 minor 8)")
     parser.add_argument("--n_pw_transformer_layers", type=int, default=2,
                         help="Cross-pathway TransformerEncoder layers in PathwaySetEncoder "
                              "(0 = disabled, 1 = original, 2 = default: deeper cross-pathway "
@@ -827,10 +925,22 @@ if __name__ == "__main__":
     parser.add_argument("--gnm_top_k",         type=int, default=2048)
     parser.add_argument("--gnm_freeze_backbone", action="store_true", default=True)
     # Global Morgan fingerprint feature (CDRScan-style 2048-bit drug descriptor)
-    parser.add_argument("--use_morgan_fp", action="store_true",
+    parser.add_argument("--pool_mode", default="auto",
+                        choices=["auto", "mean", "attention"],
+                        help="Atom->molecule pooling. 'auto' (default) reproduces "
+                             "published runs: mean pool iff --cross_attn_residual. "
+                             "'mean'/'attention' force one or the other so the "
+                             "ablation can vary pooling independently of the residual.")
+    parser.add_argument("--use_morgan_fp", action="store_true", default=False,
                         help="Concatenate a projected 2048-bit Morgan radius-2 fingerprint "
-                             "to the drug-level embedding. Adds CDRScan's substructure prior "
-                             "alongside the GAT's learned features. Helps drug-blind splits.")
+                             "to the drug-level embedding, i.e. add CDRScan's substructure "
+                             "prior alongside the GAT's learned features. NOTE: the "
+                             "fingerprint feeds only the global readout h_mol, and the "
+                             "default architecture drops h_mol from the head input "
+                             "(--drop_h_mol), so with the default settings this flag costs "
+                             "compute during training and contributes nothing at inference. "
+                             "It is off by default for that reason; enable it only together "
+                             "with --no_drop_h_mol.")
     # Optimization / regularisation techniques
     parser.add_argument("--mixup_alpha", type=float, default=0.0,
                         help="Mixup interpolation strength (Beta(α,α)) on (expression, label). "

@@ -1,0 +1,21 @@
+{
+  "args": {
+    "ckpt": "checkpoints/graphdrp/random_seed0_fold0.pt",
+    "expr": "data/raw/OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+    "response": "data/external/PRISM_response_nocollapse.csv",
+    "model": "graphdrp",
+    "source_name": "prismNC",
+    "exclude_train_cells": true,
+    "clip_sigma": 10.0,
+    "iqr_fence": 3.0
+  },
+  "test": {
+    "RMSE": 3.33322868864323,
+    "MAE": 2.7801676047455515,
+    "PCC": 0.6677530177672327,
+    "Spearman": 0.6552981267696988,
+    "R2": -0.904329015052209,
+    "Per-drug PCC": 0.054787460560077966,
+    "n_pairs": 14423
+  }
+}

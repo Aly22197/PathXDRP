@@ -1,0 +1,139 @@
+# Faithfulness numbers: provenance
+
+The submitted manuscript quotes the same gain as both *threefold* (Section 3.2) and *sixfold* (Discussion), and separately quotes 0.603 vs 0.407 in the Conclusion. This lists every faithfulness number actually present in `results/`.
+
+| File | Key | Value |
+|---|---|---|
+| `results/archive/xai/xai_benchmark_results.json` | `summary.attention.faithfulness_suff` | 0.8378 |
+| `results/archive/xai/xai_benchmark_results.json` | `summary.attention.faithfulness_comp` | 0.6735 |
+| `results/archive/xai/xai_benchmark_results.json` | `summary.integrated_gradients.faithfulness_suff` | nan |
+| `results/archive/xai/xai_benchmark_results.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/archive/xai/xai_benchmark_results_v2.json` | `summary.attention.faithfulness_suff` | 0.0250 |
+| `results/archive/xai/xai_benchmark_results_v2.json` | `summary.attention.faithfulness_comp` | 0.0237 |
+| `results/archive/xai/xai_benchmark_results_v2.json` | `summary.integrated_gradients.faithfulness_suff` | nan |
+| `results/archive/xai/xai_benchmark_results_v2.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/archive/xai/xai_results_fp_nomask.json` | `summary.attention.faithfulness_suff` | 0.0185 |
+| `results/archive/xai/xai_results_fp_nomask.json` | `summary.attention.faithfulness_comp` | 0.0317 |
+| `results/archive/xai/xai_results_fp_nomask.json` | `summary.integrated_gradients.faithfulness_suff` | nan |
+| `results/archive/xai/xai_results_fp_nomask.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/archive/xai/xai_results_nomask.json` | `summary.attention.faithfulness_suff` | 0.5504 |
+| `results/archive/xai/xai_results_nomask.json` | `summary.attention.faithfulness_comp` | 0.4583 |
+| `results/archive/xai/xai_results_nomask.json` | `summary.integrated_gradients.faithfulness_suff` | nan |
+| `results/archive/xai/xai_results_nomask.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/archive/xai/xai_results_v2.json` | `summary.attention.faithfulness_suff` | 0.0250 |
+| `results/archive/xai/xai_results_v2.json` | `summary.attention.faithfulness_comp` | 0.0237 |
+| `results/archive/xai/xai_results_v2.json` | `summary.integrated_gradients.faithfulness_suff` | nan |
+| `results/archive/xai/xai_results_v2.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/xai/xai_benchmark_results.json` | `summary.attention.faithfulness_suff` | 0.0282 |
+| `results/xai/xai_benchmark_results.json` | `summary.attention.faithfulness_comp` | 0.0235 |
+| `results/xai/xai_benchmark_results.json` | `summary.integrated_gradients.faithfulness_suff` | 0.0029 |
+| `results/xai/xai_benchmark_results.json` | `summary.integrated_gradients.faithfulness_comp` | 0.0649 |
+| `results/xai/xai_modelagnostic_cdrscan.json` | `summary.faith_curve_comp_auc_mean` | 0.1786 |
+| `results/xai/xai_modelagnostic_drpreter.json` | `summary.faith_curve_comp_auc_mean` | 1.1639 |
+| `results/xai/xai_modelagnostic_graphdrp.json` | `summary.faith_curve_comp_auc_mean` | 0.3573 |
+| `results/xai/xai_modelagnostic_pathxdrp.json` | `summary.faith_curve_comp_auc_mean` | 0.9491 |
+| `results/xai/xai_modelagnostic_summary.json` | `pathxdrp.faith_curve_comp_auc_mean` | 0.9491 |
+| `results/xai/xai_modelagnostic_summary.json` | `drpreter.faith_curve_comp_auc_mean` | 1.1639 |
+| `results/xai/xai_modelagnostic_summary.json` | `graphdrp.faith_curve_comp_auc_mean` | 0.3573 |
+| `results/xai/xai_modelagnostic_summary.json` | `cdrscan.faith_curve_comp_auc_mean` | 0.1786 |
+| `results/xai/xai_multimodel_cdrscan.json` | `summary.attn_faithfulness_suff_mean` | nan |
+| `results/xai/xai_multimodel_cdrscan.json` | `summary.attn_faithfulness_comp_mean` | nan |
+| `results/xai/xai_multimodel_drpreter.json` | `summary.attn_faithfulness_suff_mean` | 0.5552 |
+| `results/xai/xai_multimodel_drpreter.json` | `summary.attn_faithfulness_comp_mean` | 0.4067 |
+| `results/xai/xai_multimodel_graphdrp.json` | `summary.attn_faithfulness_suff_mean` | nan |
+| `results/xai/xai_multimodel_graphdrp.json` | `summary.attn_faithfulness_comp_mean` | nan |
+| `results/xai/xai_multimodel_pathxdrp.json` | `summary.attn_faithfulness_suff_mean` | 0.6343 |
+| `results/xai/xai_multimodel_pathxdrp.json` | `summary.attn_faithfulness_comp_mean` | 0.6033 |
+| `results/xai/xai_multimodel_pathxdrp_abA.json` | `summary.attn_faithfulness_suff_mean` | 0.0271 |
+| `results/xai/xai_multimodel_pathxdrp_abA.json` | `summary.attn_faithfulness_comp_mean` | 0.0269 |
+| `results/xai/xai_multimodel_pathxdrp_abAp.json` | `summary.attn_faithfulness_suff_mean` | 0.0225 |
+| `results/xai/xai_multimodel_pathxdrp_abAp.json` | `summary.attn_faithfulness_comp_mean` | 0.0205 |
+| `results/xai/xai_multimodel_pathxdrp_abB.json` | `summary.attn_faithfulness_suff_mean` | 0.0532 |
+| `results/xai/xai_multimodel_pathxdrp_abB.json` | `summary.attn_faithfulness_comp_mean` | 0.0552 |
+| `results/xai/xai_multimodel_pathxdrp_abC.json` | `summary.attn_faithfulness_suff_mean` | 0.4385 |
+| `results/xai/xai_multimodel_pathxdrp_abC.json` | `summary.attn_faithfulness_comp_mean` | 0.3724 |
+| `results/xai/xai_multimodel_pathxdrp_abD.json` | `summary.attn_faithfulness_suff_mean` | 0.2316 |
+| `results/xai/xai_multimodel_pathxdrp_abD.json` | `summary.attn_faithfulness_comp_mean` | 0.0997 |
+| `results/xai/xai_multimodel_pathxdrp_abE.json` | `summary.attn_faithfulness_suff_mean` | 0.5007 |
+| `results/xai/xai_multimodel_pathxdrp_abE.json` | `summary.attn_faithfulness_comp_mean` | 0.5013 |
+| `results/xai/xai_multimodel_pathxdrp_abF.json` | `summary.attn_faithfulness_suff_mean` | 0.4526 |
+| `results/xai/xai_multimodel_pathxdrp_abF.json` | `summary.attn_faithfulness_comp_mean` | 0.4479 |
+| `results/xai/xai_multimodel_summary.json` | `pathxdrp.attn_faithfulness_suff_mean` | 0.6343 |
+| `results/xai/xai_multimodel_summary.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.6033 |
+| `results/xai/xai_multimodel_summary.json` | `drpreter.attn_faithfulness_suff_mean` | 0.5552 |
+| `results/xai/xai_multimodel_summary.json` | `drpreter.attn_faithfulness_comp_mean` | 0.4067 |
+| `results/xai/xai_multimodel_summary.json` | `graphdrp.attn_faithfulness_suff_mean` | nan |
+| `results/xai/xai_multimodel_summary.json` | `graphdrp.attn_faithfulness_comp_mean` | nan |
+| `results/xai/xai_multimodel_summary.json` | `cdrscan.attn_faithfulness_suff_mean` | nan |
+| `results/xai/xai_multimodel_summary.json` | `cdrscan.attn_faithfulness_comp_mean` | nan |
+| `results/xai/xai_multimodel_summary_abA.json` | `pathxdrp.attn_faithfulness_suff_mean` | 0.0271 |
+| `results/xai/xai_multimodel_summary_abA.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.0269 |
+| `results/xai/xai_multimodel_summary_abAp.json` | `pathxdrp.attn_faithfulness_suff_mean` | 0.0225 |
+| `results/xai/xai_multimodel_summary_abAp.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.0205 |
+| `results/xai/xai_multimodel_summary_abB.json` | `pathxdrp.attn_faithfulness_suff_mean` | 0.0532 |
+| `results/xai/xai_multimodel_summary_abB.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.0552 |
+| `results/xai/xai_multimodel_summary_abC.json` | `pathxdrp.attn_faithfulness_suff_mean` | 0.4385 |
+| `results/xai/xai_multimodel_summary_abC.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.3724 |
+| `results/xai/xai_multimodel_summary_abD.json` | `pathxdrp.attn_faithfulness_suff_mean` | 0.2316 |
+| `results/xai/xai_multimodel_summary_abD.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.0997 |
+| `results/xai/xai_multimodel_summary_abE.json` | `pathxdrp.attn_faithfulness_suff_mean` | 0.5007 |
+| `results/xai/xai_multimodel_summary_abE.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.5013 |
+| `results/xai/xai_multimodel_summary_abF.json` | `pathxdrp.attn_faithfulness_suff_mean` | 0.4526 |
+| `results/xai/xai_multimodel_summary_abF.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.4479 |
+| `results/xai/xai_v3.json` | `summary.attention.faithfulness_suff` | 0.0282 |
+| `results/xai/xai_v3.json` | `summary.attention.faithfulness_comp` | 0.0235 |
+| `results/xai/xai_v3.json` | `summary.integrated_gradients.faithfulness_suff` | nan |
+| `results/xai/xai_v3.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+
+## Comprehensiveness values only
+
+| File | Key | Value |
+|---|---|---|
+| `results/archive/xai/xai_benchmark_results.json` | `summary.attention.faithfulness_comp` | 0.6735 |
+| `results/archive/xai/xai_benchmark_results.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/archive/xai/xai_benchmark_results_v2.json` | `summary.attention.faithfulness_comp` | 0.0237 |
+| `results/archive/xai/xai_benchmark_results_v2.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/archive/xai/xai_results_fp_nomask.json` | `summary.attention.faithfulness_comp` | 0.0317 |
+| `results/archive/xai/xai_results_fp_nomask.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/archive/xai/xai_results_nomask.json` | `summary.attention.faithfulness_comp` | 0.4583 |
+| `results/archive/xai/xai_results_nomask.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/archive/xai/xai_results_v2.json` | `summary.attention.faithfulness_comp` | 0.0237 |
+| `results/archive/xai/xai_results_v2.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+| `results/xai/xai_benchmark_results.json` | `summary.attention.faithfulness_comp` | 0.0235 |
+| `results/xai/xai_benchmark_results.json` | `summary.integrated_gradients.faithfulness_comp` | 0.0649 |
+| `results/xai/xai_modelagnostic_cdrscan.json` | `summary.faith_curve_comp_auc_mean` | 0.1786 |
+| `results/xai/xai_modelagnostic_drpreter.json` | `summary.faith_curve_comp_auc_mean` | 1.1639 |
+| `results/xai/xai_modelagnostic_graphdrp.json` | `summary.faith_curve_comp_auc_mean` | 0.3573 |
+| `results/xai/xai_modelagnostic_pathxdrp.json` | `summary.faith_curve_comp_auc_mean` | 0.9491 |
+| `results/xai/xai_modelagnostic_summary.json` | `pathxdrp.faith_curve_comp_auc_mean` | 0.9491 |
+| `results/xai/xai_modelagnostic_summary.json` | `drpreter.faith_curve_comp_auc_mean` | 1.1639 |
+| `results/xai/xai_modelagnostic_summary.json` | `graphdrp.faith_curve_comp_auc_mean` | 0.3573 |
+| `results/xai/xai_modelagnostic_summary.json` | `cdrscan.faith_curve_comp_auc_mean` | 0.1786 |
+| `results/xai/xai_multimodel_cdrscan.json` | `summary.attn_faithfulness_comp_mean` | nan |
+| `results/xai/xai_multimodel_drpreter.json` | `summary.attn_faithfulness_comp_mean` | 0.4067 |
+| `results/xai/xai_multimodel_graphdrp.json` | `summary.attn_faithfulness_comp_mean` | nan |
+| `results/xai/xai_multimodel_pathxdrp.json` | `summary.attn_faithfulness_comp_mean` | 0.6033 |
+| `results/xai/xai_multimodel_pathxdrp_abA.json` | `summary.attn_faithfulness_comp_mean` | 0.0269 |
+| `results/xai/xai_multimodel_pathxdrp_abAp.json` | `summary.attn_faithfulness_comp_mean` | 0.0205 |
+| `results/xai/xai_multimodel_pathxdrp_abB.json` | `summary.attn_faithfulness_comp_mean` | 0.0552 |
+| `results/xai/xai_multimodel_pathxdrp_abC.json` | `summary.attn_faithfulness_comp_mean` | 0.3724 |
+| `results/xai/xai_multimodel_pathxdrp_abD.json` | `summary.attn_faithfulness_comp_mean` | 0.0997 |
+| `results/xai/xai_multimodel_pathxdrp_abE.json` | `summary.attn_faithfulness_comp_mean` | 0.5013 |
+| `results/xai/xai_multimodel_pathxdrp_abF.json` | `summary.attn_faithfulness_comp_mean` | 0.4479 |
+| `results/xai/xai_multimodel_summary.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.6033 |
+| `results/xai/xai_multimodel_summary.json` | `drpreter.attn_faithfulness_comp_mean` | 0.4067 |
+| `results/xai/xai_multimodel_summary.json` | `graphdrp.attn_faithfulness_comp_mean` | nan |
+| `results/xai/xai_multimodel_summary.json` | `cdrscan.attn_faithfulness_comp_mean` | nan |
+| `results/xai/xai_multimodel_summary_abA.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.0269 |
+| `results/xai/xai_multimodel_summary_abAp.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.0205 |
+| `results/xai/xai_multimodel_summary_abB.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.0552 |
+| `results/xai/xai_multimodel_summary_abC.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.3724 |
+| `results/xai/xai_multimodel_summary_abD.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.0997 |
+| `results/xai/xai_multimodel_summary_abE.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.5013 |
+| `results/xai/xai_multimodel_summary_abF.json` | `pathxdrp.attn_faithfulness_comp_mean` | 0.4479 |
+| `results/xai/xai_v3.json` | `summary.attention.faithfulness_comp` | 0.0235 |
+| `results/xai/xai_v3.json` | `summary.integrated_gradients.faithfulness_comp` | nan |
+
+## Action
+
+The revised manuscript must quote one ratio, against a named baseline, and use it consistently in Section 3.2, the Discussion and the Conclusion. Where the before-vs-after ancestor number is not present in `results/`, the comparison is not reproducible from the released artefacts and the claim must either be re-measured by the ablation (variant A of the redesigned Table 11) or dropped.

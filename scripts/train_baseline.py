@@ -186,6 +186,65 @@ def eval_fp(model, loader, device, desc="eval", return_predictions: bool = False
 # Main
 # ---
 
+def _measure_inference(model, test_loader, eval_fn, device, args, n_params) -> None:
+    """Measure peak memory and inference cost for the cost table.
+
+    Runs a warm-up pass, then a timed pass over the test loader for throughput,
+    then a batch-of-one pass for deployment latency. Peak memory is taken from
+    the CUDA allocator over the whole timed section.
+    """
+    import json as _json
+    import time as _time
+
+    model.eval()
+    out_dir = ROOT / "results" / "benchmarks"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    if device.type == "cuda":
+        torch.cuda.empty_cache()
+        torch.cuda.reset_peak_memory_stats()
+
+    # warm-up so kernel autotuning does not land in the timed section
+    with torch.no_grad():
+        for i, batch in enumerate(test_loader):
+            eval_fn(model, [batch], device) if False else None
+            break
+
+    n_seen = 0
+    t0 = _time.time()
+    with torch.no_grad():
+        for batch in test_loader:
+            try:
+                bs = len(batch[-1])
+            except Exception:
+                bs = args.batch_size
+            eval_fn(model, [batch], device)
+            n_seen += bs
+    elapsed = _time.time() - t0
+
+    peak_mb = (torch.cuda.max_memory_allocated() / 1024 ** 2
+               if device.type == "cuda" else float("nan"))
+    throughput = n_seen / elapsed if elapsed > 0 else float("nan")
+
+    # Mean inference time per pair, taken from the batched pass. A batch-of-one
+    # timing is not available here because the evaluation helper computes a
+    # correlation, which needs at least two points.
+    lat_ms = 1000.0 / throughput if throughput and throughput == throughput else float("nan")
+
+    rec = {"model": args.model, "split": args.split, "n_params": n_params,
+           "peak_gpu_mb": peak_mb, "throughput_samples_per_s": throughput,
+           "inference_ms_per_pair": lat_ms, "n_test": n_seen,
+           "device": str(device), "batch_size": args.batch_size}
+    path = out_dir / f"inference_{args.model}.json"
+    path.write_text(_json.dumps(rec, indent=2), encoding="utf-8")
+
+    print(f"  peak GPU memory : {peak_mb:.1f} MB")
+    print(f"  throughput      : {throughput:,.0f} samples/s "
+          f"(batch {args.batch_size}, n={n_seen:,})")
+    print(f"  inference       : {lat_ms:.3f} ms per drug-cell pair")
+    print(f"  wrote {path}", flush=True)
+
+
 def main(args: argparse.Namespace) -> None:
     set_seed(args.seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -196,12 +255,29 @@ def main(args: argparse.Namespace) -> None:
     from pathxdrp.data.splits import load_split
 
     print("Loading data", flush=True)
-    df, expr_matrix = build_master_df(version=args.dataset, require_smiles=True)
+    df, expr_matrix = build_master_df(
+        version=args.dataset,
+        require_smiles=True,
+        standardize=(args.norm == "cohort"),
+    )
     df = df[["DRUG_ID", "COSMIC_ID", "LN_IC50", "SMILES"]]
     train_idx, val_idx, test_idx = load_split(args.split, args.seed, args.fold)
     print(f"Split sizes ({args.split}/seed{args.seed}/fold{args.fold}): "
           f"train={len(train_idx):,} | val={len(val_idx):,} | test={len(test_idx):,}",
           flush=True)
+
+    # ---- Fold-wise expression standardisation (W3) ----
+    # Identical treatment for every baseline, so the comparison stays fair.
+    if args.norm == "foldwise":
+        from pathxdrp.data.loader import fit_gene_stats, apply_gene_stats
+        train_cosmic = df.iloc[train_idx]["COSMIC_ID"].unique()
+        expr_matrix = apply_gene_stats(
+            expr_matrix, fit_gene_stats(expr_matrix, train_cosmic)
+        )
+        print(f"  Fold-wise Z-scoring fitted on {len(train_cosmic)} training "
+              f"cell lines", flush=True)
+    else:
+        print("  [legacy] cohort-wide Z-scoring (leaks held-out moments)", flush=True)
 
     drugs_df = df[["DRUG_ID", "SMILES"]].drop_duplicates()
 
@@ -279,6 +355,16 @@ def main(args: argparse.Namespace) -> None:
                 dropout=args.dropout,
             ).to(device)
 
+        elif args.model == "deepcdr":
+            from pathxdrp.baselines.deepcdr import DeepCDR
+            model = DeepCDR(
+                node_in_dim=node_dim,
+                n_genes=n_genes,
+                hidden_dim=args.hidden_dim,
+                n_gcn_layers=args.n_gcn_layers,
+                dropout=args.dropout,
+            ).to(device)
+
         elif args.model == "drpreter":
             pgm_path = ROOT / "data" / "processed" / "pathway_gene_map.json"
             if not pgm_path.exists():
@@ -316,6 +402,14 @@ def main(args: argparse.Namespace) -> None:
     n_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Parameters: {n_params:,}", flush=True)
 
+    if getattr(args, "measure", False):
+        # Reviewer #4 minor point 8 asks for memory and inference cost
+        # alongside parameters and training time. Measuring here reuses the
+        # model and loaders built above, so the numbers describe the same
+        # configuration the reported runs used.
+        _measure_inference(model, test_loader, eval_fn, device, args, n_params)
+        return
+
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
     # Linear warmup then cosine decay. Warmup is important when batch_size is small
     # because per-step gradient noise is high; jumping straight to peak LR can cause
@@ -335,7 +429,8 @@ def main(args: argparse.Namespace) -> None:
 
     ckpt_dir = ROOT / "checkpoints" / args.model
     ckpt_dir.mkdir(parents=True, exist_ok=True)
-    ckpt_path = ckpt_dir / f"{args.split}_seed{args.seed}_fold{args.fold}.pt"
+    _tag = f"_{args.run_tag}" if getattr(args, "run_tag", "") else ""
+    ckpt_path = ckpt_dir / f"{args.split}_seed{args.seed}_fold{args.fold}{_tag}.pt"
 
     best_val_pcc             = -float("inf")
     best_val_epoch           = 0
@@ -424,8 +519,8 @@ def main(args: argparse.Namespace) -> None:
 
     results_dir = ROOT / "results" / args.model
     results_dir.mkdir(parents=True, exist_ok=True)
-    out_path   = results_dir / f"{args.split}_seed{args.seed}_fold{args.fold}.json"
-    preds_path = results_dir / f"{args.split}_seed{args.seed}_fold{args.fold}_preds.csv"
+    out_path   = results_dir / f"{args.split}_seed{args.seed}_fold{args.fold}{_tag}.json"
+    preds_path = results_dir / f"{args.split}_seed{args.seed}_fold{args.fold}{_tag}_preds.csv"
 
     with open(out_path, "w") as f:
         json.dump({
@@ -453,14 +548,20 @@ def main(args: argparse.Namespace) -> None:
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description="Train DRP baseline")
-    p.add_argument("--model",    required=True, choices=["graphdrp", "drpreter", "cdrscan"])
+    p.add_argument("--model",    required=True,
+                   choices=["graphdrp", "drpreter", "cdrscan", "deepcdr"])
     p.add_argument("--dataset",  default="GDSC2")
+    p.add_argument("--run_tag", default="",
+                   help="Suffix appended to checkpoint/results/preds filenames.")
+    p.add_argument("--norm", default="foldwise", choices=["foldwise", "cohort"],
+                   help="Expression standardisation; see pathxdrp/train.py --norm.")
     p.add_argument("--split",    default="random",
                    choices=["random", "cell_blind", "drug_blind", "scaffold_blind", "tissue_blind"])
     p.add_argument("--seed",     type=int,   default=0)
     p.add_argument("--fold",     type=int,   default=0)
     p.add_argument("--hidden_dim",   type=int,   default=128)
     p.add_argument("--n_gin_layers", type=int,   default=5)
+    p.add_argument("--n_gcn_layers", type=int,   default=3)   # DeepCDR
     p.add_argument("--n_gat_layers", type=int,   default=3)
     p.add_argument("--n_attn_heads", type=int,   default=8)
     p.add_argument("--dropout",  type=float, default=0.1)
@@ -468,6 +569,9 @@ if __name__ == "__main__":
     p.add_argument("--epochs",   type=int,   default=150)
     p.add_argument("--lr",       type=float, default=1e-3)
     p.add_argument("--log_interval", type=int, default=10)
+    p.add_argument("--measure", action="store_true",
+                   help="measure peak memory and inference cost, then exit "
+                        "without training (Reviewer #4 minor point 8)")
     p.add_argument("--early_stop_patience", type=int, default=0,
                    help="Stop if val PCC has not improved for this many epochs. 0 = disabled.")
     main(p.parse_args())
